@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Assignment Member</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Assignment Members</value>
+    </caseValues>
+    <fields>
+        <help><!-- The date to end assigning activities to the member. --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Name --></label>
+        <name>Profile_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date to start assigning activities to the member.  Used for vacations and leaves of absences. --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the members associated to the queue.  Used to determine whether the assign activities. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The details of how the distribution will be handled of survey activities to agents and other users. --></help>
+        <label><!-- Survey Assignment --></label>
+        <name>Survey_Assignment__c</name>
+        <relationshipLabel><!-- Survey Assignment Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The name of the user that will be assigned to the membership queue. --></help>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Survey Assignment Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Workload Adjustment --></label>
+        <name>Workload_Adjustment__c</name>
+    </fields>
+    <layouts>
+        <layout>Survey Assignment Member Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

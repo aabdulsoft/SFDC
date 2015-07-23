@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Control the process to schedule customers and prospects visits to HQ.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Owner.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Manager Phone#</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Owner.FirstName &amp;&apos; &apos;&amp; Company_Name__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Owner_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Owner.Manager.FirstName&amp;&apos; &apos;&amp;Company_Name__r.Owner.Manager.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Owner Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Company_Name__r.Type , &quot;Customer&quot;, &quot;Customer&quot;, &quot;Prospect&quot;, &quot;Prospect&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Business_Challenges__c</fullName>
+        <externalId>false</externalId>
+        <label>WHAT business challenges are there?</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Company_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.ShippingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Anniversary_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.CO_RYDER_ANNSRY__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company Anniversary Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Company_City_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.ShippingCity &amp; &quot;, &quot;&amp;&quot; &quot;&amp;Company_Name__r.ShippingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company City, State</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Description</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Company Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Executive_Visits</relationshipName>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Company_ZipCode__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.ShippingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company ZipCode</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Objetive__c</fullName>
+        <externalId>false</externalId>
+        <label>WHAT is the customer’s objective(s)?</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Deliverables_Expected__c</fullName>
+        <externalId>false</externalId>
+        <label>WHAT deliverables are expected?</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Describe_Reason_for_Declined__c</fullName>
+        <description>Describe Reason for Declined</description>
+        <externalId>false</externalId>
+        <label>Describe Reason for Declined</label>
+        <length>20000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Month_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.FSL_Last_12_Months_Fixed_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Month_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.FSL_Last_12_Months_Rated_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Months_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(FSL_Last_12_month_revenue__c!=0, FSL_Last_12_Month_Fixed_Cost__c /  FSL_Last_12_month_revenue__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months-FC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Months_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>FSL - Last 12 Months - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Months_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(FSL_Last_12_month_revenue__c!=0, FSL_Last_12_Month_Rated_Cost__c /  FSL_Last_12_month_revenue__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months-RC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Months_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>FSL - Last 12 Months - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_Months_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>FSL - Last 12 Months - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_month_revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Last_12_months_FSL_revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_months_margin_Per__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(FSL_Last_12_month_revenue__c!=0, (1-((FSL_Last_12_Month_Fixed_Cost__c +  FSL_Last_12_Month_Rated_Cost__c )/ FSL_Last_12_month_revenue__c)), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months Margin%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSL_Last_12_months_margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>FSL_Last_12_month_revenue__c - ( FSL_Last_12_Month_Fixed_Cost__c +  FSL_Last_12_Month_Rated_Cost__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Last 12 Months - Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(FSL_Life_to_Date_Revenues__c!=0, FSL_Life_to_Date_Fix_Cost__c /  FSL_Life_to_Date_Revenues__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - FC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Fix_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.FSL_Life_to_Date_Fixed_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>FSL - Life to Date - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Margin_Per__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(FSL_Life_to_Date_Revenues__c!=0, (1-(( FSL_Life_to_Date_Fix_Cost__c  +  FSL_Life_to_Date_Rate_Cost__c)/ FSL_Life_to_Date_Revenues__c)), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - Margin%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>FSL_Life_to_Date_Revenues__c - (FSL_Life_to_Date_Fix_Cost__c +  FSL_Life_to_Date_Rate_Cost__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(FSL_Life_to_Date_Revenues__c!=0, FSL_Life_to_Date_Rate_Cost__c /  FSL_Life_to_Date_Revenues__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - RC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Rate_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.FSL_Life_to_Date_Rated_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>FSL - Life to Date - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>FSL - Life to Date - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FSL_Life_to_Date_Revenues__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.FSL_Life_to_Date_Revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FSL - Life to Date - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_Month_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Last_12_Months_Fixed_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_Month_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Last_12_Months_Rated_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_Month_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Last_12_Months_Revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_Months_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Last_12_Month_Fixed_Cost__c != null,Last_12_Month_Revenue__c != null,Last_12_Month_Fixed_Cost__c != 0,Last_12_Month_Revenue__c != 0) , Last_12_Month_Fixed_Cost__c / Last_12_Month_Revenue__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months-FC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Last_12_Months_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Last 12 Months - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_Months_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Last_12_Month_Rated_Cost__c != null,Last_12_Month_Revenue__c != null,Last_12_Month_Rated_Cost__c != 0,Last_12_Month_Revenue__c != 0) , Last_12_Month_Rated_Cost__c / Last_12_Month_Revenue__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months-RC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Last_12_Months_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Last 12 Months - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_Months_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Last 12 Months - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_months_margin_Per__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Last_12_Month_Revenue__c != null,Last_12_Month_Revenue__c != 0) , 1-((Last_12_Month_Rated_Cost__c + Last_12_Month_Fixed_Cost__c) / Last_12_Month_Revenue__c), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months margin%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Last_12_months_margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((Last_12_Month_Revenue__c - ( Last_12_Month_Rated_Cost__c + Last_12_Month_Fixed_Cost__c )) &gt; 0,
+   (Last_12_Month_Revenue__c - ( Last_12_Month_Rated_Cost__c + Last_12_Month_Fixed_Cost__c )), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Last 12 Months - Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Life_to_Date_Fix_Cost__c != null,Life_to_Date_Revenues__c != null,Life_to_Date_Fix_Cost__c != 0,Life_to_Date_Revenues__c != 0) , Life_to_Date_Fix_Cost__c / Life_to_Date_Revenues__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - FC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Fix_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Life_to_Date_Fixed_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Life to Date - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Margin_Per__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Life_to_Date_Revenues__c != null,Life_to_Date_Revenues__c != 0) , 1-(( Life_to_Date_Fix_Cost__c +  Life_to_Date_Rate_Cost__c )/ Life_to_Date_Revenues__c), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - Margin%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF((Life_to_Date_Revenues__c - ( Life_to_Date_Rate_Cost__c + Life_to_Date_Fix_Cost__c ))&gt;0,
+   (Life_to_Date_Revenues__c - ( Life_to_Date_Rate_Cost__c + Life_to_Date_Fix_Cost__c )), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Life_to_Date_Rate_Cost__c != null,Life_to_Date_Revenues__c != null,Life_to_Date_Rate_Cost__c != 0,Life_to_Date_Revenues__c != 0) , Life_to_Date_Rate_Cost__c / Life_to_Date_Revenues__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - RC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Rate_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Life_to_Date_Rated_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Life to Date - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Life to Date - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Life_to_Date_Revenues__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Life_to_Date_Revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Life to Date - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Business_Day__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(
+MOD(Request_Date__c - DATE(1900, 1, 8), 7),
+0, Request_Date__c + 1,
+1, Request_Date__c + 1,
+2, Request_Date__c + 1,
+3, Request_Date__c + 1,
+4, Request_Date__c + 3,
+5, Request_Date__c + 2,
+6, Request_Date__c + 1,
+DATE(9999,01,01))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Next Business Day</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Other</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Presentation_deck_be_required_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Presentation deck be required?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Month_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.RPM_Last_12_Months_Fixed_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 Months - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Month_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.RPM_Last_12_Months_Rated_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 Months - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Month_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.RPM_Last_12_Months_Revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 Months - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Months_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(RPM_Last_12_Month_Revenue__c!=0, RPM_Last_12_Month_Fixed_Cost__c /  RPM_Last_12_Month_Revenue__c,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 Months-FC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Months_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>RPM - Last 12 Months - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Months_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(RPM_Last_12_Month_Revenue__c!=0, RPM_Last_12_Month_Rated_Cost__c /  RPM_Last_12_Month_Revenue__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 Months-RC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Months_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>RPM - Last 12 Months - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_Months_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>RPM - Last 12 Months - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_months_margin_Per__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(RPM_Last_12_Month_Revenue__c !=0, (1-(( RPM_Last_12_Month_Fixed_Cost__c + RPM_Last_12_Month_Rated_Cost__c )/ RPM_Last_12_Month_Revenue__c )
+), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 months margin%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Last_12_months_margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>RPM_Last_12_Month_Revenue__c - ( RPM_Last_12_Month_Fixed_Cost__c +  RPM_Last_12_Month_Rated_Cost__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Last 12 months - margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_FC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(RPM_Life_to_Date_Revenues__c!=0, RPM_Life_to_Date_Fix_Cost__c /  RPM_Life_to_Date_Revenues__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - FC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Fix_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.RPM_Life_to_Date_Fixed_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Fixed_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>RPM - Life to Date - Fixed Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Margin_Per__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(RPM_Life_to_Date_Revenues__c!=0, (1-(( RPM_Life_to_Date_Fix_Cost__c + RPM_Life_to_Date_Rate_Cost__c )/ RPM_Life_to_Date_Revenues__c )
+), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - Margin%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Margin__c</fullName>
+        <externalId>false</externalId>
+        <formula>RPM_Life_to_Date_Revenues__c - ( RPM_Life_to_Date_Fix_Cost__c +  RPM_Life_to_Date_Rate_Cost__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_RC__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(RPM_Life_to_Date_Revenues__c!=0, RPM_Life_to_Date_Rate_Cost__c /  RPM_Life_to_Date_Revenues__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - RC%</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Rate_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.RPM_Life_to_Date_Rated_Cost__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Rated_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>RPM - Life to Date - Rated Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>RPM - Life to Date - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPM_Life_to_Date_Revenues__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.RPM_Life_to_Date_Revenue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RPM - Life to Date - Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Ryder_Objective__c</fullName>
+        <externalId>false</externalId>
+        <label>WHAT is Ryder’s objective(s)?</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New Request</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Total_Active_Vehicles__c</fullName>
+        <externalId>false</externalId>
+        <formula>Company_Name__r.Total_Active_Vehicles__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Active Vehicles</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Who_will_approve_the_presentation_deck__c</fullName>
+        <externalId>false</externalId>
+        <label>Who will approve the presentation deck?</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Who_will_build_the_presentation_deck__c</fullName>
+        <externalId>false</externalId>
+        <label>Who will build the presentation deck?</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <label>HQ Visit</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Request_Date__c</columns>
+        <columns>Company_Name__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000}</displayFormat>
+        <label>HQ Visit</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>HQ Visits</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Executive_Visit</fullName>
+        <active>true</active>
+        <description>Control the process to schedule customers and prospects visits to HQ.</description>
+        <label>Executive Visit</label>
+        <picklistValues>
+            <picklist>Presentation_deck_be_required_del__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Declined</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Request</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Request_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Company_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Describe_Reason_for_Declined</fullName>
+        <active>true</active>
+        <description>If Status is Declined Describe Reason</description>
+        <errorConditionFormula>ISPICKVAL(Status__c,&quot;Declined&quot;)
+&amp;&amp; ISBLANK(Describe_Reason_for_Declined__c)</errorConditionFormula>
+        <errorDisplayField>Describe_Reason_for_Declined__c</errorDisplayField>
+        <errorMessage>Describe Reason for Declined</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Billing_Quality</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Billing Quality</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/servlet/servlet.FileDownload?file=01511000000163B</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CWP_Presentation_Deck</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>CWP Presentation Deck</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/servlet/servlet.FileDownload?file=01511000000162b</url>
+    </webLinks>
+    <webLinks>
+        <fullName>HQ_Visit_Training_Slides</fullName>
+        <availability>online</availability>
+        <description>Related to HQ Visit</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>HQ Visit Training Slides</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/servlet/servlet.FileDownload?file=0156000000151H5</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Print_Agenda_Brief</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>500</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Print Agenda / Brief</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://www.appextremes.com/apps/Conga/Composer.aspx
+?sessionId={!API.Session_ID}
+&amp;serverUrl={!API.Partner_Server_URL_80}
+&amp;id={!HQ_Visit__c.Id}
+&amp;DefaultPdf=0
+&amp;OFN=Brief+-+Agenda+for+{!HQ_Visit__c.Company_Name__c}
+&amp;LG1=Brief+/+Agenda+Generated
+&amp;LG0=0
+&amp;LG3=1
+&amp;LG4=1
+&amp;REPORTID=[Account]00O60000003YzNC,
+[RyderParticipants]00O60000003YzNA,
+[ProspectCustomerInfo]00O60000003YzNB,
+[Agenda]00O60000003YzND,
+[WelcomeLetter]00O60000003YzNF,
+[AccountDescription]00O60000004B9bD?pv0={!HQ_Visit__c.Company_NameId__c},
+[Competitor]00O60000003YzNE?pv0={!HQ_Visit__c.Company_NameId__c}</url>
+        <width>700</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Ryder_Features_Services</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Ryder  Features &amp; Services</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/servlet/servlet.FileDownload?file=015g0000000cMFP</url>
+    </webLinks>
+</CustomObject>

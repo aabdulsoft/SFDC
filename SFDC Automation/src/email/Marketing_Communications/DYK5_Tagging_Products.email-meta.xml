@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>How to tag products in SFDC</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK5 Tagging Products</name>
+    <style>none</style>
+    <subject>Learn how to tag products in salesforce.com</subject>
+    <textOnly>Tagging prodcuts in salesforce.com
+
+The following FMS products and services are available as distinct products in salesforce.com. In order to more accurately track product level pipeline and performance, please make sure to properly identify each opportunity in salesforce.com. 
+
+Download the instructions on  &quot;Tracking Product Pipeline Information in salesforce.com&quot; http://ride/FMSMarCom/Product_Central/Docs/FMSProductTrackingSFDC.pdf , this document shows how to easily identify the following opportunities in salesforce.com: 
+
+FMS to DCC conversion 
+Fleet Plan 
+On-site 
+STAR 
+RPM 
+Flex-to-Green (coming soon) 
+Insurance 
+RydeSmart 
+Please help us track these products by identifying them in Salesforce.com! 
+
+For additional information on the products, please visit Product Central http://ride/FMSMarCom/Product_Central/index.html or contact the product managers listed below. 
+
+Fleet-Plan, Flex-To-Green: 
+Kiran Sharma, Kiran_Sharma@ryder.com 
+
+On-site, RPM, Insurance: 
+Calvin Marshall, Calvin_Marhsall@ryder.com
+
+FMS to DCC Conversions, STAR: 
+Katie McCormick, Katie_McCormick@ryder.com
+
+RydeSmart: 
+David Kidd, David_E_Kidd@ryder.com</textOnly>
+    <type>custom</type>
+</EmailTemplate>

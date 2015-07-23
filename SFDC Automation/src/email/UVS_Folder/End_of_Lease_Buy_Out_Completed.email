@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<br>Hi {!UVS_SheduleA_Request__c.Account_Owner__c},<p><br></p><p>The End of Lease Buy-Out&nbsp;was compeleted for the account below as you requested.</p><p><br></p><p><br></p><p>{!UVS_SheduleA_Request__c.Link}</p><p><br></p><p><br></p>]]></td>
+</tr>
+</table>

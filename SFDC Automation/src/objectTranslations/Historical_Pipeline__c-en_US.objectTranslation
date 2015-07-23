@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Historical Pipeline</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Historical Pipelines</value>
+    </caseValues>
+    <fields>
+        <label><!-- CY - Average Age (M) --></label>
+        <name>CY_Average_Age_M__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - Average EVA --></label>
+        <name>CY_Average_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - OC Amount --></label>
+        <name>CY_OC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - OC Count --></label>
+        <name>CY_OC_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - % of Total $ --></label>
+        <name>CY_Per_of_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - SH Amount --></label>
+        <name>CY_SH_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - SH Count --></label>
+        <name>CY_SH_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - Total Gross $ --></label>
+        <name>CY_Total_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - Total # of Deals --></label>
+        <name>CY_Total_of_Deals__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - WSO Amount --></label>
+        <name>CY_WSO_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- CY - WSO Count --></label>
+        <name>CY_WSO_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Ratio - All --></label>
+        <name>Close_Ratio_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Ratio - Quoted --></label>
+        <name>Close_Ratio_Quoted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- PY - Average Age (M) --></label>
+        <name>PY_Average_Age_M__c</name>
+    </fields>
+    <fields>
+        <help><!-- Previous Year Close Ratio --></help>
+        <label><!-- PY Close Ratio - All --></label>
+        <name>PY_Close_Ratio_All__c</name>
+    </fields>
+    <fields>
+        <label><!-- PY Close Ratio - Quoted --></label>
+        <name>PY_Close_Ratio_Quoted__c</name>
+    </fields>
+    <fields>
+        <label><!-- PY - Total Gross $ --></label>
+        <name>PY_Total_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- PY - Total # of Deals --></label>
+        <name>PY_Total_of_Deals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Needed to Reach Quota --></label>
+        <name>Pipeline_Needed_to_Reach_Quota__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team Member --></label>
+        <name>Sales_Team_Member__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Territory --></label>
+        <name>Sales_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

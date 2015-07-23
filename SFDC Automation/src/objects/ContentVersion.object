@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveNoteAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Related Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the Related Account</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Add Content</relationshipLabel>
+        <relationshipName>Content</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Buyer_Role__c</fullName>
+        <description>Field to indicate the role of the person this document is intended to</description>
+        <externalId>false</externalId>
+        <label>Buyer Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation Manager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Competitive_Intelligence__c</fullName>
+        <description>To flag content as being related to competitors. As most of these fields, it could be achieved with tags but it is easier for the user to see the values on the left pane and when loading documents, the correct values are easier to see, order and set</description>
+        <externalId>false</externalId>
+        <label>Competitive Intelligence</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Idealease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHH Corporation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CurrencyIsoCode</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Document_Type__c</fullName>
+        <description>To indicate what type of document is this</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please indicate what this document is about</inlineHelpText>
+        <label>Document Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brochure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White Paper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>FileType</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <description>In case of documents with content specific to an industry, this field indicates the industry it covers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please indicate the industry this document covers, if applicable</inlineHelpText>
+        <label>Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Food</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Language</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity that requires this proposal. If it is an RFI, where strictly speaking an opportunity may not exist yet, we will create a 0 value opportunity for consistency in the handling of the document</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Content</relationshipLabel>
+        <relationshipName>Content</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership_TCO__c</fullName>
+        <description>To flag content that is intended to cover needs for the Ownership market. Although it could be done with tags, the field allows these values to be easily visible in the left pane</description>
+        <externalId>false</externalId>
+        <label>Ownership/TCO</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ownership Playbook</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User Guide &amp; Instructions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TCO Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Section__c</fullName>
+        <description>To indicate what section of a proposal every document would belong to. Each document is supposed to be responses to questions in one specific area</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the section of the proposal that this document covers</inlineHelpText>
+        <label>Proposal Section</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing &amp; Invoicing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Company Information</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Experience</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel Service &amp; Distribution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fleet Management Solutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Managed Maintenance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Implementation and Transition</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Self_Service_Type__c</fullName>
+        <description>Field to indicate what is the document about. This allows the filtering to show in the Content section with the values of this field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please indicate what is the general category of this document</inlineHelpText>
+        <label>Self Service Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Capabilities Presentations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Proposal Template</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shop Locations and Maps</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Collaterals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sample Graphics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Org Charts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Bios</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Job Aids</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Helpful Tools</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Procurement Portal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Solution__c</fullName>
+        <description>Field to indicate what solution is this document abou</description>
+        <externalId>false</externalId>
+        <label>Solution</label>
+        <picklist>
+            <picklistValues>
+                <fullName>TCO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telematics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MMS - Preventive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MMS - Comprehensive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MMS - On Site</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MMS - ODM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel Service Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Used Vehicle Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Natural Gas / Alt Fuels</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TagCsv</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <recordTypes>
+        <fullName>Proposal</fullName>
+        <active>true</active>
+        <label>Proposal</label>
+        <picklistValues>
+            <picklist>Buyer_Role__c</picklist>
+            <values>
+                <fullName>Finance Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitive_Intelligence__c</picklist>
+            <values>
+                <fullName>Idealease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHH Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Brochure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Paper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oil</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_TCO__c</picklist>
+            <values>
+                <fullName>Ownership Playbook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Guide %26 Instructions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Section__c</picklist>
+            <values>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing %26 Invoicing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Company Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Management Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Service %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implementation and Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Self_Service_Type__c</picklist>
+            <values>
+                <fullName>Capabilities Presentations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collaterals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Helpful Tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Aids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Org Charts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Procurement Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Template</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Bios</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shop Locations and Maps</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Solution__c</picklist>
+            <values>
+                <fullName>Fuel Service Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - Comprehensive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - ODM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - On Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - Preventive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas %2F Alt Fuels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Used Vehicle Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Proposal_Documents</fullName>
+        <active>true</active>
+        <label>Proposal Documents</label>
+        <picklistValues>
+            <picklist>Buyer_Role__c</picklist>
+            <values>
+                <fullName>Finance Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitive_Intelligence__c</picklist>
+            <values>
+                <fullName>Idealease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHH Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Brochure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Paper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oil</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_TCO__c</picklist>
+            <values>
+                <fullName>Ownership Playbook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Guide %26 Instructions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Section__c</picklist>
+            <values>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing %26 Invoicing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Company Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Management Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Service %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implementation and Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Self_Service_Type__c</picklist>
+            <values>
+                <fullName>Capabilities Presentations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collaterals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Helpful Tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Aids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Org Charts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Procurement Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Bios</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shop Locations and Maps</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Solution__c</picklist>
+            <values>
+                <fullName>Fuel Service Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - Comprehensive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - ODM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - On Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - Preventive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas %2F Alt Fuels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Used Vehicle Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Sales_Self_Service</fullName>
+        <active>true</active>
+        <label>Sales Self Service</label>
+        <picklistValues>
+            <picklist>Buyer_Role__c</picklist>
+            <values>
+                <fullName>Finance Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transportation Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitive_Intelligence__c</picklist>
+            <values>
+                <fullName>Idealease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHH Corporation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Document_Type__c</picklist>
+            <values>
+                <fullName>Brochure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case Study</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>White Paper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Industry__c</picklist>
+            <values>
+                <fullName>Beverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oil</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ownership_TCO__c</picklist>
+            <values>
+                <fullName>Ownership Playbook</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Guide %26 Instructions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Section__c</picklist>
+            <values>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing %26 Invoicing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Company Information</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financials</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Management Solutions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Service %26 Distribution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Implementation and Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Self_Service_Type__c</picklist>
+            <values>
+                <fullName>Capabilities Presentations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collaterals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Helpful Tools</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Job Aids</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Org Charts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Procurement Portal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Proposal Template</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Bios</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sample Graphics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shop Locations and Maps</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Solution__c</picklist>
+            <values>
+                <fullName>Fuel Service Lease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - Comprehensive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - ODM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - On Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMS - Preventive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas %2F Alt Fuels</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TCO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telematics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Used Vehicle Sales</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+</CustomObject>

@@ -1,0 +1,8 @@
+<apex:page standardController="Task" extensions="AgentSurveyActivityViewController" action="{!nullValue(redir.url, urlFor($Action.Task.Edit, task.id, null, true))}">
+        <apex:pageBlock title="Hello this is {!$User.FirstName} {!$User.LastName}."><strong>I am calling on behalf of Ryder Customer Service to 
+        conduct a customer satisfaction survey for the Ryder Branch.  As a valued customer, Ryder wants to ensure that we get your 
+        feedback to better serve you.</strong>
+      <!-- Begin Default Content REMOVE THIS --></apex:pageBlock>
+    <apex:detail subject="{!task}" relatedList="false" relatedListHover="false"/>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

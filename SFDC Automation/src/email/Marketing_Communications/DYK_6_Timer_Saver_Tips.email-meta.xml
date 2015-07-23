@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Timer Saver Tips</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK 6 Timer Saver Tips</name>
+    <style>none</style>
+    <subject>Salesforce.com: Timer Saver Tips</subject>
+    <textOnly>Timer Saver Tips
+
+Timer Open a New Window - To &quot;Open in New Window&quot; (or Open in New Tab) allows you to drill into the detail of a report without losing the report itself. To return to the report simply minimize or close the new window (tab). 
+
+
+
+Consolidate Your Page View - Each record in salesforce.com provides a wealth of information, but often you only want to view a portion of the page. In order to do this, click on the icon to close the sections you do not wish to view. As an added feature, salesforce.com saves your changes and replicates it when you log back in.
+
+
+
+Enter Your Own Lead - The normal process for reviewing and qualifying a lead is a 3 stage process (Unread, Accepted, Qualified). In the instances where you are entering your own leads, you can go directly to the qualified stage.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

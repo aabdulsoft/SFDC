@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Used to relate non-Ryder vehicle information to Accounts</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Competitor Vehicles</relationshipLabel>
+        <relationshipName>Competitor_Vehicles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <picklist>
+            <picklistValues>
+                <fullName>City Van</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dry Trailer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flatbed Trailer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Metro Van</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Panel Van</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Parcel Van</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reefer Truck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refrigerated Trailer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Single Axle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Straight Truck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tandem Axle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tandem Axle Sleeper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Competitor__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IdealLease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NationalLease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PacLease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Local Provider</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interstate National</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter any known term-out dates for non-Ryder vehicles.</inlineHelpText>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Competitor Vehicles</relationshipLabel>
+        <relationshipName>Competitor_Vehicles</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>500</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle Count</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Competitor Vehicle</label>
+    <nameField>
+        <displayFormat>CV-{0000}</displayFormat>
+        <label>Competitor Vehicle ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Competitor Vehicles</pluralLabel>
+    <recordTypes>
+        <fullName>Account_Competitor_Vehicle</fullName>
+        <active>true</active>
+        <description>Select this when creating information connected to an Account.</description>
+        <label>Account Competitor Vehicle</label>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>City Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flatbed Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metro Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panel Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parcel Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerated Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single Axle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Straight Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tandem Axle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tandem Axle Sleeper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitor__c</picklist>
+            <values>
+                <fullName>IdealLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interstate National</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NationalLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PacLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Competitive_Info_Rental_Accounts</fullName>
+        <active>true</active>
+        <label>Competitive Info Rental Accounts</label>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>City Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flatbed Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metro Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panel Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parcel Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerated Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single Axle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Straight Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tandem Axle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tandem Axle Sleeper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitor__c</picklist>
+            <values>
+                <fullName>IdealLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interstate National</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NationalLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PacLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Lead_Competitor_Vehicle</fullName>
+        <active>true</active>
+        <description>Select if information is related to a Lead</description>
+        <label>Lead Competitor Vehicle</label>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>City Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dry Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flatbed Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Metro Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panel Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parcel Van</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reefer Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refrigerated Trailer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Single Axle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Straight Truck</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tandem Axle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tandem Axle Sleeper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitor__c</picklist>
+            <values>
+                <fullName>IdealLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interstate National</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Local Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NationalLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PacLease</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Penske</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

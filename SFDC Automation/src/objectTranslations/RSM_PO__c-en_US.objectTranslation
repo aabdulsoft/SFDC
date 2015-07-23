@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM PO</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM POs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- RSM POs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DateCreated --></label>
+        <name>DateCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateModified --></label>
+        <name>DateModified__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateOrderedInRemedy --></label>
+        <name>DateOrderedInRemedy__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateOrdered --></label>
+        <name>DateOrdered__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateReceived --></label>
+        <name>DateReceived__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateShipped --></label>
+        <name>DateShipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- DestinationLocationCode --></label>
+        <name>DestinationLocationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrderComments --></label>
+        <name>OrderComments__c</name>
+    </fields>
+    <fields>
+        <label><!-- PONumberFromTeletrac --></label>
+        <name>PONumberFromTeletrac__c</name>
+    </fields>
+    <fields>
+        <label><!-- RemedyChangeNumber --></label>
+        <name>RemedyChangeNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- RemedyPONumber --></label>
+        <name>RemedyPONumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SignedBy --></label>
+        <name>SignedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- TrackingNumber --></label>
+        <name>TrackingNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit # --></label>
+        <name>Unit_Number__c</name>
+        <relationshipLabel><!-- RSM POs --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>RSM PO HD Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RSM PO Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- History_Viewer --></label>
+        <name>History_Viewer</name>
+    </webLinks>
+</CustomObjectTranslation>

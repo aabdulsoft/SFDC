@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Executive Call Notes</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Executive Call Notes</value>
+    </caseValues>
+    <fields>
+        <help><!-- Items Executive was Supposed to Address in Call --></help>
+        <label><!-- Action Items for Call --></label>
+        <name>Action_Items_for_Call__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please be sure to cover what needs to be done, specify by whom at Ryder and by when --></help>
+        <label><!-- Action Items to work on --></label>
+        <name>Action_Items_to_work_on__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action items from previous call --></label>
+        <name>Action_items_from_previous_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Notes --></label>
+        <name>Call_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate the name of the person you talked to if different from the Primary Contact --></help>
+        <label><!-- Contacted Person --></label>
+        <name>Contacted_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Call --></label>
+        <name>Date_of_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Account --></label>
+        <name>Executive_Sponsors__c</name>
+        <relationshipLabel><!-- Executive Call Notes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status update from previous call --></label>
+        <name>Status_update_from_previous_call__c</name>
+    </fields>
+    <layouts>
+        <layout>Executive Call Notes Layout</layout>
+        <sections>
+            <label><!-- About this call --></label>
+            <section>About this call</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

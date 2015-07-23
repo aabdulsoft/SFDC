@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Related to HQ Visit Object</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>3000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Confirmed__c</fullName>
+        <externalId>false</externalId>
+        <label>Confirmed</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>HQ_Visit_del__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>HQ Visit</label>
+        <referenceTo>HQ_Visit__c</referenceTo>
+        <relationshipName>Request_del</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Rooms__c</fullName>
+        <externalId>false</externalId>
+        <label># of Rooms</label>
+        <picklist>
+            <controllingField>Request_Type_del__c</controllingField>
+            <picklistValues>
+                <fullName>1</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Request_Detail_del__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide more details at &quot;Comments&quot; section</inlineHelpText>
+        <label>Request Detail</label>
+        <picklist>
+            <controllingField>Request_Type_del__c</controllingField>
+            <picklistValues>
+                <fullName>Baseball</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Basketball</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Broadway / Play / Musical</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Football</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Golf</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hockey</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hotel Needed</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HQ Breakfast</fullName>
+                <controllingFieldValues>Meals</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HQ Lunch</fullName>
+                <controllingFieldValues>Meals</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HQ PM Snack</fullName>
+                <controllingFieldValues>Meals</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Limo</fullName>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NASCAR</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off-site Breakfast</fullName>
+                <controllingFieldValues>Meals</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off-site Dinner</fullName>
+                <controllingFieldValues>Meals</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off-site Lunch</fullName>
+                <controllingFieldValues>Meals</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <controllingFieldValues>Social Events</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental Car</fullName>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder Rep will coordinate</fullName>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Taxi</fullName>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Request_Type_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accommodation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Request_date__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Time__c</fullName>
+        <externalId>false</externalId>
+        <label>Time</label>
+        <picklist>
+            <picklistValues>
+                <fullName>12 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11 : 00 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11 : 30 AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11 : 00 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11 : 30 PM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>in_Party__c</fullName>
+        <externalId>false</externalId>
+        <label># in Party</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>of_Days__c</fullName>
+        <externalId>false</externalId>
+        <label># of Days</label>
+        <picklist>
+            <controllingField>Request_Type_del__c</controllingField>
+            <picklistValues>
+                <fullName>0</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <controllingFieldValues>Accommodation</controllingFieldValues>
+                <controllingFieldValues>Transportation</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Meals/Events/Lodging/Transportation</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Meals/Events/Lodging/Transportation Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Meals/Events/Lodging/Transportation</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

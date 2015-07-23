@@ -1,0 +1,84 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 1/25/2014       Saad Wali Jaan       RydeSmart Contracts Data Visibility on Accounts page    
+ ****************************************************************************/
+-->
+
+<apex:page standardController="Account" extensions="RSMAccountContracts" showHeader="true" >
+    <apex:form >
+    <script>
+       function setFocusOnLoad() {}
+    </script>
+        <apex:pageMessages />
+        <apex:pageBlock title="" >
+           <!--All Contracst for the Accounts Section START -->
+            <apex:pageBlockSection title="All Contracts" columns="1" id="allContractSection" collapsible="true">
+                <apex:pageBlockSectionItem rendered="{!stdAllContractController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            Current Page#{!stdAllContractController.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>    
+                <apex:pageBlockTable var="allContract" value="{!PageAllContracts}" rendered="{!stdAllContractController.ResultSize>0}" >
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Contract Number"  action="{!changeOrder}" >
+                                    <apex:param value="{!allContract.Name}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                                <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Name',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <!--<apex:outputLink onclick="window.open('/{!allContract.id}')" value="#" >{!allContract.Name}</apex:outputLink>-->
+                        <apex:outputLink target="_parent" value="{!URLFOR($Action.RSM_Contract__c.View,allContract.id)}">{!allContract.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Status"  action="{!changeOrder}" >
+                                    <apex:param value="{!allContract.Status_Name__c}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                             <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Status_Name__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!allContract.Status_Name__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Document Type"  action="{!changeOrder}" >
+                                    <apex:param value="{!allContract.Document_Type_Name__c}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                             <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Document_Type_Name__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!allContract.Document_Type_Name__c}
+                    </apex:column>
+                    <apex:column value="{!allContract.Lessee_Email__c}"/>
+                    <apex:column value="{!allContract.Effective_Date__c}"/>
+                    <apex:column value="{!allContract.CreatedBy__c}"/>
+                    <apex:column value="{!allContract.CreatedDate__c}"/>
+                </apex:pageBlockTable>
+                <apex:pageBlockSectionItem rendered="{!stdAllContractController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <apex:commandButton value="First" action="{!stdAllContractController.first}" reRender="allContractSection" rendered="{!stdAllContractController.hasPrevious}" status="allContractsLoading" />
+                            <apex:commandButton value="Next" action="{!stdAllContractController.next}" rendered="{!stdAllContractController.hasNext}" reRender="allContractSection" status="allContractsLoading" />
+                            <apex:commandButton value="Previous" action="{!stdAllContractController.previous}" rendered="{!stdAllContractController.hasPrevious}" reRender="allContractSection" status="allContractsLoading" />
+                            <apex:commandButton value="Last" action="{!stdAllContractController.last}" reRender="allContractSection" rendered="{!stdAllContractController.hasNext}" status="allContractsLoading" />
+                            <apex:actionStatus id="allContractsLoading">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+    </apex:page>

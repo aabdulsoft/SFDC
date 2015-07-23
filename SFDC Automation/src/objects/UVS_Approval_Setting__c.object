@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Role_Names__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Roles which require 2 level approvals only</inlineHelpText>
+        <label>Role Names</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>UVS Approval Setting</label>
+    <visibility>Public</visibility>
+</CustomObject>

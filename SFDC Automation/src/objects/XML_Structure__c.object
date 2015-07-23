@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Custom setting will hold the Resume Hierarchy that is the tags and related sub tags</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Attribute_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Attribute Value</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mapped_To_Contact_Field__c</fullName>
+        <description>This is the corresponding Contact fields that are mapped to resume fields</description>
+        <externalId>false</externalId>
+        <label>Mapped To Contact Field</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Multiple_Children__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Multiple Children</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ParentTag__c</fullName>
+        <externalId>false</externalId>
+        <label>ParentTag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubTags__c</fullName>
+        <description>This will a comma separated list of all the subtags for the current selected tag</description>
+        <externalId>false</externalId>
+        <label>SubTags</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>XML Structure</label>
+    <visibility>Public</visibility>
+</CustomObject>

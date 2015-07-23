@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM Sales Questionnaire</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM Sales Questionnaires</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Customer RydeSmart Locations --></label>
+        <name>Additional_Customer_RydeSmart_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional, Pertinent Information: --></label>
+        <name>Additional_Pertinent_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are there any shop specific information --></label>
+        <name>Are_there_any_shop_specific_information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>CPU_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>CPU_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can the RS Account Manager contact the c --></label>
+        <name>Can_the_RS_Account_Manager_contact_the_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- RSM Sales Questionnaires --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Industry / Business --></label>
+        <name>Customer_Industry_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+        <relationshipLabel><!-- RSM Sales Questionnaires --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Primary RydeSmart Location: --></label>
+        <name>Customer_Primary_RydeSmart_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Primary User --></label>
+        <name>Customer_Primary_User__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer RydeSmart Owner --></label>
+        <name>Customer_RydeSmart_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Some or All Drivers Use the Same Truc --></label>
+        <name>Do_Some_or_All_Drivers_Use_the_Same_Truc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does the customer have specific ROI goal --></label>
+        <name>Does_the_customer_have_specific_ROI_goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- How does the customer intend to use Ryde --></label>
+        <name>How_does_the_customer_intend_to_use_Ryde__c</name>
+    </fields>
+    <fields>
+        <label><!-- Long Haul --></label>
+        <name>Long_Haul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please describe potential for additional --></label>
+        <name>Please_describe_potential_for_additional__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please describe the customer previous Te --></label>
+        <name>Please_describe_the_customer_previous_Te__c</name>
+    </fields>
+    <fields>
+        <label><!-- Please describe the customer’s normal op --></label>
+        <name>Please_describe_the_customer_s_normal_op__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Person Name --></label>
+        <name>Sales_Person_Name__c</name>
+        <relationshipLabel><!-- RSM Sales Questionnaires --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Short Haul --></label>
+        <name>Short_Haul__c</name>
+    </fields>
+    <fields>
+        <label><!-- Slip Seating --></label>
+        <name>Slip_Seating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Drivers --></label>
+        <name>Team_Drivers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <layouts>
+        <layout>RSM Sales Questionnaire Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Sales Questionnaire Task List --></label>
+            <section>Sales Questionnaire Task List</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

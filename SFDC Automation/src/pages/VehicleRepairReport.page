@@ -1,0 +1,78 @@
+<apex:page controller="VehicleRepairReport" sidebar="false">
+
+    <style>
+        .filterControls { float:left; margin-top:5px; margin-left:10px; }
+        .tb { margin:3px; }
+        .ct { text-align:center !important; }
+        .rt { text-align:right !important; }
+        .lt { text-align:left !important; }
+        .messageText { color:red !important; }
+        .pageMessage { color:red !important; margin:10px; }
+    </style>
+    
+    <apex:form id="form">
+                
+        <apex:pageblock title="Vehicle Repair History"> 
+      
+            <div style="margin-top:10px; width:100%; height: 80px;">
+                <div class="filterControls">
+                    <apex:outputLabel value="Vehicle #" for="vehicleNum"/>
+                    <apex:inputText id="vehicleNum" label="Vehicle #" value="{!vehicleNumValue}" styleClass="tb"/>
+                    <apex:outputPanel id="vehMessagePanel" styleClass="messageText" rendered="{!showVehMessage}"></apex:outputPanel>
+                </div>
+                <div class="filterControls">
+                    <apex:outputLabel value="Period:" for="vehiclePeriod"/>
+                    <apex:selectList value="{!periods}" multiselect="false" size="1" styleClass="tb"> 
+                        <apex:selectOptions value="{!periodItems}"/> 
+                    </apex:selectList>
+                </div>
+                <div class="filterControls" style="margin-top:-3px;">
+                    <apex:selectRadio value="{!filteredViews}">
+                        <apex:selectOptions value="{!filteredViewItems}"/>
+                    </apex:selectRadio>
+                </div>
+                <div class="filterControls">
+                    <apex:commandButton value="Go" action="{!doSubmit}"/>
+                </div>
+                
+                <div style="clear: both;"></div>
+                
+                <div class="pageMessage">
+                    <apex:outputPanel id="messagePanel" styleClass="messageText">{!pageMessage}</apex:outputPanel>
+                </div>
+            </div>
+                        
+            <apex:pageblockSection title="" collapsible="false" columns="1">
+                <apex:pageBlockTable var="reportData" value="{!VehicleRepairReportData}" id="tblVRHistory">
+                    <apex:column value="{!reportData.RepairOrderNum}" headerValue="PO/RO #" styleClass="ct" headerclass="ct"/>
+                    <apex:column headerValue="Repair Date" styleClass="ct" headerclass="ct">
+                        <apex:outputText value="{0,date,M'/'d'/'yyyy}">
+                            <apex:param value="{!reportData.RepairDate}" />
+                        </apex:outputText>
+                    </apex:column>
+                    <apex:column value="{!reportData.Location}" headerValue="Location" styleClass="ct" headerclass="ct"/>
+                    <apex:column value="{!reportData.Reason}" headerValue="Reason" styleClass="ct" headerclass="ct"/>
+                    <apex:column value="{!reportData.Odometer}" headerValue="Odometer" styleClass="ct" headerclass="ct"/>
+                    <apex:column value="{!reportData.SystemDetail}" headerValue="System" styleClass="lt" headerclass="ct"/>
+                    <apex:column value="{!reportData.Assembly}" headerValue="Assembly" styleClass="ct" headerclass="ct"/>
+                    <apex:column value="{!reportData.TaskDetail}" headerValue="Task" styleClass="ct" headerclass="ct"/>
+                    <apex:column value="{!reportData.LaborHour}" headerValue="Labor Hour" styleClass="rt" headerclass="ct" rendered="{!showColumn}"/>
+                    <apex:column value="{!reportData.LaborCost}" headerValue="Total Labor Cost" styleClass="rt" headerclass="ct" rendered="{!showColumn}"/>
+                    <apex:column value="{!reportData.PartsQuantity}" headerValue="Part Quantity" styleClass="ct" headerclass="ct" rendered="{!showColumn}"/>
+                    <apex:column value="{!reportData.PartsCost}" headerValue="Total Parts Cost" styleClass="rt" headerclass="ct" rendered="{!showColumn}"/>
+                    <apex:column value="{!reportData.AccountNum}" headerValue="Account#" styleClass="ct" headerclass="ct" rendered="{!showColumn}"/>
+                    <apex:column value="{!reportData.Source}" headerValue="Source" styleClass="ct" headerclass="ct" rendered="{!showColumn}"/>
+                </apex:pageBlockTable>
+            </apex:pageblockSection>
+            <!--<apex:pageblockButtons >
+                <apex:commandButton value="First Page" rerender="details" action="{!FirstPage}" disabled="{!prev}"/>
+                <apex:commandButton value="Previous" rerender="details" action="{!previous}" disabled="{!prev}"/>
+                <apex:commandButton value="Next" rerender="details" action="{!next}" disabled="{!nxt}"/>
+                <apex:commandButton value="Last Page" rerender="details" action="{!LastPage}" disabled="{!nxt}"/>
+            </apex:pageblockButtons>
+            -->
+            
+        </apex:pageblock>
+    </apex:form>
+
+</apex:page>

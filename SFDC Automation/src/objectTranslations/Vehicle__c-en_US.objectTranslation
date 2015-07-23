@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vehicle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vehicles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Schedule A Amount --></label>
+        <name>AD_INV_R_AM__c</name>
+    </fields>
+    <fields>
+        <label><!-- AS IS Vehicle --></label>
+        <name>AS_IS_Vehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accept Vehicle By UTC Date --></label>
+        <name>Accept_Vehicle_By_UTC_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Air Cond Mfg --></label>
+        <name>Air_Cond_Mfg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Price --></label>
+        <name>Approved_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ask Price --></label>
+        <name>Ask_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Availability --></label>
+        <name>Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Axle Count --></label>
+        <name>Axle_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- BIPD Ins --></label>
+        <name>BIPD_Ins__c</name>
+    </fields>
+    <fields>
+        <label><!-- BankOfAmerica --></label>
+        <name>BankOfAmerica__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill of Sale --></label>
+        <name>Bill_of_Sale__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Body Height --></label>
+        <name>Body_Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body Length --></label>
+        <name>Body_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body MFG --></label>
+        <name>Body_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body Serial Number --></label>
+        <name>Body_Serial_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body Type --></label>
+        <name>Body_TYP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body Width --></label>
+        <name>Body_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Body Year --></label>
+        <name>Body_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brake Type --></label>
+        <name>Brake_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>Branch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- BreadCrumb To --></label>
+        <name>BreadCrumb_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Single Limit --></label>
+        <name>COMBINED_SNGL_LIMIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Sheet # --></label>
+        <name>COST_SHEET_NUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package ID --></label>
+        <name>CTRT_PCKG_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch --></label>
+        <name>CUSTOMER_BRANCH__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Accommodation --></label>
+        <name>CUST_ACCOMMODATION__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cab Type --></label>
+        <name>Cab_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chassis Serial Number --></label>
+        <name>Chassis_Serial_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chassis Type --></label>
+        <name>Chassis_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Vehicles --></label>
+        <name>Count_of_Vehicles__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field stores the Customer&apos;s Internal Vehicle No --></help>
+        <label><!-- Customer Internal Vehicle No --></label>
+        <name>Cust_Veh_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOOR SIDE --></label>
+        <name>DOOR_SIDE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days At UTC --></label>
+        <name>Days_At_UTC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery --></label>
+        <name>Delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- Door B --></label>
+        <name>Door_B__c</name>
+    </fields>
+    <fields>
+        <label><!-- Door C --></label>
+        <name>Door_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Door_R --></label>
+        <name>Door_R__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rate Sheet Effective Date --></help>
+        <label><!-- Ext. Starts --></label>
+        <name>EFF_RT_DT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine CYC QN --></label>
+        <name>ENG_CYC_QN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Est. Life --></label>
+        <name>ENG_EST_LIFE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Fuel Type --></label>
+        <name>ENG_FUEL_TYP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine HP --></label>
+        <name>ENG_HP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Model --></label>
+        <name>ENG_MDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine MFG --></label>
+        <name>ENG_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine RPM --></label>
+        <name>ENG_RPM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Type --></label>
+        <name>ENG_TYP__c</name>
+    </fields>
+    <fields>
+        <label><!-- EVA --></label>
+        <name>EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>EXPIRATION_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXP_501 --></label>
+        <name>EXP_501__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXP 502 --></label>
+        <name>EXP_502__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXP 503 --></label>
+        <name>EXP_503__c</name>
+    </fields>
+    <fields>
+        <help><!-- Extension Effective Date --></help>
+        <label><!-- Effective Date --></label>
+        <name>EXT_EFF_DT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Serial --></label>
+        <name>Engine_Serial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est Build Date --></label>
+        <name>Est_Build_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FHUT --></label>
+        <name>FHUT__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Account --></label>
+        <name>FIS_Account__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fuel --></label>
+        <name>FUEL__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Revenue Date --></label>
+        <name>First_Revenue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fixed Rate --></label>
+        <name>Fixed_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- GVW RIDE --></label>
+        <name>GVW_RIDE__c</name>
+    </fields>
+    <fields>
+        <label><!-- GVW SAM --></label>
+        <name>GVW_SAM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gain Loss --></label>
+        <name>Gain_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gear Ratio --></label>
+        <name>Gear_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Vehicle Weight --></label>
+        <name>Gross_Vehicle_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Operation --></label>
+        <name>HRS_OPERATION__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID Service --></label>
+        <name>ID_SERVICE__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Service Date --></label>
+        <name>In_Service_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Expiration Date --></label>
+        <name>Insurance_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Available For Sale --></label>
+        <name>Is_Available_For_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jbrake Type --></label>
+        <name>Jbrake_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Date --></label>
+        <name>LAST_UPDATED_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Insurance Provider --></label>
+        <name>LIABILITY_INSR_BY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Insurance Deductible --></label>
+        <name>LIABILITY_INSURANCE_DEDUCTIBLE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lift Gate MDL --></label>
+        <name>LIFT_GATE_MDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lift Gate MFG --></label>
+        <name>LIFT_GATE_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lift Gate Weight --></label>
+        <name>LIFT_GATE_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lift Gate Year --></label>
+        <name>LIFT_GATE_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Fixed Cost --></label>
+        <name>Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Miles --></label>
+        <name>Last_12_Months_Miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Running Cost --></label>
+        <name>Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Revenue --></label>
+        <name>Last_12_Months_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 months margin --></label>
+        <name>Last_12_months_margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month - Fixed Cost --></label>
+        <name>Last_Month_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month - Miles --></label>
+        <name>Last_Month_Miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month - Running Cost --></label>
+        <name>Last_Month_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Month - Revenue --></label>
+        <name>Last_Month_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Revenue Date --></label>
+        <name>Latest_Revenue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Expiration Date --></label>
+        <name>License_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Tag Number --></label>
+        <name>License_Tag_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Tag State --></label>
+        <name>License_Tag_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- License --></label>
+        <name>License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Fixed Cost --></label>
+        <name>Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Miles --></label>
+        <name>Life_to_Date_Miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Running Cost --></label>
+        <name>Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Revenue --></label>
+        <name>Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lift Gate --></label>
+        <name>Lift_Gate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miles --></label>
+        <name>MILES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Rate --></label>
+        <name>Mileage_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>Model_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months In Service --></label>
+        <name>Months_Service_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- Book Value --></label>
+        <name>NBV__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Washes Provided --></label>
+        <name>NO_OF_WASHES_PROVIDED__c</name>
+    </fields>
+    <fields>
+        <label><!-- NVI --></label>
+        <name>NVI__c</name>
+    </fields>
+    <fields>
+        <label><!-- NonCompliantCAUnits --></label>
+        <name>NonCompliantCAUnits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onsite Maintenance --></label>
+        <name>ONSITE_MAINTENANCE__c</name>
+    </fields>
+    <fields>
+        <label><!-- OS Gallons --></label>
+        <name>OS_Gallons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Odometer --></label>
+        <name>Odometer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Account Name --></label>
+        <name>Opportunity_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out Service Date --></label>
+        <name>Out_Service_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overstock --></label>
+        <name>Overstock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package # --></label>
+        <name>PACKAGE_NUM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parking --></label>
+        <name>PARKING__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pegged --></label>
+        <name>PEGGED__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Damage Insurance Deductible --></label>
+        <name>PHYSICAL_DAMAGE_DEDUCTIBLE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Damage Insurance Provider --></label>
+        <name>PHY_DAMAGE_RESPONSIBILITY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pickup / Delivery --></label>
+        <name>PICKUP_DLVRY__c</name>
+    </fields>
+    <fields>
+        <label><!-- PP Tax --></label>
+        <name>PP_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>PRODUCT_LINE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Date --></label>
+        <name>Package_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phy Dmg Ins --></label>
+        <name>Phy_Dmg_Ins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Power Units --></label>
+        <name>Power_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Detail --></label>
+        <name>Product_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rear Axle Model --></label>
+        <name>REAR_AXLE_MDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rear Axle MFG --></label>
+        <name>REAR_AXLE_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rear Axle Type --></label>
+        <name>REAR_AXLE_TYP__c</name>
+    </fields>
+    <fields>
+        <label><!-- REAR AXLE WT --></label>
+        <name>REAR_AXLE_WT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Model --></label>
+        <name>REEFER_MDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer MFG --></label>
+        <name>REEFER_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Service --></label>
+        <name>REEFER_SRVC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Serial Number --></label>
+        <name>REEFER_Serial_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Year --></label>
+        <name>REEFER_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rated Reefer Hrs --></label>
+        <name>REFR_HR_NO__c</name>
+    </fields>
+    <fields>
+        <label><!-- REV 435 --></label>
+        <name>REV_435__c</name>
+    </fields>
+    <fields>
+        <label><!-- REV 436 --></label>
+        <name>REV_436__c</name>
+    </fields>
+    <fields>
+        <label><!-- RS Account Product Line --></label>
+        <name>RSM_Ac_Product_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>RSM_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>RSM_Action__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Edit</masterLabel>
+            <translation><!-- Edit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RSM Add Service current count --></label>
+        <name>RSM_Add_Service_current_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSM Addition Service prior count --></label>
+        <name>RSM_Addition_Service_prior_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Services --></label>
+        <name>RSM_Additional_Services__c</name>
+        <picklistValues>
+            <masterLabel>Business Intelligence</masterLabel>
+            <translation><!-- Business Intelligence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Navigation</masterLabel>
+            <translation><!-- Navigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety Analytics</masterLabel>
+            <translation><!-- Safety Analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed gauge</masterLabel>
+            <translation><!-- Speed gauge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Activation Date --></label>
+        <name>RSM_Billing_Activation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Email Date --></label>
+        <name>RSM_Billing_Email_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing --></label>
+        <name>RSM_Billing_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSM Consider Leasing --></label>
+        <name>RSM_Consider_Leasing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Rental Agreement # --></label>
+        <name>RSM_Current_Rental_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- RydeSmart Customer --></label>
+        <name>RSM_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Demo --></label>
+        <name>RSM_Demo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Status --></label>
+        <name>RSM_Device_Status__c</name>
+        <picklistValues>
+            <masterLabel>Deactivated</masterLabel>
+            <translation><!-- Deactivated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed</masterLabel>
+            <translation><!-- Installed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed with Repairs</masterLabel>
+            <translation><!-- Installed with Repairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Device</masterLabel>
+            <translation><!-- No Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordered</masterLabel>
+            <translation><!-- Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped</masterLabel>
+            <translation><!-- Shipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First Bread Crumb --></label>
+        <name>RSM_First_Bread_Crumb__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>RSM_From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Status --></label>
+        <name>RSM_Health_Status__c</name>
+        <picklistValues>
+            <masterLabel>Has Ticket(s) Open</masterLabel>
+            <translation><!-- Has Ticket(s) Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Device</masterLabel>
+            <translation><!-- No Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No issues reported</masterLabel>
+            <translation><!-- No issues reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Reporting</masterLabel>
+            <translation><!-- Not Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Requires Shop Repair</masterLabel>
+            <translation><!-- Requires Shop Repair --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Installation Status --></label>
+        <name>RSM_Installation_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsIFTLiable Date --></label>
+        <name>RSM_IsIFTLiable_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsIFTLiable --></label>
+        <name>RSM_IsIFTLiable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Paper Less Trip Ready --></label>
+        <name>RSM_Is_Paper_Less_Trip_Ready__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Billing Date --></label>
+        <name>RSM_Last_Billing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Bread Crumb --></label>
+        <name>RSM_Last_Bread_Crumb__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last City --></label>
+        <name>RSM_Last_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Ignition Status --></label>
+        <name>RSM_Last_Ignition_Status__c</name>
+        <picklistValues>
+            <masterLabel>OFF</masterLabel>
+            <translation><!-- OFF --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ON</masterLabel>
+            <translation><!-- ON --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Location --></label>
+        <name>RSM_Last_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Road --></label>
+        <name>RSM_Last_Road__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last State --></label>
+        <name>RSM_Last_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Trip Start Date --></label>
+        <name>RSM_Next_Trip_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Status --></label>
+        <name>RSM_Order_Status__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordered</masterLabel>
+            <translation><!-- Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped</masterLabel>
+            <translation><!-- Shipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall Status --></label>
+        <name>RSM_Overall_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rental Type --></label>
+        <name>RSM_Rental_Type__c</name>
+        <picklistValues>
+            <masterLabel>Rental A</masterLabel>
+            <translation><!-- Rental A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental B</masterLabel>
+            <translation><!-- Rental B --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request for Billing --></label>
+        <name>RSM_Request_for_Billing__c</name>
+        <picklistValues>
+            <masterLabel>Send to Activate Billing</masterLabel>
+            <translation><!-- Send to Activate Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Activate Billing</masterLabel>
+            <translation><!-- Sent to Activate Billing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RSM Service Level Change --></label>
+        <name>RSM_Service_Level_Change__c</name>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation><!-- Downgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RSM Service Level Prior value --></label>
+        <name>RSM_Service_Level_Prior_value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Level --></label>
+        <name>RSM_Service_Level__c</name>
+        <picklistValues>
+            <masterLabel>Plus</masterLabel>
+            <translation><!-- Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus 1</masterLabel>
+            <translation><!-- Plus 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STD</masterLabel>
+            <translation><!-- STD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RSM Service level Change Date --></label>
+        <name>RSM_Service_level_Change_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>RSM_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSM_Vendor --></label>
+        <name>RSM_Vendor__c</name>
+        <picklistValues>
+            <masterLabel>Telematics</masterLabel>
+            <translation><!-- Telematics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RS Contract Status --></label>
+        <name>RSM__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted</masterLabel>
+            <translation><!-- Deleted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printed</masterLabel>
+            <translation><!-- Printed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by SSC</masterLabel>
+            <translation><!-- Rejected by SSC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to SSC</masterLabel>
+            <translation><!-- Submitted to SSC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RS Account Product Line --></label>
+        <name>RS_Account_Product_Lines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rated Miles --></label>
+        <name>Rated_Miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rated Revenue --></label>
+        <name>Rated_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Gallons --></label>
+        <name>Reefer_Gallons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Hours --></label>
+        <name>Reefer_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Rate Per Hour --></label>
+        <name>Reefer_Rate_Per_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Rate --></label>
+        <name>Reefer_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Default Type --></label>
+        <name>Renewal_Default_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Gallons --></label>
+        <name>Ryder_Gallons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Safety Program --></label>
+        <name>SAFETY_PRGM__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAM Class --></label>
+        <name>SAM_CLASS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAM Desc --></label>
+        <name>SAM_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAM Odom --></label>
+        <name>SAM_Odom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Instructions --></label>
+        <name>SPECIAL_INSTRUCTIONS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Island --></label>
+        <name>SRVC_ISLAND__c</name>
+    </fields>
+    <fields>
+        <label><!-- Substitution --></label>
+        <name>SUBSTITUTION__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub During PM --></label>
+        <name>SUBS_DURING_PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspension MDL --></label>
+        <name>SUSPNS_MDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspension MFG --></label>
+        <name>SUSPNS_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suspension Type --></label>
+        <name>SUSPNS_TYP__c</name>
+    </fields>
+    <fields>
+        <label><!-- SaleInProcess --></label>
+        <name>SaleInProcess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale In Process Date --></label>
+        <name>Sale_In_Process_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Date --></label>
+        <name>Sales_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Price --></label>
+        <name>Sales_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sell Loc Code --></label>
+        <name>Sell_Loc_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sleeper Size --></label>
+        <name>Sleeper_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sleeper Type --></label>
+        <name>Sleeper_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field to indicate whether a vehicle has been sold and not available in the inventory. --></help>
+        <label><!-- Sold Flag --></label>
+        <name>Sold_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spec Rate Cd --></label>
+        <name>Spec_Rate_Cd__c</name>
+    </fields>
+    <fields>
+        <label><!-- SpecialPrice --></label>
+        <name>SpecialPrice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tires --></label>
+        <name>TIRES__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transmission Model --></label>
+        <name>TRANS_MDL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transmission MFG --></label>
+        <name>TRANS_MFG__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transmission Type --></label>
+        <name>TRANS_TYP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Take Price (%) --></label>
+        <name>Take_Price_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Take Price --></label>
+        <name>Take_Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether Asset Management has approved this unit to be redeployed or term extended. ATTENTION, this is not a blanket approval. It sill may not be approved based on the term and rated miles --></help>
+        <label><!-- Term Extension or Redeploy --></label>
+        <name>Term_Extension_or_Redeploy__c</name>
+        <picklistValues>
+            <masterLabel>Go</masterLabel>
+            <translation><!-- Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Go</masterLabel>
+            <translation><!-- No Go --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tire Size --></label>
+        <name>Tire_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trans Number Of Speeds --></label>
+        <name>Trans_Number_Of_Speeds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transmission Type --></label>
+        <name>Transmission_Type2__c</name>
+        <picklistValues>
+            <masterLabel>Auto</masterLabel>
+            <translation><!-- Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Shift</masterLabel>
+            <translation><!-- Auto Shift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UTC Location --></label>
+        <name>UTC_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Number --></label>
+        <name>Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- VEH_CLS_SAM_DS --></label>
+        <name>VEH_CLS_SAM_DS__c</name>
+    </fields>
+    <fields>
+        <label><!-- VOSA --></label>
+        <name>VOSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Type --></label>
+        <name>Vehicle_Type__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tractor</masterLabel>
+            <translation><!-- Tractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trailer</masterLabel>
+            <translation><!-- Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck</masterLabel>
+            <translation><!-- Truck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wash Provided By --></label>
+        <name>WASH_PROVIDED_BY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wash --></label>
+        <name>WASH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty --></label>
+        <name>Warranty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Was Replaced --></label>
+        <name>Was_Replaced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Washes --></label>
+        <name>Washes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wheel Base --></label>
+        <name>Wheel_Base__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wheel Count --></label>
+        <name>Wheel_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- automatedRenewalCreated --></label>
+        <name>automatedRenewalCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- DepreciationAmount --></label>
+        <name>depr_mor_am__c</name>
+    </fields>
+    <fields>
+        <label><!-- display_code --></label>
+        <name>display_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExcessHrsPercent --></label>
+        <name>excs_hrs_pc__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExcessHoursSurchargeAmount --></label>
+        <name>excs_hrs_srchg_am__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excess Miles Percent --></label>
+        <name>excs_mils_pc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Excess Miles Surcharge Amount --></label>
+        <name>excs_mils_srchg_am__c</name>
+    </fields>
+    <fields>
+        <label><!-- meq_sale_prc_am --></label>
+        <name>meq_sale_prc_am__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Reefer Hrs --></label>
+        <name>reefer_eng_hrs__c</name>
+    </fields>
+    <layouts>
+        <layout>Copy of Rental</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contracted Information --></label>
+            <section>Contracted Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Details --></label>
+            <section>Equipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fuel Performance --></label>
+            <section>Fuel Performance</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Insurance Information --></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Information Section --></label>
+            <section>Rate Information Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Ryder Vehicle Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Contract Information --></label>
+            <section>RydeSmart Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Information --></label>
+            <section>RydeSmart Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicle Location --></label>
+            <section>Vehicle Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rental</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Details --></label>
+            <section>Equipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Information Section --></label>
+            <section>Rate Information Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RydeSmart Vehicle Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contracted Information --></label>
+            <section>Contracted Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Details --></label>
+            <section>Equipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fuel Performance --></label>
+            <section>Fuel Performance</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Insurance Information --></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Billing Information --></label>
+            <section>RydeSmart Billing Information</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Contract Information --></label>
+            <section>RydeSmart Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Demo Information --></label>
+            <section>RydeSmart Demo Information</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Information --></label>
+            <section>RydeSmart Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicle Location --></label>
+            <section>Vehicle Location</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UVS Vehicle Layout</layout>
+        <sections>
+            <label><!-- Admin Section(Testing) --></label>
+            <section>Admin Section(Testing)</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contracted Information --></label>
+            <section>Contracted Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Details --></label>
+            <section>Equipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fuel Performance --></label>
+            <section>Fuel Performance</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Insurance Information --></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicle Status (Color Validation) --></label>
+            <section>Vehicle Status (Color Validation)</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vehicle Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contracted Information --></label>
+            <section>Contracted Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Equipment Details --></label>
+            <section>Equipment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fuel Performance --></label>
+            <section>Fuel Performance</section>
+        </sections>
+        <sections>
+            <label><!-- General Information --></label>
+            <section>General Information</section>
+        </sections>
+        <sections>
+            <label><!-- Insurance Information --></label>
+            <section>Insurance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Rate Information Section --></label>
+            <section>Rate Information Section</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- FMS RIL --></label>
+        <name>FMS_RIL</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Ryder Vehicle (NRV) --></label>
+        <name>Non_Ryder_Vehicle_NRV</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Rental --></label>
+        <name>Rental</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UVS --></label>
+        <name>UVS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Start and End are required fields. --></errorMessage>
+        <name>RSM_Demo_StartDate_EndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permissions to edit this field --></errorMessage>
+        <name>RSM_UnitNo_ReadOnly_Managers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permissions to edit this field --></errorMessage>
+        <name>RSM_UnitNo_ReadOnly_Users</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- History_Repair_Report --></label>
+        <name>History_Repair_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- History_Viewer --></label>
+        <name>History_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Case --></label>
+        <name>New_Case</name>
+    </webLinks>
+</CustomObjectTranslation>

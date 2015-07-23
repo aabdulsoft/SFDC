@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Send Email To VSR/VSM When a BTR is Finally Approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Send Email To VSR/VSM When a BTR is Finally Approved</name>
+    <style>none</style>
+    <subject>BTR Record has been Approved.</subject>
+    <type>text</type>
+</EmailTemplate>

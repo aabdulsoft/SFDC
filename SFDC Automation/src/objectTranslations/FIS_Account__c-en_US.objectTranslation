@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FIS Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>FIS Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- FIS Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Address 1 (Line 1) --></label>
+        <name>Address1_Line1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 1 (Line 2) --></label>
+        <name>Address1_Line2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 (Line 1) --></label>
+        <name>Address2_Line1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 (Line 2) --></label>
+        <name>Address2_Line2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attention --></label>
+        <name>Attention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Number --></label>
+        <name>Branch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Only Flag --></label>
+        <name>Cash_Only_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- City 1 --></label>
+        <name>City_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- City 2 --></label>
+        <name>City_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comdata Fee --></label>
+        <name>Comdata_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Activity --></label>
+        <name>Customer_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- FIS Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS Number --></label>
+        <name>DUNS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Number --></label>
+        <name>District_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lessee Number --></label>
+        <name>Lessee_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Lease --></label>
+        <name>National_Lease__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Rental Number --></label>
+        <name>National_Rental_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Print Name --></label>
+        <name>Print_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder HQ ID --></label>
+        <name>Ryder_HQ_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code Ryder --></label>
+        <name>SIC_Code_Ryder__c</name>
+        <relationshipLabel><!-- FIS Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- State 1 --></label>
+        <name>State_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- State 2 --></label>
+        <name>State_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip 1 --></label>
+        <name>Zip_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip 2 --></label>
+        <name>Zip_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_FISAcct_id --></label>
+        <name>ext_FisAcct_id__c</name>
+    </fields>
+    <layouts>
+        <layout>FIS Account Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Branch Information --></label>
+            <section>Branch Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

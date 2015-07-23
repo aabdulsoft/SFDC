@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Ownership100%</name>
+    <style>none</style>
+    <subject>Opportunity has been marked 100% Ownership. Please validate</subject>
+    <textOnly>Dear #UserName,
+
+Opportunity Name: #OpportunityName
+Opportunity Stage: #OpportunityStageName
+Account Name: #AccName
+ 
+The opportunity captioned above has been signed and marked as 100% Ownership. Please review and validate if the opportunity was won 100% from ownership by accessing the tab: &quot;Ownership Validation&quot;
+
+Ryder Team</textOnly>
+    <type>custom</type>
+</EmailTemplate>

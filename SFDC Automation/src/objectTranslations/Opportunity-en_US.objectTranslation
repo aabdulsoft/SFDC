@@ -1,0 +1,2127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Transaction Type</value>
+        </caseValues>
+        <name>type_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Classification --></label>
+        <name>Account_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Location --></label>
+        <name>Account_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Close Date --></label>
+        <name>Actual_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>Approved__c</name>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assign To --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only Sales or Admin can own the opportunities --></errorMessage>
+        </lookupFilter>
+        <name>Assign_To__c</name>
+        <relationshipLabel><!-- Opportunities (Assign To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AutomaticBatchOpportunity --></label>
+        <name>AutomaticBatchOpportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatic Renewed --></label>
+        <name>Automatic_Renewed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buyout/Takeover --></label>
+        <name>BOUT_TOVER_CD__c</name>
+        <picklistValues>
+            <masterLabel>Buyout</masterLabel>
+            <translation><!-- Buyout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Takeover</masterLabel>
+            <translation><!-- No Takeover --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Takeover</masterLabel>
+            <translation><!-- Takeover --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Buyout Vehicle Deposition --></label>
+        <name>BOUT_VHCL_DEPO__c</name>
+        <picklistValues>
+            <masterLabel>Lease Back</masterLabel>
+            <translation><!-- Lease Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Deployment</masterLabel>
+            <translation><!-- Re-Deployment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sell Vehicle</masterLabel>
+            <translation><!-- Sell Vehicle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>CMPT_ID__c</name>
+        <picklistValues>
+            <masterLabel>ComCar</masterLabel>
+            <translation><!-- ComCar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dixie</masterLabel>
+            <translation><!-- Dixie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gatorlease</masterLabel>
+            <translation><!-- Gatorlease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hogan</masterLabel>
+            <translation><!-- Hogan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hunt</masterLabel>
+            <translation><!-- Hunt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I don&apos;t know</masterLabel>
+            <translation><!-- I don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IdealLease</masterLabel>
+            <translation><!-- IdealLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interstate Natn&apos;l</masterLabel>
+            <translation><!-- Interstate Natn&apos;l --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lily</masterLabel>
+            <translation><!-- Lily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Provider</masterLabel>
+            <translation><!-- Local Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NationalLease</masterLabel>
+            <translation><!-- NationalLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM (pls specify)</masterLabel>
+            <translation><!-- OEM (pls specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (pls specify)</masterLabel>
+            <translation><!-- Other (pls specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PacLease</masterLabel>
+            <translation><!-- PacLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penske</masterLabel>
+            <translation><!-- Penske --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollins</masterLabel>
+            <translation><!-- Rollins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder</masterLabel>
+            <translation><!-- Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We need the values here</masterLabel>
+            <translation><!-- We need the values here --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>12 month / 100,000 miles - Class 8</masterLabel>
+            <translation><!-- 12 month / 100,000 miles - Class 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 month / 40,000 miles - Class A</masterLabel>
+            <translation><!-- 12 month / 40,000 miles - Class A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 month / 40,000 miles - Class B</masterLabel>
+            <translation><!-- 12 month / 40,000 miles - Class B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 month / 10,000 miles - Class A</masterLabel>
+            <translation><!-- 3 month / 10,000 miles - Class A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 month / 10,000 miles - Class B</masterLabel>
+            <translation><!-- 3 month / 10,000 miles - Class B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 month / 25,000 miles - Class 8</masterLabel>
+            <translation><!-- 3 month / 25,000 miles - Class 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 month / 20,000 miles - Class A</masterLabel>
+            <translation><!-- 6 month / 20,000 miles - Class A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 month / 20,000 miles - Class B</masterLabel>
+            <translation><!-- 6 month / 20,000 miles - Class B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 month / 50,000 miles - Class 8</masterLabel>
+            <translation><!-- 6 month / 50,000 miles - Class 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Type --></label>
+        <name>Company_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Opportunities --></label>
+        <name>Count_of_Opportunities__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select Yes if this company owned their entire fleet when we got them, regardless of who was providing maintenance services, or they went to 100% ownership if we lost them. Select No if this company had any portion of their fleet under a lease contract --></help>
+        <label><!-- Customer 100% Ownership --></label>
+        <name>Customer_100_Ownership__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deal lost to/ Won from whom --></label>
+        <name>Deal_lost_to_Won_from_whom__c</name>
+        <picklistValues>
+            <masterLabel>Common Carrier</masterLabel>
+            <translation><!-- Common Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Competition</masterLabel>
+            <translation><!-- No Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not lost. Duplicate pipeline</masterLabel>
+            <translation><!-- Not lost. Duplicate pipeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipeline inactive cleanup</masterLabel>
+            <translation><!-- Pipeline inactive cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Down Payment % --></label>
+        <name>Down_Payment_Percent__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Down Payment --></label>
+        <name>Down_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Type --></label>
+        <name>EQUP_TYPE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Deal Close Date --></label>
+        <name>EST_DEAL_CLOSE_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Deal Value --></label>
+        <name>EST_DEAL_VAL__c</name>
+    </fields>
+    <fields>
+        <label><!-- EVA Vehicle Count --></label>
+        <name>EVA_VEH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average EVA --></label>
+        <name>EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Proposed Date --></label>
+        <name>Estimated_Proposal_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total estimated worth of the National Opportunity --></help>
+        <label><!-- Estimated Total Revenue --></label>
+        <name>Estimated_Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the total # of vehicles for the entire National Opportunity. --></help>
+        <label><!-- Estimated Total Vehicles --></label>
+        <name>Estimated_Total_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Company --></label>
+        <name>Finance_Company__c</name>
+        <picklistValues>
+            <masterLabel>Finance 1</masterLabel>
+            <translation><!-- Finance 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 2</masterLabel>
+            <translation><!-- Finance 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 3</masterLabel>
+            <translation><!-- Finance 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 4</masterLabel>
+            <translation><!-- Finance 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 5</masterLabel>
+            <translation><!-- Finance 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 6</masterLabel>
+            <translation><!-- Finance 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 7</masterLabel>
+            <translation><!-- Finance 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance 8</masterLabel>
+            <translation><!-- Finance 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financing --></label>
+        <name>Financing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gross Revenue --></label>
+        <name>Gross_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- HasAccount --></label>
+        <name>HasAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Included in Monthly Forecast --></label>
+        <name>Included_in_Monthly_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Included in Quarterly Forecast --></label>
+        <name>Included_in_Quarterly_Forecast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Specialist --></label>
+        <name>Industry_Specialist__c</name>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil and Gas</masterLabel>
+            <translation><!-- Oil and Gas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry Type --></label>
+        <name>Industry_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interest Rate --></label>
+        <name>Interest_Rate__c</name>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10.5</masterLabel>
+            <translation><!-- 10.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11.5</masterLabel>
+            <translation><!-- 11.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12.5</masterLabel>
+            <translation><!-- 12.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13.5</masterLabel>
+            <translation><!-- 13.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14.5</masterLabel>
+            <translation><!-- 14.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15.5</masterLabel>
+            <translation><!-- 15.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16.5</masterLabel>
+            <translation><!-- 16.5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Active Date --></label>
+        <name>LAST_ACT_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Edit Date --></label>
+        <name>Last_Edit_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field holds the comment of the latest Activity of Type = &apos;Account/Opportunity Update&apos; on Opportunity which is created by Account/Opportunity Owner, NCA or SAC. --></help>
+        <label><!-- Latest Update --></label>
+        <name>Latest_Update__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blitz</masterLabel>
+            <translation><!-- Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation><!-- CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMBO</masterLabel>
+            <translation><!-- COMBO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call-in</masterLabel>
+            <translation><!-- Call-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concentrix</masterLabel>
+            <translation><!-- Concentrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Marketing</masterLabel>
+            <translation><!-- Corporate Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBD</masterLabel>
+            <translation><!-- DBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNA</masterLabel>
+            <translation><!-- DNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Marketing</masterLabel>
+            <translation><!-- Digital Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Dimensional Marketing</masterLabel>
+            <translation><!-- Direct Dimensional Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing customer</masterLabel>
+            <translation><!-- Existing customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B</masterLabel>
+            <translation><!-- F&amp;B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Campaigns</masterLabel>
+            <translation><!-- Local Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Marketing</masterLabel>
+            <translation><!-- Local Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mkt Automation - DGT</masterLabel>
+            <translation><!-- Mkt Automation - DGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRM</masterLabel>
+            <translation><!-- NRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Customer</masterLabel>
+            <translation><!-- Other Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Outbound</masterLabel>
+            <translation><!-- Other Outbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Referral</masterLabel>
+            <translation><!-- Other Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outside Contractor</masterLabel>
+            <translation><!-- Outside Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Advertising - DGT</masterLabel>
+            <translation><!-- Paid Advertising - DGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Search - DGT</masterLabel>
+            <translation><!-- Paid Search - DGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Counter</masterLabel>
+            <translation><!-- Rental Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar / Trade Shows</masterLabel>
+            <translation><!-- Seminar / Trade Shows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Buyers Guide</masterLabel>
+            <translation><!-- Truck Buyers Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Paper</masterLabel>
+            <translation><!-- Truck Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk-in</masterLabel>
+            <translation><!-- Walk-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Employee Email --></label>
+        <name>Lead_Employee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Last Modified By --></label>
+        <name>Legacy_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Opportunities (Legacy Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Legacy Last Modified Date --></label>
+        <name>Legacy_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Owner Id --></label>
+        <name>Legacy_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please complete ONLY when selecting &quot;Local Provider&quot; from the Competitor field. --></help>
+        <label><!-- Local Provider Name --></label>
+        <name>Local_Provider_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Revenue --></label>
+        <name>NET_REVENUE__c</name>
+    </fields>
+    <fields>
+        <label><!-- NVI Total --></label>
+        <name>NVI_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Vehicles --></label>
+        <name>Net_Vehicles__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field to mark an opportunity with at-least one of the rate sheets having Transaction type as New Add Business --></help>
+        <label><!-- New Customer --></label>
+        <name>New_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Win/Loss Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of Vehicles must be entered on the Opportunity Line Item, or they will roll-up from Rate Sheets/Deal Summaries. --></help>
+        <label><!-- Total Number of Vehicles --></label>
+        <name>Num_of_vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Revenue --></label>
+        <name>Old_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate if this is an On-Site opportunity (formerly Captive Shop). Salesforce.com reporting will show the entire opportunity as On-Site. Therefore, if there are portions that are not On-Site, create a separate opportunity for those. --></help>
+        <label><!-- On-Site --></label>
+        <name>On_Site__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Opportunity in Auto Number format --></help>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Decision Maker --></label>
+        <name>Original_Decision_Maker__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Opportunity --></label>
+        <name>PW_RelatedOppty__c</name>
+        <relationshipLabel><!-- Opportunities (Related Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the National or Coordinated Account Opportunity --></help>
+        <label><!-- Parent Opportunity --></label>
+        <name>Parent_Opportunity__c</name>
+        <relationshipLabel><!-- Local Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PartialWinDealLostToWonFrom --></label>
+        <name>PartialWinDealLostToWonFrom__c</name>
+        <picklistValues>
+            <masterLabel>Common Carrier</masterLabel>
+            <translation><!-- Common Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Competition</masterLabel>
+            <translation><!-- No Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not lost. Duplicate pipeline</masterLabel>
+            <translation><!-- Not lost. Duplicate pipeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipeline inactive cleanup</masterLabel>
+            <translation><!-- Pipeline inactive cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PartialWinIncumbent --></label>
+        <name>PartialWinIncumbent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PartialWinLocalProvider --></label>
+        <name>PartialWinLocalProvider__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartialWinLostReason --></label>
+        <name>PartialWinLostReason__c</name>
+        <picklistValues>
+            <masterLabel>Ability to Extend Insurance</masterLabel>
+            <translation><!-- Ability to Extend Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Business</masterLabel>
+            <translation><!-- Change in Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in transportation model to common carrier</masterLabel>
+            <translation><!-- Change in transportation model to common carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company acquisition or Management change</masterLabel>
+            <translation><!-- Company acquisition or Management change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company declined due to credit- Customer unwilling to agree to credit-related stipulations</masterLabel>
+            <translation><!-- Company declined due to credit- Customer unwilling to agree to credit-related stipulations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company declined due to credit-not credit worthy</masterLabel>
+            <translation><!-- Company declined due to credit-not credit worthy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company out of business</masterLabel>
+            <translation><!-- Company out of business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Declined due to credit</masterLabel>
+            <translation><!-- Customer Declined due to credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services</masterLabel>
+            <translation><!-- Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer closed location</masterLabel>
+            <translation><!-- Customer closed location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic Conditions</masterLabel>
+            <translation><!-- Economic Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Downsize</masterLabel>
+            <translation><!-- Fleet Downsize --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet downsizing by a 100% Ryder Customer</masterLabel>
+            <translation><!-- Fleet downsizing by a 100% Ryder Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet downsizing by a split fleet customer</masterLabel>
+            <translation><!-- Fleet downsizing by a split fleet customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I Don&apos;t Know</masterLabel>
+            <translation><!-- I Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I Don&apos;t Remember</masterLabel>
+            <translation><!-- I Don&apos;t Remember --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient proximity/ convenience of service locations</masterLabel>
+            <translation><!-- Insufficient proximity/ convenience of service locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue with Competitor</masterLabel>
+            <translation><!-- Issue with Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Length of lease</masterLabel>
+            <translation><!-- Length of lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less expensive option available</masterLabel>
+            <translation><!-- Less expensive option available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 1 Only Declined Rate Increase</masterLabel>
+            <translation><!-- Level 1 Only Declined Rate Increase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location not competitive</masterLabel>
+            <translation><!-- Location not competitive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location proximity</masterLabel>
+            <translation><!-- Location proximity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance Expertise</masterLabel>
+            <translation><!-- Maintenance Expertise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network of Locations</masterLabel>
+            <translation><!-- Network of Locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No business granted</masterLabel>
+            <translation><!-- No business granted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Lost - Duplicate Pipeline</masterLabel>
+            <translation><!-- Not Lost - Duplicate Pipeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not enough services offered</masterLabel>
+            <translation><!-- Not enough services offered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipeline inactive cleanup</masterLabel>
+            <translation><!-- Pipeline inactive cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred other truck (OEM brand)</masterLabel>
+            <translation><!-- Preferred other truck (OEM brand) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred our vehicle types/specs</masterLabel>
+            <translation><!-- Preferred our vehicle types/specs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIL</masterLabel>
+            <translation><!-- RIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder closed location</masterLabel>
+            <translation><!-- Ryder closed location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Provided</masterLabel>
+            <translation><!-- Services Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too few services offered</masterLabel>
+            <translation><!-- Too few services offered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to meet business needs/ provide flexibility/ act as partner</masterLabel>
+            <translation><!-- Unable to meet business needs/ provide flexibility/ act as partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory account management</masterLabel>
+            <translation><!-- Unsatisfactory account management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory billing and invoicing</masterLabel>
+            <translation><!-- Unsatisfactory billing and invoicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory breakdown service</masterLabel>
+            <translation><!-- Unsatisfactory breakdown service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory maintenance quality</masterLabel>
+            <translation><!-- Unsatisfactory maintenance quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfied with Service Received</masterLabel>
+            <translation><!-- Unsatisfied with Service Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value (service received for price)</masterLabel>
+            <translation><!-- Value (service received for price) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PartialWinRateSheetCompetitor --></label>
+        <name>PartialWinRateSheetCompetitor__c</name>
+        <picklistValues>
+            <masterLabel>ComCar</masterLabel>
+            <translation><!-- ComCar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dixie</masterLabel>
+            <translation><!-- Dixie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gatorlease</masterLabel>
+            <translation><!-- Gatorlease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hogan</masterLabel>
+            <translation><!-- Hogan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hunt</masterLabel>
+            <translation><!-- Hunt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I don&apos;t know</masterLabel>
+            <translation><!-- I don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IdealLease</masterLabel>
+            <translation><!-- IdealLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interstate Natn&apos;l</masterLabel>
+            <translation><!-- Interstate Natn&apos;l --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lily</masterLabel>
+            <translation><!-- Lily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Provider</masterLabel>
+            <translation><!-- Local Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NationalLease</masterLabel>
+            <translation><!-- NationalLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM (pls specify)</masterLabel>
+            <translation><!-- OEM (pls specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (pls specify)</masterLabel>
+            <translation><!-- Other (pls specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PacLease</masterLabel>
+            <translation><!-- PacLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penske</masterLabel>
+            <translation><!-- Penske --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollins</masterLabel>
+            <translation><!-- Rollins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder</masterLabel>
+            <translation><!-- Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We need the values here</masterLabel>
+            <translation><!-- We need the values here --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PartialWinRateSheetStatus --></label>
+        <name>PartialWinRateSheetStatus__c</name>
+        <picklistValues>
+            <masterLabel>Alternate Pricing Option</masterLabel>
+            <translation><!-- Alternate Pricing Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Business Granted</masterLabel>
+            <translation><!-- No Business Granted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Business</masterLabel>
+            <translation><!-- Open Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won Business about to book next month</masterLabel>
+            <translation><!-- Won Business about to book next month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won Business about to book this month</masterLabel>
+            <translation><!-- Won Business about to book this month --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PipelineIDGenerator --></label>
+        <name>PipelineIDGenerator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Reason Detail --></label>
+        <name>Purchase_Reason_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Accident Replacement</masterLabel>
+            <translation><!-- Accident Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adding to Current Fleet</masterLabel>
+            <translation><!-- Adding to Current Fleet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Different Type of Truck Required</masterLabel>
+            <translation><!-- Different Type of Truck Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Normal Fleet Replacement</masterLabel>
+            <translation><!-- Normal Fleet Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacing Rental</masterLabel>
+            <translation><!-- Replacing Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Decommissioned</masterLabel>
+            <translation><!-- Unit Decommissioned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Reason --></label>
+        <name>Purchase_Reason__c</name>
+        <picklistValues>
+            <masterLabel>End of Lease Sale</masterLabel>
+            <translation><!-- End of Lease Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Export</masterLabel>
+            <translation><!-- Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growing</masterLabel>
+            <translation><!-- Growing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacing Unit</masterLabel>
+            <translation><!-- Replacing Unit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salvage</masterLabel>
+            <translation><!-- Salvage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Starting New Business</masterLabel>
+            <translation><!-- Starting New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field tracks many times an Opportunity has been pushed from month to month --></help>
+        <label><!-- Push Counter --></label>
+        <name>Push_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM Target Margin --></label>
+        <name>RPM_Target_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Sheet --></label>
+        <name>Rate_Sheet__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- UVS: Reason Lost Only. --></help>
+        <label><!-- Reason Won/Lost --></label>
+        <name>Reason_Won_Lost__c</name>
+        <picklistValues>
+            <masterLabel>Ability to Extend Insurance</masterLabel>
+            <translation><!-- Ability to Extend Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bankruptcy</masterLabel>
+            <translation><!-- Bankruptcy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Business</masterLabel>
+            <translation><!-- Change in Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in transportation model to common carrier</masterLabel>
+            <translation><!-- Change in transportation model to common carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company acquisition or Management change</masterLabel>
+            <translation><!-- Company acquisition or Management change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company declined due to credit- Customer unwilling to agree to credit-related stipulations</masterLabel>
+            <translation><!-- Company declined due to credit- Customer unwilling to agree to credit-related stipulations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company declined due to credit-not credit worthy</masterLabel>
+            <translation><!-- Company declined due to credit-not credit worthy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company out of business</masterLabel>
+            <translation><!-- Company out of business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Declined due to credit</masterLabel>
+            <translation><!-- Customer Declined due to credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Services</masterLabel>
+            <translation><!-- Customer Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer closed location</masterLabel>
+            <translation><!-- Customer closed location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Economic Conditions</masterLabel>
+            <translation><!-- Economic Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Not Available</masterLabel>
+            <translation><!-- Equipment Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financing Rejected</masterLabel>
+            <translation><!-- Financing Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Downsize</masterLabel>
+            <translation><!-- Fleet Downsize --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet downsizing by a 100% Ryder Customer</masterLabel>
+            <translation><!-- Fleet downsizing by a 100% Ryder Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet downsizing by a split fleet customer</masterLabel>
+            <translation><!-- Fleet downsizing by a split fleet customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I Don&apos;t Know</masterLabel>
+            <translation><!-- I Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I Don&apos;t Remember</masterLabel>
+            <translation><!-- I Don&apos;t Remember --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient proximity/ convenience of service locations</masterLabel>
+            <translation><!-- Insufficient proximity/ convenience of service locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue with Competitor</masterLabel>
+            <translation><!-- Issue with Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Length of lease</masterLabel>
+            <translation><!-- Length of lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less expensive option available</masterLabel>
+            <translation><!-- Less expensive option available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 1 Only Declined Rate Increase</masterLabel>
+            <translation><!-- Level 1 Only Declined Rate Increase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location not competitive</masterLabel>
+            <translation><!-- Location not competitive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location proximity</masterLabel>
+            <translation><!-- Location proximity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to competition</masterLabel>
+            <translation><!-- Lost to competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Issue</masterLabel>
+            <translation><!-- Main Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance Expertise</masterLabel>
+            <translation><!-- Maintenance Expertise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network of Locations</masterLabel>
+            <translation><!-- Network of Locations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No business granted</masterLabel>
+            <translation><!-- No business granted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Lost - Duplicate Pipeline</masterLabel>
+            <translation><!-- Not Lost - Duplicate Pipeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not enough services offered</masterLabel>
+            <translation><!-- Not enough services offered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Not Pursued</masterLabel>
+            <translation><!-- Opportunity Not Pursued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pipeline inactive cleanup</masterLabel>
+            <translation><!-- Pipeline inactive cleanup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred other truck (OEM brand)</masterLabel>
+            <translation><!-- Preferred other truck (OEM brand) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred our vehicle types/specs</masterLabel>
+            <translation><!-- Preferred our vehicle types/specs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIL</masterLabel>
+            <translation><!-- RIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder closed location</masterLabel>
+            <translation><!-- Ryder closed location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services Provided</masterLabel>
+            <translation><!-- Services Provided --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too few services offered</masterLabel>
+            <translation><!-- Too few services offered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to meet business needs/ provide flexibility/ act as partner</masterLabel>
+            <translation><!-- Unable to meet business needs/ provide flexibility/ act as partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory account management</masterLabel>
+            <translation><!-- Unsatisfactory account management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory billing and invoicing</masterLabel>
+            <translation><!-- Unsatisfactory billing and invoicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory breakdown service</masterLabel>
+            <translation><!-- Unsatisfactory breakdown service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory maintenance quality</masterLabel>
+            <translation><!-- Unsatisfactory maintenance quality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfied with Service Received</masterLabel>
+            <translation><!-- Unsatisfied with Service Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value (service received for price)</masterLabel>
+            <translation><!-- Value (service received for price) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Split Value --></label>
+        <name>SPLIT_VALUE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Email To Lead Employee --></label>
+        <name>Send_Email_To_Lead_Employee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate which products may be involved in the opportunity.
+The MMS On Demand - Local option is only to be used for Canada --></help>
+        <label><!-- Solutions Involved --></label>
+        <name>Solutions_Involved__c</name>
+        <picklistValues>
+            <masterLabel>Alternative Fuel</masterLabel>
+            <translation><!-- Alternative Fuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Lease</masterLabel>
+            <translation><!-- Finance Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flex to Green</masterLabel>
+            <translation><!-- Flex to Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMS On Demand - Local</masterLabel>
+            <translation><!-- MMS On Demand - Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMS-Comprehensive</masterLabel>
+            <translation><!-- MMS-Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMS-On Demand</masterLabel>
+            <translation><!-- MMS-On Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMS-Preventive</masterLabel>
+            <translation><!-- MMS-Preventive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMX</masterLabel>
+            <translation><!-- MMX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Site</masterLabel>
+            <translation><!-- On-Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>STAR</masterLabel>
+            <translation><!-- STAR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Specialized Operating Criteria --></label>
+        <name>Specialized_Operating_Criteria__c</name>
+        <picklistValues>
+            <masterLabel>HazMat</masterLabel>
+            <translation><!-- HazMat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile Maintenance</masterLabel>
+            <translation><!-- Mobile Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natural Gas</masterLabel>
+            <translation><!-- Natural Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parking Agreement</masterLabel>
+            <translation><!-- Parking Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialized Equipment</masterLabel>
+            <translation><!-- Specialized Equipment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Split_type --></label>
+        <name>Split_type__c</name>
+    </fields>
+    <fields>
+        <name>StageName</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closing</masterLabel>
+            <translation><!-- Closing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developing</masterLabel>
+            <translation><!-- Developing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need Analysis</masterLabel>
+            <translation><!-- Need Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation</masterLabel>
+            <translation><!-- Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision</masterLabel>
+            <translation><!-- No Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overcome Concerns</masterLabel>
+            <translation><!-- Overcome Concerns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualifying</masterLabel>
+            <translation><!-- Qualifying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution Hypothesis</masterLabel>
+            <translation><!-- Solution Hypothesis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weigh Solution Options</masterLabel>
+            <translation><!-- Weigh Solution Options --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicate if this opportunity is part of the STAR program --></help>
+        <label><!-- STAR --></label>
+        <name>Star_Opportunity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Was the TCO tool used to demonstrate the value of our solution? --></help>
+        <label><!-- TCO Used --></label>
+        <name>TCO_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Takeover Competitor --></label>
+        <name>Takeover_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>ComCar</masterLabel>
+            <translation><!-- ComCar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dixie</masterLabel>
+            <translation><!-- Dixie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise</masterLabel>
+            <translation><!-- Enterprise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gatorlease</masterLabel>
+            <translation><!-- Gatorlease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hogan</masterLabel>
+            <translation><!-- Hogan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hunt</masterLabel>
+            <translation><!-- Hunt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>I don&apos;t know</masterLabel>
+            <translation><!-- I don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IdealLease</masterLabel>
+            <translation><!-- IdealLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interstate Natn&apos;l</masterLabel>
+            <translation><!-- Interstate Natn&apos;l --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lily</masterLabel>
+            <translation><!-- Lily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Provider</masterLabel>
+            <translation><!-- Local Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NationalLease</masterLabel>
+            <translation><!-- NationalLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OEM (pls specify)</masterLabel>
+            <translation><!-- OEM (pls specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (pls specify)</masterLabel>
+            <translation><!-- Other (pls specify) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PacLease</masterLabel>
+            <translation><!-- PacLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penske</masterLabel>
+            <translation><!-- Penske --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollins</masterLabel>
+            <translation><!-- Rollins --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Takeover Type --></label>
+        <name>Takeover_Type__c</name>
+        <picklistValues>
+            <masterLabel>Takeover from Competition</masterLabel>
+            <translation><!-- Takeover from Competition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Takeover from Ownership</masterLabel>
+            <translation><!-- Takeover from Ownership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Target EVA --></label>
+        <name>Target_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Term --></label>
+        <name>Term__c</name>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24</masterLabel>
+            <translation><!-- 24 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>36</masterLabel>
+            <translation><!-- 36 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>42</masterLabel>
+            <translation><!-- 42 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>48</masterLabel>
+            <translation><!-- 48 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54</masterLabel>
+            <translation><!-- 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the amount of related Child Opportunities that are not in &apos;Lost&apos; status. --></help>
+        <label><!-- Total Child Opportunity Amount --></label>
+        <name>Total_Child_Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total EVA --></label>
+        <name>Total_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total No Of Vehicles --></label>
+        <name>Total_No_Of_Vehicles_Rental__c</name>
+    </fields>
+    <fields>
+        <help><!-- Includes the count of Vehicles from all related Child Opportunities --></help>
+        <label><!-- Total Number of Vehicles (Child) --></label>
+        <name>Total_Number_of_Vehicles_Child__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>National Rental Managers</masterLabel>
+            <translation><!-- National Rental Managers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Deal</masterLabel>
+            <translation><!-- New Deal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Extension/Replacement</masterLabel>
+            <translation><!-- Term Extension/Replacement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Look up to Ryder Branch in order to know the location --></help>
+        <label><!-- UTC Assigned --></label>
+        <name>UTC_Assigned__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- UVS Source Lead --></label>
+        <name>UVS_Source_Lead__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Non-National Accounts should have the Standard Opportunity record type.
+Local National Accounts with decentralized decision-making should have Child Opportunity record type. --></help>
+        <label><!-- Update Record Type --></label>
+        <name>Update_Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Child Opportunity</masterLabel>
+            <translation><!-- Child Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Opportunity</masterLabel>
+            <translation><!-- Standard Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Count --></label>
+        <name>Vehicle_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Win/Lost Date --></label>
+        <name>WIN_LOST_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Amount --></label>
+        <name>Warranty_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Provider --></label>
+        <name>Warranty_Provider__c</name>
+        <picklistValues>
+            <masterLabel>Premium 2000</masterLabel>
+            <translation><!-- Premium 2000 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder</masterLabel>
+            <translation><!-- Ryder --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty --></label>
+        <name>Warranty__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was this competitor the incumbent? --></label>
+        <name>Was_this_competitor_the_incumbent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Who is the Main Incumbent --></label>
+        <name>Who_is_the_main_incumbent__c</name>
+        <picklistValues>
+            <masterLabel>Ideal Lease</masterLabel>
+            <translation><!-- Ideal Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Provider</masterLabel>
+            <translation><!-- Local Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Lease</masterLabel>
+            <translation><!-- National Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None – Net Fleet Growth</masterLabel>
+            <translation><!-- None – Net Fleet Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pac Lease</masterLabel>
+            <translation><!-- Pac Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penske</masterLabel>
+            <translation><!-- Penske --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder</masterLabel>
+            <translation><!-- Ryder --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sourced from Data.com --></label>
+        <name>ddc_prospector__Sourced_from_Data_com_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_RenewId --></label>
+        <name>ext_RenewId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Number --></label>
+        <name>ext_pipeline_id__c</name>
+    </fields>
+    <layouts>
+        <layout>Ryder Child Opportunity Layout</layout>
+        <sections>
+            <label><!-- Additional Services --></label>
+            <section>Additional Services</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet-Plan (Buyout / Takeover) --></label>
+            <section>Fleet-Plan (Buyout / Takeover)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Buttons --></label>
+            <section>Opportunity Buttons</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Split --></label>
+            <section>Opportunity Split</section>
+        </sections>
+        <sections>
+            <label><!-- Pipeline Information --></label>
+            <section>Pipeline Information</section>
+        </sections>
+        <sections>
+            <label><!-- Win / Loss Information --></label>
+            <section>Win / Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder National Parent Opportunity Layout</layout>
+        <sections>
+            <label><!-- Additional Products --></label>
+            <section>Additional Products</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet-Plan (Buyout / Takeover) --></label>
+            <section>Fleet-Plan (Buyout / Takeover)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Buttons --></label>
+            <section>Opportunity Buttons</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Split --></label>
+            <section>Opportunity Split</section>
+        </sections>
+        <sections>
+            <label><!-- Pipeline Information --></label>
+            <section>Pipeline Information</section>
+        </sections>
+        <sections>
+            <label><!-- Win / Loss Information --></label>
+            <section>Win / Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder National Rental Opportunity Layout</layout>
+        <sections>
+            <label><!-- Win / Loss Information --></label>
+            <section>Win / Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder Standard Opportunity Layout</layout>
+        <sections>
+            <label><!-- Additional Services --></label>
+            <section>Additional Services</section>
+        </sections>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet-Plan (Buyout / Takeover) --></label>
+            <section>Fleet-Plan (Buyout / Takeover)</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Buttons --></label>
+            <section>Opportunity Buttons</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Splits --></label>
+            <section>Opportunity Splits</section>
+        </sections>
+        <sections>
+            <label><!-- Win / Loss Information --></label>
+            <section>Win / Loss Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UVS Standard Opportunity Layout</layout>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Direct Capital --></label>
+            <section>Direct Capital</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Information --></label>
+            <section>Opportunity Information</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Products --></label>
+            <section>Opportunity Products</section>
+        </sections>
+        <sections>
+            <label><!-- Win / Loss Information --></label>
+            <section>Win / Loss Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Legal Case --></label>
+        <name>Legal_Case</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Quick Update --></label>
+        <name>Quick_Update</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- RFP Request --></label>
+        <name>RFP_Request</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Child Opportunity --></label>
+        <name>Child_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- National Rental Opportunity --></label>
+        <name>National_Rental_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parent Opportunity --></label>
+        <name>Parent_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Opportunity --></label>
+        <name>Standard_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UVS Opportunity --></label>
+        <name>UVS_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must select an Opportunity that matches the Account or Parent Account of the Parent Opportunity --></errorMessage>
+        <name>AccountIDMatchParentOpportunityAccountID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only an Administrator can change the related Account. --></errorMessage>
+        <name>AccountNameChanges</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please assign the opportunity to a valid sales person. --></errorMessage>
+        <name>AssignToIsRequiredByNCAandSAC_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot move the status to Booked. This will be done by an automated process or a System Administrator. --></errorMessage>
+        <name>CannotSelectBooked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter a Parent Opportunity if you have selected the Child record type. --></errorMessage>
+        <name>ChildOppRequiresParentOpp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is not a national account.  You must select the Standard Opportunity record type. --></errorMessage>
+        <name>ChildOpportunityBlockForLocal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Local Provider name is required. --></errorMessage>
+        <name>LocalProviderNameisrequired</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid Deal_lost_to_Won_from_whom value is required. --></errorMessage>
+        <name>Make_field_required_based_on_Booked_stag</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select an Estimated Close Date in the future. --></errorMessage>
+        <name>OpportunityEstimatedCloseDateInPast</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Original Decision Maker cannot be updated. To make any update to current Decision Maker, please go to Contact Role Section. --></errorMessage>
+        <name>Original_Decision_Maker_No_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Original Decision Maker cannot be blank: This field is required when an Opportunity is Created. --></errorMessage>
+        <name>Original_Decision_Maker_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This is a national account with centralized decision-making.  Only a DBD/DNA or NCA can create the Opportunity. --></errorMessage>
+        <name>PreventLocalUserOpptyCreation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Estimated Propose Date cannot occur after Estimated Close Date --></errorMessage>
+        <name>ProposedDateLessThanClosedDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Opportunity is now locked. Only an admin can make updates to the opportunity. --></errorMessage>
+        <name>StageIsLocked</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a Child Opportunity record type, as this is a National Account with Decentralized decision-making.  Update the value, add a Parent Opportunity and save the record. --></errorMessage>
+        <name>StandardOpportunityBlockForLocal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only UVS users can own UVS opportunity --></errorMessage>
+        <name>UVS_Opportunity_Owner</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Product_UVS --></label>
+        <name>Add_Product_UVS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Branches_for_Split --></label>
+        <name>Branches_for_Split</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Call_Plan --></label>
+        <name>Call_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Change_Forecast --></label>
+        <name>Change_Forecast</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Evaluation_Tool --></label>
+        <name>Evaluation_Tool</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Glossary --></label>
+        <name>Glossary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- MultiEdit --></label>
+        <name>MultiEdit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Opportunity_History --></label>
+        <name>Opportunity_History</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Opportunity_Review --></label>
+        <name>Opportunity_Review</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RFP_Response --></label>
+        <name>RFP_Response</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rate_Sheet --></label>
+        <name>Rate_Sheet</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Referral_Form --></label>
+        <name>Referral_Form</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit_Legal_Case --></label>
+        <name>Submit_Legal_Case</name>
+    </webLinks>
+</CustomObjectTranslation>

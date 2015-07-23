@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rebillable Rates</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rebillable Rates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Abuse Dbltime Labour Fixed MU --></label>
+        <name>Abuse_Dbltime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Dbltime Labour Percent MU --></label>
+        <name>Abuse_Dbltime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Dbltime Labour Set MU --></label>
+        <name>Abuse_Dbltime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Dbltime Rate Flag --></label>
+        <name>Abuse_Dbltime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse_ListMinusFlag --></label>
+        <name>Abuse_ListMinusFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Outside Misc. Fixed MU --></label>
+        <name>Abuse_Outside_Misc_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Outside Misc. Flag --></label>
+        <name>Abuse_Outside_Misc_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Outside Misc. Percent MU --></label>
+        <name>Abuse_Outside_Misc_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Outside Misc. Set MU --></label>
+        <name>Abuse_Outside_Misc_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Overtime Labour Fixed MU --></label>
+        <name>Abuse_Overtime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Overtime Labour Percent MU --></label>
+        <name>Abuse_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Overtime Labour Set MU --></label>
+        <name>Abuse_Overtime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Overtime Rate Flag --></label>
+        <name>Abuse_Overtime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Parts Rate Percent --></label>
+        <name>Abuse_Parts_Rate_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Regular Labour Fixed MU --></label>
+        <name>Abuse_Regular_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Regular Labour Percent MU --></label>
+        <name>Abuse_Regular_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Regular Labour Set MU --></label>
+        <name>Abuse_Regular_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Regular Rate Flag --></label>
+        <name>Abuse_Regular_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Service Veh. Rate --></label>
+        <name>Abuse_Service_Veh_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Tire Rate Percent MU --></label>
+        <name>Abuse_Tire_Rate_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Abuse Wrecker Rate --></label>
+        <name>Abuse_Wrecker_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Dbltime Labour Fixed MU --></label>
+        <name>Accident_Dbltime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Dbltime Labour Percent MU --></label>
+        <name>Accident_Dbltime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Dbltime Labour Set MU --></label>
+        <name>Accident_Dbltime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Dbltime Rate Flag --></label>
+        <name>Accident_Dbltime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident_ListMinusFlag --></label>
+        <name>Accident_ListMinusFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Outside Misc. Fixed MU --></label>
+        <name>Accident_Outside_Misc_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Outside Misc. Flag --></label>
+        <name>Accident_Outside_Misc_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Outside Misc. Percent MU --></label>
+        <name>Accident_Outside_Misc_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Outside Misc. Set MU --></label>
+        <name>Accident_Outside_Misc_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Overtime Labour Fixed MU --></label>
+        <name>Accident_Overtime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Overtime Labour Percent MU --></label>
+        <name>Accident_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Overtime Labour Set MU --></label>
+        <name>Accident_Overtime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Overtime Rate Flag --></label>
+        <name>Accident_Overtime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Parts Rate Percent --></label>
+        <name>Accident_Parts_Rate_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Regular Labour Fixed MU --></label>
+        <name>Accident_Regular_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Regular Labour Percent MU --></label>
+        <name>Accident_Regular_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Regular Labour Set MU --></label>
+        <name>Accident_Regular_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Regular Rate Flag --></label>
+        <name>Accident_Regular_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Service Veh. Rate --></label>
+        <name>Accident_Service_Veh_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Tire Rate Percent MU --></label>
+        <name>Accident_Tire_Rate_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accident Wrecker Rate --></label>
+        <name>Accident_Wrecker_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Dbltime Labour Fixed MU --></label>
+        <name>Accomodation_Dbltime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Dbltime Labour Percent MU --></label>
+        <name>Accomodation_Dbltime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Dbltime Labour Set MU --></label>
+        <name>Accomodation_Dbltime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Dbltime Rate Flag --></label>
+        <name>Accomodation_Dbltime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation_ListMinusFlag --></label>
+        <name>Accomodation_ListMinusFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Outside Misc. Fixed MU --></label>
+        <name>Accomodation_Outside_Misc_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Outside Misc. Flag --></label>
+        <name>Accomodation_Outside_Misc_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Outside Misc. Percent MU --></label>
+        <name>Accomodation_Outside_Misc_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Outside Misc. Set MU --></label>
+        <name>Accomodation_Outside_Misc_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Overtime Labour Fixed MU --></label>
+        <name>Accomodation_Overtime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Overtime Labour Percent MU --></label>
+        <name>Accomodation_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Overtime Labour Set MU --></label>
+        <name>Accomodation_Overtime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Overtime Rate Flag --></label>
+        <name>Accomodation_Overtime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Parts Rate Percent --></label>
+        <name>Accomodation_Parts_Rate_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Regular Labour Fixed MU --></label>
+        <name>Accomodation_Regular_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Regular Labour Percent MU --></label>
+        <name>Accomodation_Regular_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Regular Labour Set MU --></label>
+        <name>Accomodation_Regular_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Regular Rate Flag --></label>
+        <name>Accomodation_Regular_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Service Veh. Rate --></label>
+        <name>Accomodation_Service_Veh_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Tire Rate Percent MU --></label>
+        <name>Accomodation_Tire_Rate_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accomodation Wrecker Rate --></label>
+        <name>Accomodation_Wrecker_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer No --></label>
+        <name>Customer_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diesel Fixed MU --></label>
+        <name>Diesel_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diesel MU Method --></label>
+        <name>Diesel_MU_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diesel MU Percent --></label>
+        <name>Diesel_MU_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Diesel Set Rate --></label>
+        <name>Diesel_Set_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domicile Branch Code --></label>
+        <name>Domicile_Branch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Account --></label>
+        <name>FIS_Account__c</name>
+        <relationshipLabel><!-- Rebillable Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lessee ID --></label>
+        <name>LesseeNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location LBU --></label>
+        <name>Location_LBU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location RO Effective Date --></label>
+        <name>Location_RO_Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location RO Rate --></label>
+        <name>Location_RO_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Misc. Overtime Labour Percent MU --></label>
+        <name>Misc_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Dbltime Labour Fixed MU --></label>
+        <name>Miscellaneous_Dbltime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Dbltime Labour Percent MU --></label>
+        <name>Miscellaneous_Dbltime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Dbltime Labour Set MU --></label>
+        <name>Miscellaneous_Dbltime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Dbltime Rate Flag --></label>
+        <name>Miscellaneous_Dbltime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous_ListMinusFlag --></label>
+        <name>Miscellaneous_ListMinusFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Outside Misc. Fixed MU --></label>
+        <name>Miscellaneous_Outside_Misc_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Outside Misc. Flag --></label>
+        <name>Miscellaneous_Outside_Misc_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Outside Misc. Percent MU --></label>
+        <name>Miscellaneous_Outside_Misc_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Outside Misc. Set MU --></label>
+        <name>Miscellaneous_Outside_Misc_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Overtime Labour Fixed MU --></label>
+        <name>Miscellaneous_Overtime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Overtime Labour Percent MU --></label>
+        <name>Miscellaneous_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Overtime Labour Set MU --></label>
+        <name>Miscellaneous_Overtime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Overtime Rate Flag --></label>
+        <name>Miscellaneous_Overtime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Parts Rate Percent --></label>
+        <name>Miscellaneous_Parts_Rate_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Regular Labour Fixed MU --></label>
+        <name>Miscellaneous_Regular_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Regular Labour Percent MU --></label>
+        <name>Miscellaneous_Regular_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Regular Labour Set MU --></label>
+        <name>Miscellaneous_Regular_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Regular Rate Flag --></label>
+        <name>Miscellaneous_Regular_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Service Veh. Rate --></label>
+        <name>Miscellaneous_Service_Veh_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Tire Rate Percent MU --></label>
+        <name>Miscellaneous_Tire_Rate_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Wrecker Rate --></label>
+        <name>Miscellaneous_Wrecker_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oil Fixed MU --></label>
+        <name>Oil_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oil MU Method --></label>
+        <name>Oil_MU_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oil MU Percent --></label>
+        <name>Oil_MU_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oil Set Rate --></label>
+        <name>Oil_Set_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rebill Rate Flag --></label>
+        <name>Rebill_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Dbltime Labour Fixed MU --></label>
+        <name>Repair_Dbltime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Dbltime Labour Percent MU --></label>
+        <name>Repair_Dbltime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Dbltime Labour Set MU --></label>
+        <name>Repair_Dbltime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Dbltime Rate Flag --></label>
+        <name>Repair_Dbltime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair_ListMinusFlag --></label>
+        <name>Repair_ListMinusFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Outside Misc. Fixed MU --></label>
+        <name>Repair_Outside_Misc_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Outside Misc. Flag --></label>
+        <name>Repair_Outside_Misc_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Outside Misc. Percent MU --></label>
+        <name>Repair_Outside_Misc_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Outside Misc. Set MU --></label>
+        <name>Repair_Outside_Misc_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Overtime Labour Fixed MU --></label>
+        <name>Repair_Overtime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Overtime Labour Percent MU --></label>
+        <name>Repair_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Overtime Labour Set MU --></label>
+        <name>Repair_Overtime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Overtime Rate Flag --></label>
+        <name>Repair_Overtime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Parts Rate Percent --></label>
+        <name>Repair_Parts_Rate_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Regular Labour Fixed MU --></label>
+        <name>Repair_Regular_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Regular Labour Percent MU --></label>
+        <name>Repair_Regular_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Regular Labour Set MU --></label>
+        <name>Repair_Regular_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Regular Rate Flag --></label>
+        <name>Repair_Regular_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Service Veh. Rate --></label>
+        <name>Repair_Service_Veh_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Tire Rate Percent MU --></label>
+        <name>Repair_Tire_Rate_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Wrecker Rate --></label>
+        <name>Repair_Wrecker_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Dbltime Labour Fixed MU --></label>
+        <name>Special_Dbltime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Dbltime Labour Percent MU --></label>
+        <name>Special_Dbltime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Dbltime Labour Set MU --></label>
+        <name>Special_Dbltime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Dbltime Rate Flag --></label>
+        <name>Special_Dbltime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special_ListMinusFlag --></label>
+        <name>Special_ListMinusFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Outside Misc. Fixed MU --></label>
+        <name>Special_Outside_Misc_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Outside Misc. Flag --></label>
+        <name>Special_Outside_Misc_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Outside Misc. Percent MU --></label>
+        <name>Special_Outside_Misc_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Outside Misc. Set MU --></label>
+        <name>Special_Outside_Misc_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Overtime Labour Fixed MU --></label>
+        <name>Special_Overtime_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Overtime Labour Percent MU --></label>
+        <name>Special_Overtime_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Overtime Labour Set MU --></label>
+        <name>Special_Overtime_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Overtime Rate Flag --></label>
+        <name>Special_Overtime_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Parts Rate Percent --></label>
+        <name>Special_Parts_Rate_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Regular Labour Fixed MU --></label>
+        <name>Special_Regular_Labour_Fixed_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Regular Labour Percent MU --></label>
+        <name>Special_Regular_Labour_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Regular Labour Set MU --></label>
+        <name>Special_Regular_Labour_Set_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Regular Rate Flag --></label>
+        <name>Special_Regular_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Service Veh. Rate --></label>
+        <name>Special_Service_Veh_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Tire Rate Percent MU --></label>
+        <name>Special_Tire_Rate_Percent_MU__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Wrecker Rate --></label>
+        <name>Special_Wrecker_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- Rebillable Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ext_rates --></label>
+        <name>ext_rates__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

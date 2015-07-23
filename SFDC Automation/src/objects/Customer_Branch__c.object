@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Field_Sales_View</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Field_Sales_View</fullName>
+        <fields>Name</fields>
+        <fields>Customer_Branch_Owner__c</fields>
+        <fields>Customer_Branch_Status__c</fields>
+        <fields>VEH_COUNT__c</fields>
+        <label>Field Sales View</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Customer Branches at Ryder</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Additional_Comments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Place additional comments for service handling
+
+SMO Field: Text in this field and Other Misc. Billing Information field make up the Comments field in SMO</inlineHelpText>
+        <label>Additional Comments</label>
+        <length>8000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Area_Name__c</fullName>
+        <description>Added to identify the region associated with the Ryder Branch for the customer/branch/</description>
+        <externalId>false</externalId>
+        <formula>Ryder_Branch__r.Area_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The region associated to this customer/branch - a correlation to the region of the Ryder branch.</inlineHelpText>
+        <label>Area Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Key_Contact_Roll_up__c</fullName>
+        <description>Roll-up for # of Billing Contacts on Customer Branch</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Roll-up for # of Billing Contacts on Customer Branch</inlineHelpText>
+        <label>Billing Key Contact Roll-up</label>
+        <summaryFilterItems>
+            <field>Key_Contact__c.Contact_Role__c</field>
+            <operation>equals</operation>
+            <value>Billing</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Key_Contact__c.Customer_Branch__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Blanket_PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Blanket PO Number</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BranchAnniversaryDate__c</fullName>
+        <description>Branch Anniversary Date</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Branch Anniversary Date</inlineHelpText>
+        <label>Branch Anniversary Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CSI_Key_Contact_Roll_up__c</fullName>
+        <description>Rolls Up Values for Key Contacts on Customer Branches</description>
+        <externalId>false</externalId>
+        <label>CSI Key Contact Roll-up</label>
+        <summaryFilterItems>
+            <field>Key_Contact__c.Contact_Role__c</field>
+            <operation>equals</operation>
+            <value>CSI Contact</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Key_Contact__c.Customer_Branch__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Components_Not_Included__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Describe any components not included in Service
+
+SMO Field: Component Not Included in Maintenance Plan</inlineHelpText>
+        <label>Components Not Included</label>
+        <length>8000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Count_of_Customer_Branches__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count of Customer Branches</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Customer Branch Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Branch</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch_Status__c</fullName>
+        <description>Indicates whether a Customer/Branch has active vehicles.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates whether a Customer/Branch has active vehicles.</inlineHelpText>
+        <label>Customer Branch Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Requires_PO__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Customer Requires PO</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DCC_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DCC Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Change_IAM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field shows that you cannot change the IAM field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field shows that you cannot change the IAM field</inlineHelpText>
+        <label>Do Not Change IAM</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IAM_Managed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field denotes that this CB is managed by an IAM</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field denotes that this CB is managed by an IAM</inlineHelpText>
+        <label>IAM Managed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IAM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup to the User object to store the IAM</description>
+        <externalId>false</externalId>
+        <label>IAM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Branch_IAM</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LastSurveyDate__c</fullName>
+        <description>This date indicates when the last survey was done.</description>
+        <externalId>false</externalId>
+        <label>Last Survey Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LastSurveySubmissionDate__c</fullName>
+        <description>Date on which last survey was submitted.</description>
+        <externalId>false</externalId>
+        <label>Last Survey Submission Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Last_12_months_FSL_revenue_c_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Last 12 months FSL revenue</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_12_months_RPM_revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Last 12 months RPM revenue</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_CS_Score__c</fullName>
+        <description>Score for the branch that identifies the customer satisfaction ranking from the results of the surveys.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Score for the branch that identifies the customer satisfaction ranking from the results of the surveys.</inlineHelpText>
+        <label>Lease - CS Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maint_Key_Contact_Roll_up__c</fullName>
+        <description>Roll-up for # of Maintenance Contacts on Customer Branch</description>
+        <externalId>false</externalId>
+        <label>Maint Key Contact Roll-up</label>
+        <summaryFilterItems>
+            <field>Key_Contact__c.Contact_Role__c</field>
+            <operation>equals</operation>
+            <value>Maintenance Contact</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Key_Contact__c.Customer_Branch__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>MigratedFrom__c</fullName>
+        <externalId>false</externalId>
+        <label>MigratedFrom</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Missing_Key_Contact_Flag__c</fullName>
+        <description>Displays Red image to indicate that the Branch is missing a Key Contact</description>
+        <externalId>false</externalId>
+        <formula>IF( ((Maint_Key_Contact_Roll_up__c &lt; 1) &amp;&amp; (CSI_Key_Contact_Roll_up__c &lt; 1)),
+IMAGE(&quot;/img/samples/color_red.gif&quot;, &quot;Both Missing&quot;, 30, 30),
+IF( Maint_Key_Contact_Roll_up__c &lt; 1, 
+IMAGE(&quot;/img/samples/color_red.gif&quot;, &quot;Maintenance Missing&quot;, 30, 30),
+IF( CSI_Key_Contact_Roll_up__c &lt; 1,
+IMAGE(&quot;/img/samples/color_red.gif&quot;, &quot;CSI Missing&quot;, 30, 30),
+Null
+)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Missing Key Contact Flag</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Instructions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please specify Subs for PM&apos;s
+
+SMO Field: Other Instructions</inlineHelpText>
+        <label>Other Instructions</label>
+        <length>8000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_Misc_Billing_Information__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter billing information details
+
+SMO Field: Text in this field and Additional Comments field make up the Comments field in SMO</inlineHelpText>
+        <label>Other Misc. Billing Information</label>
+        <length>6500</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Power_Unit_Count__c</fullName>
+        <description>Count of Power Units (TRUCKS &amp; TRACTORS)</description>
+        <externalId>false</externalId>
+        <label>Power Unit Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_authorized_Repair_Amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>SMO Field: Approval or PO if exceeds</inlineHelpText>
+        <label>Pre-authorized Repair Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pre_authorized_Repairs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If Checked, the Customer has pre-authorized repairs. 
+
+SMO Field: Customer PO Required</inlineHelpText>
+        <label>Pre-authorized Repairs</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Account_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Account Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Customer / Branch</relationshipLabel>
+        <relationshipName>Customer_Branch1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact_Count__c</fullName>
+        <description>Used to count the # of Primary Contacts users are trying to add</description>
+        <externalId>false</externalId>
+        <label>Primary Contact Count</label>
+        <summaryFilterItems>
+            <field>Key_Contact__c.Contact_Type__c</field>
+            <operation>equals</operation>
+            <value>Primary</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Key_Contact__c.Customer_Branch__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>RSM_Plus1_Approved_Vehicle_Count__c</fullName>
+        <description>RydeSmart-Displays the total count of all Plus1 vehicles under the customer branch</description>
+        <externalId>false</externalId>
+        <label>Plus1 Approved Vehicle Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RSM_Plus_Approved_Vehicle_Count__c</fullName>
+        <description>RydeSmart - Displays the total count of all Plus vehicles under the customer branch</description>
+        <externalId>false</externalId>
+        <label>Plus Approved Vehicle Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RSM_STD_Approved_Vehicle_Count__c</fullName>
+        <description>RydeSmart - Displays the total count of all Plus1 vehicles under the customer branch</description>
+        <externalId>false</externalId>
+        <label>STD Approved Vehicle Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rated_FSL_revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Rated FSL revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rated_RPM_revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Rated RPM revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Risk_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Risk Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Growth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stable</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>At Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Status</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ryder_Branch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Lookup field for Customer Branch to Ryder branch</description>
+        <externalId>false</externalId>
+        <label>Ryder Branch</label>
+        <referenceTo>Ryder_Branch__c</referenceTo>
+        <relationshipLabel>Customer / Branch</relationshipLabel>
+        <relationshipName>Customer_Branches</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ryder_HQ_Account__c</fullName>
+        <description>M/D field between Customer Branch and HQ Accounts</description>
+        <externalId>false</externalId>
+        <label>Ryder HQ Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer / Branch</relationshipLabel>
+        <relationshipName>Customer_Branches</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Speed_Changes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are speed changes authorized and by whom
+
+SMO Field: Are speed changes authorized and by whom</inlineHelpText>
+        <label>Speed Changes</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Time_Zone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ryder_Branch__r.Postal_Code_For_TimeZone_Mapping__r.Time_Zone__c</formula>
+        <label>Time Zone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_on_Hierarchy__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( (ISPICKVAL($User.Short_Title__c,&quot;SAC&quot;)||ISPICKVAL($User.Short_Title__c,&quot;MOS&quot;)||ISPICKVAL($User.Short_Title__c,&quot;DOS&quot;))
+    ,IF(($User.Sales_Territory__c=Customer_Branch_Owner__r.Sales_Territory__c),1,0),
+IF( (ISPICKVAL($User.Short_Title__c,&quot;BDM&quot;)||ISPICKVAL($User.Short_Title__c,&quot;CDM&quot;)||ISPICKVAL($User.Short_Title__c,&quot;COMBO&quot;)||ISPICKVAL($User.Short_Title__c,&quot;MDM&quot;))
+    ,IF($User.Id=Customer_Branch_Owner__r.Id,1,0),
+IF( (ISPICKVAL($User.Short_Title__c,&quot;VP&quot;))
+   ,IF($User.Region__c=Customer_Branch_Owner__r.Region__c,1,0),
+IF( (ISPICKVAL($User.Short_Title__c,&quot;IAM&quot;)||ISPICKVAL($User.Short_Title__c,&quot;NIAM&quot;))
+   ,IF(($User.Id=IAM__r.Id||$User.Id=Ryder_HQ_Account__r.OwnerId),1,0),
+IF( (ISPICKVAL($User.Short_Title__c,&quot;IAM Manager&quot;) &amp;&amp; $UserRole.Name &lt;&gt; &apos;Director of Inside Sales&apos;)
+   ,IF(($User.Id=IAM__r.Id||$User.Id=IAM__r.ManagerId||$User.Id=Ryder_HQ_Account__r.OwnerId||$User.Id=Ryder_HQ_Account__r.Owner.ManagerId),1,0),
+IF( ( $UserRole.Name =&apos;Director of Inside Sales&apos;)
+  ,IF((NOT(ISBLANK(IAM__r.Id))||ISPICKVAL(Ryder_HQ_Account__r.Owner.Short_Title__c,&quot;IAM&quot;)||ISPICKVAL(Ryder_HQ_Account__r.Owner.Short_Title__c,&quot;NIAM&quot;)||ISPICKVAL(Ryder_HQ_Account__r.Owner.Short_Title__c,&quot;IAM Manager&quot;)),1,0)
+,1)
+)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>User on Hierarchy</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VEH_COUNT__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ext_customerbranch_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Ext Cust Branch Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Customer / Branch</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Ryder_HQ_Account__c</columns>
+        <columns>VEH_COUNT__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Customer Branch Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Customer / Branch</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Contractual</fullName>
+        <active>true</active>
+        <description>New Record Type for Contractual accounts</description>
+        <label>Lease</label>
+        <picklistValues>
+            <picklist>Customer_Branch_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Status__c</picklist>
+            <values>
+                <fullName>At Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>UVS</fullName>
+        <active>true</active>
+        <description>Identity</description>
+        <label>UVS</label>
+        <picklistValues>
+            <picklist>Customer_Branch_Status__c</picklist>
+            <values>
+                <fullName>Active</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Risk_Status__c</picklist>
+            <values>
+                <fullName>At Risk</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Growth</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stable</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Customer_Branch_Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ryder_Branch__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ryder_HQ_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Branch_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Risk_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>VEH_COUNT__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Ryder_HQ_Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Branch_Owner__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Branch_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Risk_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>VEH_COUNT__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Ryder_HQ_Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Customer_Branch_Owner__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Customer_Branch_Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Risk_Status__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>VEH_COUNT__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Customer_Branch_Owner__c</searchFilterFields>
+        <searchFilterFields>Customer_Branch_Status__c</searchFilterFields>
+        <searchFilterFields>VEH_COUNT__c</searchFilterFields>
+        <searchFilterFields>Risk_Status__c</searchFilterFields>
+        <searchResultsAdditionalFields>Ryder_HQ_Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Branch_Owner__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Branch_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Risk_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VEH_COUNT__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>CannotEditCustomerBranchName</fullName>
+        <active>true</active>
+        <description>Prevents users other than admin from changing name.</description>
+        <errorConditionFormula>ISCHANGED(Name ) &amp;&amp; AND(NOT( $Profile.Name = &quot;System Administrator&quot;), NOT( $Profile.Name = &quot;SSO System Administrator&quot;))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>You cannot edit the Customer Branch Name</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CannotEditRyderHQAccount</fullName>
+        <active>true</active>
+        <description>Used to prevent changes to Account on Customer/Branch</description>
+        <errorConditionFormula>ISCHANGED( Ryder_HQ_Account__c ) &amp;&amp; OR(NOT($Profile.Name=&quot;System Administrator&quot;),NOT($Profile.Name=&quot;SSO System Administrator&quot;))</errorConditionFormula>
+        <errorDisplayField>Ryder_HQ_Account__c</errorDisplayField>
+        <errorMessage>You cannot edit the Ryder HQ Account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Primary_Contact_Count_Less_than_2</fullName>
+        <active>false</active>
+        <errorConditionFormula>Primary_Contact_Count__c &gt;1 &amp;&amp; AND(NOT($Profile.Name=&quot;System Administrator&quot;),NOT($Profile.Name=&quot;SSO System Administrator&quot;))</errorConditionFormula>
+        <errorMessage>You may only select one Primary Contact for the Customer / Branch.  Please change remove the existing Primary Contact before adding a new one.</errorMessage>
+    </validationRules>
+</CustomObject>

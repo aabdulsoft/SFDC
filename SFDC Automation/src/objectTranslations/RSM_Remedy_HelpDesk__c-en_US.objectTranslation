@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM Remedy HelpDesk</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM Remedy HelpDesk</value>
+    </caseValues>
+    <fields>
+        <label><!-- Lessee Number --></label>
+        <name>AccountNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup field to the Account --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- RSM Remedy HelpDesk --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AssignedToGroup --></label>
+        <name>AssignedToGroup__c</name>
+    </fields>
+    <fields>
+        <label><!-- AssignedToIndividual --></label>
+        <name>AssignedToIndividual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ticket Number --></label>
+        <name>CaseID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- ClosureCode --></label>
+        <name>ClosureCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreateTime --></label>
+        <name>CreateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedTime_OriginalZone --></label>
+        <name>CreatedTime_OriginalZone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateCreated --></label>
+        <name>DateCreated__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateModified --></label>
+        <name>DateModified__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirmwareVersion --></label>
+        <name>FirmwareVersion__c</name>
+    </fields>
+    <fields>
+        <label><!-- IPAddress --></label>
+        <name>IPAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impact --></label>
+        <name>Impact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item --></label>
+        <name>Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- PrismType --></label>
+        <name>PrismType__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequesterID --></label>
+        <name>RequesterID__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequesterName --></label>
+        <name>RequesterName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ResolvedTime --></label>
+        <name>ResolvedTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- ServiceType --></label>
+        <name>ServiceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary --></label>
+        <name>Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Duration --></label>
+        <name>Task_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Unit__c</name>
+        <relationshipLabel><!-- RSM Remedy HelpDesk --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VehicleNumber --></label>
+        <name>VehicleNumber__c</name>
+    </fields>
+    <layouts>
+        <layout>RSM Remedy HelpDesk Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

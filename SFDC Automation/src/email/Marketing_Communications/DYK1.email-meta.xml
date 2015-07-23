@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SFDC Tips and Tricks - MarCom</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK</name>
+    <style>none</style>
+    <subject>Private vs. Public</subject>
+    <textOnly>Private vs. Public
+Chatter Groups provide users the ability to communicate information to an entire population of users (Public), or direct the information to a specific group of users (Private). Any user can join a public group, but must request and receive access permission to join private groups. To create a group, simply click on the Chatter or Group headers from your home page, select &quot;Groups &quot;, and then add yourself to a group or create a new group. If you&apos;re creating a new group, create your group&apos;s name and provide a brief description of the group&apos;s purpose. Indicate whether the group is public or private. Once you&apos;ve created your group, you can add members by selecting &quot;add group members&quot; as well as set up group email alerts. It&apos;s that simple.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

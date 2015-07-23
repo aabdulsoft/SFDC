@@ -1,0 +1,12 @@
+The following Customer / Branch object has just been created and requires that you specify a CSI and Maintenance Contact.
+
+Cust/Br Name: {!Customer_Branch__c.Name}
+Account: {!Customer_Branch__c.Ryder_HQ_Account__c}
+Link: {!Customer_Branch__c.Link}
+
+IMPORTANT NOTE: Make sure you are logged to Salesforce.com before clicking on the link above, then review and take appropriate action.
+
+If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won't be able to log in from there.
+
+Kind regards,
+Sales Admin

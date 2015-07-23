@@ -1,0 +1,160 @@
+<apex:page sidebar="false" showHeader="false"
+    StandardController="Account"
+    extensions="OpportunityFilter_Controller" tabStyle="Opportunity">
+
+    <apex:includeScript value="{!$Resource.SortJs1}" />
+    <apex:includeScript value="{!$Resource.SortJS}" />
+    <apex:stylesheet value="{!URLFOR($Resource.SortImages, 'jquery.dataTables.css')}"/>
+    
+    <style>
+    
+    	.dataTables_wrapper .dataTables_filter {
+		  float: left;
+		  text-align: left;
+		}
+		.dataTables_wrapper .dataTables_filter input {
+		  margin-left: 0.5em;
+		  width: 225px;
+		}
+		.dataTables_wrapper .dataTables_length {
+		  float: right;
+		}
+
+    </style>
+    <script>
+      function OpenNewOpportunityWindow()
+      {
+        window.parent.top.location.href = '{!NewOppURL}';
+      }
+      function OpenEditOpportunityWindow(recordid, accid)
+      {
+        window.parent.top.location.href = "/" + recordid + "/e?retURL=%2F" + accid;
+      }
+      function DeleteOpportunityWindow()
+      {
+        var agree = confirm("Are you sure, you want to delete this record?");
+
+		if(agree)
+		{
+			return true;
+		}
+		return false;
+      } 
+    </script>
+    <apex:form >
+        <apex:pageBlock id="SaveBlock" title="Opportunities">
+            <apex:pageBlockButtons >                
+                <apex:commandButton value="New" onclick="return OpenNewOpportunityWindow();" rendered="{!IF(bMobile, false, true)}" />
+            </apex:pageBlockButtons>            
+	        
+	        <div align="left">
+	         	<apex:outputLabel value="Opportunity RecordTypes: " />
+	           	<apex:outputPanel >
+	           	<apex:selectList value="{!RecordTypeName}" multiselect="false" size="1">
+		 	 	 	<apex:selectOptions value="{!RecordTypeNames}"/>
+		 	 	 	<apex:actionSupport event="onchange" 
+	                              action="{!QueryOpportunity}" 
+	                              rerender="SaveBlock" status="counterStatus" />
+		 	 	</apex:selectList>
+	 			<apex:actionStatus id="counterStatus" startText="Filtering..." /> 	
+		 	 	</apex:outputPanel>
+		 	</div>
+		 	 <br />
+		 	 	
+		 	<apex:outputPanel rendered="{!IF(bMobile, false, true)}">
+	            <table id="my_table1" class="display" cellspacing="0" width="100%">
+	                <thead>
+	                    <tr>
+	                    	<th width="2%">Action</th>
+	                        <th width="24%">Opportunity Name</th>
+	                        <th width="15%">Owner Name</th>
+	                        <th width="15%">Stage Name</th>
+	                        <th width="8%">CreatedDate</th>
+	                        <th width="8%">Close Date</th>
+	                        <th width="8%">Actual <br />Close Date</th>
+	                        <th width="10%">Estimated <br />Deal Value</th>
+	                        <th width="5%">Total Number<br />of Vehicles</th>
+	                        <th width="5%">Average<br />EVA</th>                        
+	                    </tr>
+	                </thead>
+	                <apex:repeat value="{!OppData}" var="Data" id="tblResults">
+	                    <tr>
+	                    	<td><apex:commandLink value="Edit" 
+	                    							onclick="return OpenEditOpportunityWindow('{!Data.Id}', '{!Data.AccountId}');" 
+	                    							id="theLink" />
+	                    		&nbsp;&nbsp;
+	                    		<apex:commandLink action="{!DeleteOpportunity}" value="Del" onclick="return DeleteOpportunityWindow();" 
+	                    			id="thedelLink" reRender="SaveBlock" rendered="{!$ObjectType.Opportunity.deletable}">
+	                    			<apex:param name="recordid" value="{!Data.Id}"/>
+	                    		</apex:commandLink>
+	                    	</td>
+	                        <td><apex:outputLink value="/{!Data.Id}" target="_blank">{!Data.Name}</apex:outputLink></td>
+	                        <td><apex:outputLink value="/{!Data.OwnerId}" target="_blank">{!Data.Owner.Name}</apex:outputLink></td>
+	                        <td><apex:outputField value="{!Data.StageName}" style="white-space: nowrap;" /></td>
+	                        <td>
+	                        	<apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+								    <apex:param value="{!Data.CreatedDate}" /> 
+								</apex:outputText>
+	                        </td>
+	                        <td><apex:outputField value="{!Data.CloseDate}" /></td>
+	                        <td><apex:outputField value="{!Data.Actual_Close_Date__c}" /></td>
+	                        <td>
+	                        	<apex:outputText value="{0, number, ###,##0}">
+									<apex:param value="{!Data.EST_DEAL_VAL__c}" />
+								</apex:outputText>
+	                        </td>
+	                        <td><apex:outputField value="{!Data.Num_of_vehicles__c}" /></td>
+	                        <td><apex:outputField value="{!Data.EVA__c}" /></td>                        
+	                    </tr>
+	                </apex:repeat>
+	            </table>
+	            <script>
+	                $ = jQuery.noConflict(); 
+	                $(document).ready(function() {
+	                    $('#my_table1').dataTable( {
+	                        "bFilter": true,
+	                        "bPaginate": true,
+	                        "pagingType": "full_numbers",
+	                        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	                        "order": [[ 1, "asc" ]]
+	                    } );
+	                } );
+	         </script>
+         </apex:outputPanel>
+         <apex:outputPanel rendered="{!bMobile}">
+	            <table id="my_table2" class="display" cellspacing="0">
+	                <thead>
+	                    <tr>
+	                    	<th width="20%">Opportunity Name</th>
+	                        <th width="12%">Stage Name</th>
+	                        <th width="10%">Estimated <br />Deal Value</th>	                                                
+	                    </tr>
+	                </thead>
+	                <apex:repeat value="{!OppData}" var="Data" id="tblResults1">
+	                    <tr>
+	                    	<td><apex:outputLink value="/{!Data.Id}" target="_blank">{!Data.Name}</apex:outputLink></td>
+	                        <td><apex:outputField value="{!Data.StageName}" style="white-space: nowrap;" /></td>
+	                        <td>
+	                        	<apex:outputText value="{0, number, ###,##0}">
+									<apex:param value="{!Data.EST_DEAL_VAL__c}" />
+								</apex:outputText>
+	                        </td>                        
+	                    </tr>
+	                </apex:repeat>
+	            </table>
+	            <script>
+	                $ = jQuery.noConflict(); 
+	                $(document).ready(function() {
+	                    $('#my_table2').dataTable( {
+	                        "bFilter": true,
+	                        "bPaginate": true,
+	                        "pagingType": "full_numbers",
+	                        "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+	                        "order": [[ 1, "asc" ]]
+	                    } );
+	                } );
+	         </script>
+         </apex:outputPanel>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

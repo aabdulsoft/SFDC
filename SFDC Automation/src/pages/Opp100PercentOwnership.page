@@ -1,0 +1,53 @@
+<apex:page StandardController="Opportunity" extensions="Opp100PercentOwnership_Controller" id="pageId">
+	<apex:Form id="mainFormId">
+		<apex:sectionHeader subtitle="Opportunity 100% Ownership"
+			title="Opportunity 100% Ownership Edit" />
+		<apex:pageBlock id="pgBId" title="Opportunity 100% Ownership">
+			<apex:pageBlockButtons >
+				<apex:commandButton value="Submit" action="{!SubmitData}" />
+				<apex:commandButton value="Cancel" action="{!Cancel}" />
+			</apex:pageBlockButtons>
+			<apex:pageMessages id="errormsg" />
+			
+			<apex:pageBlockTable value="{!InnerClassObj}" var="Data" id="datatable">					
+					<apex:column headerValue="Select">
+						<apex:inputCheckbox value="{!Data.IsSelected}" />
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Account Name</apex:facet>
+						<apex:outputField value="{!Data.Opp.Account.Name}" />
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Opportunity Name</apex:facet>
+						<apex:outputField value="{!Data.Opp.Name}" />						
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Owner</apex:facet>
+						<apex:outputField value="{!Data.Opp.Owner.Name}" />						
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Amount</apex:facet>
+						<apex:outputField value="{!Data.Opp.Amount}" />						
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Opportunity Stage</apex:facet>
+						<apex:outputField value="{!Data.Opp.StageName}" />						
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Close Date</apex:facet>
+						<apex:outputField value="{!Data.Opp.CloseDate}" />						
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Is It 100% Ownership?</apex:facet>
+						<apex:selectList value="{!Data.Ownership100Selected}" multiselect="false" size="1">
+				            <apex:selectOptions value="{!Ownership100}"/>
+				        </apex:selectList>
+					</apex:column>
+					<apex:column >
+						<apex:facet name="header">Comment</apex:facet>
+						<apex:inputTextArea value="{!Data.sComment}" />
+					</apex:column>
+			</apex:pageBlockTable>
+		</apex:pageBlock>
+	</apex:Form>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Eloqua Engage</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom49: CD/DVD</motif>
+    <url>https://secure.eloqua.com/apps/engage</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rental Rates</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rental Rates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>Branch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Category Code --></label>
+        <name>Class_Category_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Code --></label>
+        <name>Class_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class Description --></label>
+        <name>Class_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer No --></label>
+        <name>Customer_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate --></label>
+        <name>Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- District Code --></label>
+        <name>District_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Account --></label>
+        <name>FIS_Account__c</name>
+        <relationshipLabel><!-- Rental Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lessee No --></label>
+        <name>LesseeNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Rate --></label>
+        <name>Mileage_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Rate --></label>
+        <name>Monthly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Frequency --></label>
+        <name>Rate_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Type --></label>
+        <name>Rate_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Rate --></label>
+        <name>Refer_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Rate Flag --></label>
+        <name>Special_Rate_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standby Rate --></label>
+        <name>Standby_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- Rental Rates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weekly Rate --></label>
+        <name>Weekly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_rates --></label>
+        <name>ext_rates__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

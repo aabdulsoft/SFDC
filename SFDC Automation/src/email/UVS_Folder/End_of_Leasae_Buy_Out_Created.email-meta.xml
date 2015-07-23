@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>End of Lease requested for pricing</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>End of Leasae Buy-Out Created</name>
+    <style>freeForm</style>
+    <subject>New Buy-Out for End of Lease</subject>
+    <textOnly>Hi HQ Admin,
+
+
+A New End of Lease was created for:
+
+
+Account Name: {!UVS_SheduleA_Request__c.Account_Name__c}
+
+Account Owner: {!UVS_SheduleA_Request__c.CreatedBy}
+
+
+{!UVS_SheduleA_Request__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

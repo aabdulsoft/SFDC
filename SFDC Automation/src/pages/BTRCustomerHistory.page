@@ -1,0 +1,130 @@
+<!--
+/**=====================================================================
+ * Appirio, Inc
+ * Page Name: BTR_List
+ * Description: T-324750: Create New VF Page to Display Previous BTR List for a Given Vehicle
+ * Created Date: 08/10/2014
+ * Created By: [Rahul Agrawal] (Appirio)
+ *
+ * Date Modified                Modified By                  Description of the update
+ * [MON DD, YYYY]               [FirstName LastName]         [Short description for changes]
+ =====================================================================*/
+-->
+<apex:page controller="BTRCustomerHistoryController" tabStyle="BTR__c" title="BTR History" sidebar="false">
+    <style>
+        .pbSubheader, .headerRow{
+            text-align:center !important;
+            font-size:12px !important;
+            color:#5858FA !important;
+            background-color:#D8D8D8 !important;
+        }
+
+        .labelCol{
+            color:#5858FA !important;
+        }
+
+        .pbTitle{
+            width:50% !important;
+        }
+
+        .popupBackground {
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 998;
+            position: absolute;
+        }
+        .popupPanel {
+            border: solid 1px;
+            background-color: white;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            top: 50%;
+            height: 50px;
+            margin-top: -25px;
+            z-index: 999;
+            position: fixed;
+        }
+    </style>
+
+    <apex:form id="form">
+        <!-- "Loading" or "Processing" popup whenever we are waiting for the page to return from a "Search" or page size being changed.  -->
+        <apex:actionStatus id="processingStatus" stopText="" >
+            <apex:facet name="start">
+                <div>
+                    <div class="popupBackground" />
+                    <div class="popupPanel">
+                        <table border="0" width="100%" height="100%">
+                            <tr>
+                                <td align="center" style="font-family: Calibri; font-size: 13px; font-weight: normal;"><b>Processing... Please Wait</b></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><img src="/img/loading.gif"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </apex:facet>
+        </apex:actionStatus>
+
+        <apex:pageblock >
+            
+          <apex:pageblockButtons >
+            
+                <Apex:commandButton value="Back to Previous BTR List" onClick="window.location.href = '/apex/BTRVehicleHistory?Id={!vehNumber}&BTRId={!btrId}'; return false;"/>
+                <Apex:commandButton value="Back to BTR" onClick="window.location.href = '/apex/BTRDetail?Id={!btrId}'; return false;"/> 
+          </apex:pageblockButtons>
+      
+      
+            <apex:pageMessages />
+            <apex:pageblockSection title="Requests to Sell vehicles below Take" collapsible="false" columns="1">
+                
+                 <apex:pageBlockSectionItem >
+                  <apex:outputLabel value="Customer Name"/>  
+                  <apex:inputText value="{!customerName}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable value="{!lstBTRList}" var="btr" id="tblBTRHistory">
+                   
+                    
+                    
+                    <apex:column value="{!btr.Vehicle_Number__c}" headerValue="Vehicle Number" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.SAM_Class__c}" headerValue="Sam Class" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Year__c}" headerValue="Year" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Make_Model__c}" headerValue="Make Model" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.UTC__c}" headerValue="Location" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Days_At_UTC__c}" headerValue="Days Held" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Engine_Make_Model__c}" headerValue="Engine Make/Model" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Mileage__c}" headerValue="Mileage" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.NVI_Percent__c}" headerValue="%of NVI" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Book_Value__c}" headerValue="Book Value" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Take_Price__c}" headerValue="Take Price" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Offer_Price_Sale_Price__c}" headerValue="Offer Price/Sale Price" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Take_Price_percent__c}" headerValue="% of Take" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Gain_Loss__c}" headerValue="Gain (Loss)" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.As_Is_Vehicle__c}" headerValue="AS IS Vehicle" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.VOSA__c}" headerValue="Vosa" style="text-align:center !important;" width="5%"/>
+                    <apex:column value="{!btr.Approved_Price__c}" headerValue="Approved Price" style="text-align:center !important;" width="5%"/>
+                     <apex:column value="{!btr.Approved_to_take__c}" headerValue="Approved % of Take" style="text-align:center !important;" width="5%"/> 
+                </apex:pageBlockTable>
+                
+                 <apex:pageBlockTable value="{!quoteLIHistoryList}" var="qlih" id="tblquoteHistory">
+                    
+                    <apex:column value="{!qlih.Name}" headerValue="History Name" style="text-align:center !important;" width="20%"/>
+                    <apex:column value="{!qlih.LastModifiedDate}" headerValue="Updated on" style="text-align:center !important;" width="20%"/>
+                    <apex:column value="{!qlih.LastModifiedBy.Name}" headerValue="Updated By" style="text-align:center !important;" width="20%"/>
+                    
+                </apex:pageBlockTable>
+                
+                
+            </apex:pageblockSection>
+            
+            
+                
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

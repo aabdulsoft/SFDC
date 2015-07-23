@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BTR History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BTR Histories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved Price --></label>
+        <name>Approved_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved % to take --></label>
+        <name>Approved_to_take__c</name>
+    </fields>
+    <fields>
+        <label><!-- As Is Vehicle --></label>
+        <name>As_Is_Vehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTR Number --></label>
+        <name>BTR_Number__c</name>
+        <relationshipLabel><!-- BTR Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BTR Status --></label>
+        <name>BTR_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - With DAM</masterLabel>
+            <translation><!-- Submitted - With DAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - With FAM</masterLabel>
+            <translation><!-- Submitted - With FAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - With VP AM</masterLabel>
+            <translation><!-- Submitted - With VP AM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Book Value --></label>
+        <name>Book_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days At UTC --></label>
+        <name>Days_At_UTC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Make/Model --></label>
+        <name>Engine_Make_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gain (Loss) --></label>
+        <name>Gain_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Conditional Approval --></label>
+        <name>Is_Conditional_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy BTR # --></label>
+        <name>Legacy_BTR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make Model --></label>
+        <name>Make_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage --></label>
+        <name>Mileage__c</name>
+    </fields>
+    <fields>
+        <label><!-- NVI(%) --></label>
+        <name>NVI_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Price/Sale Price --></label>
+        <name>Offer_Price_Sale_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Number --></label>
+        <name>Quote_Number__c</name>
+        <relationshipLabel><!-- BTR Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- BTR Comments --></label>
+        <name>Requester_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor --></label>
+        <name>Requestor__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAM Class --></label>
+        <name>SAM_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Take Price --></label>
+        <name>Take_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Take Price (%) --></label>
+        <name>Take_Price_percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTC --></label>
+        <name>UTC__c</name>
+    </fields>
+    <fields>
+        <label><!-- VOSA --></label>
+        <name>VOSA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Number --></label>
+        <name>Vehicle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <layouts>
+        <layout>BTR History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

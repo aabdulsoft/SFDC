@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Create_Duplicate_Contacts__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Create Duplicate Contacts</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Search_Using_SOSL__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Search contact using SOSL query, use in case of bulk data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Search contact using SOSL query, use in case of bulk data.</inlineHelpText>
+        <label>Search Using SOSL</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>DuplicateContact</label>
+    <visibility>Public</visibility>
+</CustomObject>

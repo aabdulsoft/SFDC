@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>from_Discover_ELQA_Marketing_Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>from_Discover_ELQA_Marketing_Activity</value>
+    </caseValues>
+    <fields>
+        <label><!-- Eloqua Discover Activity Date --></label>
+        <name>EDP1_ActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Activity Type --></label>
+        <name>EDP1_ActivityType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Activity URL --></label>
+        <name>EDP1_ActivityUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Asset Name --></label>
+        <name>EDP1_AssetName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Asset Type --></label>
+        <name>EDP1_AssetType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Asset --></label>
+        <name>EDP1_Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Description --></label>
+        <name>EDP1_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Error Text --></label>
+        <name>EDP1_ErrorText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Is Error --></label>
+        <name>EDP1_IsError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Is Processed --></label>
+        <name>EDP1_IsProcessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Owner Id --></label>
+        <name>EDP1_OwnerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Prospect Id --></label>
+        <name>EDP1_ProspectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Discover Sort Key --></label>
+        <name>EDP1_SortKey__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

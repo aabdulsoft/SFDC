@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>AfterCallSurvey</name>
+    <style>freeForm</style>
+    <subject>Please rate your recent experience with the Ryder Customer Care line</subject>
+    <textOnly>Dear Valued Ryder Customer,
+
+Please complete this brief online survey so we might better serve you in
+ the future.  
+
+Your responses will help us to continue providing information and services that you find most useful.
+
+Case Number: {!Case.CaseNumber}
+Case Description: {!Case.Description}
+
+Again, thank you for your time. To begin the survey, simply click on the link below. 
+
+Click here for survey link
+
+Should you have any additional questions, please contact Ryder Customer Care at 1-800-947-9337 or Customer_Service-US@ryder.com.</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>AccountShareCustom</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Share Custom</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountId --></label>
+        <name>AccountId__c</name>
+        <relationshipLabel><!-- Account Share Custom --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- GroupId --></label>
+        <name>GroupId__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

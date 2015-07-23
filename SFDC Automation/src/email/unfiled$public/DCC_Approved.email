@@ -1,0 +1,13 @@
+{!ApprovalRequest.Process_Approver} has approved your submission for the following DCC conversion lead:
+
+Account: {!Account.Name}
+Branch: {!Customer_Branch__c.Name}
+Branch Owner: {!Customer_Branch__c.Customer_Branch_Owner__c}
+Vehicle Count:{!Customer_Branch__c.VEH_COUNT__c}
+
+Please click on the link below to review the record.
+
+{!Customer_Branch__c.Link}
+
+Thank you,
+FMS Product Management

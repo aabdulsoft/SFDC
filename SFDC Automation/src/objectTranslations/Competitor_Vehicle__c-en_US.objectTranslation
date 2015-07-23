@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor Vehicle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitor Vehicles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Competitor Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Class --></label>
+        <name>Class__c</name>
+        <picklistValues>
+            <masterLabel>City Van</masterLabel>
+            <translation><!-- City Van --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dry Trailer</masterLabel>
+            <translation><!-- Dry Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flatbed Trailer</masterLabel>
+            <translation><!-- Flatbed Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metro Van</masterLabel>
+            <translation><!-- Metro Van --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panel Van</masterLabel>
+            <translation><!-- Panel Van --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parcel Van</masterLabel>
+            <translation><!-- Parcel Van --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pick Up</masterLabel>
+            <translation><!-- Pick Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reefer Truck</masterLabel>
+            <translation><!-- Reefer Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refrigerated Trailer</masterLabel>
+            <translation><!-- Refrigerated Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Axle</masterLabel>
+            <translation><!-- Single Axle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Straight Truck</masterLabel>
+            <translation><!-- Straight Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tandem Axle</masterLabel>
+            <translation><!-- Tandem Axle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tandem Axle Sleeper</masterLabel>
+            <translation><!-- Tandem Axle Sleeper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>IdealLease</masterLabel>
+            <translation><!-- IdealLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interstate National</masterLabel>
+            <translation><!-- Interstate National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Provider</masterLabel>
+            <translation><!-- Local Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NationalLease</masterLabel>
+            <translation><!-- NationalLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership</masterLabel>
+            <translation><!-- Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PacLease</masterLabel>
+            <translation><!-- PacLease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penske</masterLabel>
+            <translation><!-- Penske --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter any known term-out dates for non-Ryder vehicles. --></help>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Competitor Vehicles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Count --></label>
+        <name>Vehicle_Count__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Competitor Vehicle Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitor Vehicle Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Competitor Vehicle Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Rental Accounts Competitive Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account Competitor Vehicle --></label>
+        <name>Account_Competitor_Vehicle</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Competitive Info Rental Accounts --></label>
+        <name>Competitive_Info_Rental_Accounts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Lead Competitor Vehicle --></label>
+        <name>Lead_Competitor_Vehicle</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

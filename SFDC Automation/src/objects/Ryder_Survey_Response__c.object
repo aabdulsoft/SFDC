@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This custom object provides the responses to the questions answered for any survey that is created in survey software.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Activity ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CT_Survey_ID__c</fullName>
+        <description>Clicktools ID that identifies the actual survey and the responses.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Clicktools ID that identifies the actual survey and the responses.</inlineHelpText>
+        <label>CT Survey ID</label>
+        <length>200</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Lessee__c</fullName>
+        <description>The lessee number associated to the company.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.LesseeNo__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The lessee number associated to the company.</inlineHelpText>
+        <label>Company Lessee</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <description>Name of the company associated to the contact and customer/branch survey response.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Name of the company associated to the contact and customer/branch survey response.</inlineHelpText>
+        <label>Company Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_First_Name__c</fullName>
+        <description>The individual survey respondent&apos;s first name.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.FirstName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The individual survey respondent&apos;s first name.</inlineHelpText>
+        <label>Contact First Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Last_Name__c</fullName>
+        <description>The individual survey respondent&apos;s last name.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The individual survey respondent&apos;s last name.</inlineHelpText>
+        <label>Contact Last Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone_Number__c</fullName>
+        <description>The individual survey respondent&apos;s phone number.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The individual survey respondent&apos;s phone number.</inlineHelpText>
+        <label>Contact Phone Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The individual survey respondent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The individual survey respondent.</inlineHelpText>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Ryder Survey Responses</relationshipLabel>
+        <relationshipName>Ryder_CS_Survey</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The customer/branch associated to the survey respondent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The customer/branch associated to the survey respondent.</inlineHelpText>
+        <label>Customer / Branch</label>
+        <referenceTo>Customer_Branch__c</referenceTo>
+        <relationshipLabel>Ryder Survey Responses</relationshipLabel>
+        <relationshipName>Ryder_CS_Survey</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Number__c</fullName>
+        <description>The prospect number of the customer associated to the survey respondent.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.CustProspectID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The prospect number of the customer associated to the survey respondent.</inlineHelpText>
+        <label>Customer Prospect Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Question_Number__c</fullName>
+        <description>Question Number presented in the survey (not necessarily to the agent at the time of conducting survey) as hidden fields would also be included.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Question Number presented in the survey (not necessarily to the agent at the time of conducting survey) as hidden fields would also be included.</inlineHelpText>
+        <label>Question Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Question_Response__c</fullName>
+        <description>Response presented in the survey (not necessarily to the agent at the time of conducting survey) as hidden fields would also be included.</description>
+        <externalId>false</externalId>
+        <label>Question Response</label>
+        <length>5000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Question_Text__c</fullName>
+        <description>The text associated to the question that may or may not be displayed to the agent at the time of conducting the survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The text associated to the question that may or may not be displayed to the agent at the time of conducting the survey.</inlineHelpText>
+        <label>Question Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Response_Key__c</fullName>
+        <description>Response key transmitted from clicktools</description>
+        <externalId>false</externalId>
+        <label>Response Key</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ryder_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Ryder Branch</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ryder_Survey_Question__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ryder Survey Question</label>
+        <referenceTo>Ryder_Survey_Question__c</referenceTo>
+        <relationshipLabel>Ryder Survey Responses</relationshipLabel>
+        <relationshipName>Ryder_Survey_Responses</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SurveyId__c</fullName>
+        <externalId>false</externalId>
+        <label>Ryder Survey</label>
+        <referenceTo>Ryder_Surveys__c</referenceTo>
+        <relationshipLabel>Ryder Survey Responses</relationshipLabel>
+        <relationshipName>Ryder_Survey_Responses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Survey_Conducted_By_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The name of the individual that conducted the survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the individual that conducted the survey.</inlineHelpText>
+        <label>Survey Conducted By ID</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Ryder_Survey_Responses</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Conducted_By__c</fullName>
+        <description>The alias of the person that conducted the survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The alias of the person that conducted the survey.</inlineHelpText>
+        <label>Survey Conducted By</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Submission_Date__c</fullName>
+        <description>The date the survey responses were submitted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the survey responses were submitted.</inlineHelpText>
+        <label>Survey Submission Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>upload_key__c</fullName>
+        <externalId>true</externalId>
+        <label>upload key</label>
+        <length>55</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Ryder Survey Response</label>
+    <nameField>
+        <displayFormat>RSR-{0000}</displayFormat>
+        <label>Ryder Survey Response</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ryder Survey Responses</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object used to store historical opportunity pipeline data via an Analytic Snapshot</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>CY_Average_Age_M__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - Average Age (M)</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_Average_EVA__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - Average EVA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CY_OC_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - OC Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_OC_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - OC Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_Per_of_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - % of Total $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_SH_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - SH Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_SH_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - SH Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_Total_Gross__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - Total Gross $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>CY_Total_of_Deals__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - Total # of Deals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_WSO_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - WSO Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CY_WSO_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>CY - WSO Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Close_Ratio_All__c</fullName>
+        <externalId>false</externalId>
+        <label>Close Ratio - All</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Close_Ratio_Quoted__c</fullName>
+        <externalId>false</externalId>
+        <label>Close Ratio - Quoted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <defaultValue>TEXT(MONTH(TODAY()))</defaultValue>
+        <description>Holds the month of the Actual data loaded</description>
+        <externalId>false</externalId>
+        <label>Month</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PY_Average_Age_M__c</fullName>
+        <description>Previous Year</description>
+        <externalId>false</externalId>
+        <label>PY - Average Age (M)</label>
+        <precision>17</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PY_Close_Ratio_All__c</fullName>
+        <description>Previous Year Close Ratio</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Previous Year Close Ratio</inlineHelpText>
+        <label>PY Close Ratio - All</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PY_Close_Ratio_Quoted__c</fullName>
+        <externalId>false</externalId>
+        <label>PY Close Ratio - Quoted</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PY_Total_Gross__c</fullName>
+        <externalId>false</externalId>
+        <label>PY - Total Gross $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PY_Total_of_Deals__c</fullName>
+        <description>Previous Year</description>
+        <externalId>false</externalId>
+        <label>PY - Total # of Deals</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pipeline_Needed_to_Reach_Quota__c</fullName>
+        <externalId>false</externalId>
+        <label>Pipeline Needed to Reach Quota</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <description>Holds the Regional data for each record.</description>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Team_Member__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Team Member</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Territory__c</fullName>
+        <description>Displays Sales Territory for a data record.</description>
+        <externalId>false</externalId>
+        <label>Sales Territory</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <defaultValue>TEXT(YEAR( TODAY() ))</defaultValue>
+        <description>Holds the year of the data loaded.  With Month field, represents data load on said month and year</description>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Historical Pipeline</label>
+    <nameField>
+        <displayFormat>PL-{0000000}</displayFormat>
+        <label>Historical Pipeline #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Historical Pipelines</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

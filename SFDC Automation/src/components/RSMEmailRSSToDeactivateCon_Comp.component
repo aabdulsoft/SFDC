@@ -1,0 +1,21 @@
+<!--FR033-Generate Email to RSS once unit cancels their contract to request de-activation-->
+<apex:component controller="RSMEmailRSSToDeactivateConCtrl" access="global">
+    
+    <!--Should change below link when moved to production-->
+    <apex:image id="Logo" value="https://cs10.salesforce.com/servlet/servlet.ImageServer?oid=00DJ0000001MAFb
+    &id=01560000000jtOy" /><br/>
+ 
+    De-Activate Contract for the below Vehicles <br/><br/>  
+    
+    <apex:outputPanel > 
+        
+        <apex:dataTable value="{!rsmCdList}" var="cd" border="1">
+            <apex:column headerValue="Contract Number" value="{!cd.Contract_Number__r.Name}"/> 
+            <apex:column headerValue="Contract Detail ID" value="{!cd.Name}"/> 
+            <apex:column headerValue="Vehicle Number" value="{!cd.Unit_Number__r.Name}"/> 
+            
+        </apex:dataTable>
+    </apex:outputPanel>
+  
+  
+</apex:component>

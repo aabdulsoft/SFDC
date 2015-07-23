@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM Trending Source Table FR123</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM Trending Source Tables</value>
+    </caseValues>
+    <fields>
+        <label><!-- RSM Count of Different Stages --></label>
+        <name>RSM_Count_of_Different_Stages__c</name>
+    </fields>
+    <fields>
+        <label><!-- RSM Stage --></label>
+        <name>RSM_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction date --></label>
+        <name>Transaction_date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

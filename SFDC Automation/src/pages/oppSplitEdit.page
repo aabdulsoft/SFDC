@@ -1,0 +1,63 @@
+<apex:page standardController="Opportunity" extensions="oppSplitController" 
+                        tabStyle="Opportunity" > 
+                                           
+   <apex:form > 
+   <script>
+       function setFocusOnLoad() {}
+       
+       /* AAK 08/01/2014 Start - Commented as the requested functionality part of REQ346 automatic pipeline refresh
+       is not fully functional but restricting error msgs to show up.
+       function doPipelineRefresh() {
+           refreshOppty();
+       }      
+       AAK 08/01/2014 End
+       */ 
+    </script>
+
+     <apex:pageBlock >
+            <apex:pageMessages /> 
+       <apex:pageBlockButtons location="top" > 
+         <apex:commandButton value="New"  
+                             action="{!newrec}" rendered="{!ShowNewButton}"/>
+         <apex:commandButton value="Save"  
+                                 action="{!save}"/>
+        <!--AAK 08/01/2014 Start AAK 08/01/2014 Start - Commented as the requested functionality part of REQ346 automatic pipeline refresh
+       is not fully functional but restricting error msgs to show up.                    
+                                action="{!save}" oncomplete="doPipelineRefresh(); return false;"/> 
+            <apex:actionFunction action="{!refreshOppty}" name="refreshOppty" />                             -->
+       <!--AAK 08/01/2014 End -->
+                              
+         <!--<apex:commandButton value="Refresh"  
+                             action="{!refresh}"/> -->
+                                                     
+       </apex:pageBlockButtons> 
+    
+       <apex:pageBlockTable columns="4" value="{!OpportunitySplits}" var="oppsplit"> 
+                    <apex:column headerValue="Team Member"> 
+            <apex:inputField value="{!oppsplit.opp_split.Sales_Team_Member__c}"/> 
+        </apex:column> 
+
+         <apex:column headerValue="Split Percentage"> 
+           <apex:inputField value="{!oppsplit.opp_split.Split_Percentage__c}"/> 
+         </apex:column> 
+         
+         <apex:column headerValue="Split Amount"> 
+           <!--<apex:outputtext value="{!opp.opp_split.Pipeline_Split_Amount__c}"/> -->
+           <apex:outputtext value="{!opp.currencyisocode}"/>
+               <apex:outputtext value="{0, number, ###,###,###,##0.00}"> 
+                   <apex:param value="{!oppsplit.opp_split.Pipeline_Split_Amount__c}"/>
+               </apex:outputtext>
+         </apex:column>
+         
+         <apex:column headerValue="Action"> 
+         <apex:commandlink action="{!deleterec}" value="delete">
+         <apex:param name="idx" value="{!oppsplit.mapkey}" />
+         </apex:commandlink>
+          </apex:column> 
+
+                
+       </apex:pageBlockTable>   
+          
+     </apex:pageBlock> 
+   </apex:form> 
+</apex:page>

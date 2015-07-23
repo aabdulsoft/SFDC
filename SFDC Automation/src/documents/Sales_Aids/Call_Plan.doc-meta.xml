@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Roadmap to help guide each call.  It includes essential outcomes and information from each Phase of the Sales Process.
+Used ot prepare for face to face sales calls.  Helps ensure key outcomes are achieved in each sales call.</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Call Plan</name>
+    <public>false</public>
+</Document>

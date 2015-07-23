@@ -1,0 +1,28 @@
+*** NOTIFICATION OF TASK ASSIGNMENT ON Salesforce.com CASE ***  
+
+This is a request for you to address an issue in the following case.  
+
+ACTIONS REQUIRED:
+-Take the necessary steps to resolve the customer’s issue.
+-Make any necessary system changes to prevent recurrence of the issue.
+-Submit any credit memos necessary to resolve the customer’s issue
+-Submit any applicable re-billing
+-Respond to this email with a resolution
+
+CASE INFORMATION:
+Company:  {!Account.Name} 
+FIS Account: {!Case.FIS_Account__c}
+Vehicle #: {!Case.Vehicle_Number__c}
+Contact Name:  {!Contact.Name} 
+Contact Phone: {!Contact.Phone}
+Phone Extension: {!Case.Business_Phone_Extension_1__c}
+Contact Fax: {!Contact.Fax}
+Contact Email: {!Contact.Email}
+Case #:  {!Case.CaseNumber} 
+Date/Time Opened: {!Case.CreatedDate}
+Created by: {!Case.CreatedBy}
+Created on: {!Case.CreatedDate}
+Currently owned by: {!Case.OwnerFullName}
+
+Subject: {!Case.Type} - {!Case.Subcategory__c}
+Description: {!Case.Description}

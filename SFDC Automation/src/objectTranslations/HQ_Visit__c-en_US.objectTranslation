@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HQ Visit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HQ Visits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Manager Phone# --></label>
+        <name>Account_Manager_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Manager --></label>
+        <name>Account_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner Manager --></label>
+        <name>Account_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- WHAT business challenges are there? --></label>
+        <name>Business_Challenges__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Address --></label>
+        <name>Company_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Anniversary Date --></label>
+        <name>Company_Anniversary_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company City, State --></label>
+        <name>Company_City_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Description --></label>
+        <name>Company_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+        <relationshipLabel><!-- HQ Visits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company ZipCode --></label>
+        <name>Company_ZipCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- WHAT is the customer’s objective(s)? --></label>
+        <name>Customer_Objetive__c</name>
+    </fields>
+    <fields>
+        <label><!-- WHAT deliverables are expected? --></label>
+        <name>Deliverables_Expected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe Reason for Declined --></label>
+        <name>Describe_Reason_for_Declined__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Fixed Cost --></label>
+        <name>FSL_Last_12_Month_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Rated Cost --></label>
+        <name>FSL_Last_12_Month_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months-FC% --></label>
+        <name>FSL_Last_12_Months_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Fixed Cost --></label>
+        <name>FSL_Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months-RC% --></label>
+        <name>FSL_Last_12_Months_RC__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Rated Cost --></label>
+        <name>FSL_Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Revenue --></label>
+        <name>FSL_Last_12_Months_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months Revenue --></label>
+        <name>FSL_Last_12_month_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months Margin% --></label>
+        <name>FSL_Last_12_months_margin_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Margin --></label>
+        <name>FSL_Last_12_months_margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - FC% --></label>
+        <name>FSL_Life_to_Date_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Fixed Cost --></label>
+        <name>FSL_Life_to_Date_Fix_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Fixed Cost --></label>
+        <name>FSL_Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Margin% --></label>
+        <name>FSL_Life_to_Date_Margin_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Margin --></label>
+        <name>FSL_Life_to_Date_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - RC% --></label>
+        <name>FSL_Life_to_Date_RC__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Rated Cost --></label>
+        <name>FSL_Life_to_Date_Rate_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Rated Cost --></label>
+        <name>FSL_Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Revenue --></label>
+        <name>FSL_Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Revenue --></label>
+        <name>FSL_Life_to_Date_Revenues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Fixed Cost --></label>
+        <name>Last_12_Month_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Rated Cost --></label>
+        <name>Last_12_Month_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Revenue --></label>
+        <name>Last_12_Month_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months-FC% --></label>
+        <name>Last_12_Months_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Fixed Cost --></label>
+        <name>Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months-RC% --></label>
+        <name>Last_12_Months_RC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Rated Cost --></label>
+        <name>Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Revenue --></label>
+        <name>Last_12_Months_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months margin% --></label>
+        <name>Last_12_months_margin_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Margin --></label>
+        <name>Last_12_months_margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - FC% --></label>
+        <name>Life_to_Date_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Fixed Cost --></label>
+        <name>Life_to_Date_Fix_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Fixed Cost --></label>
+        <name>Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Margin% --></label>
+        <name>Life_to_Date_Margin_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Margin --></label>
+        <name>Life_to_Date_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - RC% --></label>
+        <name>Life_to_Date_RC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Rated Cost --></label>
+        <name>Life_to_Date_Rate_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Rated Cost --></label>
+        <name>Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Revenue --></label>
+        <name>Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Revenue --></label>
+        <name>Life_to_Date_Revenues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Business Day --></label>
+        <name>Next_Business_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presentation deck be required? --></label>
+        <name>Presentation_deck_be_required_del__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Fixed Cost --></label>
+        <name>RPM_Last_12_Month_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Rated Cost --></label>
+        <name>RPM_Last_12_Month_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Revenue --></label>
+        <name>RPM_Last_12_Month_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months-FC% --></label>
+        <name>RPM_Last_12_Months_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Fixed Cost --></label>
+        <name>RPM_Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months-RC% --></label>
+        <name>RPM_Last_12_Months_RC__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Rated Cost --></label>
+        <name>RPM_Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Revenue --></label>
+        <name>RPM_Last_12_Months_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 months margin% --></label>
+        <name>RPM_Last_12_months_margin_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 months - margin --></label>
+        <name>RPM_Last_12_months_margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - FC% --></label>
+        <name>RPM_Life_to_Date_FC__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Fixed Cost --></label>
+        <name>RPM_Life_to_Date_Fix_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Fixed Cost --></label>
+        <name>RPM_Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Margin% --></label>
+        <name>RPM_Life_to_Date_Margin_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Margin --></label>
+        <name>RPM_Life_to_Date_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - RC% --></label>
+        <name>RPM_Life_to_Date_RC__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Rated Cost --></label>
+        <name>RPM_Life_to_Date_Rate_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Rated Cost --></label>
+        <name>RPM_Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Revenue --></label>
+        <name>RPM_Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Revenue --></label>
+        <name>RPM_Life_to_Date_Revenues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Request Date --></label>
+        <name>Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- WHAT is Ryder’s objective(s)? --></label>
+        <name>Ryder_Objective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Active Vehicles --></label>
+        <name>Total_Active_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who will approve the presentation deck? --></label>
+        <name>Who_will_approve_the_presentation_deck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who will build the presentation deck? --></label>
+        <name>Who_will_build_the_presentation_deck__c</name>
+    </fields>
+    <layouts>
+        <layout>HQ Visit Layout</layout>
+        <sections>
+            <label><!-- Fleet / Revenue Information --></label>
+            <section>Fleet / Revenue Information</section>
+        </sections>
+        <sections>
+            <label><!-- Sample Templates / Decks --></label>
+            <section>Sample Templates / Decks</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Objectives --></label>
+            <section>Visit Objectives</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Executive Visit --></label>
+        <name>Executive_Visit</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Describe Reason for Declined --></errorMessage>
+        <name>Describe_Reason_for_Declined</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Billing_Quality --></label>
+        <name>Billing_Quality</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CWP_Presentation_Deck --></label>
+        <name>CWP_Presentation_Deck</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HQ_Visit_Training_Slides --></label>
+        <name>HQ_Visit_Training_Slides</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Agenda_Brief --></label>
+        <name>Print_Agenda_Brief</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ryder_Features_Services --></label>
+        <name>Ryder_Features_Services</name>
+    </webLinks>
+</CustomObjectTranslation>

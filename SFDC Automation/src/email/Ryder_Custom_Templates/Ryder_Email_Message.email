@@ -1,0 +1,4 @@
+Error Id - {!Ryder_Error__c.Name}
+Logged In user - {!Ryder_Error__c.Logged_In_User_ID__c}
+Error Message : {!Ryder_Error__c.Error_Message__c}
+Error Detail: {!Ryder_Error__c.Error_Detail__c}

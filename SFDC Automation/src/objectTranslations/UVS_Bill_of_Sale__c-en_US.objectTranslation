@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bill of Sale</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>UVS_Bill_of_Sales</value>
+    </caseValues>
+    <fields>
+        <label><!-- ADDITIONAL_COST --></label>
+        <name>ADDITIONAL_COST__c</name>
+    </fields>
+    <fields>
+        <label><!-- COUNTRY_CODE --></label>
+        <name>COUNTRY_CODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- COUNTRY_NAME --></label>
+        <name>COUNTRY_NAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- CUSTOMER_NAME --></label>
+        <name>CUSTOMER_NAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- CUSTOMER_NUMBER --></label>
+        <name>CUSTOMER_NUMBER__c</name>
+    </fields>
+    <fields>
+        <label><!-- DISCOUNT --></label>
+        <name>DISCOUNT__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOCATION_CODE --></label>
+        <name>LOCATION_CODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- MEQ_BOS_ID --></label>
+        <name>MEQ_BOS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MEQ_DISP_ID --></label>
+        <name>MEQ_DISP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- MEQ_NUMBER --></label>
+        <name>MEQ_NUMBER__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPPORTUNITY NUMBER --></label>
+        <name>OPPORTUNITYID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OPPORTUNITY ID --></label>
+        <name>OPPORTUNITY__c</name>
+        <relationshipLabel><!-- UVS_Bill_of_Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- OWNER REGION --></label>
+        <name>OWNER_REGION__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROCESSED --></label>
+        <name>PROCESSED__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROCESS COMMENT --></label>
+        <name>PROCESS_COMMENT__c</name>
+    </fields>
+    <fields>
+        <label><!-- SALES_AMOUNT --></label>
+        <name>SALES_AMOUNT__c</name>
+    </fields>
+    <fields>
+        <label><!-- SALES_REP --></label>
+        <name>SALES_REP__c</name>
+    </fields>
+    <fields>
+        <label><!-- SALES_STATUS --></label>
+        <name>SALES_STATUS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOLD_LOCATION_CODE --></label>
+        <name>SOLD_LOCATION_CODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold UTC Name --></label>
+        <name>Sold_UTC_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- TOTAL_COST_OF_SALE --></label>
+        <name>TOTAL_COST_OF_SALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRANSACTION_DATE --></label>
+        <name>TRANSACTION_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNIT_ID --></label>
+        <name>UNIT_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- UNIT NUMBER --></label>
+        <name>UNIT_NUMBER__c</name>
+        <relationshipLabel><!-- UVS_Bill_of_Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VEHICLE_SOLD_DATE --></label>
+        <name>VEHICLE_SOLD_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- WARRANTY_MILES --></label>
+        <name>WARRANTY_MILES__c</name>
+    </fields>
+    <fields>
+        <label><!-- WARRANTY_TERM --></label>
+        <name>WARRANTY_TERM__c</name>
+    </fields>
+    <layouts>
+        <layout>Bill of Sale Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Opportunity Number cannot be changed --></errorMessage>
+        <name>Opportunity_Number_cannot_be_changed</name>
+    </validationRules>
+</CustomObjectTranslation>

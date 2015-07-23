@@ -1,0 +1,588 @@
+<apex:page standardController="Vehicle__c" extensions="SearchMasterInventoryController" id="pg" sidebar="false" title="Search Master Inventory">
+    <apex:sectionheader title="Search Master Inventory"/>
+    <!-- Adding styles required for loading or processing popup  -->
+    <style>
+        .popupBackground {
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 998;
+            position: absolute;
+        }
+        .popupPanel {
+            border: solid 1px;
+            background-color: white;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            top: 50%;
+            height: 50px;
+            margin-top: -25px;
+            z-index: 999;
+            position: fixed;
+        }
+        .labelCol {
+          vertical-align: middle !important;
+        }
+
+        th{
+          white-space: inherit !important;
+        }
+        .imageAsc {
+            background: url("/img/alohaSkin/sortArrows.png") no-repeat scroll left top transparent;
+            height: 8px;
+            margin: 0 5px;
+            vertical-align: -1px;
+            width: 7px;
+        }
+        .bPageBlock .detailList .dataCol {
+            width: auto !important;
+         }
+
+        .imageDesc {
+            background: url("/img/alohaSkin/sortArrows.png") no-repeat scroll 0px -12px transparent;
+            background-repeat: no-repeat;
+            height: 8px;
+            margin: 0 5px;
+            vertical-align: -1px;
+            width: 7px;
+        }
+
+    </style>
+    <apex:form id="frm">
+
+    <!-- "Loading" or "Processing" popup whenever we are waiting for the page to return from a "Search" or page size being changed.  -->
+    <apex:actionStatus id="processingStatus" stopText="" >
+        <apex:facet name="start">
+            <div>
+                <div class="popupBackground" />
+                <div class="popupPanel">
+                    <table border="0" width="100%" height="100%">
+                        <tr>
+                            <td align="center" style="font-family: Calibri; font-size: 13px; font-weight: normal;"><b>Processing... Please Wait</b></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><img src="/img/loading.gif"/></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </apex:facet>
+    </apex:actionStatus>
+        <apex:pageMessages id="pgMsg"/>
+        <apex:pageblock title="Vehicle Inventory Result" id="resultPB">
+
+        <apex:tabPanel switchType="client" value="{!selectedTab}" id="vehicleMasterInventory" onclick="setSelectedTabOnController();"
+                                                        tabClass="activeTab" inactiveTabClass="inactiveTab" style="font-size:12px;">
+
+        <apex:tab label="Trucks" name="Truck" id="tabTrucks" style="font-size:12px;">
+          <apex:pageblock title="Search Trucks" id="searchPBTruck">
+                    <apex:pageBlockSection columns="4">
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel value="As of : {!(TODAY())}"/>
+                         <apex:outputText value=""/>
+                     </apex:pageBlockSectionItem>
+
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel value="Available for Sale :"/>
+                         <apex:outputText value="{!trucksAvailableForSale}"/>
+                     </apex:pageBlockSectionItem>
+
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel value="Sales in Process :"/>
+                         <apex:outputText value="{!trucksSalesInProcess}"/>
+                     </apex:pageBlockSectionItem>
+
+                     <apex:pageBlockSectionItem >
+                         <apex:outputLabel value="OS in Process :"/>
+                         <apex:outputText value="{!trucksOsInProcess}"/>
+                     </apex:pageBlockSectionItem>
+
+                </apex:pageBlockSection>
+                <hr/>
+                    <apex:pageblocksection columns="4">
+                        <apex:repeat value="{!$ObjectType.VehicleSearchSetting__c.FieldSets.Truck_Filter_Fields}"  var="f">
+                            <apex:inputField label="{!SUBSTITUTE(f.Label, 'Truck', '')}" value="{!searchObjTruck[f.fieldPath]}" onkeypress="doSearchJS(this, event, 'truck')"
+                                              rendered="{!!CONTAINS(f.label, 'PlaceHolder')}"/>
+                                              
+                            <apex:outputpanel rendered="{!CONTAINS(f.label, 'PlaceHolder Blank Space')}"> </apex:outputpanel>
+                        
+                        <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks ODOM SAM Start')}">
+                          <apex:outputLabel value="ODOM SAM Start" />
+                          <apex:inputText value="{!odomSamStartTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks ODOM SAM End')}">
+                          <apex:outputLabel value="ODOM SAM End"/>
+                          <apex:inputText value="{!odomSamEndTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                        
+
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks Days At UTC Start')}">
+                          <apex:outputLabel value="Days At UTC Start"/>
+                          <apex:inputText value="{!daysAtUTCStartTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                          
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks Days At UTC End')}">
+                          <apex:outputLabel value="Days At UTC End"/>
+                          <apex:inputText value="{!daysAtUTCEndTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                          
+
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks Sales Price Start')}">
+                          <apex:outputLabel value="Sales Price Start"/>
+                          <apex:inputText value="{!salesPriceStartTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                          
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks Sales Price End')}">
+                          <apex:outputLabel value="Sales Price End"/>
+                          <apex:inputText value="{!salesPriceEndTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                          
+
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks Model Year Start')}">
+                          <apex:outputLabel value="Model Year Start"/>
+                          <apex:inputText value="{!modelYearStartTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                          
+                          <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trucks Model Year End')}">
+                          <apex:outputLabel value="Model Year End"/>
+                          <apex:inputText value="{!modelYearEndTruck}" onkeypress="doSearchJS(this, event, 'truck')"/>
+                          </apex:pageblockSectionItem>
+                        
+                        
+                        </apex:repeat>
+                        
+
+
+                    </apex:pageblocksection>
+                    <apex:pageblockbuttons location="bottom">
+                        <apex:commandButton value="Search" onclick="doSearch_truck();return false;" />
+                        <apex:commandButton value="Reset"  action="{!resetTruck}" rerender="resultPB, tabTrucks" oncomplete="setHeight();setFixedHeader();"/>
+                        <apex:commandButton value="Export to Excel"  onClick="exportToExcel();return false;" rendered="{!AND(searchResultTrucks != null && searchResultTrucks.size > 0)}"/>
+                    </apex:pageblockbuttons>
+                </apex:pageblock>
+        <apex:outputPanel id="resultTruck">
+       <apex:outputPanel rendered="{!OR(searchResultTrucks == null || searchResultTrucks.size == 0)}">Search returned no result.</apex:outputPanel>
+        <div id="resultDivTruck" >
+        <apex:outputPanel rendered="{!AND(searchResultTrucks != null && searchResultTrucks.size > 0)}" style=" width:100%; height:500px;" >
+        <span style="color:red">{!resultSizeError_Truck}</span>
+         <apex:pageblockTable value="{!searchResultTrucks}" var="truck" styleClass="resultTable" id="tableTruck">
+                <apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+                <apex:column styleClass="colData">
+                    <apex:outputField value="{!truck[f.FieldPath]}" rendered="{!AND(f != 'Name', f != 'Model_Year__c')}"/>
+                     
+                     
+                     <apex:outputText value="{!truck[f.FieldPath]}" rendered="{!f == 'Model_Year__c'}" />
+                       
+
+                     
+                    <apex:outputLink value="/{!truck.Id}" target="_new" rendered="{!f = 'Name'}">{!truck[f.FieldPath]}</apex:outputLink>
+                    
+                    
+                         <apex:facet name="header">
+                             <apex:outputPanel >
+                                 <apex:outputLink value="javascript:void(0);"
+                                     onclick="sortDataJS('{!f.FieldPath}');">{!f.Label}</apex:outputLink>
+                                  <apex:outputPanel id="directionIcon" rendered="{!sortField = f}">
+                                    <apex:image styleClass="imageDesc" value="/s.gif" rendered="{!isAsc = false}"/>
+                                    <apex:image styleClass="imageAsc" value="/s.gif" rendered="{!isAsc = true}"/>
+                                 </apex:outputPanel>
+                             </apex:outputPanel>
+                            </apex:facet>
+                </apex:column>
+            </apex:repeat> 
+        </apex:pageblockTable>
+
+
+        </apex:outputPanel>
+        </div>
+        </apex:outputPanel>
+       </apex:tab>
+
+       <apex:tab label="Tractors" name="Tractor" id="tabTractors"  style="font-size:12px;">
+        <apex:pageblock title="Search Vehicle Inventory" id="searchPBTractor">
+          <apex:pageBlockSection columns="4">
+
+             <apex:pageBlockSectionItem >
+                 <apex:outputLabel value="As of : {!(TODAY())}"/>
+                 <apex:outputText value=""/>
+             </apex:pageBlockSectionItem>
+
+             <apex:pageBlockSectionItem >
+                 <apex:outputLabel value="Available for Sale :"/>
+                 <apex:outputText value="{!tractorsAvailableForSale}"/>
+             </apex:pageBlockSectionItem>
+
+             <apex:pageBlockSectionItem >
+                 <apex:outputLabel value="Sales in Process :"/>
+                 <apex:outputText value="{!tractorsSalesInProcess}"/>
+             </apex:pageBlockSectionItem>
+
+             <apex:pageBlockSectionItem >
+                 <apex:outputLabel value="OS in Process :"/>
+                 <apex:outputText value="{!tractorsOsInProcess}"/>
+             </apex:pageBlockSectionItem>
+
+            </apex:pageBlockSection>
+            <hr/>
+            <apex:pageblocksection columns="4">
+                <apex:repeat value="{!$ObjectType.VehicleSearchSetting__c.FieldSets.Tractor_Filter_Fields}"  var="f">
+                    <apex:inputField label="{!SUBSTITUTE(f.Label, 'Tractor', '')}" value="{!searchObjTractor[f.fieldPath]}" onkeypress="doSearchJS(this, event, 'tractor')"
+                                     rendered="{!!CONTAINS(f.label, 'PlaceHolder')}"/>
+                    <apex:outputpanel rendered="{!CONTAINS(f.label, 'PlaceHolder Blank Space')}"> </apex:outputpanel>
+
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors ODOM SAM Start')}">
+                <apex:outputLabel value="ODOM SAM Start"/>
+                <apex:inputText value="{!odomSamStartTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors ODOM SAM End')}">
+                <apex:outputLabel value="ODOM SAM End"/>
+                <apex:inputText value="{!odomSamEndTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors Days At UTC Start')}">
+                <apex:outputLabel value="Days At UTC Start"/>
+                <apex:inputText value="{!daysAtUTCStartTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors Days At UTC End')}">
+                <apex:outputLabel value="Days At UTC End"/>
+                <apex:inputText value="{!daysAtUTCEndTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                 <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors Model Year Start')}">
+                <apex:outputLabel value="Model Year Start"/>
+                <apex:inputText value="{!modelYearStartTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors Model Year End')}">
+                <apex:outputLabel value="Model Year End"/>
+                <apex:inputText value="{!modelYearEndTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors Sales Price Start')}">
+                <apex:outputLabel value="Sales Price Start"/>
+                <apex:inputText value="{!salesPriceStartTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+                <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Tractors Sales Price End')}">
+                <apex:outputLabel value="Sales Price End"/>
+                <apex:inputText value="{!salesPriceEndTractor}" onkeypress="doSearchJS(this, event, 'tractor')"/>
+                </apex:pageblockSectionItem>
+                
+               
+                
+                </apex:repeat>
+
+                
+            </apex:pageblocksection>
+
+            <apex:pageblockbuttons location="bottom">
+               <apex:commandButton value="Search" onclick="doSearch_tractor();return false;"  />
+               <apex:commandButton value="Reset" action="{!resetTractor}" rerender="resultPB, tabTractors" oncomplete="setHeight();setFixedHeader();"/>
+               <apex:commandButton value="Export to Excel"  onClick="exportToExcel();return false;" rendered="{!AND(searchResultTractors != null && searchResultTractors.size > 0)}"/>
+            </apex:pageblockbuttons>
+          </apex:pageblock>
+          <apex:outputPanel id="resultTractor">
+        <apex:outputPanel rendered="{!OR(searchResultTractors == null || searchResultTractors.size == 0)}">Search returned no result.</apex:outputPanel>
+        <div id="resultDivTractor" >
+        <apex:outputPanel rendered="{!AND(searchResultTractors != null && searchResultTractors.size > 0)}" layout="block" >
+        <span style="color:red">{!resultSizeError_Tractor}</span>
+         <apex:pageblockTable value="{!searchResultTractors}" var="tractor" id="tableTractor">
+                <apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+                <apex:column >
+                    <apex:outputField value="{!tractor[f.FieldPath]}" rendered="{!AND(f != 'Name', f != 'Model_Year__c')}" />
+                    
+                    
+                     
+                     <apex:outputText value="{!tractor[f.FieldPath]}" rendered="{!f == 'Model_Year__c'}" />
+                    
+                    <apex:outputLink value="/{!tractor.Id}" target="_new" rendered="{!f = 'Name'}">{!tractor[f.FieldPath]}</apex:outputLink>
+                         <apex:facet name="header">
+                             <apex:outputPanel >
+                                 <apex:outputLink value="javascript:void(0);"
+                                     onclick="sortDataJS('{!f}');">{!f.Label}</apex:outputLink>
+                                 <apex:outputPanel id="directionIcon" rendered="{!sortField = f}">
+                                    <apex:image styleClass="imageDesc" value="/s.gif" rendered="{!isAsc = false}"/>
+                                    <apex:image styleClass="imageAsc" value="/s.gif" rendered="{!isAsc = true}"/>
+                                 </apex:outputPanel>
+                             </apex:outputPanel>
+                            </apex:facet>
+                </apex:column>
+            </apex:repeat>
+         </apex:pageblockTable>
+         </apex:outputPanel>
+         </div>
+         </apex:outputPanel>
+       </apex:tab>
+
+       <apex:tab label="Trailers" name="Trailer" id="tabTrailers" style="font-size:12px;">
+            <apex:pageblock title="Search Vehicle Inventory" id="searchPBTrailer">
+                        <apex:pageBlockSection columns="4">
+
+                             <apex:pageBlockSectionItem >
+                                 <apex:outputLabel value="As of : {!(TODAY())}"/>
+                                 <apex:outputText value=""/>
+                             </apex:pageBlockSectionItem>
+
+                             <apex:pageBlockSectionItem >
+                                 <apex:outputLabel value="Available for Sale :"/>
+                                 <apex:outputText value="{!trailersAvailableForSale}"/>
+                             </apex:pageBlockSectionItem>
+
+                             <apex:pageBlockSectionItem >
+                                 <apex:outputLabel value="Sales in Process :"/>
+                                 <apex:outputText value="{!trailersSalesInProcess}"/>
+                             </apex:pageBlockSectionItem>
+
+                             <apex:pageBlockSectionItem >
+                                 <apex:outputLabel value="OS in Process :"/>
+                                 <apex:outputText value="{!trailersOsInProcess}"/>
+                             </apex:pageBlockSectionItem>
+
+                        </apex:pageBlockSection>
+                        <hr/>
+
+                        <apex:pageblocksection columns="4">
+                          <apex:repeat value="{!$ObjectType.VehicleSearchSetting__c.FieldSets.Trailer_Filter_Fields}"  var="f">
+                                <apex:inputField label="{!SUBSTITUTE(f.Label, 'Trailer', '')}" value="{!searchObjTrailer[f.fieldPath]}" onkeypress="doSearchJS(this, event, 'trailer')"
+                                                 rendered="{!!CONTAINS(f.label, 'PlaceHolder')}"/>
+                            <apex:outputpanel rendered="{!CONTAINS(f.label, 'PlaceHolder Blank Space')}"> </apex:outputpanel>
+
+                            
+                            <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers ODOM SAM Start')}">
+                                    <apex:outputLabel value="ODOM SAM Start"/>
+                                    <apex:inputText value="{!odomSamStartTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers ODOM SAM End')}">
+                                    <apex:outputLabel value="ODOM SAM End"/>
+                                    <apex:inputText value="{!odomSamEndTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+                                   
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers Days At UTC Start')}">
+                                    <apex:outputLabel value="Days At UTC Start"/>
+                                    <apex:inputText value="{!daysAtUTCStartTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+                                    
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers Days At UTC End')}">
+                                    <apex:outputLabel value="Days At UTC End"/>
+                                    <apex:inputText value="{!daysAtUTCEndTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers Sales Price Start')}">
+                                    <apex:outputLabel value="Sales Price Start"/>
+                                    <apex:inputText value="{!salesPriceStartTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers Sales Price End')}">
+                                    <apex:outputLabel value="SalesPrice End"/>
+                                    <apex:inputText value="{!salesPriceEndTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers Model Year Start')}">
+                                    <apex:outputLabel value="Model Year Start"/>
+                                    <apex:inputText value="{!modelYearStartTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+                                    
+                                    <apex:pageblockSectionItem rendered="{!CONTAINS(f.label, 'PlaceHolder Trailers Model Year End')}">
+                                    <apex:outputLabel value="Model Year End"/>
+                                    <apex:inputText value="{!modelYearEndTrailer}" onkeypress="doSearchJS(this, event, 'trailer')"/>
+                                    </apex:pageblockSectionItem>
+                            
+                            
+                            </apex:repeat>
+                                    
+                        </apex:pageblocksection>
+                        <apex:pageblockbuttons location="bottom">
+                            <apex:commandButton value="Search" onclick="doSearch_trailer();return false;" />
+                            <apex:commandButton value="Reset"  action="{!resetTrailer}" rerender="resultPB, tabTrailers" oncomplete="setHeight();setFixedHeader();"/>
+                            <apex:commandButton value="Export to Excel"  onClick="exportToExcel();return false;" rendered="{!AND(searchResultTrailers != null && searchResultTrailers.size > 0)}"/>
+                        </apex:pageblockbuttons>
+                    </apex:pageblock>
+                    <apex:outputPanel id="resultTrailer">
+            <apex:outputPanel rendered="{!OR(searchResultTrailers == null || searchResultTrailers.size == 0)}">Search returned no result.</apex:outputPanel>
+            <div id="resultDivTrailer" >
+            <apex:outputPanel rendered="{!AND(searchResultTrailers != null && searchResultTrailers.size > 0)}" layout="block" >
+            <span style="color:red">{!resultSizeError_Trailer}</span>
+                <apex:pageblockTable value="{!searchResultTrailers}" var="trailer" id="tableTrailer">
+                    <apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+                    <apex:column >
+                     <apex:outputField value="{!trailer[f.FieldPath]}" rendered="{!AND(f != 'Name', f != 'Model_Year__c')}" />
+                     
+                   
+                     
+                     <apex:outputText value="{!trailer[f.FieldPath]}" rendered="{!f == 'Model_Year__c'}" />
+                     
+                    <apex:outputLink value="/{!trailer.Id}" target="_new" rendered="{!f = 'Name'}">{!trailer[f.FieldPath]}</apex:outputLink>
+
+                    <apex:facet name="header">
+                             <apex:outputPanel >
+                                 <apex:outputLink value="javascript:void(0);"
+                                     onclick="sortDataJS('{!f}');">{!f.Label}</apex:outputLink>
+                                 <apex:outputPanel id="directionIcon" rendered="{!sortField = f}">
+                                    <apex:image styleClass="imageDesc" value="/s.gif" rendered="{!isAsc = false}"/>
+                                    <apex:image styleClass="imageAsc" value="/s.gif" rendered="{!isAsc = true}"/>
+                                 </apex:outputPanel>
+                             </apex:outputPanel>
+                            </apex:facet>
+                        </apex:column>
+                </apex:repeat> 
+                </apex:pageblockTable>
+
+            </apex:outputPanel>
+           </div>
+           </apex:outputPanel>
+       </apex:tab>
+
+        </apex:tabPanel>
+        </apex:pageblock>
+        <apex:actionFunction id="af" name="selectTabActionFunction" action="{!selectTab}" reRender="" onComplete="setHeight();setFixedHeader();">
+        <apex:param name="selectedTab" assignTo="{!selectedTab}" value="{!selectedTab}"/>
+    </apex:actionFunction>
+
+   <apex:actionFunction action="{!sortData}" name="sortDataJS" reRender="resultPB" status="processingStatus" oncomplete="setHeight();setFixedHeader();">
+        <apex:param name="sortField" assignTo="{!sortField}" value="" />
+    </apex:actionFunction>
+
+    <apex:actionFunction action="{!searchVehicleInventory_Truck}" status="processingStatus" name="doSearch_truck" reRender="resultTruck,pgMsg, searchPBTruck" oncomplete="setHeight();setFixedHeader();"/>
+    <apex:actionFunction action="{!searchVehicleInventory_Tractor}" status="processingStatus" name="doSearch_tractor" reRender="resultTractor,pgMsg, searchPBTractor" oncomplete="setHeight();setFixedHeader();"/>
+    <apex:actionFunction action="{!searchVehicleInventory_Trailer}" status="processingStatus" name="doSearch_trailer" reRender="resultTrailer,pgMsg,searchPBTrailer" oncomplete="setHeight();setFixedHeader();"/>
+    <apex:actionFunction name="exportToExcel" status="processingStatus" action="{!exportToExcel}"/>
+    </apex:form>
+    <script src="//code.jquery.com/jquery-1.4.4.js"/>
+    <script type="text/javascript">
+
+        $jQ = jQuery.noConflict();
+
+
+        window.onresize = setHeight;
+        function getSelectedTabName() {
+            if (RichFaces) {
+                var tabs = RichFaces.panelTabs['pg:frm:resultPB:vehicleMasterInventory'];
+                for (var i = 0; i < tabs.length; i++) {
+                    var tab = tabs[i];
+                    if (RichFaces.isTabActive(tab.id + '_lbl')) {
+                        return tab.name;
+                    }
+                }
+            }
+            return null;
+        }
+        function setSelectedTabOnController() {
+        selectTabActionFunction(getSelectedTabName());
+        }
+
+
+
+        function showTable(){
+     $jQ('#pageTbl').toggleClass('hidePageList');
+     $jQ('#pageTbl').toggleClass('showPageList');
+    }
+    function increaseDivHeightOnClick(lineItemList){
+       if(lineItemList == '[]'){
+           document.getElementById('dtTbl').style.paddingTop = '150px';
+       }else{
+           document.getElementById('dtTbl').style.paddingTop = '0px';
+       }
+    }
+    function setHeight() {
+      console.log('set height');
+       var marginWidth = 100;
+       document.getElementById('resultDivTruck').style.width = window.innerWidth - marginWidth + 'px';
+       document.getElementById('resultDivTractor').style.width = window.innerWidth - marginWidth + 'px';
+       document.getElementById('resultDivTrailer').style.width = window.innerWidth - marginWidth + 'px';
+    }
+
+
+    function increaseDivHeight(lineItemList){
+      document.getElementById('dtTbl').style.paddingTop = '0px';
+      //loadValues();
+    }
+    function isNumber(evt,obj) {
+           evt = (evt) ? evt : window.event;
+           var charCode = (evt.which) ? evt.which : evt.keyCode;
+           if(charCode == 13){
+
+               obj.onchange();
+               return false;
+           }
+           if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+               return false;
+           }
+       return true;
+    }
+
+        function doSearchJS(ctrl,e, tabName){
+          var keycode = (e.keyCode ? e.keyCode : e.which);
+          if(keycode == '13'){
+             e.preventDefault();
+             if(tabName == 'truck'){
+                doSearch_truck();
+             }else if(tabName == 'tractor'){
+            doSearch_tractor();
+         }else if(tabName == 'trailer'){
+            doSearch_trailer();
+         }
+
+             return false;
+          }
+        }
+
+      function setFixedHeader(){
+        var resultDiv;
+        var selectedTab = getSelectedTabName();
+        setFixedHeaderforTab('table'+selectedTab, 'resultDiv'+selectedTab);
+      }
+
+
+
+    function setFixedHeaderforTab(sfTableId, divId)  {
+        var wrperDiv = 'wrapper_' + sfTableId;
+        var fxdDiv = 'fixed_' + sfTableId;
+        var tblDiv = 'table_' + sfTableId;
+        var desiredHeight = 450;
+        var desiredWidth = document.getElementById(divId).style.width;
+        var dTable = $jQ('table[id$="'+sfTableId+'"]');
+        var wrapperHeight = 450 + $jQ(dTable).find('thead').height();
+
+        if(!($jQ(dTable).closest('#'+wrperDiv).length)) {
+          $jQ(dTable).wrap( "<div id='"+wrperDiv+"'></div>" );
+          $jQ('#'+wrperDiv).prepend( "<div id='"+fxdDiv+"'></div>" );
+          $jQ(dTable).wrap( "<div id='"+tblDiv+"'></div>" );
+          $jQ('#'+wrperDiv).width(desiredWidth).height(wrapperHeight);
+          $jQ('#'+fxdDiv).width('101%').height($jQ(dTable).find('thead').height()).css('overflow','hidden');
+          $jQ('#'+tblDiv).width('102%').height(desiredHeight).css('overflow','scroll');
+        }
+
+     //$jQ('#'+fxdDiv).html('');
+            var table = $jQ('<table></table>').addClass('list resultTable').attr('border','0').attr('cellpadding','0').attr('cellspacing','0');
+            var tableHead = $jQ('<thead></thead>');
+            var row = $jQ('<tr></tr>').addClass(' headerRow');
+            $jQ(dTable).find('thead tr th').each(function(){
+                var rowCol = $jQ('<th></th>').addClass('headerRow').html($jQ(this).html()).css('width',$jQ(this).css('width')).attr('scope','col').attr('colspan','1');
+                $jQ(rowCol).find('div').css('width',$jQ(this).find('div').css('width'));
+                $jQ(this).find('div').css('width',$jQ(rowCol).find('div').css('width'));
+                row.append(rowCol);
+                $jQ(this).find('div').html('');
+            });
+            tableHead.append(row);
+            table.append(tableHead);
+            $jQ('#'+fxdDiv).append(table);
+            $jQ('#'+tblDiv).scroll(function () {
+              $jQ('#'+fxdDiv).scrollLeft($jQ(this).scrollLeft());
+            });
+
+  }
+
+        </script>
+
+
+</apex:page>

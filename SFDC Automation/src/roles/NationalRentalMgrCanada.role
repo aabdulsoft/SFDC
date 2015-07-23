@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>National Rental Mgr- Canada</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>National Rental Mgr- Canada</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>NationalRentalCustomerAdvocate</parentRole>
+</Role>

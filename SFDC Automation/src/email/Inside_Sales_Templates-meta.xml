@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Inside Sales Templates</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <role>DirectorofInsideSales</role>
+        <role>InsideSalesAlbanyHartford</role>
+        <role>InsideSalesAssistant</role>
+        <role>InsideSalesAtlanta</role>
+        <role>InsideSalesBaltimoreWashington</role>
+        <role>InsideSalesBluegrass</role>
+        <role>InsideSalesBostonProvidence</role>
+        <role>InsideSalesCarolinas</role>
+        <role>InsideSalesCentralPAUpstateNY</role>
+        <role>InsideSalesDetroitNorthMichigan</role>
+        <role>InsideSalesGreaterOhio</role>
+        <role>InsideSalesGulfCoast</role>
+        <role>InsideSalesIllinois</role>
+        <role>InsideSalesIndyGrandRapids</role>
+        <role>InsideSalesLongIsland</role>
+        <role>InsideSalesManagerCentral</role>
+        <role>InsideSalesManagerNE</role>
+        <role>InsideSalesManagerSE</role>
+        <role>InsideSalesManager_West</role>
+        <role>InsideSalesMidAtlantic</role>
+        <role>InsideSalesNashville</role>
+        <role>InsideSalesNorthFlorida</role>
+        <role>InsideSalesNorthernNewEngland</role>
+        <role>InsideSalesPhiladelphia</role>
+        <role>InsideSalesSouthFlorida</role>
+        <role>InsideSalesUpperMidwest</role>
+        <role>InsideSales_EasternCanada</role>
+        <role>InsideSales_WesternCanada</role>
+        <role>Inside_Sales_Great_Plains</role>
+        <role>Inside_Sales_Los_Angeles</role>
+        <role>Inside_Sales_National_Rental</role>
+        <role>Inside_Sales_Northern_California</role>
+        <role>Inside_Sales_Northwest</role>
+        <role>Inside_Sales_Ontario</role>
+        <role>Inside_Sales_Rocky_Mountain</role>
+        <role>Inside_Sales_Southern_Pacific</role>
+        <role>Inside_Sales_Southern_Plains</role>
+        <role>Inside_Sales_Southern_Texas</role>
+    </sharedTo>
+</EmailFolder>

@@ -1,0 +1,9 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p style="font-family: Verdana,Helvetica,Sans-Serif;"><font size="4"><br>The following Lead has been assigned to you and the status has not been updated after 48 hours:<br><br>Lead Name: {!Lead.Name}<br>Company Name: {!Lead.Company}<br>Lead Status: {!Lead.Status}<br>Link: {!Lead.Link}</font></p><p style="font-family: Verdana,Helvetica,Sans-Serif;"><font size="4"><br></font></p><font size="4"><span style="font-family: Verdana,Helvetica,Sans-Serif; color: rgb(255, 0, 0);">Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link,&nbsp;then&nbsp;review the record and take appropriate action.</span><br style="font-family: Verdana,Helvetica,Sans-Serif; color: rgb(255, 0, 0);"><br style="font-family: Verdana,Helvetica,Sans-Serif; color: rgb(255, 0, 0);"><span style="font-family: Verdana,Helvetica,Sans-Serif; color: rgb(255, 0, 0);">If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won't be able to log in from there.</span><br style="font-family: Verdana,Helvetica,Sans-Serif;"></font><p style="font-family: Verdana,Helvetica,Sans-Serif;"><font size="4"><span style="color: black;"></span>&nbsp;</font></p>
+<p style="font-family: Verdana,Helvetica,Sans-Serif;"><font size="4"><span style="color: black;">Kind Regards</span></font></p>
+<p><font size="4"><span style="font-family: Verdana,Helvetica,Sans-Serif; color: black;">Sales Admin</span></font><span style="FONT-FAMILY: 'Arial','sans-serif'; COLOR: black"><o:p></o:p></span></p>
+<p>&nbsp;</p>]]></td>
+</tr>
+</table>

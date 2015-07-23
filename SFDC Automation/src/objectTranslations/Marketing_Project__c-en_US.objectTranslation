@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actual Completion Date --></label>
+        <name>Actual_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Brief Approver --></label>
+        <name>Brief_Approver__c</name>
+        <relationshipLabel><!-- Marketing Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call to Action --></label>
+        <name>Call_to_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Track --></label>
+        <name>Campaign_Track__c</name>
+        <picklistValues>
+            <masterLabel>Asset Optimization</masterLabel>
+            <translation><!-- Asset Optimization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Think</masterLabel>
+            <translation><!-- Fleet Think --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety</masterLabel>
+            <translation><!-- Safety --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Type --></label>
+        <name>Campaign_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Retention</masterLabel>
+            <translation><!-- Customer Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Demand Generation</masterLabel>
+            <translation><!-- Demand Generation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Communication Objective --></label>
+        <name>Communication_Objective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-brief Creation Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliverable / Medium --></label>
+        <name>Deliverable_Medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detailed Brief Required --></label>
+        <name>Detailed_Brief_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please provide previous stock number or reference --></help>
+        <label><!-- Previous Reference --></label>
+        <name>Previous_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previously Used or Executed --></label>
+        <name>Previously_Executed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease - Marketing</masterLabel>
+            <translation><!-- Lease - Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease - Solutions</masterLabel>
+            <translation><!-- Lease - Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Sales</masterLabel>
+            <translation><!-- Vehicle Sales --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Category --></label>
+        <name>Project_Category__c</name>
+        <picklistValues>
+            <masterLabel>Advertising</masterLabel>
+            <translation><!-- Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collateral</masterLabel>
+            <translation><!-- Collateral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate</masterLabel>
+            <translation><!-- Corporate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Marketing</masterLabel>
+            <translation><!-- Direct Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Automation</masterLabel>
+            <translation><!-- Marketing Automation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telemarketing</masterLabel>
+            <translation><!-- Telemarketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Days --></label>
+        <name>Project_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pending Committee Approval - Submitted; awaiting approval from committee
+Approved, not started
+Rejected - Will not move forward
+Development - Developing content
+Routing for Approval - Sent to approvers
+Cancelled - Will not move forward
+Completed --></help>
+        <label><!-- Project Status --></label>
+        <name>Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved. Not Started</masterLabel>
+            <translation><!-- Approved. Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Committee Approval</masterLabel>
+            <translation><!-- Pending Committee Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing for Approvals</masterLabel>
+            <translation><!-- Routing for Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted / Upcoming</masterLabel>
+            <translation><!-- Submitted / Upcoming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Fast Track is used for repurpose, update or modify projects
+New Project is used when a brief is required. It requires review and prioritization --></help>
+        <label><!-- Project Track --></label>
+        <name>Project_Track__c</name>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simple</masterLabel>
+            <translation><!-- Simple --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Launch Date --></label>
+        <name>Requested_Launch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Audience --></label>
+        <name>Target_Audience__c</name>
+    </fields>
+    <layouts>
+        <layout>MARCOM Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Pre-Brief Details --></label>
+            <section>Pre-Brief Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status and Dates --></label>
+            <section>Status and Dates</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify Lead Owner that they have an Unread Lead 48 hours after assignment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Lead: Unread after 48 hours</name>
+    <style>freeForm</style>
+    <subject>You have not accepted an assigned Lead</subject>
+    <textOnly>The following Lead has been assigned to you and the status has not been updated after 48 hours:
+
+Lead Name: {!Lead.Name}
+Company Name: {!Lead.Company}
+Lead Status: {!Lead.Status}
+Link: {!Lead.Link}
+
+Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link, then review the record and take appropriate action.
+
+If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won&apos;t be able to log in from there. 
+
+Kind Regards
+Sales Admin
+ </textOnly>
+    <type>html</type>
+</EmailTemplate>

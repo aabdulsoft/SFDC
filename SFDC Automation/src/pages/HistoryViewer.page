@@ -1,0 +1,104 @@
+<apex:page StandardController="Account" extensions="HistoryViewer_Controller" sidebar="false" tabStyle="Account" >
+	<apex:form id="AccountForm" styleClass="AccountForm">
+		<apex:actionFunction name="SearchHistory" action="{!SearchHistory}" rerender="SecondPageBlock, toperror" />
+        <apex:sectionHeader subtitle="{!Acc.Name}" title="History Viewer for Account:" />
+        <apex:pageBlock id="FirstPageBlock">
+            <apex:pageBlockButtons >                
+                <apex:commandButton value="Search" action="{!SearchHistory}" reRender="SecondPageBlock, toperror" status="SearchStatus" />
+                <apex:actionStatus startText="Searching..." id="SearchStatus"/>
+                <apex:commandButton value="Go Back" action="{!ReturnBack}" />
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="toperror">
+                <apex:pageMessages id="error" escape="false"/>
+            </apex:outputPanel>
+            <apex:pageBlockSection id="AccountBlock" title="Search Options" columns="1" collapsible="false">
+            	<apex:pageBlockSectionItem >
+            		<apex:outputLabel value="Object Name" />
+            		<apex:outputPanel >
+		            	<div class = "requiredInput">				        
+				        	<div class = "requiredBlock"></div>
+				        	<apex:selectList value="{!ObjectName}" multiselect="false" size="1" id="ObjectName">
+			 	 	 			<apex:selectOptions value="{!ObjectNames}"/>
+			 	 	 			<apex:actionSupport event="onchange" action="{!ObjectSelected}" 
+			 	 	 				rerender="FirstPageBlock" status="FieldSearchStatus" />
+			 	 	 		</apex:selectList>
+			 	 	 		<apex:actionStatus startText="Rendering..." id="FieldSearchStatus"/>
+				 	 	</div>
+			 	 	</apex:outputPanel>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	<apex:pageBlockSectionItem >
+            		<apex:outputLabel value="Vehicle" />
+	            	<apex:outputPanel >
+		            	<div class = "requiredInput">				        
+				        	<div class = "requiredBlock"></div>
+				        	<apex:selectList value="{!VehicleName}" multiselect="false" size="1" disabled="{!bShowVehicles}">
+				 	 	 		<apex:selectOptions value="{!VehicleNames}"/>
+				 	 		</apex:selectList>
+				 	 	</div>
+			 	 	</apex:outputPanel>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	<apex:pageBlockSectionItem id="FieldNames">
+            		<apex:outputLabel value="Field Name" />
+	            	<apex:outputPanel >
+		            	<div class = "requiredInput">				        
+				        	<div class = "requiredBlock"></div>
+					        <apex:selectList value="{!FieldName}" multiselect="false" size="1" >
+					 	 	 	<apex:selectOptions value="{!FieldNames}"/>
+					 	 	</apex:selectList>
+				 	 	</div>
+			 	 	</apex:outputPanel>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	<apex:pageBlockSectionItem >
+            		<apex:outputLabel value="Start Date" />
+	            	<apex:outputPanel >
+		            	<div class = "requiredInput">				        
+				        	<div class = "requiredBlock"></div>
+				        	<apex:inputField value="{!AccDate.addr_verified_date__c}" />
+				 	 	</div>
+			 	 	</apex:outputPanel>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	<apex:pageBlockSectionItem >
+            		<apex:outputLabel value="End Date" />
+	            	<apex:outputPanel >
+		            	<div class = "requiredInput">				        
+				        	<div class = "requiredBlock"></div>
+				        	<apex:inputField value="{!AccDate.BAD_ADDR_DATE__c}" />
+				 	 	</div>
+			 	 	</apex:outputPanel>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	<apex:pageBlockSectionItem >
+		 	 		<apex:outPutLabel value="Action"/>
+				    <apex:inputText value="{!Action}" style="width:300px"/>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	
+		 	</apex:pageBlockSection>
+		</apex:pageBlock>
+		<apex:pageBlock id="SecondPageBlock" title="History Result">
+			<apex:pageBlockTable value="{!InnerClassObj}" var="data">
+				<apex:column headerValue="Parent">
+					<apex:outputLink target="_self" value="/{!data.sVehicleId}" id="theLink">{!data.sVehicle}</apex:outputLink>
+				</apex:column>
+            	<apex:column headerValue="Date" value="{!data.sDate}"/>
+            	<apex:column headerValue="User" value="{!data.sUser}"/>
+            	<apex:column headerValue="Action">
+            		<apex:outputLabel value="{!data.sAction}" escape="false"/>
+            	</apex:column>
+        	</apex:pageBlockTable> 
+		</apex:pageBlock>
+	</apex:form>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	  <script>
+	  	$(document).ready(function(){
+	    $('.AccountForm').keypress(function (event) {
+	      if (event.which == 13) {
+	        SearchHistory();
+	        event.preventDefault();
+	     }
+	    });
+	 });
+	 window.onload = function()
+	 {
+	 	jQuery('[id$=ObjectName]').focus();
+	 };
+	 </script>
+</apex:page>

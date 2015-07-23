@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Second edition of DYK for SFDC - MarCom</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK2</name>
+    <style>none</style>
+    <subject>Learn how to properly forecast your sales</subject>
+    <textOnly>All DEALS MUST BE AN OPPORTUNITY FIRST IN ORDER 
+TO BE CONSIDERED IN THE FORECAST. 
+Opportunities have to be split between Renewal/ Extensions and Adds / New business. If deals closing within the next 30- 120 days have not migrated from CIM, they need to manually be entered as opportunities to be considered for the forecast. 
+
+THE DATE OF THE CLOSE MUST BE AS ACCURATE AS POSSIBLE. 
+Only those deals that are scheduled to close in the month being forecasted will be considered for the forecast. If deals are alive but the close date has past, (and the Account Manager has not updated the close date), you will most likely not have visibility to that deal for your forecast. 
+
+THE OPPORTUNITY MUST HAVE A DOLLAR AMOUNT ASSOCIATED 
+WITH IT TO AFFECT THE FORECAST. 
+Rate sheets need to be attached or the amount estimated and manually entered. 
+
+THE PHASE OF THE DEAL NEEDS TO BE UPDATED AND ACCURATE. 
+It will be very difficult for you to forecast if your deals are inaccurately positioned in the sales process phases. Over time you would assume that a majority of your forecast would come from the &quot;over come concerns&quot; phase. Please remember that in order for a deal to be positioned in the &quot;over come concerns&quot; phase, IT MUST BE PROPOSED. Sales leadership has made the &quot;provide the proposal&quot; an exit criteria for the &quot;over come concerns&quot; phase to better support the proposal.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

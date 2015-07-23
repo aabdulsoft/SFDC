@@ -1,0 +1,12 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[*** NEW SURVEY RESPONSE NOTIFICATION ***  
+<br>
+<br>The following survey has been completed by customer.<br>Customer Branch: {!Ryder_Surveys__c.Customer_Branch__c}<br>Contact Name: {!Ryder_Surveys__c.Contact__c}*<br>
+<br>Click on the link to access the lead directly: {!Ryder_Surveys__c.Link}<br>
+<br>Make sure you are logged to <a href="http://salesforce.com/" target="_blank">Salesforce.com</a> (<a href="http://crm.ryder.com/" target="_blank">http://crm.ryder.com</a>) before clicking on the link,&nbsp;then&nbsp;review the record and take appropriate action.
+<br>
+<br>If you click on the link before logging to <a href="http://salesforce.com/" target="_blank">Salesforce.com</a>, you will be taken to the standard <a href="http://salesforce.com/" target="_blank">Salesforce.com</a> login page and you won't be able to log in from there.]]></td>
+</tr>
+</table>

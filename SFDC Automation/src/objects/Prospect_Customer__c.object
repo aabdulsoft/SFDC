@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Related to HQ Visit</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Buyer_Behavior__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Prospect_Customer_Participant_Name__r.Buying_Behavior__c, &quot;Believer&quot;, &quot;Believer&quot;, &quot;Fence Sitter&quot;, &quot;Fence Sitter&quot;,&quot;Skeptic&quot;, &quot;Skeptic&quot;,&quot;Denier&quot;, &quot;Denier&quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Buyer Behavior</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Courtesy_Letter__c</fullName>
+        <externalId>false</externalId>
+        <label>Courtesy Letter</label>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Welcome letter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Thank you letter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Executive_Visit_Number__c</fullName>
+        <description>Related to HQ Visit</description>
+        <externalId>false</externalId>
+        <label>Executive Visit Number</label>
+        <referenceTo>HQ_Visit__c</referenceTo>
+        <relationshipName>Prospect_Customer_Participant_Info</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Prospect_Customer_Participant_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Prospect / Customer Participant Name</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Prospect / Customer</relationshipLabel>
+        <relationshipName>Prospect_Customer_Participant_Info</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Role_in_Meeting__c</fullName>
+        <externalId>false</externalId>
+        <label>Role in Meeting</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Decision Maker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Observer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Prospect_Customer_Participant_Name__r.Title</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Prospect / Customer</label>
+    <nameField>
+        <displayFormat>{0}</displayFormat>
+        <label>Prospect / Customer Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Prospect / Customers</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Buyer_Behavior_must_be_completed</fullName>
+        <active>true</active>
+        <description>Buyer Behavior must be completed at contact object</description>
+        <errorConditionFormula>Buyer_Behavior__c = null</errorConditionFormula>
+        <errorMessage>Please complete the Contact &quot;Title&quot; and/or &quot;Buying Behavior&quot; at the Contact Information Level</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Title_must_be_completed</fullName>
+        <active>true</active>
+        <description>Title for Prospect / Customer Participant Info must be completed</description>
+        <errorConditionFormula>Title__c = null</errorConditionFormula>
+        <errorMessage>Please complete the Contact &quot;Title&quot; and/or &quot;Buying Behavior&quot; at the Contact Information Level</errorMessage>
+    </validationRules>
+</CustomObject>

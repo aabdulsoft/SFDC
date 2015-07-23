@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Branches at Ryder</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Asset Manager Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Asset Manager Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Asset Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Account_Manager_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Asset Manager ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Area_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Area Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Area_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Area Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch_Code__c</fullName>
+        <description>external ID</description>
+        <externalId>true</externalId>
+        <label>Branch Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CBU_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>CBU Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CBU_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>CBU Name</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Captive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indication of whether this is a captive shop</description>
+        <externalId>false</externalId>
+        <label>Captive / OnSite</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>25</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Count_of_Ryder_Branches__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Count of Ryder Branches</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Asset_Management_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Asset Management Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Asset_Management_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Asset Management Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Asset_Management_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Asset Management Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Director_of_Asset_Management_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Asset Management ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Ops_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Ops Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Ops_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Ops Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Ops_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Ops Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Director_of_Ops_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Ops ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Rental_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Rental Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Rental_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Rental Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Rental_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Rental Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Director_of_Rental_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Rental ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Sales_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Sales Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Sales_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Sales Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Director_of_Sales_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Sales Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Director_of_Sales_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Director of Sales ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>District__c</fullName>
+        <externalId>false</externalId>
+        <label>District</label>
+        <picklist>
+            <picklistValues>
+                <fullName>District 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>District 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Director_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Director Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Director_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Director Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Director_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Director Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Director_UserID__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Director ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Manager Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Manager Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Manager_UserID__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Manager ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_VP_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance VP Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_VP_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance VP Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_VP_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance VP Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Finance_VP_UserID__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance VP ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_Director_National_Sales_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Director National Sales Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Group_Director_National_Sales_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Group Director National Sales ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Include_In_360_Date__c</fullName>
+        <description>This field will store the date on which the Branch was marked to be included in the Customer 360</description>
+        <externalId>false</externalId>
+        <label>Include In 360 Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Include_In_360__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include_In_360</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inside_Sales_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Inside_Sales_Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inside_Sales_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Inside_Sales_Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inside_Sales_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Inside_Sales_Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Inside_Sales_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Inside_Sales_UserId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_2_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator 2 Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_2_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator 2 Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_2_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator 2 Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_2_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator 2 ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Lease_Administrator_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Lease Administrator ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Admin_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>License Admin Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Admin_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>License Admin Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Admin_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>License Admin Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>License_Admin_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>License Admin UserId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MOS_Email__c</fullName>
+        <description>Manager of Sales Email.</description>
+        <externalId>false</externalId>
+        <label>MOS Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MOS_Name__c</fullName>
+        <description>Name of  &apos;Manager of Sales&apos;.</description>
+        <externalId>false</externalId>
+        <label>MOS Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MOS_Phone__c</fullName>
+        <description>Manager of Sales - Phone Number.</description>
+        <externalId>false</externalId>
+        <label>MOS Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>MOS_UserId__c</fullName>
+        <description>User Id of &apos;Manager of Sales&apos;.</description>
+        <externalId>false</externalId>
+        <label>MOS UserId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Manager Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Manager Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Manager_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Manager ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Postal_Code_For_TimeZone_Mapping__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Postal Code</label>
+        <referenceTo>Postal_Code__c</referenceTo>
+        <relationshipLabel>Ryder Branches</relationshipLabel>
+        <relationshipName>Ryder_Branche_PostalCode</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quality_Director_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Director Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_Director_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Director Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_Director_UserID__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Director ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Manager Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Manager Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Quality_Manager_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality Manager Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_VP_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality VP Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_VP_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality VP ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_VP_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality VP Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quality_VP_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Quality VP Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Rental_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Rental Manager Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rental_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Rental Manager Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rental_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Rental Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Rental_Manager_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Rental Manager ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAC2_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC2_Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAC2_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC2_Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAC2_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC2_Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>SAC2_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC2_UserId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAC_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAC_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAC_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>SAC_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>SAC UserId</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Area_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Area Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Area_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Area Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Territory_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Territory Code</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Territory_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Territory</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_To_All__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will be used to define whether the PDF has to be sent to everyone in the Account Management team or not</description>
+        <externalId>false</externalId>
+        <label>Send To All</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_of_Ops_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP of Ops Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_of_Ops_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP of Ops Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_of_Ops_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP of Ops Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Senior_VP_of_Ops_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Senior VP of Ops ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Manager_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Manager Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Manager_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Manager Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Manager_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Manager Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Service_Manager_UserID__c</fullName>
+        <externalId>false</externalId>
+        <label>Service Manager ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>State Name</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Street Address</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip Code</label>
+        <length>9</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Ryder Branch</label>
+    <listViews>
+        <fullName>All_Ryder_Branches</fullName>
+        <columns>NAME</columns>
+        <columns>CBU_Name__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Sales_Area_Name__c</columns>
+        <columns>Sales_Territory_Name__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Maintenance_Manager_Name__c</columns>
+        <columns>Account_Manager_Name__c</columns>
+        <columns>Director_of_Ops_Name__c</columns>
+        <columns>Director_of_Sales_Name__c</columns>
+        <columns>Include_In_360__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sales_Territory_Code__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>All Ryder Branches</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Ryder_Branches_MICHIGAN_CBU</fullName>
+        <columns>NAME</columns>
+        <columns>CBU_Name__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Sales_Area_Name__c</columns>
+        <columns>Sales_Territory_Name__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Maintenance_Manager_Name__c</columns>
+        <columns>Account_Manager_Name__c</columns>
+        <columns>Director_of_Ops_Name__c</columns>
+        <columns>Director_of_Sales_Name__c</columns>
+        <columns>Include_In_360__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sales_Territory_Code__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>CBU_Name__c</field>
+            <operation>equals</operation>
+            <value>INDY GRND RAPIDS CBU</value>
+        </filters>
+        <label>All Ryder Branches MICHIGAN CBU</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Captive_Branches</fullName>
+        <columns>NAME</columns>
+        <columns>State__c</columns>
+        <columns>Branch_Code__c</columns>
+        <columns>Account_Manager_Name__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>CBU_Name__c</columns>
+        <columns>Director_of_Asset_Management_Name__c</columns>
+        <columns>Director_of_Ops_Name__c</columns>
+        <columns>Maintenance_Manager_Name__c</columns>
+        <columns>Rental_Manager_Name__c</columns>
+        <columns>Senior_VP_of_Ops_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Captive__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Captive Branches</label>
+    </listViews>
+    <listViews>
+        <fullName>Ryder_Branches_by_Branch_Code</fullName>
+        <columns>NAME</columns>
+        <columns>CBU_Name__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Sales_Area_Name__c</columns>
+        <columns>Sales_Territory_Name__c</columns>
+        <columns>City__c</columns>
+        <columns>State__c</columns>
+        <columns>Maintenance_Manager_Name__c</columns>
+        <columns>Account_Manager_Name__c</columns>
+        <columns>Director_of_Ops_Name__c</columns>
+        <columns>Director_of_Sales_Name__c</columns>
+        <columns>Include_In_360__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Branch_Code__c</field>
+            <operation>equals</operation>
+            <value>91700</value>
+        </filters>
+        <label>Ryder Branches by Branch Code</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <label>Ryder Branch Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Ryder Branches</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Branch_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CBU_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CBU_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Maintenance_Manager_Name__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <webLinks>
+        <fullName>Maintenance_Contacts</fullName>
+        <availability>online</availability>
+        <description>Report showing maintenance contacts for this branch</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Maintenance Contacts</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O600000032pmn?pv0={!Ryder_Branch__c.Branch_Code__c }</url>
+    </webLinks>
+</CustomObject>

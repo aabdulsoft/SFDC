@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solution Interest Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solution Interest Details</value>
+    </caseValues>
+    <fields>
+        <label><!-- Solutions Interest --></label>
+        <name>Solutions_Interest__c</name>
+        <relationshipLabel><!-- Solution Interest Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Name --></label>
+        <name>Vehicle_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Type --></label>
+        <name>Vehicle_Type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

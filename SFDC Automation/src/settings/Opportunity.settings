@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpportunitySettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoActivateNewReminders>false</autoActivateNewReminders>
+    <enableFindSimilarOpportunities>true</enableFindSimilarOpportunities>
+    <enableOpportunityTeam>true</enableOpportunityTeam>
+    <enableUpdateReminders>true</enableUpdateReminders>
+    <findSimilarOppFilter>
+        <similarOpportunitiesDisplayColumns>OPPORTUNITY.NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>ACCOUNT.NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>CORE.USERS.FULL_NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesDisplayColumns>OPPORTUNITY.STAGE_NAME</similarOpportunitiesDisplayColumns>
+        <similarOpportunitiesMatchFields>OPPORTUNITY.ACCOUNT</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>Opportunity.OpportunityCompetitors</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>Opportunity.OpportunityLineItems</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>Opportunity.OpportunityContactRoles</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>OPPORTUNITY.OWNER</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>Deal_lost_to_Won_from_whom__c</similarOpportunitiesMatchFields>
+        <similarOpportunitiesMatchFields>Reason_Won_Lost__c</similarOpportunitiesMatchFields>
+    </findSimilarOppFilter>
+    <promptToAddProducts>true</promptToAddProducts>
+</OpportunitySettings>

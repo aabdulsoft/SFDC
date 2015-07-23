@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object lists all the questions asked in the survey software and provides a detailed view on which ones are part of scores and trend summaries.  If there is a difference between versions of the survey, the questions may change in terms of text and sequence.  This object captures this to ensure the calculations are performed on the correct questions.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>CSI_Calculation_Indicator__c</fullName>
+        <description>The Customer Satisfaction Index will be calculated if the indicator is set.  The Index will not be calculated if the indicator is not set.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines if the question should be calculated in the score.</inlineHelpText>
+        <label>CSI Calculation Indicator</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>QuestionKey__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>ClickTool Question Key</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Question_Number__c</fullName>
+        <description>The question number associated to the question in the resulting survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The question number associated to the question in the resulting survey.</inlineHelpText>
+        <label>Question Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Question_Text__c</fullName>
+        <description>The verbiage of the question in the survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The verbiage of the question in the survey.</inlineHelpText>
+        <label>Question Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Question_Weight__c</fullName>
+        <description>The percentage of how the question should be used in the score.  The weight the question holds in the score.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The weight the question holds in the score calculation.</inlineHelpText>
+        <label>Question Weight</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Ryder_Survey_Question_Category__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Ryder Survey Question Category</label>
+        <referenceTo>Ryder_Survey_Question_Category__c</referenceTo>
+        <relationshipLabel>Ryder Survey Questions</relationshipLabel>
+        <relationshipName>Ryder_Survey_Questions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Short_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Short Question Text</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Class__c</fullName>
+        <description>The type of survey being conducted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of survey being conducted.</inlineHelpText>
+        <label>Survey Class</label>
+        <picklist>
+            <picklistValues>
+                <fullName>CSI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Loop</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RIL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Last_Build_Date__c</fullName>
+        <description>The last date the survey was updated/built/deployed in ClickTools.  This is important to denote new question numbers and new sequences.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The last date the survey was updated/built/deployed in ClickTools.</inlineHelpText>
+        <label>Survey Last Build Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Name__c</fullName>
+        <description>Name of the survey that is stored in ClickTools or any other survey solution software</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference name of the survey in the survey software</inlineHelpText>
+        <label>Survey Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trend_Summary_Indicator__c</fullName>
+        <description>Identifier that determines if the question is part of the trend summary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifier that determines if the question is part of the trend summary.</inlineHelpText>
+        <label>Trend Summary Indicator</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trend_Summary_Sequence__c</fullName>
+        <description>The sequence used to calculate the trend summary.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The sequence used to calculate the trend summary.</inlineHelpText>
+        <label>Trend Summary Sequence</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Ryder Survey Question</label>
+    <nameField>
+        <displayFormat>{0000}</displayFormat>
+        <label>Ryder Survey Question Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ryder Survey Questions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

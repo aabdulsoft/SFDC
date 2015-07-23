@@ -1,0 +1,19 @@
+<messaging:emailTemplate subject="Reactivate RydeSmart Billing" recipientType="User" relatedToType="Contact">
+    <messaging:htmlEmailBody >
+
+        <p><img alt="" src="https://cs10.salesforce.com/servlet/servlet.ImageServer?oid=00DJ0000001MAFb&amp;id=01560000000jtOy" style="width: 177px; height: 88px;" /></p>
+
+        <p>Hello,<br />
+        <br />
+        Reactivate billing for the below Vehicles as FSL is billing, approved contract for RydeSmart exists and RydeSmart is not billing.<br />
+        Vehicle Numbers:<span id="contents">%ListOfVehicle%</span></p>
+        
+        <p>&nbsp;</p>
+        
+        <p>Regards,</p>
+        
+        <p>RydeSmart Support</p>
+        
+
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

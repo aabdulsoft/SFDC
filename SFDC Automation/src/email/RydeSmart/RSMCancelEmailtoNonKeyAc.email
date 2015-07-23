@@ -1,0 +1,5 @@
+<messaging:emailTemplate subject="RydeSmart Cancellation" recipientType="User" relatedToType="RSM_Contract__c">
+    <messaging:htmlEmailBody >
+       <c:RSMCancelEmailtoNonKeyAc_Comp ContractId="{!relatedTo.Id}"></c:RSMCancelEmailtoNonKeyAc_Comp>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

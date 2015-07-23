@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MARCOM Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MARCOM Contacts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Arrival Date/Time --></label>
+        <name>Arrival_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendance Confirmed --></label>
+        <name>Attendance_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee Name --></label>
+        <name>Attendee_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell Phone --></label>
+        <name>Cell_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- MARCOM Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Depart Date/Time --></label>
+        <name>Depart_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- PR Manager --></label>
+        <name>PR_Manager__c</name>
+        <relationshipLabel><!-- MARCOM Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Attendee</masterLabel>
+            <translation><!-- Attendee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booth Space Reservations</masterLabel>
+            <translation><!-- Booth Space Reservations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Speaker</masterLabel>
+            <translation><!-- Co-Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conference Coordinator</masterLabel>
+            <translation><!-- Conference Coordinator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker</masterLabel>
+            <translation><!-- Speaker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder</masterLabel>
+            <translation><!-- Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target/Prospect</masterLabel>
+            <translation><!-- Target/Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

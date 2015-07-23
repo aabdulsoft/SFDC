@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ScheduleA Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ScheduleA Request</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- ScheduleA Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Owner Email --></label>
+        <name>Account_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buy-Out Status --></label>
+        <name>Buy_Out_Approved__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Request</masterLabel>
+            <translation><!-- New Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Lease</masterLabel>
+            <translation><!-- Sent to Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent to Pricing</masterLabel>
+            <translation><!-- Sent to Pricing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Address --></label>
+        <name>Company_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company City, State --></label>
+        <name>Company_City_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Zipcode --></label>
+        <name>Company_Zipcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+        <relationshipLabel><!-- ScheduleA Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone Number --></label>
+        <name>Contact_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Fax Number --></label>
+        <name>Customer_Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppStage --></label>
+        <name>OppStage__c</name>
+        <picklistValues>
+            <masterLabel>Booked</masterLabel>
+            <translation><!-- Booked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Need Analysis</masterLabel>
+            <translation><!-- Need Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiation</masterLabel>
+            <translation><!-- Negotiation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>End of Lease</masterLabel>
+            <translation><!-- End of Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ScheduleA</masterLabel>
+            <translation><!-- ScheduleA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SalesTax Exempt --></label>
+        <name>SalesTax_Exempt__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing User Email --></label>
+        <name>User_Pricing_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing User  Name --></label>
+        <name>User_Pricing_Name__c</name>
+        <relationshipLabel><!-- ScheduleA Request --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pricing User Title --></label>
+        <name>User_Pricing_Title__c</name>
+    </fields>
+    <layouts>
+        <layout>ScheduleA Request Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing --></label>
+            <section>Pricing</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- UVS Lease --></label>
+        <name>UVS_Lease</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Create_Opportunity --></label>
+        <name>Create_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Submit --></label>
+        <name>Submit</name>
+    </webLinks>
+</CustomObjectTranslation>

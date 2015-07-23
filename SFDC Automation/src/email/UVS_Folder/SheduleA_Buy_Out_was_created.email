@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p><br></p><p>Hi HQ Admin,</p><p><br></p><p>A New SheduleA was created for:&nbsp;</p><p><br></p><p>Account Name: {!UVS_SheduleA_Request__c.Account_Name__c}</p><p>Account Owner: {!UVS_SheduleA_Request__c.CreatedBy}&nbsp;</p><p><br></p><p>{!UVS_SheduleA_Request__c.Link}</p><p><br></p><p><br></p><p><br></p><p><br></p><p><br></p>]]></td>
+</tr>
+</table>

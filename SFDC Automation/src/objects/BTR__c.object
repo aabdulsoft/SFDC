@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>BTRDetail</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Linked to the quote object as 1:1 relationship and used to drive the approval process for the quotes</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Amount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Approver_Comments__c</fullName>
+        <description>Used to track the comments by Approver and to be used on email template</description>
+        <externalId>false</externalId>
+        <label>Approver Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quote__r.Opportunity.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>First Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BTRs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Is_Conditional_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Conditional Approval</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Quote__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The quote record to which this BTR approval process is linked to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The quote record to which this BTR approval process is linked to.</inlineHelpText>
+        <label>Quote</label>
+        <referenceTo>Quote</referenceTo>
+        <relationshipLabel>BTRs</relationshipLabel>
+        <relationshipName>BTRs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requester_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>BTR Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ryder_Branch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is a lookup to Ryder Branch object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Points to the branch of the user who created the BTR.</inlineHelpText>
+        <label>Ryder Branch</label>
+        <referenceTo>Ryder_Branch__c</referenceTo>
+        <relationshipLabel>BTRs</relationshipLabel>
+        <relationshipName>BTRs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Second_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Second Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BTRs1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The status of the BTR approval process for a given quote.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status of the BTR approval process for a given quote.</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Submitted - With FAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted - With DAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted - With VP AM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Third_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Third Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>BTRs2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>BTR</label>
+    <listViews>
+        <fullName>UVS_DAM_BTR</fullName>
+        <filterScope>Queue</filterScope>
+        <label>UVS DAM Queue</label>
+        <queue>UVS_DAM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>UVS_FAM_BTR</fullName>
+        <filterScope>Queue</filterScope>
+        <label>UVS FAM Queue</label>
+        <queue>UVS_FAM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>UVS_VP_AM_BTR</fullName>
+        <filterScope>Queue</filterScope>
+        <label>UVS VP AM Queue</label>
+        <queue>UVS_VP_AM</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>BTR-{0000000}</displayFormat>
+        <label>BTR Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>BTRs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Prevent_From_Editing_When_Approved</fullName>
+        <active>true</active>
+        <description>Prevents the users  from editing the BTR record, when a BTR of that quote is already approved.</description>
+        <errorConditionFormula>AND(ISPICKVAL(Quote__r.Status, &apos;BTR Approved&apos;),
+ISPICKVAL(Status__c, &apos;Approved&apos;))</errorConditionFormula>
+        <errorMessage>The BTR record cannot be edited as one of the BTR for this quote has been already approved.</errorMessage>
+    </validationRules>
+</CustomObject>

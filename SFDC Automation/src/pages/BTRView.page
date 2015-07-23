@@ -1,0 +1,80 @@
+<!--
+/**=====================================================================
+ * Appirio, Inc
+ * Name: BTRView
+ * Created Date: 9-24-2012
+ * Created By: Sunil (Appirio)
+  =====================================================================*/
+-->
+<apex:page controller="BTRViewController" tabStyle="BTR__c" showHeader="true">
+  <apex:form id="muform" styleClass="thisForm">
+  <apex:actionFunction name="selectView" action="{!selectView}" status="goStatus" rerender="pnlResult" />
+    
+    <apex:pageBlock title="Pending BTR's"> 
+     <apex:pageMessages />
+     <apex:pageBlockSection columns="1">
+     
+     
+     <apex:outputPanel rendered="{!isApprovers}" id="pnlViews">
+       <table cellspacing="4" cellpadding="4"><tr><td> 
+       <apex:outputText value="Select View" />
+       </td><td>
+       <apex:selectList size="1" value="{!selectedView}" multiselect="false">
+         <apex:selectOptions value="{!items}"/>
+       </apex:selectList>
+       </td><td>  
+       <apex:commandButton style="margin-top:-3px;" value="Go"  action="{!selectView}" rerender="pnlResult" status="goStatus"/>
+       </td><td><apex:actionstatus id="goStatus">
+       <apex:facet name="start">
+       <div>
+         <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." /> 
+         <span class="waitingDescription">Loading...</span>
+       </div>
+       </apex:facet>
+       </apex:actionstatus></td></tr></table>
+     </apex:outputPanel>
+       
+      
+      <apex:outputPanel id="pnlResult" > 
+         
+        <apex:pageBlockTable value="{!lstBTRWrapper}" var="t">
+          
+         <apex:column headerValue="BTR Number" rendered="{!NOT(isVSM)}">
+           <apex:outputLink target="_blank" value="/apex/BTRDetail?Id={!t.btrObject.Id}">{!t.btrObject.Name}
+           </apex:outputLink>
+         </apex:column> 
+         
+         <apex:column headerValue="BTR Number" rendered="{!isVSM}" >
+         <apex:outputLink target="_blank" value="/apex/BTRDetail?Id={!t.btrObject.Id}">{!t.btrObject.Name}
+         </apex:outputLink>
+         </apex:column>
+         
+         
+         <apex:column headerValue="BTR Status" value="{!t.btrObject.Status__c}" />
+         <!-- Hari K(2014-11-04): Uncomment this -->
+         <apex:column headerValue="Account Name" value="{!t.btrObject.Quote__r.Opportunity.Account.Name}" />
+        <apex:column headerValue="Contact Name" value="{!t.btrObject.Quote__r.Opportunity.Original_Decision_Maker__c}" />
+         <apex:column headerValue="Quote Name" rendered="{!isVSM}" value="{!t.btrObject.Quote__c}" />
+         <apex:column headerValue="Quote Name" rendered="{!NOT(isVSM)}" value="{!t.btrObject.Quote__c}" />
+         <apex:column headerValue="Submitted Date" value="{!t.btrObject.CreatedDate}" />
+         <apex:column headerValue="Submitted By" rendered="{!NOT(isVSM)}" value="{!t.btrObject.OwnerId}" />
+         <apex:column headerValue="Current Approver" rendered="{!NOT(isVSM)}" value="{!t.currentApprover}" />
+         <apex:column headerValue="Pending with" rendered="{!isVSM}" value="{!t.currentApprover}" />
+          
+        </apex:pageBlockTable>
+      </apex:outputPanel>
+     </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.thisForm').keypress(function (event) {
+      if (event.which == 13) {
+        selectView();
+        event.preventDefault();
+     }
+    });
+ });
+ </script>
+</apex:page>

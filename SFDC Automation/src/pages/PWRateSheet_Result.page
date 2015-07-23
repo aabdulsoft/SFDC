@@ -1,0 +1,19 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 5/20/2014       Albert Miranda       For displaying the PartialWinrateSheet processed text     
+ ****************************************************************************/
+-->
+
+<apex:page >
+  
+  <br/>
+  <br/>
+  
+  <h1>Your request has been processed</h1>
+  
+  <br/>
+  <br/>
+
+</apex:page>

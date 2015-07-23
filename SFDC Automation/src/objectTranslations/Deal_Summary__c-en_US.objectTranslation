@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Deal Summary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Deal Summaries</value>
+    </caseValues>
+    <fields>
+        <label><!-- EVA --></label>
+        <name>EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Revenue --></label>
+        <name>Gross_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Quote --></label>
+        <name>Include_In_Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in EVA --></label>
+        <name>Include_in_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Vehicles --></label>
+        <name>No_of_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Deal Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_dealsummary_id --></label>
+        <name>ext_dealsummary_id__c</name>
+    </fields>
+    <layouts>
+        <layout>Deal Summary Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- No changes are allowed on this page. if you are trying to update the Include in Quote, please go to the Opportunity Details Page. For any other updates, go to Radar using the Edit in Radar link on the Opportunity Details Page. --></errorMessage>
+        <name>No_UpdatesOnDealSummary</name>
+    </validationRules>
+</CustomObjectTranslation>

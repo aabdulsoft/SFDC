@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Exclusion</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Exclusions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Choose the criteria that should be excluded when determining the list of survey candidates.  Please remember each exclusion type will be used to remove any customers that meet this criteria from being surveyed. --></help>
+        <label><!-- Exclusion Field --></label>
+        <name>Exclusion_Field__c</name>
+        <picklistValues>
+            <masterLabel>Account City</masterLabel>
+            <translation><!-- Account City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Country</masterLabel>
+            <translation><!-- Account Country --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Lessee No</masterLabel>
+            <translation><!-- Account Lessee No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Name</masterLabel>
+            <translation><!-- Account Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Risk Level</masterLabel>
+            <translation><!-- Account Risk Level --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account State</masterLabel>
+            <translation><!-- Account State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Top 10 Ranking</masterLabel>
+            <translation><!-- Account Top 10 Ranking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Type</masterLabel>
+            <translation><!-- Account Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Count</masterLabel>
+            <translation><!-- Vehicle Count --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Term Out</masterLabel>
+            <translation><!-- Vehicle Term Out --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please choose the operator that best describes how the exclusion should be evaluated. --></help>
+        <label><!-- Exclusion Operator --></label>
+        <name>Exclusion_Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than or equal</masterLabel>
+            <translation><!-- greater than or equal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than or equal</masterLabel>
+            <translation><!-- less than or equal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equal</masterLabel>
+            <translation><!-- not equal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation><!-- starts with --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please type the value (case-sensitive) desired to exclude based on the exclusion field.  (i.e. Exclusion Field = Account State, Exclusion Operator = equals, Exclusion Value = HI) --></help>
+        <label><!-- Exclusion Value --></label>
+        <name>Exclusion_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Survey exclusions only apply to one survey type and one assignment group. --></help>
+        <label><!-- Survey Assignment --></label>
+        <name>Survey_Assignment__c</name>
+        <relationshipLabel><!-- Survey Exclusions --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Survey Exclusion Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

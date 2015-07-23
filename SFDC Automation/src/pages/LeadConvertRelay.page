@@ -1,0 +1,6 @@
+<apex:page id="leadConvertPage" standardController="Lead" showHeader="true" tabStyle="Lead" title="{!pageTitle}"  action="{!init}" extensions="LeadConvertRelayController" >
+<apex:form >
+<apex:pageMessages />
+<apex:commandButton action="{!URLFOR($Action.Lead.view, leadId)}" value="Back to Lead" id="backToOpportunity"/>
+</apex:form>
+</apex:page>

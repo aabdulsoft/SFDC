@@ -1,0 +1,57 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<font style="font-family: Verdana,Helvetica,Sans-Serif;" size="3">You have been included in the Sales Team for the following opportunity:
+<br><br>Opportunity name: {!Opportunity.Name}
+</font>
+<font style="font-family: Verdana,Helvetica,Sans-Serif;" size="3"><br>Owner: {!Opportunity.OwnerFullName}
+<br><br>Please click {!Opportunity.Link} to see this opportunity and follow in Chatter for future updates.
+</font>
+<font style="font-family: Verdana,Helvetica,Sans-Serif;" size="3"><br><br></font><style type="text/css">
+body { margin: 0 0 0 0; padding:0 0 0 0 }
+td,div { font-family:Tahoma;font-size:8pt;vertical-align:top }
+/* Copyright IBM Corp. 2010  All Rights Reserved.                    */
+body { margin: 0 0 0 0; padding:0 0 0 0; overflow:hidden; }
+.transcript { background-color:#d2d2d2; }
+.messageBlock { padding-left:10px; padding-right:10px; margin-bottom:3px }
+.message { padding-left:20px; margin-left:95px; word-wrap:break-word; white-space:-moz-pre-wrap; _white-space:pre; white-space:pre-wrap;}
+.messageCont { padding-left:20px; margin-left:95px; word-wrap:break-word; white-space:-moz-pre-wrap; _white-space:pre;white-space:pre-wrap;}
+.other { font-size:11px;color:#39577a;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.myself { font-size:11px;color:#da8103;font-style:normal;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont { font-size:8px;text-align:right; color:#39577a;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.myselfCont { font-size:8px;text-align:right; color:#da8103;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.system { font-size:11px; word-wrap:break-word;color:#da8103;font-style:normal;font-weight:normal; white-space:-moz-pre-wrap; _white-space:pre;white-space:pre-wrap; }
+.showTimestamp { padding-left:20px; font-size:11px; float:right; color:#999999;font-style:normal;font-weight:normal; }
+.other1 { font-size:11px; color:#ac2000;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont1 { font-size:8px;text-align:right; color:#ac2000;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.other2 { font-size:11px; color:#3c9fa8;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont2 { font-size:8px;text-align:right; color:#3c9fa8;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.other3 { font-size:11px; color:#e25614;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont3 { font-size:8px;text-align:right; color:#e25614;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.other4 { font-size:11px; color:#0b6ac8;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont4 { font-size:8px;text-align:right; color:#0b6ac8;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.other5 { font-size:11px; color:#b23290;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont5 { font-size:8px;text-align:right; color:#b23290;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.other6 { font-size:11px; color:#02e7c7;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont6 { font-size:8px;text-align:right; color:#02e7c7;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.other7 { font-size:11px; color:#5b3284;vertical-align:top;font-weight:bold;font-style:normal;float:left; width:95px; }
+.otherCont7 { font-size:8px;text-align:right; color:#5b3284;font-family:Arial,Lucida Grande;font-style:normal;vertical-align:top;font-weight:bold;float:left; width:95px; }
+.highlight { background-color:#bed6f8; }
+.datestamp { padding-right:0px; font-size:11px; cursor:default; margin-bottom:1px; background-color:#c0c0c0; width:100%; float:left; text-align:right; color:#ffffff; font-weight:bold; font-style:italic; }
+#chatAlert { float:left; border-bottom:1px solid #E8D091; padding:6px; width:100%; color:#A5754C; }
+#chatAlertImage { float:left; }
+#chatAlertText { float:left; margin-left:6px; }
+#chatAlertClose { float:right; margin-right:10px; padding-right:6px; margin-top:0px; }
+#chatAlertText a { color:#A5754C; }
+#chatAlertText a:hover { color:#A5754C; text-decoration:none; }
+
+.tsDisplay { display:block }.dsDisplay { display:none }</style><span style="font-family: Verdana,Helvetica,Sans-Serif;">
+
+
+
+</span><table style="font-family: Verdana,Helvetica,Sans-Serif;" width="550px"></table><font style="color: rgb(255, 0, 0);" size="4"><span style="font-family: Verdana,Helvetica,Sans-Serif;">Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link,&nbsp;then&nbsp;review the record and take appropriate action.</span><br style="font-family: Verdana,Helvetica,Sans-Serif;"><br style="font-family: Verdana,Helvetica,Sans-Serif;"><span style="font-family: Verdana,Helvetica,Sans-Serif;">If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won't be able</span> to log in from there.</font><font size="3"><br style="font-family: Verdana,Helvetica,Sans-Serif;"><br style="font-family: Verdana,Helvetica,Sans-Serif;"><span style="font-family: Verdana,Helvetica,Sans-Serif;">Sincerely,
+</span></font>
+
+<font size="3"><br style="font-family: Verdana,Helvetica,Sans-Serif;"><span style="font-family: Verdana,Helvetica,Sans-Serif;">Ryder CRM Team</span></font>]]></td>
+</tr>
+</table>

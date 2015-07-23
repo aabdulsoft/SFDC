@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessHoursSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessHours>
+        <active>true</active>
+        <default>true</default>
+        <fridayEndTime>17:00:00.000Z</fridayEndTime>
+        <fridayStartTime>08:00:00.000Z</fridayStartTime>
+        <mondayEndTime>17:00:00.000Z</mondayEndTime>
+        <mondayStartTime>08:00:00.000Z</mondayStartTime>
+        <name>Default</name>
+        <thursdayEndTime>17:00:00.000Z</thursdayEndTime>
+        <thursdayStartTime>08:00:00.000Z</thursdayStartTime>
+        <timeZoneId>America/New_York</timeZoneId>
+        <tuesdayEndTime>17:00:00.000Z</tuesdayEndTime>
+        <tuesdayStartTime>08:00:00.000Z</tuesdayStartTime>
+        <wednesdayEndTime>17:00:00.000Z</wednesdayEndTime>
+        <wednesdayStartTime>08:00:00.000Z</wednesdayStartTime>
+    </businessHours>
+    <holidays>
+        <activityDate>2011-11-25</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Day after Thanksgiving Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Day after Thanksgiving Day</name>
+        <recurrenceDayOfWeek>Friday</recurrenceDayOfWeek>
+        <recurrenceInstance>Fourth</recurrenceInstance>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-11-23</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2011-07-04</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Independence Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Independence Day</name>
+        <recurrenceDayOfMonth>4</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>July</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-07-04</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2011-09-05</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Labor Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Labor Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>First</recurrenceInstance>
+        <recurrenceMonthOfYear>September</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-09-03</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2011-05-30</activityDate>
+        <isRecurring>false</isRecurring>
+        <name>Memorial Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Memorial Day</name>
+        <recurrenceDayOfWeek>Monday</recurrenceDayOfWeek>
+        <recurrenceInstance>Last</recurrenceInstance>
+        <recurrenceMonthOfYear>May</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-05-28</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2012-01-02</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>New Year&apos;s Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>New Year&apos;s Day</name>
+        <recurrenceDayOfMonth>1</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>January</recurrenceMonthOfYear>
+        <recurrenceStartDate>2013-01-01</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2011-12-30</activityDate>
+        <businessHours>Default</businessHours>
+        <endTime>12:00:00.000Z</endTime>
+        <isRecurring>false</isRecurring>
+        <name>New Year&apos;s Eve</name>
+        <startTime>08:00:00.000Z</startTime>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <endTime>12:00:00.000Z</endTime>
+        <isRecurring>true</isRecurring>
+        <name>New Year&apos;s Eve</name>
+        <recurrenceDayOfMonth>31</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-12-31</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+        <startTime>08:00:00.000Z</startTime>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Thanksgiving Day</name>
+        <recurrenceDayOfWeek>Thursday</recurrenceDayOfWeek>
+        <recurrenceInstance>Fourth</recurrenceInstance>
+        <recurrenceMonthOfYear>November</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-11-22</recurrenceStartDate>
+        <recurrenceType>RecursYearlyNth</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2011-12-26</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Day</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <isRecurring>true</isRecurring>
+        <name>Xmas Day</name>
+        <recurrenceDayOfMonth>25</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-12-25</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+    </holidays>
+    <holidays>
+        <activityDate>2011-12-23</activityDate>
+        <businessHours>Default</businessHours>
+        <isRecurring>false</isRecurring>
+        <name>Xmas Eve</name>
+    </holidays>
+    <holidays>
+        <businessHours>Default</businessHours>
+        <endTime>12:00:00.000Z</endTime>
+        <isRecurring>true</isRecurring>
+        <name>Xmas Eve</name>
+        <recurrenceDayOfMonth>24</recurrenceDayOfMonth>
+        <recurrenceMonthOfYear>December</recurrenceMonthOfYear>
+        <recurrenceStartDate>2012-12-24</recurrenceStartDate>
+        <recurrenceType>RecursYearly</recurrenceType>
+        <startTime>08:00:00.000Z</startTime>
+    </holidays>
+</BusinessHoursSettings>

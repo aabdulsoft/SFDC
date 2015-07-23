@@ -1,0 +1,12 @@
+<apex:page id="addProductRelayPage" showHeader="true" tabStyle="Opportunity" standardController="OpportunityLineItem" 
+    action="{!init}" extensions="EditProductRelayController" >
+    <apex:form >
+        
+        <apex:pageBlock id="opptyPageBlock" >
+                <apex:pageBlockButtons location="bottom" id="customButtons">
+                    <apex:commandButton id="backToOpportunity" value="Back To Opportunity" action="{!backToOpportunity}" tabindex="1"  />
+                </apex:pageBlockButtons>
+                <apex:pageMessages />
+        </apex:pageBlock>
+     </apex:form>
+</apex:page>

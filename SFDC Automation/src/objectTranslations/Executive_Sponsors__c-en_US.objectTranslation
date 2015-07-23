@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Executive Sponsors</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Executive Sponsors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Items --></label>
+        <name>Action_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Assistant Name --></label>
+        <name>Admin_Assistant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Admin Assistant Phone --></label>
+        <name>Admin_Assistant_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Authority --></label>
+        <name>Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Goals --></label>
+        <name>Business_Goals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Preferences --></label>
+        <name>Business_Preferences__c</name>
+    </fields>
+    <fields>
+        <help><!-- Customer Satisfaction Index in a scale 1 - 100 --></help>
+        <label><!-- CSI Score --></label>
+        <name>CSI_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>CompanyName__c</name>
+        <relationshipLabel><!-- Executive Sponsors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company Overview --></label>
+        <name>Company_Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Revenue --></label>
+        <name>Company_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+        <relationshipLabel><!-- Executive Sponsors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+        <relationshipLabel><!-- Executive Sponsors (Contact Phone) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Title --></label>
+        <name>Contact_Title__c</name>
+        <relationshipLabel><!-- Executive Sponsors (Contact Title) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DTS Revenue --></label>
+        <name>DTS_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decision-Making Role --></label>
+        <name>Decision_Making_Role__c</name>
+        <picklistValues>
+            <masterLabel>C-Suite</masterLabel>
+            <translation><!-- C-Suite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Champion</masterLabel>
+            <translation><!-- Internal Champion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joint Decision Maker</masterLabel>
+            <translation><!-- Joint Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Decision Maker</masterLabel>
+            <translation><!-- Primary Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Decision Maker</masterLabel>
+            <translation><!-- Sole Decision Maker --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Division --></label>
+        <name>Division__c</name>
+        <picklistValues>
+            <masterLabel>DDC</masterLabel>
+            <translation><!-- DDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMS</masterLabel>
+            <translation><!-- FMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCS</masterLabel>
+            <translation><!-- SCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # Employees --></label>
+        <name>Employees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Sponsor --></label>
+        <name>Executive_Sponsor__c</name>
+        <picklistValues>
+            <masterLabel>Dennis Cooke</masterLabel>
+            <translation><!-- Dennis Cooke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karen Jones</masterLabel>
+            <translation><!-- Karen Jones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Todd Skiles</masterLabel>
+            <translation><!-- Todd Skiles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Rolling 12 Month Revenue as of March 1st, 2015. Please use revenues from the last spreadsheet provided. Thank You. --></help>
+        <label><!-- FMS Contractual Revenue --></label>
+        <name>FMS_Contractual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Local Rental Revenue --></label>
+        <name>FMS_Local_Rental_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Margin --></label>
+        <name>FMS_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS National Rental Revenue --></label>
+        <name>FMS_National_Rental_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Pipeline --></label>
+        <name>FMS_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS UVS Revenue --></label>
+        <name>FMS_UVS_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL Units --></label>
+        <name>FSL_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Status --></label>
+        <name>Family_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial news --></label>
+        <name>Financial_news__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Adds --></label>
+        <name>Fleet_Adds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Reductions --></label>
+        <name>Fleet_Reductions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fortune Rank --></label>
+        <name>Fortune_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- HQ Location --></label>
+        <name>HQ_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hobbies --></label>
+        <name>Hobbies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leadership Changes --></label>
+        <name>Leadership_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- LinkedIn record --></label>
+        <name>LinkedIn_record__c</name>
+    </fields>
+    <fields>
+        <label><!-- M&amp;A or Expansions --></label>
+        <name>M_A_or_Expansions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Major Competitors --></label>
+        <name>Major_Competitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memberships --></label>
+        <name>Memberships__c</name>
+    </fields>
+    <fields>
+        <label><!-- ODM Revenue --></label>
+        <name>ODM_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Acct Info --></label>
+        <name>Other_Acct_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Company Info --></label>
+        <name>Other_Company_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Name --></label>
+        <name>Primary_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Phone --></label>
+        <name>Primary_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Title --></label>
+        <name>Primary_Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder 12M Margin --></label>
+        <name>Ryder_12M_Margin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rolling 12 month revenue as of March 1st, 2015 --></help>
+        <label><!-- Ryder 12M Revenue --></label>
+        <name>Ryder_12M_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Executive Sponsor --></label>
+        <name>Ryder_Executive_Sponsor__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Revenue --></label>
+        <name>Ryder_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Tenure --></label>
+        <name>Ryder_Tenure__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Lost Business --></label>
+        <name>SCS_Lost_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Margin --></label>
+        <name>SCS_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Pipeline --></label>
+        <name>SCS_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Revenue --></label>
+        <name>SCS_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code --></label>
+        <name>SIC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Contact Name --></label>
+        <name>Secondary_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Contact Phone --></label>
+        <name>Secondary_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Contact Title --></label>
+        <name>Secondary_Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services with Ryder --></label>
+        <name>Services_with_Ryder__c</name>
+        <picklistValues>
+            <masterLabel>Dedicated</masterLabel>
+            <translation><!-- Dedicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FSL</masterLabel>
+            <translation><!-- FSL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Mgmt</masterLabel>
+            <translation><!-- Transportation Mgmt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse Mgmt</masterLabel>
+            <translation><!-- Warehouse Mgmt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Locations --></label>
+        <name>Total_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Margin --></label>
+        <name>Total_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Revenue --></label>
+        <name>Total_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Units --></label>
+        <name>Total_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alma Mater --></label>
+        <name>University_College__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Founded --></label>
+        <name>Year_Founded__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Warehouses --></label>
+        <name>of_Warehouses__c</name>
+    </fields>
+    <layouts>
+        <layout>Executive Sponsors Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Contact Information --></label>
+            <section>Customer Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Update --></label>
+            <section>Customer Update</section>
+        </sections>
+        <sections>
+            <label><!-- General Customer Information --></label>
+            <section>General Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Last 12 Months FMS Revenue --></label>
+            <section>Last 12 Months FMS Revenue</section>
+        </sections>
+        <sections>
+            <label><!-- Last 12 Months SCS / DTS Revenue --></label>
+            <section>Last 12 Months SCS / DTS Revenue</section>
+        </sections>
+        <sections>
+            <label><!-- Ryder Account History --></label>
+            <section>Ryder Account History</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

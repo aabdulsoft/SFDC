@@ -1,0 +1,21 @@
+<!--Component for Email Template RSM Activate Billing: To Send Email to RSS all accounts require to acivate billing-->
+<apex:component controller="RSMActivateBillingCtrl" access="global">
+
+    <apex:attribute name="accId" description="Account Id" assignTo="{!accountId}" type="String" />
+    <apex:attribute name="accName" description="Account Id" assignTo="{!accountName}" type="String" />
+    
+    <!--Should change below link when moved to production-->
+    <apex:image id="Logo" value="https://cs10.salesforce.com/servlet/servlet.ImageServer?oid=00DJ0000001MAFb
+    &id=01560000000jtOy" />
+
+  <br/> Hello,<br/><br/>
+  Activate billing for the below vehicles:
+  <br/>Account Name :{!accountName}
+  <br/>Vehicle Numbers:  
+    
+    <apex:outputPanel > 
+        <apex:dataTable value="{!vehList}" var="v" border="1">
+            <apex:column value="{!v.Name}"/>    
+        </apex:dataTable>
+    </apex:outputPanel>  
+</apex:component>

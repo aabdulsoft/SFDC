@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Defines terminology including Buying Influences, Buying Behaviors, Exit Criteria, and Compelling Event</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Glossary</name>
+    <public>false</public>
+</Document>

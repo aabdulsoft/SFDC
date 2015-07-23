@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Decline</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewEvent</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewSfdcEvent</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Today</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>ActivityDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>ClientGuid</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DurationInMinutes</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>EndDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>IsAllDayEvent</fullName>
+    </fields>
+    <fields>
+        <fullName>IsException</fullName>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields>
+    <fields>
+        <fullName>Location</fullName>
+    </fields>
+    <fields>
+        <fullName>OriginalInstanceDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>ShowAs</fullName>
+    </fields>
+    <fields>
+        <fullName>StartDateTime</fullName>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Letter/Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Collision Review Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Summary/ Recommendations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CSA Guidance/ Training/Score Reduction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Safety Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Driver Safety Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executive Leadership Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fleet Risk Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leadership Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mock DOT Audit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Natural Gas Vehicle Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Participant in Customer Safety Symposium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety Program Development/ Benchmarking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Question/ Direction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Driver Awards Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customized Driver Training/ Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder Safety Capabilities Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>Ryder_Event</fullName>
+        <active>true</active>
+        <label>Ryder Event</label>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter%2FQuote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Meeting</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Safety_Event</fullName>
+        <active>true</active>
+        <label>Safety Event</label>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter%2FQuote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSA Guidance%2F Training%2FScore Reduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collision Review Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Question%2F Direction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Summary%2F Recommendations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Safety Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customized Driver Training%2F Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Awards Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Safety Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Leadership Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Risk Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leadership Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mock DOT Audit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas Vehicle Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant in Customer Safety Symposium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Safety Capabilities Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Program Development%2F Benchmarking</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

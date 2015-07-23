@@ -1,0 +1,174 @@
+<apex:page standardController="Vehicle__c" sidebar="false"
+    extensions="VehicleRateInformation">
+    <apex:pageBlock >
+        <apex:pageBlockSection collapsible="true" title="{!$Label.RebillableRatesInformation}" columns="1">
+            <apex:outputPanel >
+                <apex:outputText value="{!$Label.RebillableRatesInformationText}" />
+            </apex:outputPanel>
+            <apex:pageBlockTable value="{!rebillableRates}" rules="all" var="item" width="100%"
+                rowClasses="odd,even">
+                <apex:column value="{!item.name}" />
+                <apex:column value="{!item.repairInfo.amountType}"
+                    headerValue="{!$Label.RepairType}" />
+                <apex:column headerValue="{!$Label.RepairAmount}">
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.repairInfo.amount}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column value="{!item.accidentInfo.amountType}"
+                    headerValue="{!$Label.AccidentType}" />
+                <apex:column headerValue="{!$Label.AccidentAmount}" >
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.accidentInfo.amount}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column value="{!item.accomodationInfo.amountType}"
+                    headerValue="{!$Label.AccomodationType}" />
+                <apex:column headerValue="{!$Label.AccomodationAmount}" >
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.accomodationInfo.amount}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column value="{!item.abuseInfo.amountType}"
+                    headerValue="{!$Label.AbuseType}" />
+                <apex:column headerValue="{!$Label.AbuseAmount}" >
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.abuseInfo.amount}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column value="{!item.specialInfo.amountType}"
+                    headerValue="{!$Label.SpecialType}" />
+                <apex:column headerValue="{!$Label.SpecialAmount}" >
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.specialInfo.amount}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column value="{!item.miscellaneousInfo.amountType}"
+                    headerValue="{!$Label.MiscellaneousType}" />
+                <apex:column headerValue="{!$Label.MiscellaneousAmount}" >
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.miscellaneousInfo.amount}" />
+                    </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection columns="2" >
+            <apex:PageBlockSectionItem >
+            <apex:pageBlockTable value="{!fuelItems}" var="item" width="100%"
+                    rowClasses="odd,even">
+                    <apex:column value="{!item.name}" headerValue="" />
+                    <apex:column value="{!item.fuelInfo.amountType}"
+                        headerValue="Type" />
+                    <apex:column headerValue="Amount">
+                        <apex:outputText value="{0, number, 0.00}">
+                                    <apex:param value="{!item.fuelInfo.amount}" />
+                        </apex:outputText>
+                    </apex:column>
+            </apex:pageBlockTable>
+            </apex:PageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+               <apex:outputPanel >
+                   <apex:outputText >
+                       "S": set rate for customer, regardless of cost<br/>
+                       "F": fixed mark-up amount over cost<br/>
+                       "P": percentage over cost<br/>
+                       "L": percentage below cost<br/>
+                       "Wreckage" and "Service Vehicle" show $ per mile
+                   </apex:outputText>
+               </apex:outputPanel>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+        <apex:pageBlockSection collapsible="true" title="{!$Label.FuelRatesInformation}" columns="1" >
+            <apex:outputPanel >
+                <apex:outputText >
+                (*) rates differ between vehicles of this branch. Check individual vehicle detail.
+                </apex:outputText>
+            </apex:outputPanel>
+            <apex:pageBlockTable value="{!fuelRateInformationItems}" var="item" width="100%"
+                    rowClasses="odd,even">
+                    <apex:column value="{!item.name}" headerValue="" />
+                    <apex:column headerValue="{!$Label.MarkupCostPerGallon}">
+                        <apex:outputText value="{0, number, 0.00}">
+                                    <apex:param value="{!item.markupCostPerGallon}" />
+                        </apex:outputText>
+                        <apex:facet name="footer"><apex:outputText value="{!$Label.FPSScore}: {0}">
+                            <apex:param value="{!fuelRateCode.fpsScore}"/></apex:outputText>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.OutsideMarkupRate}" >
+                        <apex:outputText value="{0, number, 0.00}">
+                                    <apex:param value="{!item.outsideMarkupRate}" />
+                        </apex:outputText>
+                        <apex:facet name="footer"><apex:outputText value="{!$Label.MarkupRate}: {0}">
+                            <apex:param value="{!fuelRateCode.markUpRate}"/></apex:outputText>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.FloorAmount}" >
+                        <apex:outputText value="{0, number, 0.00}">
+                                    <apex:param value="{!item.floorAmount}" />
+                        </apex:outputText>
+                        <apex:facet name="footer"><apex:outputText value="{!$Label.UsageCode}: {0}">
+                            <apex:param value="{!fuelRateCode.usageCode}"/></apex:outputText>
+                        </apex:facet>
+                    </apex:column>
+                    <apex:column headerValue="{!$Label.CeilingAmount}">
+                        <apex:outputText value="{0, number, 0.00}">
+                                    <apex:param value="{!item.ceilingAmount}" />
+                        </apex:outputText>
+                        <apex:facet name="footer"><apex:outputText value="{!$Label.AlgorithCode}: {0}">
+                            <apex:param value="{!fuelRateCode.algorithCode}"/></apex:outputText>
+                        </apex:facet>
+                    </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        
+        <apex:pageBlockSection collapsible="true" title="{!$Label.RentalRatesInformation}" columns="1">
+            <apex:pageBlockTable value="{!rentalRateList}" var="item" width="100%"
+                rowClasses="odd,even">
+                <apex:column value="{!item.Class_Description__c}"
+                    />
+                <apex:column headerValue="{!$Label.Daily}">
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.Daily_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column headerValue="{!$Label.Weekly}">
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.Weekly_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column headerValue="{!$Label.Monthly}">
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.Monthly_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column headerValue="{!$Label.Mileage}">
+                    <apex:outputText value="{0, number, 0.0000}">
+                                <apex:param value="{!item.Mileage_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+                
+                <apex:column headerValue="{!$Label.Reefer}">
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.Refer_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+                <apex:column headerValue="{!$Label.Standby}">
+                    <apex:outputText value="{0, number, 0.00}">
+                                <apex:param value="{!item.Standby_Rate__c}" />
+                    </apex:outputText>
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+        
+        
+    </apex:pageBlock>
+</apex:page>

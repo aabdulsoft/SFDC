@@ -1,0 +1,8 @@
+There has been a change for the following Account:
+
+Account Name: {!Account.Name}
+New decision-making flag: {!Account.Central_Decisionmaking__c}
+Owner: {!Account.OwnerFullName}
+Last modified by: {!Account.LastModifiedBy}
+
+Click here to access this Account: {!Account.Link}

@@ -1,0 +1,36 @@
+<apex:page standardController="Contact"
+    extensions="ContactToCustomerBranchs">
+    <apex:form >
+        <apex:pageBlock title="Related Branches">
+            <apex:pageBlockButtons location="top">
+                    <apex:commandButton onclick="window.open('{!addNewKeyContact}','_parent');" value="New Key Contact" rendered="{!canRenderNewKeyContact}"/>
+                    <apex:commandButton value="Delete All Key Contacts" action="{!DeleteAllKEyContactsContact}"  />
+            </apex:pageBlockButtons>
+                <!-- <apex:commandLink target="_parent" styleClass="btn" action="{!URLFOR($Action.Key_Contact__c.new)}" value="New Key Contact"/> -->
+            <apex:pageBlockSection columns="1" collapsible="true">
+                <apex:pageBlockTable value="{!keyContactList}" var="item" width="100%"
+                    rowClasses="odd,even">
+                    <apex:column headerValue="Action" >
+                        <apex:outputPanel rendered="{!IF(item.customerBranch!='All',true, false)}">
+                            <apex:commandLink target="_parent" action="{!URLFOR($Action.Key_Contact__c.edit,item.id)}" value="Edit"/>&nbsp;|&nbsp;
+                            <apex:commandLink target="_parent" action="{!URLFOR($Action.Key_Contact__c.delete,item.id)}" value="Del"/>
+                        </apex:outputPanel>
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Key_Contact__c.fields.Customer_Branch__c.label}">
+                        <apex:outputPanel rendered="{!IF(item.customerBranch!='All',true, false)}">
+                            <apex:outputLink target="_parent" value="{!URLFOR($Action.Customer_Branch__c.View,item.customerBranchId)}">{!item.customerBranch}</apex:outputLink>
+                        </apex:outputPanel>
+                        <apex:outputPanel rendered="{!IF(item.customerBranch=='All',true, false)}">
+                            {!item.customerBranch}
+                        </apex:outputPanel>
+                    </apex:column>
+                    <apex:column value="{!item.contactRole}" headerValue="{!$ObjectType.Key_Contact__c.fields.Contact_Role__c.label}" />
+                    <apex:column value="{!item.contactType}" headerValue="{!$ObjectType.Key_Contact__c.fields.Contact_Type__c.label}" />
+                    <apex:facet name="footer{!IF(displayMoreLink, '', 'dummyname')}">
+                       <apex:commandLink target="_parent" action="/a0P?rlid={!contactToCustomerBranchRLID}&id={!contact.id}">Go to list</apex:commandLink>                      
+                    </apex:facet>
+                </apex:pageBlockTable>
+                </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

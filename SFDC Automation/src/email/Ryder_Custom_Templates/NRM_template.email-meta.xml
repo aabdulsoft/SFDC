@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>NRM template</name>
+    <style>none</style>
+    <subject>National Rental</subject>
+    <textOnly>When you rent from Ryder, you enjoy a number of important benefits. Whether you need a vehicle for a local delivery or for the long haul, you can always count on the right truck for the job – when and where you need it.
+
+The good news? Ryder can deliver even more value to your business and your bottom line with the Ryder National Rental Program. Designed for national customers with large-scale rental requirements in multiple locations, the Ryder National Rental Program offers premium service and a higher level of support.
+
+As a member of the Ryder National Rental Program, you enjoy access to the industry&apos;s only dedicated national sales team, a central reservations center and personalized attention – every time you rent, wherever your rent. Whether you have two locations or two hundred, there&apos;s just one relationship to manage – and the premium services you need to get your products to the right place at the right time.
+
+Want to learn more about how to gain the benefits of the Ryder National Rental Program? I will be in touch soon to arrange a meeting so that we can discuss how together, we can drive your business forward.
+Sincerely,
+{!User.Name}
+National Truck Rental
+{!User.Title}
+{!User.Street}
+{!User.City},{!User.State} {!User.PostalCode}
+Phone:  {!User.MobilePhone}
+Cell:  {!User.MobilePhone}
+Fax: {!User.Fax}
+Email:  {!User.Email}
+Web:  www.ryder.com</textOnly>
+    <type>custom</type>
+</EmailTemplate>

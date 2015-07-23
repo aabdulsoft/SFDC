@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ryder Survey Question</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ryder Survey Questions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Determines if the question should be calculated in the score. --></help>
+        <label><!-- CSI Calculation Indicator --></label>
+        <name>CSI_Calculation_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ClickTool Question Key --></label>
+        <name>QuestionKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- The question number associated to the question in the resulting survey. --></help>
+        <label><!-- Question Number --></label>
+        <name>Question_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The verbiage of the question in the survey. --></help>
+        <label><!-- Question Text --></label>
+        <name>Question_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- The weight the question holds in the score calculation. --></help>
+        <label><!-- Question Weight --></label>
+        <name>Question_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Survey Question Category --></label>
+        <name>Ryder_Survey_Question_Category__c</name>
+        <relationshipLabel><!-- Ryder Survey Questions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Short Question Text --></label>
+        <name>Short_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of survey being conducted. --></help>
+        <label><!-- Survey Class --></label>
+        <name>Survey_Class__c</name>
+        <picklistValues>
+            <masterLabel>CSI</masterLabel>
+            <translation><!-- CSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Loop</masterLabel>
+            <translation><!-- Closed Loop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIL</masterLabel>
+            <translation><!-- RIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The last date the survey was updated/built/deployed in ClickTools. --></help>
+        <label><!-- Survey Last Build Date --></label>
+        <name>Survey_Last_Build_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reference name of the survey in the survey software --></help>
+        <label><!-- Survey Name --></label>
+        <name>Survey_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifier that determines if the question is part of the trend summary. --></help>
+        <label><!-- Trend Summary Indicator --></label>
+        <name>Trend_Summary_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- The sequence used to calculate the trend summary. --></help>
+        <label><!-- Trend Summary Sequence --></label>
+        <name>Trend_Summary_Sequence__c</name>
+    </fields>
+    <layouts>
+        <layout>Ryder Survey Question Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

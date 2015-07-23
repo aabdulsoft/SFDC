@@ -1,0 +1,9 @@
+The following opportunity has not had activity within 90 days, and requires your attention:
+
+Name: {!Opportunity.Name}
+Account: {!Opportunity.Account}
+Link: {!Opportunity.Link}
+
+Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link, then review the record and take appropriate action.
+
+If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won't be able to log in from there.

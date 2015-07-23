@@ -1,0 +1,52 @@
+<apex:page standardController="RSM_Sales_Qus__c" extensions="RSMSalesQuestionnaire" showHeader="True">
+    <apex:form >
+        <apex:pageBlock title="Sales Questionnaire Task List" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="/apex/RSM_Sales_Questionnaire_Task_List?Id={!newRSMSQ.Id}" value="Edit"/>
+            </apex:pageBlockButtons>
+                <apex:pageBlockSection columns="2">
+                <apex:outputField value="{!newRSMSQ.Customer_Name__c}"/>
+                <apex:outputField value="{!newRSMSQ.Account_Number__c}" />
+                <apex:outputField value="{!newRSMSQ.Date__c}"/>
+                <apex:outputField value="{!newRSMSQ.Customer_Primary_RydeSmart_Location__c}"/>
+                <apex:outputField value="{!newRSMSQ.Sales_Person_Name__c}"/>
+                <apex:outputField value="{!newRSMSQ.Phone_Number__c}"/>
+                <apex:outputField value="{!newRSMSQ.Additional_Customer_RydeSmart_Locations__c}"/><br/>
+                <apex:outputField value="{!newRSMSQ.Customer_RydeSmart_Owner__c}"/>
+                <apex:outputField value="{!newRSMSQ.Customer_Primary_User__c}"/>
+                <apex:outputField value="{!newRSMSQ.Title__c}"/>
+                <apex:outputField value="{!newRSMSQ.CPU_Title__c}"/>
+                <apex:outputField value="{!newRSMSQ.Phone__c}"/>
+                <apex:outputField value="{!newRSMSQ.CPU_Phone__c}"/>
+                <apex:outputField value="{!newRSMSQ.Email_Address__c}"/>
+                <apex:outputField value="{!newRSMSQ.Email__c}"/>
+                <apex:outputField value="{!newRSMSQ.Customer_Industry_Business__c}"/><br/>
+                <apex:outputField value="{!newRSMSQ.Team_Drivers__c}"/>
+                <apex:outputField value="{!newRSMSQ.Short_Haul__c}"/>
+                <apex:outputField value="{!newRSMSQ.Slip_Seating__c}"/>
+                <apex:outputField value="{!newRSMSQ.Long_Haul__c}"/>
+                </apex:pageBlockSection>                
+                <apex:pageBlockSection columns="1">
+                Do Some or All Drivers Use the Same Truck Every Day? 
+                <apex:outputText label="" id="newDesc" value="{!newRSMSQ.Do_Some_or_All_Drivers_Use_the_Same_Truc__c}"   />
+                Please describe potential for additional RydeSmart business, if any.
+                <apex:outputText label="" id="newDesc1" value="{!newRSMSQ.Please_describe_potential_for_additional__c}"  />
+                Please describe the customer’s normal operation of their trucks to include route information, back hauls, etc.
+                <apex:outputText label="" id="newDesc2" value="{!newRSMSQ.Please_describe_the_customer_s_normal_op__c}" />
+                Can the RS Account Manager contact the customer directly or do you require a warm introduction to the customer? 
+                <apex:outputText label="" id="newDesc3" value="{!newRSMSQ.Can_the_RS_Account_Manager_contact_the_c__c}" />
+                Please describe the customer previous Telematics experience to include provider, if any
+                <apex:outputText label="" id="newDesc4" value="{!newRSMSQ.Please_describe_the_customer_previous_Te__c}" />
+                How does the customer intend to use RydeSmart; will they be using any other logistic tools in conjunction with RydeSmart?
+                <apex:outputText label="" id="newDesc5" value="{!newRSMSQ.How_does_the_customer_intend_to_use_Ryde__c}" />
+                Does the customer have specific ROI goals involving RydeSmart?
+                <apex:outputText label="" id="newDesc6" value="{!newRSMSQ.Does_the_customer_have_specific_ROI_goal__c}" />
+                Are there any shop specific information you can share regarding this RydeSmart implementation and ongoing support?
+                <apex:outputText label="" id="newDesc7" value="{!newRSMSQ.Are_there_any_shop_specific_information__c}" />
+                Additional, Pertinent Information: 
+                <apex:outputText label="" id="newDesc8" value="{!newRSMSQ.Additional_Pertinent_Information__c}" />
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

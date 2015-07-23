@@ -1,0 +1,11 @@
+<apex:page standardController="Account" >
+
+        <apex:variable var="CompanyID" value="4028259148f9a2a90148fae773a810a9" />
+        <apex:variable var="ServerID" value="rv1.revegy.com" />
+        <apex:variable var="RvgyURL" value="https://{!ServerID}/RevegyEmbedded/REA.html?sessionId={!$Api.Session_ID}&sessionURL={!SUBSTITUTE(SUBSTITUTE($Api.Partner_Server_URL_220,'c.',''),'.visual.force.','.salesforce.')}&accountId={!account.id}&companyId={!CompanyID}" />
+         
+        <apex:outputLink onclick="window.open('{!RvgyURL}','Revegy','toolbar=no, scrollbars=yes, resizable=yes, top=10, left=10, width=1000, height=600');" value="https://demo.revegy.com/Help/sfdc_launched.html">Launch Revegy in new window</apex:outputLink>
+
+        <apex:iframe src="{!RvgyURL}" width="100%" height="550"></apex:iframe>    
+  
+</apex:page>

@@ -1,0 +1,42 @@
+<div>
+<img src="https://c.na4.content.force.com/servlet/servlet.FileDownload?file=01560000000l4Tu" alt="Ryder System, Inc. National Rental"/>
+</div>
+<div>
+<img src="https://c.na4.content.force.com/servlet/servlet.FileDownload?file=01560000000l4Tk" alt=""/>
+</div>
+<div>
+<img src="https://c.na4.content.force.com/servlet/servlet.FileDownload?file=01560000000l4Tf" alt="Get preferred status and platinum service wherever the road takes you.  Become a Ryder National Rental Customer Today."/> 
+</div>
+<div>
+<img src="https://c.na4.content.force.com/servlet/servlet.FileDownload?file=01560000000l4Ta" alt="Company Logo"/>
+</div>
+<div>
+<font size = "1" color="#5f5f5f" face="Arial">
+When you rent from Ryder, you enjoy a number of important benefits. Whether you need a vehicle for a local delivery or for the long haul, you can always count on the right truck for the job – when and where you need it.
+<br><br>
+The good news? Ryder can deliver even more value to your business and your bottom line with the Ryder National Rental Program. Designed for national customers with large-scale rental requirements in multiple locations, the Ryder National Rental Program offers premium service and a higher level of support.
+<br><br>
+As a member of the Ryder National Rental Program, you enjoy access to the industry's only dedicated national sales team, a central reservations center and personalized attention – every time you rent, wherever your rent. Whether you have two locations or two hundred, there's just one relationship to manage – and the premium services you need to get your products to the right place at the right time.
+<br><br>
+Want to learn more about how to gain the benefits of the Ryder National Rental Program? I will be in touch soon to arrange a meeting so that we can discuss how together, we can drive your business forward.
+<br><br>
+Sincerely,
+</font>
+</div>
+<p> 
+<font size = "1" color="#5f5f5f" face="Arial">
+{!User.Name}<br>
+National Truck Rental<br>
+{!User.Title}<br>
+{!User.Street}<br>
+{!User.City},{!User.State} {!User.PostalCode}<br>
+Phone:  {!User.MobilePhone}<br>
+Cell:  {!User.MobilePhone}<br>
+Fax: {!User.Fax}<br>
+Email:  {!User.Email}<br>
+Web:  www.ryder.com
+</font>
+</p>
+<div>
+<img src="https://c.na4.content.force.com/servlet/servlet.FileDownload?file=01560000000l4UJ" alt="Ryder Trucks"/>
+</div>

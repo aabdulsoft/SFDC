@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template for Proposal Case Closed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>RFP Case Closed</name>
+    <style>freeForm</style>
+    <subject>{!Case.Account} Proposal Case was Closed</subject>
+    <textOnly>Dear {!Case.CreatedBy}
+
+Your Proposal Case # {!Case.CaseNumber} was Closed
+
+Case Open Date: {!Case.CreatedDate + 0}
+Case Closed Date: {!Case.ClosedDate + 0}
+
+{!Case.Link}
+
+Kind Regards
+Proposal Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

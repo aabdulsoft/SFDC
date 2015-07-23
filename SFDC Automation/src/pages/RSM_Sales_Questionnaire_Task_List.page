@@ -1,0 +1,53 @@
+<apex:page standardController="RSM_Sales_Qus__c" extensions="RSMSalesQuestionnaire" showHeader="True">
+    <apex:form >
+        <apex:pageBlock title="Sales Questionnaire Task List" mode="edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+            </apex:pageBlockButtons>
+                <apex:pageBlockSection columns="2">
+                <apex:inputField value="{!newRSMSQ.Customer_Name__c}"/>
+                <apex:inputField value="{!newRSMSQ.Account_Number__c}" />
+                <apex:inputField value="{!newRSMSQ.Date__c}"/>
+                <apex:inputField value="{!newRSMSQ.Customer_Primary_RydeSmart_Location__c}"/>
+                <apex:inputField value="{!newRSMSQ.Sales_Person_Name__c}"/>
+                <apex:inputField value="{!newRSMSQ.Phone_Number__c}"/>
+                <apex:inputField value="{!newRSMSQ.Additional_Customer_RydeSmart_Locations__c}"/><br/>
+                <apex:inputField value="{!newRSMSQ.Customer_RydeSmart_Owner__c}"/>
+                <apex:inputField value="{!newRSMSQ.Customer_Primary_User__c}"/>
+                <apex:inputField value="{!newRSMSQ.Title__c}"/>
+                <apex:inputField value="{!newRSMSQ.CPU_Title__c}"/>
+                <apex:inputField value="{!newRSMSQ.Phone__c}"/>
+                <apex:inputField value="{!newRSMSQ.CPU_Phone__c}"/>
+                <apex:inputField value="{!newRSMSQ.Email_Address__c}"/>
+                <apex:inputField value="{!newRSMSQ.Email__c}"/>
+                <apex:inputField value="{!newRSMSQ.Customer_Industry_Business__c}"/><br/>
+                <apex:inputField value="{!newRSMSQ.Team_Drivers__c}"/>
+                <apex:inputField value="{!newRSMSQ.Short_Haul__c}"/>
+                <apex:inputField value="{!newRSMSQ.Slip_Seating__c}"/>
+                <apex:inputField value="{!newRSMSQ.Long_Haul__c}"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection columns="1">
+                Do Some or All Drivers Use the Same Truck Every Day? 
+                <apex:inputTextarea label="" id="newDesc" value="{!newRSMSQ.Do_Some_or_All_Drivers_Use_the_Same_Truc__c}" rows="1" cols="70"   />
+                Please describe potential for additional RydeSmart business, if any.
+                <apex:inputTextarea label="" id="newDesc1" value="{!newRSMSQ.Please_describe_potential_for_additional__c}" cols="100"   />
+                Please describe the customer’s normal operation of their trucks to include route information, back hauls, etc.
+                <apex:inputtextarea label="" id="newDesc2" value="{!newRSMSQ.Please_describe_the_customer_s_normal_op__c}" cols="100" />
+                Can the RS Account Manager contact the customer directly or do you require a warm introduction to the customer? 
+                <apex:inputtextarea label="" id="newDesc3" value="{!newRSMSQ.Can_the_RS_Account_Manager_contact_the_c__c}" cols="100" />
+                Please describe the customer previous Telematics experience to include provider, if any
+                <apex:inputtextarea label="" id="newDesc4" value="{!newRSMSQ.Please_describe_the_customer_previous_Te__c}" cols="100" />
+                How does the customer intend to use RydeSmart; will they be using any other logistic tools in conjunction with RydeSmart?
+                <apex:inputtextarea label="" id="newDesc5" value="{!newRSMSQ.How_does_the_customer_intend_to_use_Ryde__c}" cols="100" />
+                Does the customer have specific ROI goals involving RydeSmart?
+                <apex:inputtextarea label="" id="newDesc6" value="{!newRSMSQ.Does_the_customer_have_specific_ROI_goal__c}" cols="100" />
+                Are there any shop specific information you can share regarding this RydeSmart implementation and ongoing support?
+                <apex:inputtextarea label="" id="newDesc7" value="{!newRSMSQ.Are_there_any_shop_specific_information__c}" cols="100" />
+                Additional, Pertinent Information: 
+                <apex:inputtextarea label="" id="newDesc8" value="{!newRSMSQ.Additional_Pertinent_Information__c}" cols="100" />
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

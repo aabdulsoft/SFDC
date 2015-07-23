@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Surveys</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer / Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Failed Survey --></label>
+        <name>Failed_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Creator --></label>
+        <name>Survey_Creator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the date when the survey was conducted. --></help>
+        <label><!-- Survey Date --></label>
+        <name>Survey_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey_ID --></label>
+        <name>Survey_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Score --></label>
+        <name>Survey_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Type --></label>
+        <name>Survey_Type__c</name>
+        <picklistValues>
+            <masterLabel>CSI</masterLabel>
+            <translation><!-- CSI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Care</masterLabel>
+            <translation><!-- Customer Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Customer</masterLabel>
+            <translation><!-- Lost Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ext_SurveyID --></label>
+        <name>ext_SurveyID__c</name>
+    </fields>
+    <layouts>
+        <layout>Historical Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

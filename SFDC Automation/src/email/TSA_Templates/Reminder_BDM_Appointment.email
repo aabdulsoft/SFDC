@@ -1,0 +1,14 @@
+Good morning! Just wanted to drop you a quick reminder of today's appointment. 
+
+I am connecting you with the local Ryder Business Development Manager. For the convenience of both of you, I have included contact information. 
+
+Here is the information listed below: 
+
+
+Phone: {!Contact.Phone}
+Email: {!Contact.Email}
+
+
+
+Phone: 
+Email:

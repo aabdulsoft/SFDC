@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vehicle And Search Input Fields Mapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vehicle And Search Input Fields Mapping</value>
+    </caseValues>
+    <fields>
+        <label><!-- Search Input Field --></label>
+        <name>Search_Input_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehilcle Field --></label>
+        <name>Vehilcle_Field__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

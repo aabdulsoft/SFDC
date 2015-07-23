@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Will be populated with data from Radar</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Branch_No__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Branch No</label>
+        <referenceTo>Ryder_Branch__c</referenceTo>
+        <relationshipLabel>Rate Sheets</relationshipLabel>
+        <relationshipName>Rate_Sheets</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Summary__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Deal Summary</label>
+        <referenceTo>Deal_Summary__c</referenceTo>
+        <relationshipLabel>Rate Sheets</relationshipLabel>
+        <relationshipName>Rate_Sheets</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>EVA__c</fullName>
+        <externalId>false</externalId>
+        <label>EVA</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>FuelType__c</fullName>
+        <description>Engine Fuel Type, get it from RADAR</description>
+        <externalId>false</externalId>
+        <label>Fuel Type</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gross_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Gross Revenue</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Include_In_Quote__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Include In Quote</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Include_in_EVA__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Used to indicate if the EVA value should be rolled up and displayed at the Opportunity Detail page</description>
+        <externalId>false</externalId>
+        <label>Include in EVA</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Net_Investment__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Investment</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>No_of_Vehicles__c</fullName>
+        <externalId>false</externalId>
+        <label># of Vehicles</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <label>Old Revenue</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Rate Sheets</relationshipLabel>
+        <relationshipName>Rate_Sheets</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Original_Create_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Create Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Package_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Package Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Regular</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Regular</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_Sheet_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the Rate Sheet from Radar</inlineHelpText>
+        <label>Rate Sheet Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Difference__c</fullName>
+        <description>Field to represent the time difference between Creation date of Rate Sheet and Opportunity</description>
+        <externalId>false</externalId>
+        <formula>DATEVALUE(Original_Create_Date__c) - DATEVALUE(Opportunity__r.CreatedDate)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Field to represent the time difference between Creation date of Rate Sheet and Opportunity</inlineHelpText>
+        <label>Time Difference</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Add/Drop Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Add Insurance Only</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contract Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conversion to Contract Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conversion to Term Extension</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lessee  Re-Assignment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New/Add Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Replacement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Term Extension</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Walk Continuation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ext_ratesheet_id__c</fullName>
+        <externalId>true</externalId>
+        <label>ext_ratesheet_id</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <label>Rate Sheet</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Rate Sheet #</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Rate Sheets</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>No_UpdatesOnRateSheet</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(ISNEW()), ISCHANGED( Name ) || ISCHANGED( Rate_Sheet_Name__c ) ||  ISCHANGED( Product_Line__c ) || ISCHANGED( Package_Type__c ) || ISCHANGED( Gross_Revenue__c ) || ISCHANGED( No_of_Vehicles__c )  ||  ISCHANGED( EVA__c ) || ISCHANGED( ext_ratesheet_id__c ) || ISCHANGED( Deal_Summary__c ) || ISCHANGED( Transaction_Type__c ) || ISCHANGED( Branch_No__c ) || ISCHANGED( Old_Revenue__c ) || ISCHANGED( FuelType__c )) &amp;&amp; AND(NOT($Profile.Name = &apos;System Administrator&apos;), NOT($Profile.Name = &apos;SSO System Administrator&apos;), NOT($Profile.Name = &apos;Business Admin&apos;), NOT($Profile.Name = &apos;Business Admin Non SSO&apos;), NOT($Profile.Name = &apos;Business Support&apos;))</errorConditionFormula>
+        <errorMessage>No changes are allowed on this page. if you are trying to update the Include in Quote, please go to the Opportunity Details Page. For any other updates, go to Radar using the Edit in Radar link on the Opportunity Details Page.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Launch_Radar</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Launch Radar</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>window.open(&apos;http://www.espn.com&apos;,&apos;radar&apos;);</url>
+    </webLinks>
+</CustomObject>

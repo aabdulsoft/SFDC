@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contains the list of Rate Sheets which were not booked</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Competitor__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor</label>
+        <picklist>
+            <controllingField>Deal_lost_to_Won_from_whom__c</controllingField>
+            <picklistValues>
+                <fullName>ComCar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dixie</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Enterprise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gatorlease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hogan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hunt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IdealLease</fullName>
+                <controllingFieldValues>Competitor</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I don&apos;t know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interstate Natn&apos;l</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lily</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Local Provider</fullName>
+                <controllingFieldValues>Competitor</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NatioanlLease</fullName>
+                <controllingFieldValues>Competitor</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OEM (pls specify)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other (pls specify)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PacLease</fullName>
+                <controllingFieldValues>Competitor</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Penske</fullName>
+                <controllingFieldValues>Competitor</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rollins</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>We need the values here</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Deal_Summary_Name__c</fullName>
+        <description>Contains the DealSummaryName (Name from teh Deal_Summary__c object)</description>
+        <externalId>false</externalId>
+        <label>Deal Summary Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deal_Summary__c</fullName>
+        <description>Contains the Deal_Summary # (ext_dealsummary_id__c from the Deal_Summary__c object)</description>
+        <externalId>false</externalId>
+        <label>Deal Summary #</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deal_lost_to_Won_from_whom__c</fullName>
+        <externalId>false</externalId>
+        <label>Deal lost to/ Won from whom</label>
+        <picklist>
+            <controllingField>Reason_Won_Lost__c</controllingField>
+            <picklistValues>
+                <fullName>Competitor</fullName>
+                <controllingFieldValues>Ability to Extend Insurance</controllingFieldValues>
+                <controllingFieldValues>Company declined due to credit - Customer unwilling to agree credi-related stipulations</controllingFieldValues>
+                <controllingFieldValues>Company out of business</controllingFieldValues>
+                <controllingFieldValues>Customer Referral</controllingFieldValues>
+                <controllingFieldValues>Fleet downsizing by a split fleet customer</controllingFieldValues>
+                <controllingFieldValues>Insufficient proximity/ convenience of service location</controllingFieldValues>
+                <controllingFieldValues>Issue with Competitor</controllingFieldValues>
+                <controllingFieldValues>Length of lease</controllingFieldValues>
+                <controllingFieldValues>Less expensive Option Available</controllingFieldValues>
+                <controllingFieldValues>Location proximity</controllingFieldValues>
+                <controllingFieldValues>Maintenance Expertise</controllingFieldValues>
+                <controllingFieldValues>Network of Locations</controllingFieldValues>
+                <controllingFieldValues>Preferred our vehicle types/specs</controllingFieldValues>
+                <controllingFieldValues>Relationship</controllingFieldValues>
+                <controllingFieldValues>Ryder closed location</controllingFieldValues>
+                <controllingFieldValues>Services Provided</controllingFieldValues>
+                <controllingFieldValues>Unable to meet business needs/provide flexibility/ act as partner</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory  account management</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory Maintenance Quality</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory billing and invoicing</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory breakdown service</controllingFieldValues>
+                <controllingFieldValues>Value (service received for price)</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ownership</fullName>
+                <controllingFieldValues>Ability to Extend Insurance</controllingFieldValues>
+                <controllingFieldValues>Company declined due to credit - Customer unwilling to agree credi-related stipulations</controllingFieldValues>
+                <controllingFieldValues>Company out of business</controllingFieldValues>
+                <controllingFieldValues>Customer Referral</controllingFieldValues>
+                <controllingFieldValues>Fleet downsizing by a split fleet customer</controllingFieldValues>
+                <controllingFieldValues>Insufficient proximity/ convenience of service location</controllingFieldValues>
+                <controllingFieldValues>Issue with Competitor</controllingFieldValues>
+                <controllingFieldValues>Length of lease</controllingFieldValues>
+                <controllingFieldValues>Less expensive Option Available</controllingFieldValues>
+                <controllingFieldValues>Location proximity</controllingFieldValues>
+                <controllingFieldValues>Maintenance Expertise</controllingFieldValues>
+                <controllingFieldValues>Network of Locations</controllingFieldValues>
+                <controllingFieldValues>Preferred our vehicle types/specs</controllingFieldValues>
+                <controllingFieldValues>Relationship</controllingFieldValues>
+                <controllingFieldValues>Ryder closed location</controllingFieldValues>
+                <controllingFieldValues>Services Provided</controllingFieldValues>
+                <controllingFieldValues>Unable to meet business needs/provide flexibility/ act as partner</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory  account management</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory Maintenance Quality</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory billing and invoicing</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory breakdown service</controllingFieldValues>
+                <controllingFieldValues>Value (service received for price)</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental</fullName>
+                <controllingFieldValues>Ability to Extend Insurance</controllingFieldValues>
+                <controllingFieldValues>Company declined due to credit - Customer unwilling to agree credi-related stipulations</controllingFieldValues>
+                <controllingFieldValues>Company out of business</controllingFieldValues>
+                <controllingFieldValues>Customer Referral</controllingFieldValues>
+                <controllingFieldValues>Fleet downsizing by a split fleet customer</controllingFieldValues>
+                <controllingFieldValues>Insufficient proximity/ convenience of service location</controllingFieldValues>
+                <controllingFieldValues>Issue with Competitor</controllingFieldValues>
+                <controllingFieldValues>Length of lease</controllingFieldValues>
+                <controllingFieldValues>Less expensive Option Available</controllingFieldValues>
+                <controllingFieldValues>Location proximity</controllingFieldValues>
+                <controllingFieldValues>Maintenance Expertise</controllingFieldValues>
+                <controllingFieldValues>Network of Locations</controllingFieldValues>
+                <controllingFieldValues>Preferred our vehicle types/specs</controllingFieldValues>
+                <controllingFieldValues>Relationship</controllingFieldValues>
+                <controllingFieldValues>Ryder closed location</controllingFieldValues>
+                <controllingFieldValues>Services Provided</controllingFieldValues>
+                <controllingFieldValues>Unable to meet business needs/provide flexibility/ act as partner</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory  account management</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory Maintenance Quality</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory billing and invoicing</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory breakdown service</controllingFieldValues>
+                <controllingFieldValues>Value (service received for price)</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pipeline inactive cleanup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Common Carrier</fullName>
+                <controllingFieldValues>Ability to Extend Insurance</controllingFieldValues>
+                <controllingFieldValues>Company declined due to credit - Customer unwilling to agree credi-related stipulations</controllingFieldValues>
+                <controllingFieldValues>Company out of business</controllingFieldValues>
+                <controllingFieldValues>Customer Referral</controllingFieldValues>
+                <controllingFieldValues>Fleet downsizing by a split fleet customer</controllingFieldValues>
+                <controllingFieldValues>Insufficient proximity/ convenience of service location</controllingFieldValues>
+                <controllingFieldValues>Length of lease</controllingFieldValues>
+                <controllingFieldValues>Less expensive Option Available</controllingFieldValues>
+                <controllingFieldValues>Location proximity</controllingFieldValues>
+                <controllingFieldValues>Maintenance Expertise</controllingFieldValues>
+                <controllingFieldValues>Network of Locations</controllingFieldValues>
+                <controllingFieldValues>Preferred our vehicle types/specs</controllingFieldValues>
+                <controllingFieldValues>Relationship</controllingFieldValues>
+                <controllingFieldValues>Ryder closed location</controllingFieldValues>
+                <controllingFieldValues>Services Provided</controllingFieldValues>
+                <controllingFieldValues>Unable to meet business needs/provide flexibility/ act as partner</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory  account management</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory Maintenance Quality</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory billing and invoicing</controllingFieldValues>
+                <controllingFieldValues>Unsatisfactory breakdown service</controllingFieldValues>
+                <controllingFieldValues>Value (service received for price)</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Competition</fullName>
+                <controllingFieldValues>Ability to Extend Insurance</controllingFieldValues>
+                <controllingFieldValues>Company out of business</controllingFieldValues>
+                <controllingFieldValues>Customer Referral</controllingFieldValues>
+                <controllingFieldValues>Length of lease</controllingFieldValues>
+                <controllingFieldValues>Location proximity</controllingFieldValues>
+                <controllingFieldValues>Maintenance Expertise</controllingFieldValues>
+                <controllingFieldValues>Network of Locations</controllingFieldValues>
+                <controllingFieldValues>Preferred our vehicle types/specs</controllingFieldValues>
+                <controllingFieldValues>Relationship</controllingFieldValues>
+                <controllingFieldValues>Services Provided</controllingFieldValues>
+                <controllingFieldValues>Value (service received for price)</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not lost. Duplicate pipeline</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsProcessed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To mark the records as processed once user submit button</description>
+        <externalId>false</externalId>
+        <label>IsProcessed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsSelected__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Just used on the page</description>
+        <externalId>false</externalId>
+        <label>IsSelected</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsTaskCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Determines if a task has been created to this Partial Win</description>
+        <externalId>false</externalId>
+        <label>IsTaskCreated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Local_Provider_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Local Provider Name</label>
+        <length>32</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>PartialWinRateSheets</relationshipLabel>
+        <relationshipName>PartialWinRateSheets</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Original_Decision_Maker__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Original Decision Maker</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>PartialWinRateSheets</relationshipLabel>
+        <relationshipName>PartialWinRateSheets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>PartialWinRateSheets</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rate_Sheet_Name__c</fullName>
+        <description>Contains the name of the RateSheet (Rate_Sheet_Name__c from the Rate_Sheet__c object)</description>
+        <externalId>false</externalId>
+        <label>Rate Sheet Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rate_Sheet__c</fullName>
+        <description>Contains the Rate Sheet # (ext_ratesheet_id__c from the Rate_Sheet__c object)</description>
+        <externalId>false</externalId>
+        <label>Rate Sheet #</label>
+        <length>18</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason_Won_Lost__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason Won/Lost</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Less expensive Option Available</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsatisfactory Maintenance Quality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fleet downsizing by a split fleet customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsatisfactory breakdown service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unable to meet business needs/provide flexibility/ act as partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsatisfactory billing and invoicing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsatisfactory  account management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Company declined due to credit - Customer unwilling to agree credi-related stipulations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insufficient proximity/ convenience of service location</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder closed location</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fleet downsizing by a 100% Ryder Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer closed location</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Change in transportation model to common carrier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Company declined due to credit-not credit worthy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bankruptcy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Company acquisition or Management change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RIL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Lost - Duplicate Pipeline</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Declined due to credit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ability to Extend Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Change in Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Company out of business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Economic Conditions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fleet Downsize</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I Don&apos;t Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I Don&apos;t Remember</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Issue with Competitor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Length of lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Level 1 Only Declined Rate Increase</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Location not competitive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Location proximity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maintenance Expertise</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Network of Locations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not enough services offered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preferred other truck (OEM brand)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preferred our vehicle types/specs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services Provided</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Too few services offered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsatisfied with Service Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Value (service received for price)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pipeline inactive cleanup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No business granted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Alternate Pricing Option</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lost</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Business Granted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Won Business about to book this month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Won Business about to book next month</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Was_this_competitor_the_incumbent__c</fullName>
+        <externalId>false</externalId>
+        <label>Was this competitor the incumbent?</label>
+        <picklist>
+            <controllingField>Competitor__c</controllingField>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <controllingFieldValues>ComCar</controllingFieldValues>
+                <controllingFieldValues>Dixie</controllingFieldValues>
+                <controllingFieldValues>Enterprise</controllingFieldValues>
+                <controllingFieldValues>Gatorlease</controllingFieldValues>
+                <controllingFieldValues>Hogan</controllingFieldValues>
+                <controllingFieldValues>Hunt</controllingFieldValues>
+                <controllingFieldValues>IdealLease</controllingFieldValues>
+                <controllingFieldValues>Interstate Natn&apos;l</controllingFieldValues>
+                <controllingFieldValues>Lily</controllingFieldValues>
+                <controllingFieldValues>Local Provider</controllingFieldValues>
+                <controllingFieldValues>NatioanlLease</controllingFieldValues>
+                <controllingFieldValues>OEM (pls specify)</controllingFieldValues>
+                <controllingFieldValues>Other (pls specify)</controllingFieldValues>
+                <controllingFieldValues>Ownership</controllingFieldValues>
+                <controllingFieldValues>PacLease</controllingFieldValues>
+                <controllingFieldValues>Penske</controllingFieldValues>
+                <controllingFieldValues>Rollins</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <controllingFieldValues>ComCar</controllingFieldValues>
+                <controllingFieldValues>Dixie</controllingFieldValues>
+                <controllingFieldValues>Enterprise</controllingFieldValues>
+                <controllingFieldValues>Gatorlease</controllingFieldValues>
+                <controllingFieldValues>Hogan</controllingFieldValues>
+                <controllingFieldValues>Hunt</controllingFieldValues>
+                <controllingFieldValues>IdealLease</controllingFieldValues>
+                <controllingFieldValues>Interstate Natn&apos;l</controllingFieldValues>
+                <controllingFieldValues>Lily</controllingFieldValues>
+                <controllingFieldValues>Local Provider</controllingFieldValues>
+                <controllingFieldValues>NatioanlLease</controllingFieldValues>
+                <controllingFieldValues>OEM (pls specify)</controllingFieldValues>
+                <controllingFieldValues>Other (pls specify)</controllingFieldValues>
+                <controllingFieldValues>Ownership</controllingFieldValues>
+                <controllingFieldValues>PacLease</controllingFieldValues>
+                <controllingFieldValues>Penske</controllingFieldValues>
+                <controllingFieldValues>Rollins</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ext_ref_id__c</fullName>
+        <description>Contains the external id which is composed of Opportunity# and RateSheet#</description>
+        <externalId>true</externalId>
+        <label>ext_ref_id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PartialWinRateSheet</label>
+    <nameField>
+        <label>PartialWinRateSheet Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>PartialWinRateSheets</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Save</fullName>
+        <availability>online</availability>
+        <description>Saves modified content incase user needs to finish at a later time</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Save</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!PartialWinRateSheet__c.Status__c}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit</fullName>
+        <availability>online</availability>
+        <description>Saves the data, Creates new opportunities based on the Status selected</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!PartialWinRateSheet__c.Status__c}</url>
+    </webLinks>
+</CustomObject>

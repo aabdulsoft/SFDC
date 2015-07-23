@@ -1,0 +1,342 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 12/09/2012       Swetha Mandadi        SFDC Visibility Enhancement    
+ ****************************************************************************/
+-->
+
+<apex:page standardController="Lead" extensions="Duplicaterecordscheck" showHeader="true" >
+    <apex:form >
+    <script>
+       function setFocusOnLoad() {}
+    </script>
+        <apex:pageMessages />
+        <apex:pageBlock title="Search for Matches" >
+            <!--
+            {!accountQuery}
+            
+            {!contactQuery}
+            
+            <br/>
+            {!searchCriteriaFirstName}
+            -->
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Search" action="{!searchData}"/>
+                <apex:commandButton value="Reset" action="{!reset}"/>
+           </apex:pageblockbuttons>
+            
+            <apex:panelGrid title="Search critria" border="0" columns="5" cellspacing="6">
+                <apex:panelGroup >
+                    Company &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaCompany}"/>
+                </apex:panelGroup>
+                <apex:panelGroup >
+                    First Name &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaFirstName}"/>
+                </apex:panelGroup>
+                <apex:panelGroup >
+                    Last Name &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaLastName}"/>
+                </apex:panelGroup>
+                <apex:panelGroup >
+                    Email &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaEmail}"/>
+                </apex:panelGroup>
+                <apex:panelGroup >
+                    City &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaCity}"/>
+                </apex:panelGroup>
+                <apex:panelGroup >
+                    State &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaState}"/>
+                </apex:panelGroup>
+                
+            </apex:panelGrid>
+            
+            <!-- Matched Accounts Section START -->
+            <apex:pageBlockSection title="Accounts Matched" columns="1" id="accountSection">
+                <apex:pageBlockSectionItem rendered="{!stdAccountController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="center">
+                            <apex:commandButton value="Grant Access" action="{!GetDataForTask}" />
+                            <!--<apex:commandButton value="Grant Access" action="{!GetDataForTask}" onclick="Validate()" status="creating" />
+                            <apex:actionStatus startText=" Creating Task..." stopText="" id="creating"/>
+                                <apex:param value="{!account.id}" assignTo="{!accIdField}" name="accIdField" /> -->
+                        </div>
+                        <div align="right">
+                            Current Page#{!stdAccountController.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable var="account" value="{!pageAccounts}" rendered="{!stdAccountController.ResultSize>0}" >
+                    <apex:column >
+                        <!-- <apex:inputCheckbox id="chkRecord" value="{!account.id}" selected="false" /> -->
+                        <apex:inputCheckbox id="chkRecord" value="{!account.Is_Selected__c}" /> 
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="{!$ObjectType.Account.Fields.Name.Label}"  action="{!changeOrder}" >
+                                    <apex:param value="{!$ObjectType.Account.Fields.Name.Name}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                                <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Name',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:outputLink onclick="window.open('/{!account.id}')" value="#" >{!account.Name}</apex:outputLink> <!-- value="{!URLFOR($Action.Account.View, account.Id)}" -->
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Status"  action="{!changeOrder}" >
+                                    <apex:param value="{!$ObjectType.Account.Fields.Type.Name}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                             <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Type',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!account.Type}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Account Classification"  action="{!changeOrder}" >
+                                    <apex:param value="{!$ObjectType.Account.Fields.Account_Classification__c.Name}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                             <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Account_Classification__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!account.Account_Classification__c}
+                    </apex:column>
+                    <!--<apex:column value="{!account.Account_Classification__c}"/>-->
+                    <apex:column value="{!account.Account_Type__c}"/>
+                    <apex:column value="{!account.billingCity}"/>
+                    <apex:column value="{!account.billingState}"/>
+                    <apex:column value="{!account.Central_Decisionmaking__c}"/>
+                    <apex:column headerValue="Owner">
+                        <apex:outputLink onclick="window.open('/{!account.Ownerid}')" value="#" >{!account.Owner.Name} / {!account.Owner.Profile.Name}</apex:outputLink>
+                    </apex:column>
+                    <!--<apex:column value="{!account.Last_Sales_Interaction__c}"/>-->
+                </apex:pageBlockTable>
+                <apex:pageBlockSectionItem rendered="{!stdAccountController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <apex:commandButton value="First" action="{!stdAccountController.first}" reRender="accountSection" rendered="{!stdAccountController.hasPrevious}" status="accountsLoading" />
+                            <apex:commandButton value="Next" action="{!stdAccountController.next}" rendered="{!stdAccountController.hasNext}" reRender="accountSection" status="accountsLoading" />
+                            <apex:commandButton value="Previous" action="{!stdAccountController.previous}" rendered="{!stdAccountController.hasPrevious}" reRender="accountSection" status="accountsLoading" />
+                            <apex:commandButton value="Last" action="{!stdAccountController.last}" reRender="accountSection" rendered="{!stdAccountController.hasNext}" status="accountsLoading" />
+                            <apex:actionStatus id="accountsLoading">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <!-- Matched Accounts Section END -->
+            
+            <!-- Matched Contacts Section START -->
+            <apex:pageBlockSection title="Contacts Matched by name and company" id="contactSection" columns="1">
+                <apex:pageBlockSectionItem rendered="{!stdContactController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            Current Page#{!stdContactController.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable var="contact" value="{!PageContacts}" rendered="{!stdContactController.ResultSize>0}" >
+                   <!--<apex:column value="{!contact.FirstName}" /> -->
+                   <apex:column headerValue="FirstName">
+                        <apex:outputLink onclick="window.open('/{!contact.Id}')" value="#" >{!contact.FirstName}</apex:outputLink>
+                    </apex:column>  
+                  <!--<apex:column value="{!contact.LastName}" />-->
+                    <apex:column headerValue="LastName">
+                        <apex:outputLink onclick="window.open('/{!contact.Id}')" value="#" >{!contact.lastName}</apex:outputLink>
+                    </apex:column> 
+                    <!--<apex:column value="{!contact.Account.Name}" />-->
+                    <apex:column headerValue="Account Name">
+                        <apex:outputLink onclick="window.open('/{!contact.AccountId}')" value="#" >{!contact.Account.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!contact.Email}"/>
+                    <!--<apex:column value="{!contact.Owner.alias}"/>-->
+                    <apex:column headerValue="Owner">
+                        <apex:outputLink onclick="window.open('/{!contact.Ownerid}')" value="#" >{!contact.Owner.Name} / {!contact.Owner.Profile.Name}</apex:outputLink>
+                    </apex:column>
+                </apex:pageBlockTable>
+                <apex:pageBlockSectionItem rendered="{!stdContactController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <apex:commandButton value="First" action="{!stdContactController.first}" reRender="contactSection" rendered="{!stdContactController.hasPrevious}" status="contactsLoading" />
+                            <apex:commandButton value="Next" action="{!stdContactController.next}" rendered="{!stdContactController.hasNext}" reRender="contactSection" status="contactsLoading" />
+                            <apex:commandButton value="Previous" action="{!stdContactController.previous}" rendered="{!stdContactController.hasPrevious}" reRender="contactSection" status="contactsLoading" />
+                            <apex:commandButton value="Last" action="{!stdContactController.last}" reRender="contactSection" rendered="{!stdContactController.hasNext}" status="contactsLoading" />
+                            <apex:actionStatus id="contactsLoading">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <!-- Matched Contacts by name and company Section END -->
+            
+            <!-- Matched Contacts by email Section START -->
+            <apex:pageBlockSection title="Contacts Matched by Email" columns="1" id="contactSection2">
+                <apex:pageBlockSectionItem rendered="{!stdContactControllerMatchingEmail.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            Current Page#{!stdContactControllerMatchingEmail.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable var="contact" value="{!PageContactsMatchingEmail}" rendered="{!stdContactControllerMatchingEmail.ResultSize>0}" >
+                   <!-- <apex:column value="{!contact.FirstName}" />-->
+                    <apex:column headerValue="FirstName">
+                        <apex:outputLink onclick="window.open('/{!contact.Id}')" value="#" >{!contact.FirstName}</apex:outputLink>
+                    </apex:column>
+                    <!---<apex:column value="{!contact.LastName}" />-->
+                    <apex:column headerValue="LastName">
+                        <apex:outputLink onclick="window.open('/{!contact.Id}')" value="#" >{!contact.lastName}</apex:outputLink>
+                    </apex:column> 
+                    <!--<apex:column value="{!contact.Account.Name}" />-->
+                    <apex:column headerValue="Account Name">
+                        <apex:outputLink onclick="window.open('/{!contact.AccountId}')" value="#" >{!contact.Account.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!contact.Email}"/>
+                    <!--<apex:column value="{!con.Owner.alias}"/>-->
+                    <apex:column headerValue="Owner">
+                        <apex:outputLink onclick="window.open('/{!contact.Ownerid}')" value="#" >{!contact.Owner.Name} / {!contact.Owner.Profile.Name}</apex:outputLink>
+                    </apex:column>
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockSectionItem rendered="{!stdContactControllerMatchingEmail.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <apex:commandButton value="First" action="{!stdContactControllerMatchingEmail.first}" reRender="contactSection2" rendered="{!stdContactControllerMatchingEmail.hasPrevious}" status="contactsLoading2" />
+                            <apex:commandButton value="Next" action="{!stdContactControllerMatchingEmail.next}" rendered="{!stdContactControllerMatchingEmail.hasNext}" reRender="contactSection2" status="contactsLoading2" />
+                            <apex:commandButton value="Previous" action="{!stdContactControllerMatchingEmail.previous}" rendered="{!stdContactControllerMatchingEmail.hasPrevious}" reRender="contactSection2" status="contactsLoading2" />
+                            <apex:commandButton value="Last" action="{!stdContactControllerMatchingEmail.last}" reRender="contactSection2" rendered="{!stdContactControllerMatchingEmail.hasNext}" status="contactsLoading2" />
+                            <apex:actionStatus id="contactsLoading2">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+               
+            </apex:pageBlockSection>
+             
+            <!-- Matched Leads section START  --->
+            <apex:pageBlockSection title="Leads Matched by name and company" id="leadSection" columns="1">
+                <apex:pageBlockSectionItem rendered="{!stdLeadController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            Current Page#{!stdLeadController.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable var="lead" value="{!pageLeads}" rendered="{!stdLeadController.ResultSize>0}">
+                    <!--<apex:column value="{!lead.Name}" />---->
+                    <apex:column headerValue="Name">
+                        <apex:outputLink onclick="window.open('/{!Lead.Id}')" value="#" >{!Lead.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!lead.Email}"/>
+                    <!--  apex:column value="{!lead.Title}"/> -->
+                    <apex:column value="{!lead.Phone}"/>
+                    <apex:column value="{!lead.Company}"/>
+                    <apex:column value="{!lead.Status}"/> 
+                    <apex:column value="{!lead.State}" />
+                    <apex:column value="{!lead.City}" />        
+                    <apex:column value="{!lead.Country}"/>
+                    <apex:column headerValue="Owner">
+                        <apex:outputLink onclick="window.open('/{!Lead.Ownerid}')" value="#" >{!Lead.Owner.Name} / {!Lead.Owner.Profile.Name}</apex:outputLink>
+                    </apex:column>
+                    
+                </apex:pageBlockTable>
+                <apex:pageBlockSectionItem rendered="{!stdLeadController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <apex:commandButton value="First" action="{!stdLeadController.first}" reRender="leadSection" rendered="{!stdLeadController.hasPrevious}" status="leadsLoading" />
+                            <apex:commandButton value="Next" action="{!stdLeadController.next}" rendered="{!stdLeadController.hasNext}" reRender="leadSection" status="leadsLoading" />
+                            <apex:commandButton value="Previous" action="{!stdLeadController.previous}" rendered="{!stdLeadController.hasPrevious}" reRender="leadSection" status="leadsLoading" />
+                            <apex:commandButton value="Last" action="{!stdLeadController.last}" reRender="leadSection" rendered="{!stdLeadController.hasNext}" status="leadsLoading" />
+                            <apex:actionStatus id="leadsLoading">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <!----Matched Leads section END --->
+            <!-- Matched Leads by email Section START -->
+           <apex:pageBlockSection title="Leads Matched by Email" columns="1">
+                <apex:pageBlockSectionItem rendered="{!stdLeadControllerMatchingEmail.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            Current Page#{!stdLeadControllerMatchingEmail.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockTable var="l" value="{!pageLeadsMatchingEmail}" rendered="{!stdLeadControllerMatchingEmail.ResultSize>0}">
+                    <!--<apex:column value="{!l.Name}" />-->
+                    <apex:column headerValue="Name">
+                        <apex:outputLink onclick="window.open('/{!l.Id}')" value="#" >{!l.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!l.Email}"/>
+                    <!--  apex:column value="{!l.Title}"/> -->
+                    <apex:column value="{!l.Phone}"/>
+                    <apex:column value="{!l.Company}"/>
+                    <apex:column value="{!l.Status}"/> 
+                    <apex:column value="{!l.City}" />      
+                    <apex:column value="{!l.State}" />
+                    <apex:column value="{!l.Country}" />
+                    <apex:column headerValue="Owner">
+                        <apex:outputLink onclick="window.open('/{!l.Ownerid}')" value="#" >{!l.Owner.Name} / {!l.Owner.Profile.Name}</apex:outputLink>
+                    </apex:column>
+  
+                </apex:pageBlockTable>
+                <apex:pageBlockSectionItem rendered="{!stdLeadControllerMatchingEmail.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <apex:commandButton value="First" action="{!stdLeadControllerMatchingEmail.first}" reRender="leadSection" rendered="{!stdLeadControllerMatchingEmail.hasPrevious}" status="leadsLoading" />
+                            <apex:commandButton value="Next" action="{!stdLeadControllerMatchingEmail.next}" rendered="{!stdLeadControllerMatchingEmail.hasNext}" reRender="leadSection" status="leadsLoading" />
+                            <apex:commandButton value="Previous" action="{!stdLeadControllerMatchingEmail.previous}" rendered="{!stdLeadControllerMatchingEmail.hasPrevious}" reRender="leadSection" status="leadsLoading" />
+                            <apex:commandButton value="Last" action="{!stdLeadControllerMatchingEmail.last}" reRender="leadSection" rendered="{!stdLeadControllerMatchingEmail.hasNext}" status="leadsLoading" />
+                            <apex:actionStatus id="leadsLoading">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+              </apex:pageblocksection>
+                
+        </apex:pageBlock>
+    </apex:form>
+    
+    <script language="JavaScript" type="text/javascript">
+        
+    function Validate(){
+
+        alert(1);
+        var doSave;
+        var totalRows = document.getElementById('j_id0:j_id1:j_id29:accountSection:j_id57:tb').childNodes.length;
+        doSave = false;
+        for(var i=0; i<totalRows; i++)
+        {
+            if(document.getElementById('j_id0:j_id1:j_id29:accountSection:j_id57:' + i + ':chkRecord').checked)
+            {
+                doSave = true;
+                document.getElementById('j_id0:j_id1:j_id29:accountSection:j_id57:' + i + ':chkRecord').checked = false;
+            }
+        }
+        alert(3);
+        alert('doSave = ' + doSave);
+        if (doSave == false)
+        {
+            alert(4);
+            alert("Please select atleast one Account before clicking on Grant Access Button");
+        }
+    }       
+    
+    </script>
+</apex:page>

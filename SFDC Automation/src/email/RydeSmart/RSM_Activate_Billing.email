@@ -1,0 +1,6 @@
+<messaging:emailTemplate subject="Activate RydeSmart Billing" recipientType="User" relatedToType="Account">
+<messaging:htmlEmailBody >
+  
+  <c:RSM_Activate_Billing_Comp accId="{!relatedTo.Id}" accName="{!relatedTo.Name}" ></c:RSM_Activate_Billing_Comp>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

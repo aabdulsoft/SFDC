@@ -1,0 +1,576 @@
+<apex:page controller="RyderSurveyReport" showHeader="false" renderAs="{!IF($CurrentPage.Parameters.render == 'pdf','pdf',null)}">
+    <head>
+        <style type="text/css">
+            @page
+            {
+                size:landscape;
+                @top-center {
+                    content: element(header);
+                }
+                @bottom-right {
+                    content: element(footer);
+                }
+            }
+                
+            body {
+                font-family: "Arial" "Sans-Serif";
+                font-size:9pt;
+            }
+            .header {
+                padding-top: 2px;
+                display: block;
+                position: running(header);
+                font-weight: bold;
+                clear: both;
+            }
+            .logo {
+                float: left;
+                width: 600px;
+            }
+            .title {
+                float: left;
+                text-align: center;
+            }
+            .footer {
+                width: 920px;
+                border-top: 1px solid black;
+                display: block;
+                padding: 5px;
+                font-size: 6pt;
+                position: running(footer);
+                clear: both;
+            } 
+            .container {
+                height: 180px;
+            }
+            .container3 {
+                height: 70px;
+            }
+            .spacer{
+                padding: 1px;
+                width: 450px;
+                float: left;
+            }
+            .completionDetails {
+                border: 1px solid black;
+                padding: 1px;
+                margin-top: 10px;
+                width: 450px;
+                float: left;
+            }
+            .separator {
+                float: left;
+                width: 20px;
+            }
+            .contactInformation {
+                border: 1px solid black;
+                padding: 1px;
+                width: 450px;
+                float: left;
+            }
+            .accountInformation {
+                border: 1px solid black;
+                padding: 1px;
+                width: 450px;
+                float: left;
+            } 
+            .mostImportantFactors{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;
+            }
+            .container2 {
+                padding-top: 10px;
+                height: 30px;
+            }
+            .overallRyderRelationship{
+                border: 1px solid black;
+                padding: 1px;
+                width: 400px;
+                float: left;
+            }
+            .netPromoterScore{
+                border: 1px solid black;
+                padding: 1px;
+                width: 500px;
+                float: left;
+            }
+            .questionSet2{
+                border: 1px solid black;
+                padding: 1px;
+                width: 400px;
+            }
+            .ryderMaintenance{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;
+            }
+            .truckWashing{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;
+            }
+            .ryderEmergencyRoadService{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .billing{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .accountMgt{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .ryderTruckRentalServices{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .nonRyderVehicles{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .additionalDetails{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .additionalDetailsQuestions{
+                padding: 1px;
+                width: 925px;
+            }
+            .emptySpace{
+                border: 1px solid black;
+                padding: 1px;
+                width: 925px;               
+            }
+            .titleCCO {
+                float: left;
+                text-align: center;
+                font-size: 11pt;
+            }
+        </style>
+    </head>
+    <div class="header">
+        <div class="title">
+            RYDER CUSTOMER SATISFACTION INDICATOR<p/>
+            INDIVIDUAL CUSTOMER REPORT<p/>
+            2011-2012 Lease CSI Campaign<p/>
+        </div>
+        <div class="logo">
+            <apex:image url="{!IF($CurrentPage.Parameters.render == 'pdf',$Resource.RyderLogo,'http://www.ryder.com/images/logo.jpg')}" width="{!IF($CurrentPage.Parameters.render == 'pdf','214','177')}" height="{!IF($CurrentPage.Parameters.render == 'pdf','60','88')}" style="float:right;" />
+        </div>
+        <div class="titleCCO">
+        	{!IF(ClosedLoop == 'Closed Loop', 'INDIVIDUAL CUSTOMER CARE OPPORTUNITY REPORT - CCO','')}<p/>
+        </div>
+    </div>
+    <div class="footer">
+        <div>NOTES: Overall CSI Score = Average of Overall Satisfaction &amp; Repurchase Intent X 10 <p/>   
+            Net Promoter Score: 0 - 6 = Detractor, 7 - 8 = Passive, 9 - 10 = Promoter <p/>
+        </div>
+    </div> 
+    <div class="container3">
+        <div class="spacer">
+            &nbsp;
+        </div>
+        <div class="separator">&nbsp;</div>
+        <div class="completionDetails">
+            <table>
+                <tr>
+                    <th style="width:150px;"><span style="font-weight:bold;">Completion Details</span></th>
+                    <th style="width:100px;"></th>
+                    <th style="width:100px;"></th>
+                    <th style="width:100px;"></th>
+                </tr>
+                <tr>
+                    <td>Date Completed:</td>
+                    <td>{!SurveySubmissionDate}</td>
+                    <td>Method:</td>
+                    <td>{!Method}</td>
+                </tr>
+                <tr>
+                    <td>Language:</td>
+                    <td>English</td>
+                    <td>Attempts:</td>
+                    <td>{!CallAttempts}</td>
+                </tr>
+                <tr>
+                    <td>{!ClosedLoop}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+        <div class="contactInformation">
+            <table>
+                <tr>
+                    <th style="width:250px;">Contact Information</th>
+                    <th style="width:200px;"></th>
+                </tr>
+                <tr>
+                    <td>Company Name:</td>
+                    <td>{!CompanyName}</td>
+                </tr>
+                <tr>
+                    <td>Contact Name:</td>
+                    <td>{!ContactName}</td>
+                </tr>
+                <tr>
+                    <td>Position Title:</td>
+                    <td>{!ContactTitle}</td>
+                </tr>
+                <tr>
+                    <td>Role:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fleet Type:</td>
+                    <td>{!FleetType}</td>
+                </tr>
+                <tr>
+                    <td>Fax:</td>
+                    <td>{!ContactFax}</td>
+                </tr>
+                <tr>
+                    <td>CSI Customer ID:</td>
+                    <td>{!CSICustomerId}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="separator">&nbsp;</div>
+        <div class="accountInformation">
+            <table>
+                <tr>
+                    <th style="width:200px;">Account Information</th>
+                    <th style="width:250px;"></th>
+                </tr>
+                <tr>
+                    <td>Lessee Num:</td>
+                    <td>{!LesseeNo}</td>
+                </tr>
+                <tr>
+                    <td>Manager:</td>
+                    <td>{!Manager}</td>
+                </tr>
+                <tr>
+                    <td>Maint. Mgr:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Branch:</td>
+                    <td>{!Branch}</td>
+                </tr>
+                <tr>
+                    <td>CBU</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Region:</td>
+                    <td>{!Region}</td>
+                </tr>
+                <tr>
+                    <td>National Account:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Revenue at Risk:</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="mostImportantFactors">
+        <table>
+            <tr>
+                <th style="width:300px;">Most Important Factors</th>
+                <th style="width:100px;">Ryder Score</th>
+                <th style="width:100px;">Importance Rating</th>
+                <th style="width:150px;">Other Provider(s) Score</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Maintenance:</td>
+                <td>{!MaintenanceSatisfaction}</td>
+                <td>{!Q36_10}</td>
+                <td>{!Q52_10}</td>
+                <td>{!Q41_00}</td>
+            </tr>
+            <tr>
+                <td>Emergency Road Service:</td>
+                <td>{!Q40_70}</td>
+                <td>{!Q36_70}</td>
+                <td>{!Q52_70}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Truck Washing:</td>
+                <td>{!Q40_60}</td>
+                <td>{!Q36_60}</td>
+                <td>{!Q52_60}</td>
+                <td>{!Q42_00}</td>
+            </tr>
+        </table>
+    </div>
+   <br/>
+    <div class="container2">
+        <div class="overallRyderRelationship">
+            <table>
+                <tr>
+                    <th style="width:300px;">Overall Ryder Relationship</th>
+                    <th style="width:100px;">Ryder Score</th>
+                </tr>
+                <tr>
+                    <td>CSI (avg overall satisfaction + repurch. intent):</td>
+                    <td>{!OverallRyderRelationship}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="separator">&nbsp;</div>
+        <div class="netPromoterScore">
+            <table>
+                <tr>
+                    <th style="width:260px;">Net Promoter Score</th>
+                    <th style="width:110px;">Ryder Score</th>
+                    <th style="width:130px;">Other Provider(s) Score</th>
+                </tr>
+                <tr>
+                    <td>Likelihood to Recommend:</td>
+                    <td>{!WillingnessToRefer}</td>
+                    <td>{!Q58_00}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br/>
+    <div class="questionSet2">
+        <table>
+            <tr>
+                <th style="width:300px;">Decision Role:</th>
+                <td style="width:100px;">{!Q22_00}</td>
+            </tr>
+            <tr>
+                <td>Overall Satisfaction:</td>
+                <td>{!OverallSatisfaction}</td>
+            </tr>
+            <tr>
+                <td>Renewal Intent:</td>
+                <td>{!LikelihoodToRenew}</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="ryderMaintenance">
+        <table>
+            <tr>
+                <th style="width:300px;">Ryder Maintenance</th>
+                <th style="width:100px;">Ryder Score</th>
+                <th style="width:100px;">Importance Rating</th>
+                <th style="width:150px;">Other Provider(s) Score</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Maintenance Satisfaction:</td>
+                <td>{!MaintenanceSatisfaction}</td>
+                <td>{!Q36_10}</td>
+                <td>{!Q52_10}</td>
+                <td>{!Q41_00}</td>
+            </tr>
+            <tr>
+                <td>Shop contact ability to solve problems:</td>
+                <td>{!Q40_20}</td>
+                <td>{!Q36_20}</td>
+                <td>{!Q52_20}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Satisfaction with Repairs done right the first time:</td>
+                <td>{!Q40_30}</td>
+                <td>{!Q36_30}</td>
+                <td>{!Q52_30}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Satisfaction with repairs completed in time promised:</td>
+                <td>{!Q40_40}</td>
+                <td>{!Q36_40}</td>
+                <td>{!Q52_40}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Satisfaction with communication from the shop:</td>
+                <td>{!ShopCommunications}</td>
+                <td>{!Q36_50}</td>
+                <td>{!Q52_50}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="truckWashing">
+        <table>
+            <tr>
+                <th style="width:300px;">Truck Washing</th>
+                <th style="width:100px;">Ryder Score</th>
+                <th style="width:100px;">Importance Rating</th>
+                <th style="width:150px;">Other Provider(s) Score</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Satisfaction with truck washing:</td>
+                <td>{!Q40_60}</td>
+                <td>{!Q36_60}</td>
+                <td>{!Q52_60}</td>
+                <td>{!Q42_00}</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="ryderEmergencyRoadService">
+        <table>
+            <tr>
+                <th style="width:300px;">Ryder Emergency Road Service</th>
+                <th style="width:100px;">Ryder Score</th>
+                <th style="width:100px;">Importance Rating</th>
+                <th style="width:150px;">Other Provider(s) Score</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Emergency road service:</td>
+                <td>{!Q40_70}</td>
+                <td>{!Q36_70}</td>
+                <td>{!Q52_70}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="billing">
+        <table>
+            <tr>
+                <th style="width:300px;">Billing</th>
+                <th style="width:100px;">Ryder Score</th>
+                <th style="width:100px;">Importance Rating</th>
+                <th style="width:150px;">Other Provider(s) Score</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Billing quality and invoicing:</td>
+                <td>{!Q45_00}</td>
+                <td>{!Q38_00}</td>
+                <td>{!Q55_00}</td>
+                <td>{!Q46_00}</td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="accountMgt">
+        <table>
+            <tr>
+                <th style="width:300px;">Account Mgt.</th>
+                <th style="width:100px;">Ryder Score</th>
+                <th style="width:100px;">Importance Rating</th>
+                <th style="width:150px;">Other Provider(s) Score</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Satisfaction with account manager:</td>
+                <td>{!AccountManagerSatisfaction}</td>
+                <td>{!Q37_00}</td>
+                <td>{!Q53_00}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="ryderTruckRentalServices">
+        <table>
+            <tr>
+                <th style="width:300px;">Ryder Truck Rental Services</th>
+                <th style="width:170px;">Uses Ryder Rental Vehicles?</th>
+                <th style="width:90px;">Availability</th>
+                <th style="width:90px;">Condition</th>
+                <th style="width:260px;">Comments</th>
+            </tr>
+            <tr>
+                <td>Use of Ryder rental vehicles:</td>
+                <td></td>
+                <td>{!Q47_00}</td>
+                <td>{!Q48_00}</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="additionalDetails">
+        <table>
+            <tr>
+                <th style="width:910px;">Additional Details</th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+    <div class="additionalDetailsQuestions">
+        <table>
+            <tr>
+                <th>Why do you split your fleet across multiple providers?</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q27_00}</td>
+            </tr>
+            <tr>
+                <th>Issues raised with Ryder already:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q49_00}</td>
+            </tr>
+            <tr>
+                <th>Comments related to customer Business:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q29_00}</td>
+            </tr>
+            <tr>
+                <th>Comments related to customer satisfaction:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q35_00}</td>
+            </tr>
+            <tr>
+                <th>Comments related to competitors:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q59_00}</td>
+            </tr>
+            <tr>
+                <th>Comments related to customer's own maintenance:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q61_00}</td>
+            </tr>
+            <tr>
+                <th>Other areas of concern:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q64_00}</td>
+            </tr>
+            <tr>
+                <th>Preferred method of communication for future surveys:</th>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;">{!Q63_00}</td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+</apex:page>

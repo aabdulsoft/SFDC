@@ -1,0 +1,66 @@
+<apex:page standardController="Vehicle__c" extensions="SearchMasterInventoryController" cache="false" applyHtmlTag="false"  contentType="application/vnd.ms-excel#Search{!selectedTab}Results.xls"  showHeader="false" showChat="false" sidebar="false" readonly="true">
+<apex:outputPanel rendered="{!selectedTab == 'Tractor'}">
+<table>
+<tr>
+ 
+<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+<th>{!f.Label}</th>
+</apex:repeat>
+</tr>
+<apex:repeat value="{!searchResultTractorsExcel}" var="index">
+<apex:repeat value="{!index}" var="tractor">
+<tr>
+<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+<td>{!tractor[f.FieldPath]}</td>
+</apex:repeat>
+</tr>
+</apex:repeat>
+</apex:repeat>
+
+</table>
+</apex:outputPanel>
+
+
+<apex:outputPanel rendered="{!selectedTab == 'Truck'}">
+<table>
+<tr>
+<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+<th>{!f.Label}</th>
+</apex:repeat>
+</tr>
+<apex:repeat value="{!searchResultTrucksExcel}" var="index">
+<apex:repeat value="{!index}" var="truck">
+<tr>
+<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+<td>{!truck[f.FieldPath]}</td>
+</apex:repeat>
+</tr>
+</apex:repeat>
+</apex:repeat>
+
+</table>
+</apex:outputPanel>
+
+
+<apex:outputPanel rendered="{!selectedTab == 'Trailer'}">
+<table>
+<tr>
+<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+<th>{!f.Label}</th>
+</apex:repeat>
+</tr>
+<apex:repeat value="{!searchResultTrailersExcel}" var="index">
+<apex:repeat value="{!index}" var="trailer">
+<tr>
+<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearchResult_Field}" var="f">
+<td>{!trailer[f.FieldPath]}</td>
+</apex:repeat>
+</tr>
+</apex:repeat>
+</apex:repeat>
+
+</table> 
+
+</apex:outputPanel>
+
+</apex:page>

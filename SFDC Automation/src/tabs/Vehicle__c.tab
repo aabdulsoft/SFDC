@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customObject>true</customObject>
+    <description>Ryder Vehicles  - Creating to support search.</description>
+    <mobileReady>false</mobileReady>
+    <motif>Custom98: Truck</motif>
+</CustomTab>

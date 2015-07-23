@@ -1,0 +1,13 @@
+<div>Dear #UserName,</div>
+<div><br />
+	</div>
+<div>Opportunity Name: <a href="https://cs20.salesforce.com/#OppID" name="Opp">#OpportunityName</a></div>
+<div>Opportunity Stage: #OpportunityStageName</div>
+<div>Account Name: #AccName</div>
+<div>&nbsp;</div>
+<div>Please <a href="https://c.cs20.visual.force.com/apex/Opp100PercentOwnership" title="Manage your Opportunity" name="VFPage">click here</a> to see all your opportunity!</div>
+<div>The opportunity captioned above has been signed and marked as 100% Ownership. Please review and validate if the opportunity was won 100% from ownership by updating the following task. In the comments section please enter Yes or No to indicate if it is100% ownership. If this opportunity is not 100% ownership please change the field in the opportunity from yes to no.</div>
+<div><br />
+	</div>
+<div>Ryder Team</div>
+<p>&nbsp;</p>

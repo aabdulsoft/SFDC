@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>BTR</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>BTRs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved Amount --></label>
+        <name>Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approver Comments --></label>
+        <name>Approver_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Approver --></label>
+        <name>First_Approver__c</name>
+        <relationshipLabel><!-- BTRs (First Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Conditional Approval --></label>
+        <name>Is_Conditional_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- The quote record to which this BTR approval process is linked to. --></help>
+        <label><!-- Quote --></label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- BTRs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- BTR Comments --></label>
+        <name>Requester_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Points to the branch of the user who created the BTR. --></help>
+        <label><!-- Ryder Branch --></label>
+        <name>Ryder_Branch__c</name>
+        <relationshipLabel><!-- BTRs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Second Approver --></label>
+        <name>Second_Approver__c</name>
+        <relationshipLabel><!-- BTRs (Second Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The status of the BTR approval process for a given quote. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - With DAM</masterLabel>
+            <translation><!-- Submitted - With DAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - With FAM</masterLabel>
+            <translation><!-- Submitted - With FAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted - With VP AM</masterLabel>
+            <translation><!-- Submitted - With VP AM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Third Approver --></label>
+        <name>Third_Approver__c</name>
+        <relationshipLabel><!-- BTRs (Third Approver) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>BTR Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The BTR record cannot be edited as one of the BTR for this quote has been already approved. --></errorMessage>
+        <name>Prevent_From_Editing_When_Approved</name>
+    </validationRules>
+</CustomObjectTranslation>

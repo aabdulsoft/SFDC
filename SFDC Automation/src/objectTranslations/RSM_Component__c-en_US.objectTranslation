@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM Component</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM Components</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Number --></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Status Date --></label>
+        <name>Asset_Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Status Flag --></label>
+        <name>Asset_Status_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Component ID --></label>
+        <name>Component_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Status --></label>
+        <name>Device_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Type --></label>
+        <name>Equipment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- I.P. Address --></label>
+        <name>I_P_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Date --></label>
+        <name>Install_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Location --></label>
+        <name>Install_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Current --></label>
+        <name>Is_Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- MIN --></label>
+        <name>MIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Number --></label>
+        <name>Model_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Odometer Dash --></label>
+        <name>Odometer_Dash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Odometer ECM --></label>
+        <name>Odometer_ECM__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIM --></label>
+        <name>SIM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial --></label>
+        <name>Serial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tech ID --></label>
+        <name>Tech_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Number --></label>
+        <name>Unit_Number__c</name>
+        <relationshipLabel><!-- RSM Components --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>RSM Component Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- History_Viewer --></label>
+        <name>History_Viewer</name>
+    </webLinks>
+</CustomObjectTranslation>

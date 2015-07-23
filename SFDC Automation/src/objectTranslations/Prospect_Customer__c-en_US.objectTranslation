@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Prospect / Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Prospect / Customers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Buyer Behavior --></label>
+        <name>Buyer_Behavior__c</name>
+    </fields>
+    <fields>
+        <label><!-- Courtesy Letter --></label>
+        <name>Courtesy_Letter__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thank you letter</masterLabel>
+            <translation><!-- Thank you letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Welcome letter</masterLabel>
+            <translation><!-- Welcome letter --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Executive Visit Number --></label>
+        <name>Executive_Visit_Number__c</name>
+        <relationshipLabel><!-- Prospect / Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prospect / Customer Participant Name --></label>
+        <name>Prospect_Customer_Participant_Name__c</name>
+        <relationshipLabel><!-- Prospect / Customer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role in Meeting --></label>
+        <name>Role_in_Meeting__c</name>
+        <picklistValues>
+            <masterLabel>Decision Maker</masterLabel>
+            <translation><!-- Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Observer</masterLabel>
+            <translation><!-- Observer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <layouts>
+        <layout>Prospect / Customer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please complete the Contact &quot;Title&quot; and/or &quot;Buying Behavior&quot; at the Contact Information Level --></errorMessage>
+        <name>Buyer_Behavior_must_be_completed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please complete the Contact &quot;Title&quot; and/or &quot;Buying Behavior&quot; at the Contact Information Level --></errorMessage>
+        <name>Title_must_be_completed</name>
+    </validationRules>
+</CustomObjectTranslation>

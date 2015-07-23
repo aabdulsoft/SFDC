@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ryder Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ryder Surveys</value>
+    </caseValues>
+    <fields>
+        <help><!-- Activity ID associated to the task for the survey conducted by the agent --></help>
+        <label><!-- Activity ID --></label>
+        <name>Activity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CS Score --></label>
+        <name>CS_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Ryder Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conducted business review --></label>
+        <name>Conducted_Business_Review__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Ryder Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch Name From Survey --></label>
+        <name>Customer_Branch_Name_From_Survey__c</name>
+    </fields>
+    <fields>
+        <help><!-- The customer/branch of the key contact that responded to this survey. --></help>
+        <label><!-- Customer Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Ryder Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with their Account Manager. --></help>
+        <label><!-- Account Manager Satisfaction --></label>
+        <name>Customer_Sat_Acct_Mgr_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the likelihood to renew contract with Ryder. --></help>
+        <label><!-- Likelihood to Renew --></label>
+        <name>Customer_Sat_Likelihood_to_Renew__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Likely</masterLabel>
+            <translation><!-- Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Unlikely</masterLabel>
+            <translation><!-- Somewhat Unlikely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlikely</masterLabel>
+            <translation><!-- Unlikely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Likely</masterLabel>
+            <translation><!-- Very Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Unlikely</masterLabel>
+            <translation><!-- Very Unlikely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with Ryder&apos;s Maintenance. --></help>
+        <label><!-- Maintenance Satisfaction --></label>
+        <name>Customer_Sat_Maintenance_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the overall FSL customer satisfaction with Ryder. --></help>
+        <label><!-- Overall Satisfaction - FSL --></label>
+        <name>Customer_Sat_Overall_Satisfaction_FSL__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the overall customer satisfaction with Ryder where the customer is an RPM business. --></help>
+        <label><!-- Overall Satisfaction - RPM --></label>
+        <name>Customer_Sat_Overall_Satisfaction_RPM__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with Ryder&apos;s shop&apos;s communications. --></help>
+        <label><!-- Maintenance Shop Communications --></label>
+        <name>Customer_Sat_Shop_Communications__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s willingness to refer Ryder to colleagues. --></help>
+        <label><!-- Willingness to Refer --></label>
+        <name>Customer_Sat_Willingness_to_Refer__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Link to the customer satisfaction survey --></help>
+        <label><!-- Customer Satisfaction Survey --></label>
+        <name>Customer_Satisfaction_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you receive/approve Ryder invoices? --></label>
+        <name>Do_you_receive_approve_Ryder_invoices__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do you use Ryder rental vehicles? --></label>
+        <name>Do_you_use_Ryder_Rental_vehicles__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Know</masterLabel>
+            <translation><!-- Do Not Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ExternalSurveyId --></label>
+        <name>ExternalSurveyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Survey Response Id --></label>
+        <name>External_Survey_Response_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failed Survey Email Date --></label>
+        <name>Failed_Survey_Email_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failed Survey Email Sent --></label>
+        <name>Failed_Survey_Email_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failed Survey --></label>
+        <name>Failed_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback --></label>
+        <name>Feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback about the agent --></label>
+        <name>Feedback_about_the_agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback as to why the issue wasnt solve --></label>
+        <name>Feedback_as_to_why_the_issue_wasnt_solve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has your problem been resolved? --></label>
+        <name>Has_your_problem_been_resolved__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How can Ryder improve Maint service? --></label>
+        <name>How_can_Ryder_improve_Maint_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- How can Ryder improve the services --></label>
+        <name>How_can_Ryder_improve_the_services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Increased fleet with other providers? --></label>
+        <name>Increased_fleet_with_other_providers__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation><!-- No Response --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Contact Local Account Manager --></label>
+        <name>KeyContact_LocalAccountManager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Contact Other --></label>
+        <name>KeyContact_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Contact Service Manager --></label>
+        <name>KeyContact_ServiceManager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last PDF Emailed BY User --></label>
+        <name>Last_PDF_Emailed_BY_User__c</name>
+        <relationshipLabel><!-- Ryder Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last PDF Emailed Date --></label>
+        <name>Last_PDF_Emailed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liked the MOST about support experience --></label>
+        <name>Liked_the_MOST_about_support_experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Likelihood of calling again --></label>
+        <name>Likelihood_of_calling_again__c</name>
+        <picklistValues>
+            <masterLabel>Likely</masterLabel>
+            <translation><!-- Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlikely</masterLabel>
+            <translation><!-- Unlikely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Unlikely</masterLabel>
+            <translation><!-- Very Unlikely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Likelihood to recommend --></label>
+        <name>Likelihood_to_recommend__c</name>
+        <picklistValues>
+            <masterLabel>Likely</masterLabel>
+            <translation><!-- Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Unlikely</masterLabel>
+            <translation><!-- Somewhat Unlikely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlikely</masterLabel>
+            <translation><!-- Unlikely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Likely</masterLabel>
+            <translation><!-- Very Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Unlikely</masterLabel>
+            <translation><!-- Very Unlikely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Contact Frequency --></label>
+        <name>Maintenance_Contact_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Before and after every PM/Maintenance event</masterLabel>
+            <translation><!-- Before and after every PM/Maintenance event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation><!-- Weekly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Contact Preference --></label>
+        <name>Maintenance_Contact_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Person</masterLabel>
+            <translation><!-- In-Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance-Emergency Road Service --></label>
+        <name>Maintenance_Emergency_Road_Service__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance- Relation with shop contact --></label>
+        <name>Maintenance_Relation_with_shop_contact__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance-Repairs In time --></label>
+        <name>Maintenance_Repairs_In_time__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance-Truck Washing --></label>
+        <name>Maintenance_Truck_Washing__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance-Vehicle Repairs --></label>
+        <name>Maintenance_Vehicle_Repairs__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other areas of concern --></label>
+        <name>Other_Areas_Of_Concern__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are the other carriers you use? --></label>
+        <name>Other_Carriers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall experience --></label>
+        <name>Overall_experience__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How satisfied are you with the agent --></label>
+        <name>Overall_how_satisfied_are_you_with_the__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Overall quality --></label>
+        <name>Overall_quality__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation><!-- Excellent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfactory</masterLabel>
+            <translation><!-- Satisfactory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsatisfactory</masterLabel>
+            <translation><!-- Unsatisfactory --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PDF Emailed --></label>
+        <name>PDF_Emailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary reason for choosing Ryder --></label>
+        <name>Primary_Reason_For_Choosing_Ryder__c</name>
+        <picklistValues>
+            <masterLabel>EPA/DOT Compliance / Regulatory Compliance</masterLabel>
+            <translation><!-- EPA/DOT Compliance / Regulatory Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Improve vehicle uptime</masterLabel>
+            <translation><!-- Improve vehicle uptime --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management decision</masterLabel>
+            <translation><!-- Management decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network of faciltiies</masterLabel>
+            <translation><!-- Network of faciltiies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing / cost was right</masterLabel>
+            <translation><!-- Pricing / cost was right --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder capabilities / Experience / Resources</masterLabel>
+            <translation><!-- Ryder capabilities / Experience / Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trust the Ryder name and reputation</masterLabel>
+            <translation><!-- Trust the Ryder name and reputation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wanted to get out of trucking business</masterLabel>
+            <translation><!-- Wanted to get out of trucking business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem resolved --></label>
+        <name>Problem_resolved__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t know</masterLabel>
+            <translation><!-- Don&apos;t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason Behind Renewal Intent --></label>
+        <name>Reason_Behind_Renewal_Intent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for using other carriers --></label>
+        <name>Reason_for_using_other_carriers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role in DMP --></label>
+        <name>Role_in_DMP__c</name>
+        <picklistValues>
+            <masterLabel>Contributor</masterLabel>
+            <translation><!-- Contributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decision Maker</masterLabel>
+            <translation><!-- Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ryder Customer --></label>
+        <name>Ryder_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Customer --></label>
+        <name>Ryder_Customer_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction with billing accuracy --></label>
+        <name>Satisfaction_Billing_Accuracy__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction with billing format --></label>
+        <name>Satisfaction_Billing_Format__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction with billing timeliness --></label>
+        <name>Satisfaction_Billing_Timeliness__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction With Ryder Branch --></label>
+        <name>Satisfaction_Ryder_Branch__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction With Performance Review --></label>
+        <name>Satisfaction_performace_review__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction with Rental Vehicles --></label>
+        <name>Satisfaction_with_Rental_Vehicles__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction with other provider --></label>
+        <name>Satisfaction_with_other_provider__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction with the overall Value --></label>
+        <name>Satisfaction_with_the_overall_Value__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Somewhat Dissatisfied</masterLabel>
+            <translation><!-- Somewhat Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Dissatisfied</masterLabel>
+            <translation><!-- Very Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Satisfied</masterLabel>
+            <translation><!-- Very Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Conducted By --></label>
+        <name>Survey_Conducted_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Details Loaded --></label>
+        <name>Survey_Details_Loaded__c</name>
+    </fields>
+    <fields>
+        <help><!-- The link to print out the results of the survey without having to store the print-out or pdf on a server. --></help>
+        <label><!-- Survey Printable Link --></label>
+        <name>Survey_Printable_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Responder Email --></label>
+        <name>Survey_Responder_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Responder Name --></label>
+        <name>Survey_Responder_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Responder Phone --></label>
+        <name>Survey_Responder_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Responder Title --></label>
+        <name>Survey_Responder_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- The survey was submitted on this date with the responses that can be viewed in the url. --></help>
+        <label><!-- Survey Submission Date --></label>
+        <name>Survey_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Contact Preference --></label>
+        <name>Survey_contact_preference__c</name>
+        <picklistValues>
+            <masterLabel>Do Not Contact for Surveys</masterLabel>
+            <translation><!-- Do Not Contact for Surveys --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Either</masterLabel>
+            <translation><!-- Either --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Times PDF Emailed --></label>
+        <name>Times_PDF_Emailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- To be contacted by Ryder Director --></label>
+        <name>To_be_contacted_by_RyderDirector__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do you use Other Providers? --></label>
+        <name>Use_Other_Providers__c</name>
+    </fields>
+    <fields>
+        <label><!-- What should be done to improve support --></label>
+        <name>What_should_be_done_to_improve_support__c</name>
+    </fields>
+    <layouts>
+        <layout>CSI Survey</layout>
+        <sections>
+            <label><!-- Billing --></label>
+            <section>Billing</section>
+        </sections>
+        <sections>
+            <label><!-- Competitor --></label>
+            <section>Competitor</section>
+        </sections>
+        <sections>
+            <label><!-- Concerns --></label>
+            <section>Concerns</section>
+        </sections>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General --></label>
+            <section>General</section>
+        </sections>
+        <sections>
+            <label><!-- Key Factors --></label>
+            <section>Key Factors</section>
+        </sections>
+        <sections>
+            <label><!-- Maintenance --></label>
+            <section>Maintenance</section>
+        </sections>
+        <sections>
+            <label><!-- Others --></label>
+            <section>Others</section>
+        </sections>
+        <sections>
+            <label><!-- Rental --></label>
+            <section>Rental</section>
+        </sections>
+        <sections>
+            <label><!-- Satisfaction --></label>
+            <section>Satisfaction</section>
+        </sections>
+        <sections>
+            <label><!-- System Info --></label>
+            <section>System Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed case survey</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer&apos;s feedback --></label>
+            <section>Customer&apos;s feedback</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CSI Survey --></label>
+        <name>CSI_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed Case Survey --></label>
+        <name>Closed_Case_Survey</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Send_PDF --></label>
+        <name>Send_PDF</name>
+    </webLinks>
+</CustomObjectTranslation>

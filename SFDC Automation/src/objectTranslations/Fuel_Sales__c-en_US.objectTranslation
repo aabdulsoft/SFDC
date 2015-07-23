@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Fuel Sales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Fuel Sales</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Fuel Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bulk fuel through REDCO --></label>
+        <name>Bulk_fuel_through_REDCO__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bulk tank on yard% --></label>
+        <name>Bulk_tank_on_yard__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35</masterLabel>
+            <translation><!-- 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65</masterLabel>
+            <translation><!-- 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70</masterLabel>
+            <translation><!-- 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80</masterLabel>
+            <translation><!-- 80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>85</masterLabel>
+            <translation><!-- 85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95</masterLabel>
+            <translation><!-- 95 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- This contact does not belong to the account or is inactive --></errorMessage>
+        </lookupFilter>
+        <name>Contact_Name__c</name>
+        <relationshipLabel><!-- Fuel Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Full service fuel --></label>
+        <name>Full_service_fuel__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Link to Amendments --></label>
+        <name>Link_to_Amendments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Selling Sheet --></label>
+        <name>Link_to_Selling_Sheet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rep in Charge --></label>
+        <name>Rep_in_Charge__c</name>
+        <relationshipLabel><!-- Fuel Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ryder full service fuel% --></label>
+        <name>Ryder_full_service_fuel__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35</masterLabel>
+            <translation><!-- 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65</masterLabel>
+            <translation><!-- 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70</masterLabel>
+            <translation><!-- 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80</masterLabel>
+            <translation><!-- 80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>85</masterLabel>
+            <translation><!-- 85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95</masterLabel>
+            <translation><!-- 95 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Q1 --></label>
+        <name>Total_Q1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Truck stop fuel with 10 cent rebate --></label>
+        <name>Truck_stop_fuel_with_10_cent_rebate__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Truck stop self service fuel% --></label>
+        <name>Truck_stop_self_service_fuel__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35</masterLabel>
+            <translation><!-- 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65</masterLabel>
+            <translation><!-- 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70</masterLabel>
+            <translation><!-- 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80</masterLabel>
+            <translation><!-- 80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>85</masterLabel>
+            <translation><!-- 85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95</masterLabel>
+            <translation><!-- 95 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wet hosing on yard% --></label>
+        <name>Wet_hosing_on_yard__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>25</masterLabel>
+            <translation><!-- 25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>35</masterLabel>
+            <translation><!-- 35 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>40</masterLabel>
+            <translation><!-- 40 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55</masterLabel>
+            <translation><!-- 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>65</masterLabel>
+            <translation><!-- 65 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>70</masterLabel>
+            <translation><!-- 70 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>80</masterLabel>
+            <translation><!-- 80 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>85</masterLabel>
+            <translation><!-- 85 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>95</masterLabel>
+            <translation><!-- 95 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Wet hosing through Ryder billing --></label>
+        <name>Wet_hosing_through_Ryder_billing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Fuel Sales Layout</layout>
+        <sections>
+            <label><!-- Account Information --></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- How do you currently acquire fuel? --></label>
+            <section>How do you currently acquire fuel?</section>
+        </sections>
+        <sections>
+            <label><!-- Would you be interested in the following Ryder managed fuel offerings? --></label>
+            <section>Would you be interested in the following Ryder managed fuel offerings?</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Fuel Sales --></label>
+        <name>Fuel_Sales</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Total must adds 100% per section --></errorMessage>
+        <name>Fuel_Sales_Fields_Summation</name>
+    </validationRules>
+</CustomObjectTranslation>

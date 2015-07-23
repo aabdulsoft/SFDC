@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification of task assigned to Non-SFDC user</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>CUSTOMER SERVICES: Assignment; Known Account</name>
+    <style>none</style>
+    <subject>Assign: C# {!Case.CaseNumber} : {!Case.Account}; {!Case.FIS_Account__c}; {!Case.Type} - {!Case.Subcategory__c}</subject>
+    <type>text</type>
+</EmailTemplate>

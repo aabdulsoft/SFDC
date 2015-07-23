@@ -1,0 +1,23 @@
+<apex:component controller="SearchMasterInventoryController">
+		<apex:attribute name="vehicleTypeStr" type="String" required="true" description="Type of vehicle to search"/>
+<!--		<apex:attribute name="vehicleObj" type="Vehicle__c" required="true" assignTo="{!vehicleToSearch}" description="Type of vehicle to search"/>-->
+	<!-- 	<apex:attribute name="truckObj" type="Vehicle__c" required="true" assignTo="{!truckToSearch}" description="Type of vehicle to search"/>
+		<apex:attribute name="tractorObj" type="Vehicle__c" required="true" assignTo="{!tractorToSearch}" description="Type of vehicle to search"/>
+		<apex:attribute name="trailerObj" type="Vehicle__c" required="true" assignTo="{!trailerToSearch}" description="Type of vehicle to search"/>
+		<apex:pageblock title="Search Vehicle Inventory" id="searchPB">==={!vehicleSOQL}=type={!vehicleType}
+			<apex:pageblocksection columns="4">
+				<apex:repeat value="{!$ObjectType.Vehicle__c.FieldSets.VehicleMasterInventorySearch_FieldSet}"  var="f">
+					<apex:inputField value="{!truckToSearch[f.fieldPath]}" rendered="{!vehicleTypeStr == 'Truck'}"/> 
+					<apex:inputField value="{!tractorToSearch[f.fieldPath]}" rendered="{!vehicleTypeStr == 'Tractor'}"/> 
+					<apex:inputField value="{!trailerToSearch[f.fieldPath]}" rendered="{!vehicleTypeStr == 'Trailer'}"/> 
+				</apex:repeat>
+			</apex:pageblocksection> 
+			<apex:pageblockbuttons >
+				<apex:actionFunction name="createQueryAS" action="{!createQuery}" rerender="searchPB" status="processingStatus" >
+					<apex:param name="vehicle_Type" value="" assignTo="{!vehicleType}" />
+				</apex:actionFunction>
+				<apex:commandButton value="Search" onclick="createQueryAS('{!vehicleTypeStr}');return false;" />
+				<apex:commandButton value="Cancel" />
+			</apex:pageblockbuttons>
+		</apex:pageblock>-->		
+</apex:component>

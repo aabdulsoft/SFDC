@@ -1,0 +1,219 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 3/25/2014       Saad Wali Jaan       For displaying the PartialWinrateSheet data     
+ ****************************************************************************/
+-->
+<apex:page standardcontroller="Opportunity" extensions="PWRateSheet" sidebar="false" tabstyle="PartialWinRateSheet__c"  >
+
+    <apex:form id="myForm">
+    <script>
+       function setFocusOnLoad() {}
+    </script>
+        <apex:pageMessages />
+        <apex:pageBlock title="" id="theBlock">
+            <!--Opportunity Details-->
+            <apex:pageBlockSection title="Opportunity Data" columns="2" id="oppDetails" collapsible="false">
+                <apex:pageBlockSectionItem id="oppNameBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Name.label}" /> 
+                    <apex:outputField value="{!Opportunity.Name}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="oppNoPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.ext_pipeline_id__c.label}" /> 
+                    <apex:outputField value="{!Opportunity.ext_pipeline_id__c}"/>
+                </apex:pageBlockSectionItem>   
+                <apex:pageBlockSectionItem id="oppStageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.StageName.label}" /> 
+                    <apex:outputField value="{!Opportunity.StageName}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="oppOrigDecisionMakerPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Original_Decision_Maker__c.label}" /> 
+                    <apex:outputField value="{!Opportunity.Original_Decision_Maker__c}"/>
+                </apex:pageBlockSectionItem>     
+            </apex:pageBlockSection>
+            <!--All Partial Win RateSheet Section START -->
+            <apex:pageBlockSection title="Partial Win RateSheets" columns="1" id="PWRateSheet" collapsible="true">
+                <apex:pageBlockTable id="PWRowData" var="PartialWinData" value="{!PagePartialWinData}" rendered="{!stdPartialWinController.ResultSize>0}" rows="1000" >
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:inputCheckbox id="chkMaster" onclick="CheckAll(this, 'chkRecord')" />  
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:inputField id="chkRecord" value="{!PartialWinData.IsSelected__c}" onclick="CheckRelDeals(this, {!PartialWinData.Deal_Summary__c});"/>                 
+                    </apex:column>
+                    <!--<apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Rate Sheet #"  action="{!changeOrder}" >
+                                    <apex:param value="{!PartialWinData.Rate_Sheet__c}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                                <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Rate_Sheet__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!PartialWinData.Rate_Sheet__c}
+                    </apex:column>
+                    -->
+                    <apex:column value="{!PartialWinData.Rate_Sheet__c}"/>
+                    <apex:column value="{!PartialWinData.Rate_Sheet_Name__c}"/>
+                    <apex:column id="dealsumNum" value="{!PartialWinData.Deal_Summary__c}"/>
+                    <apex:column value="{!PartialWinData.Deal_Summary_Name__c}"/>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <!--  <apex:outputLabel value="{!$ObjectType.Opportunity.fields.StageName.label}"/>-->
+                                Status
+                                <apex:inputField id="ddlHeader" value="{!Opportunity.PartialWinRateSheetStatus__c}" onchange="changeAll(this, 'ddlStatus', 'chkRecord')"/>
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:inputField id="ddlStatus" value="{!PartialWinData.Status__c}" onclick="SelectDDRelDeals(this, {!PartialWinData.Deal_Summary__c});"/>
+                        <apex:inputHidden id="ddlWonLostReason" value="{!PartialWinData.Reason_Won_Lost__c}"/>
+                        <apex:inputHidden id="ddlDealLostTo" value="{!PartialWinData.Deal_lost_to_Won_from_whom__c}"/>
+                        <apex:inputHidden id="ddlCompetitor" value="{!PartialWinData.Competitor__c}"/>
+                        <apex:inputHidden id="ddlIncumbentCompetitor" value="{!PartialWinData.Was_this_competitor_the_incumbent__c}"/>
+                        <apex:inputHidden id="txtLocalProvider" value="{!PartialWinData.Local_Provider_Name__c}"/>
+                    </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection> 
+            <!--All Partial Win RateSheet Section END-->
+            <apex:pageBlockSection title="Win / Loss reason" columns="2" id="winLoss" collapsible="false">
+                <apex:pageBlockSectionItem id="oppReasonWonLostSectionItem" >
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Reason_Won_Lost__c.label}" /> 
+                    <apex:inputField id="ddlPartialWinLostReason" value="{!Opportunity.PartialWinLostReason__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="oppCompetitorPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.CMPT_ID__c.label}" /> 
+                    <apex:inputField id="ddlPartialWinCompetitor" value="{!Opportunity.PartialWinRateSheetCompetitor__c}"/>
+                </apex:pageBlockSectionItem>  
+                <apex:pageBlockSectionItem id="oppDealLostToWonFromSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Deal_lost_to_Won_from_whom__c.label}" /> 
+                    <apex:inputField id="ddlPartialWinDealLostToWonFrom" value="{!Opportunity.PartialWinDealLostToWonFrom__c}"/>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem id="oppIncubentPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Was_this_competitor_the_incumbent__c.label}" /> 
+                    <apex:inputField id="ddlPartialWinIncumbent" value="{!Opportunity.PartialWinIncumbent__c}"/>
+                </apex:pageBlockSectionItem> 
+                <apex:pageBlockSectionItem id="oppLocalProviderPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Opportunity.fields.Local_Provider_Name__c.label}" /> 
+                    <apex:inputField id="ddlPartialWinLocalProvider" value="{!Opportunity.PartialWinLocalProvider__c}"/>
+                </apex:pageBlockSectionItem> 
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="both" id="newpartiaWinLossButtons">
+                <apex:commandButton id="btnSave" value="Save" action="{!doSave}" onclick="resetControls('ddlHeader', 'chkMaster')" />
+                <apex:commandButton id="btnSubmit" value="Submit" action="{!doSubmit}" status="closer" />
+                <apex:actionStatus startText=" Submitting..." stopText="" id="closer"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+    
+    <script language="JavaScript" type="text/javascript">
+        var selectedChkbox;
+
+        function CheckAll(cb, cbid)
+        {
+            var inputElem = document.getElementsByTagName("input");                     
+            for(var i=0; i<inputElem.length; i++)
+            {             
+                if(inputElem[i].id.indexOf(cbid)!=-1)
+                {                                        
+                    inputElem[i].checked = cb.checked;
+                }
+            }
+        }
+        
+        function changeAll(ddlMaster, ddlChild, chkBox)
+        {
+            var selectElem = document.getElementsByTagName("select");
+            var inputElem = document.getElementsByTagName("input");
+            var chkBoxElem = new Array();
+            var ddlElem = new Array();
+            var j=0;
+            var l=0;
+            
+            for(var i=0; i<inputElem.length; i++)
+            {             
+                if(inputElem[i].id.indexOf(chkBox)!=-1)
+                {
+                    chkBoxElem[j] = inputElem[i];
+                    j++;
+                }
+            }
+           
+            for(var k=0; k<selectElem.length; k++)
+            {             
+                if(selectElem[k].id.indexOf(ddlChild)!=-1)
+                {
+                    ddlElem[l] = selectElem[k];
+                    l++;
+                }
+            }
+                      
+            for(var m=0; m<ddlElem.length; m++)
+            {             
+                if(ddlElem[m].id.indexOf(ddlChild)!=-1)
+                {
+                    if (chkBoxElem[m].checked)
+                    {
+                        ddlElem[m].value = ddlMaster.value;
+                    }
+                }
+            }
+        }
+        
+        function resetControls(ddlMaster, chkMaster)
+        {
+            var selectElem = document.getElementsByTagName("select");
+            var inputElem = document.getElementsByTagName("input");
+            
+            for(var i=0; i<inputElem.length; i++)
+            {             
+                if(inputElem[i].id.indexOf(chkMaster)!=-1)
+                {                                        
+                    inputElem[i].checked = false;
+                }
+            }
+           
+            for(var j=0; j<selectElem.length; j++)
+            {             
+                if(selectElem[j].id.indexOf(ddlMaster)!=-1)
+                {                                        
+                    selectElem[j].value = '--None--';
+                }
+            }
+        }
+    
+        function CheckRelDeals(cb, dsNum){
+
+            var totalRows = document.getElementById('j_id0:myForm:theBlock:PWRateSheet:PWRowData:tb').childNodes.length;
+            var currentDsNum = 0;
+
+            for(var i=0; i<totalRows; i++)
+            {
+                currentDsNum = document.getElementById('j_id0:myForm:theBlock:PWRateSheet:PWRowData:tb').childNodes[i].childNodes[3].innerText;
+                
+                //Check/Uncheck all checkboxes containing the same Deal Summary Number
+                if(currentDsNum == dsNum){
+                    document.getElementById('j_id0:myForm:theBlock:PWRateSheet:PWRowData:' + i + ':chkRecord').checked = cb.checked;
+                }
+            }
+        }   
+
+        function SelectDDRelDeals(dd, dsNum){
+            
+            var totalRows = document.getElementById('j_id0:myForm:theBlock:PWRateSheet:PWRowData:tb').childNodes.length;
+            var currentDsNum = 0;
+
+            for(var i=0; i<totalRows; i++)
+            {
+                currentDsNum = document.getElementById('j_id0:myForm:theBlock:PWRateSheet:PWRowData:tb').childNodes[i].childNodes[3].innerText;
+
+                //Change all the dropdown selections containing the same Deal Summary Number
+                if(currentDsNum == dsNum){
+                    document.getElementById('j_id0:myForm:theBlock:PWRateSheet:PWRowData:' + i + ':ddlStatus').value = dd.value;
+                }
+            }
+        }
+                
+    </script>
+</apex:page>

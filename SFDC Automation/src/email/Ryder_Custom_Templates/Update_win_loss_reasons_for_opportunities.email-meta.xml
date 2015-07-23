@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Triggers if win/loss reason has not been updated.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Update win/loss reasons for opportunities</name>
+    <style>freeForm</style>
+    <subject>Please update Win/Loss reasons for {!Opportunity.Name}</subject>
+    <textOnly>Dear {!Opportunity.OwnerFirstName}, 
+
+Please update Win/Loss reasons for {!Opportunity.Name} last modified on {!Opportunity.LastStageChangeDate}. 
+
+{!Opportunity.Link}
+
+Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link, then review the record and take appropriate action.
+
+If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won&apos;t be able to log in from there.
+
+Regards, 
+Sales Admin</textOnly>
+    <type>html</type>
+</EmailTemplate>

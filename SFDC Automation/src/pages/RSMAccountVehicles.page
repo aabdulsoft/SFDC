@@ -1,0 +1,121 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 1/25/2014       Saad Wali Jaan       RydeSmart Vehicle Data Visibility on Accounts page    
+ ****************************************************************************/
+-->
+
+<apex:page standardController="Account" extensions="RSMAccountVehicle" showHeader="true" >
+    <apex:form >
+    <script>
+       function setFocusOnLoad() {}
+    </script>
+        <apex:pageMessages />
+        <apex:pageBlock title="Search for Vehicle" >
+            <apex:panelGrid title="Search critria" border="0" columns="5" cellspacing="6">
+                <apex:panelGroup >
+                    Vehicle &nbsp;&nbsp;&nbsp; <apex:inputText value="{!searchCriteriaVehicle}" />
+                    &nbsp;&nbsp;&nbsp; <apex:commandButton id="btnSave" value="Search" action="{!searchVehicles}"/>
+                </apex:panelGroup>               
+            </apex:panelGrid>
+            <!-- Vehicles for the Accounts Section START -->
+            <apex:pageBlockSection title="Vehicle(s)" columns="1" id="vehicleSection">
+                <apex:pageBlockSectionItem rendered="{!stdVehicleController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            Current Page#{!stdVehicleController.PageNumber}
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>    
+                <apex:pageBlockTable var="vehicle" value="{!PageVehicles}" rendered="{!stdVehicleController.ResultSize>0}" >
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:inputCheckbox />  
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <apex:inputCheckbox id="chkRecord" />  <!-- value="{!vehicle.selected}"  onclick="deSelectOtherContacts(this, '{!vehicle.contact.Id}');"  />  -->                    
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Unit Number"  action="{!changeOrder}" >
+                                    <!-- <apex:param value="{!vehicle.Unit__c}" assignTo="{!sortField}" name="sortField" />-->
+                                    <apex:param value="{!$ObjectType.Vehicle__c.Fields.Name.Name}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                                <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='Unit__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        <!-- <apex:outputLink onclick="window.open('/{!vehicle.id}')" value="#" >{!vehicle.Name}</apex:outputLink>-->
+                        <apex:outputLink target="_parent" value="{!URLFOR($Action.Vehicle__c.View,vehicle.id)}">{!vehicle.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="Product Line"  action="{!changeOrder}" >
+                                    <apex:param value="{!$ObjectType.Vehicle__c.Fields.PRODUCT_LINE__c.Name}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                             <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='PRODUCT_LINE__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!vehicle.PRODUCT_LINE__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">
+                            <apex:outputPanel >
+                                <apex:commandLink value="SAM Class"  action="{!changeOrder}" >
+                                    <apex:param value="{!vehicle.SAM_CLASS__c}" assignTo="{!sortField}" name="sortField" />
+                                </apex:commandLink>
+                             <apex:outputLabel value="{!IF(sortOrder='ASC','↑','↓')}" rendered="{!IF(sortField='SAM_CLASS__c',true,false)}" />
+                            </apex:outputPanel>
+                        </apex:facet>
+                        {!vehicle.SAM_CLASS__c}
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Last Location</apex:facet>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Last Location Date</apex:facet>
+                    </apex:column>
+                    <apex:column value="{!vehicle.In_Service_Date__c}"/>
+                </apex:pageBlockTable>
+                <apex:pageBlockSectionItem rendered="{!stdVehicleController.ResultSize>0}" >
+                    <apex:outputPanel >
+                        <div align="right">
+                            <!--<apex:commandButton value="Get Current Location" action="{!stdVehicleController.first}" reRender="vehicleSection" status="vehiclesLoading" />-->
+                            <apex:commandButton value="First" action="{!stdVehicleController.first}" reRender="vehicleSection" rendered="{!stdVehicleController.hasPrevious}" status="vehiclesLoading" />
+                            <apex:commandButton value="Next" action="{!stdVehicleController.next}" rendered="{!stdVehicleController.hasNext}" reRender="vehicleSection" status="vehiclesLoading" />
+                            <apex:commandButton value="Previous" action="{!stdVehicleController.previous}" rendered="{!stdVehicleController.hasPrevious}" reRender="vehicleSection" status="vehiclesLoading" />
+                            <apex:commandButton value="Last" action="{!stdVehicleController.last}" reRender="vehicleSection" rendered="{!stdVehicleController.hasNext}" status="vehiclesLoading" />
+                            <apex:actionStatus id="vehiclesLoading">
+                                <apex:facet name="start">
+                                    <apex:image value="/img/loading32.gif" height="18" /> 
+                                </apex:facet>
+                            </apex:actionStatus>
+                        </div>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>           
+        </apex:pageBlock>
+    </apex:form>
+    <!--
+    <script language="JavaScript" type="text/javascript">
+        var selectedChkbox;
+
+        var selectedContactChkbox;
+        function deSelectOtherContacts(chkBox, sfdcContactId) 
+        {
+            if (chkBox.checked) 
+            {
+                if ((chkBox != selectedContactChkbox) && (selectedContactChkbox != null)) 
+                {
+                    selectedContactChkbox.checked = false;
+                }
+                selectedContactChkbox = chkBox;
+            }
+            selectContact(sfdcContactId);            
+        }
+    </script>
+    -->
+    </apex:page>

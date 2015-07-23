@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contact_Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact Id</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Solutions Interests</relationshipLabel>
+        <relationshipName>Solutions_Interests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Latest_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Latest Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BDM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blitz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concentrix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DBD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>F&amp;B Local Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental Counter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NRM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CDM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DNA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COMBO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Id__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Lead Id</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Solutions Interests</relationshipLabel>
+        <relationshipName>Solutions_Interests</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Original_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BDM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blitz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concentrix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DBD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>F&amp;B Local Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental Counter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NRM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CDM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DNA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COMBO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Detail</label>
+        <picklist>
+            <controllingField>Product_Line__c</controllingField>
+            <picklistValues>
+                <fullName>Choice Lease</fullName>
+                <controllingFieldValues>Lease</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comprehensive</fullName>
+                <controllingFieldValues>Maintenance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dry Trailer</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flatbed Trailer</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flex</fullName>
+                <controllingFieldValues>Lease</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gap</fullName>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hazmat</fullName>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Liability</fullName>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Market</fullName>
+                <controllingFieldValues>Fuel</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Demand</fullName>
+                <controllingFieldValues>Maintenance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OPIS</fullName>
+                <controllingFieldValues>Fuel</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Physical Damage</fullName>
+                <controllingFieldValues>Insurance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plus</fullName>
+                <controllingFieldValues>RydeSmart</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plus One</fullName>
+                <controllingFieldValues>RydeSmart</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preventive</fullName>
+                <controllingFieldValues>Maintenance</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reefer Trailer</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reefer Truck</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Single Axle Sleeper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Single Axle Tractor</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stake or Flatbed Truck</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Standard</fullName>
+                <controllingFieldValues>Dedicated Carrier</controllingFieldValues>
+                <controllingFieldValues>Lease</controllingFieldValues>
+                <controllingFieldValues>Rental</controllingFieldValues>
+                <controllingFieldValues>RydeSmart</controllingFieldValues>
+                <controllingFieldValues>Supply Chain &amp; Logistics</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tandem Axle Sleeper</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tandem Axle Tractor</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tanker Trailer</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tank Truck</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Truck</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Van</fullName>
+                <controllingFieldValues>Used Vehicles</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VOSA</fullName>
+                <controllingFieldValues>Lease</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Lease</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RydeSmart</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Used Vehicles</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder Fleet Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dedicated Carrier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Supply Chain &amp; Logistics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Score__c</fullName>
+        <externalId>false</externalId>
+        <label>Score</label>
+        <length>2</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <picklist>
+            <picklistValues>
+                <fullName>-- None --</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Suspect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unread</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contacted</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unqualified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renurture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Solutions Interest</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Lead_Id__c</columns>
+        <columns>Contact_Id__c</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Product_Line__c</columns>
+        <columns>Product_Detail__c</columns>
+        <columns>Original_Source__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Solutions Interest ID</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Solutions Interests</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Lead_Id__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Id__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Line__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Product_Detail__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Original_Source__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Lead_Id__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact_Id__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Line__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Detail__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Original_Source__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Lead_Id__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Id__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Line__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Detail__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Original_Source__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

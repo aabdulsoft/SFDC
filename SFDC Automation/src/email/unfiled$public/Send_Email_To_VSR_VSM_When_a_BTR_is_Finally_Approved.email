@@ -1,0 +1,17 @@
+Hi  {!BTR__c.OwnerFullName},
+
+Following BTR record submitted by you has been Approved.
+
+BTR Number: {!BTR__c.Name}
+Is conditional Approval: {!IF(BTR__c.Is_Conditional_Approval__c, "Yes","No")}
+Comments: {!BTR__c.Approver_Comments__c}
+Approved Amount: {!BTR__c.Approved_Amount__c}
+Approved By: {!BTR__c.LastModifiedBy}
+
+
+Click the link below to take further action.
+{!BTR__c.Link}
+
+
+Thanks
+Salesforce.com

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM VehicleValidationDetails</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM VehicleValidationDetails</value>
+    </caseValues>
+    <fields>
+        <label><!-- External Key --></label>
+        <name>External_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- LesseeName --></label>
+        <name>LesseeName__c</name>
+    </fields>
+    <fields>
+        <label><!-- LesseeNumber --></label>
+        <name>LesseeNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rule Description --></label>
+        <name>Rule_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Date --></label>
+        <name>Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Number --></label>
+        <name>Unit_Number__c</name>
+        <relationshipLabel><!-- RSM VehicleValidationDetails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Validation Rule Id --></label>
+        <name>Validation_Rule_Id__c</name>
+    </fields>
+    <layouts>
+        <layout>RSM VehicleValidationDetails Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

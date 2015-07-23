@@ -1,0 +1,154 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 6/10/2015       Saad Wali Jaan       For displaying Booked Opportunities with More than 10 Units    
+ ****************************************************************************/
+-->
+<apex:page StandardController="User" extensions="ApproveLargeOppPageController" sidebar="false">
+    <apex:form >
+        <apex:sectionHeader subtitle="Opportunity" title="Approve Opportunity" />
+        <apex:pageBlock id="SaveBlock" title="Opportunity List" >        
+            <apex:pageBlockButtons style="centre" >                
+                  <apex:commandButton value="Save" action="{!updateOpportunity}" onclick="resetControls('ddlHeader', 'chkMaster')"/>
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="toperror">
+                <apex:pageMessages id="error" />
+            </apex:outputPanel>
+            <apex:pageBlockTable value="{!lstOpportunity}" var="Data" id="datatable" >
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputPanel >
+                            <apex:inputCheckbox id="chkMaster" onclick="CheckAll(this, 'chkRecord')" />  
+                        </apex:outputPanel>
+                    </apex:facet>
+                    <apex:inputCheckbox id="chkRecord" />        
+                </apex:column>    
+                <apex:column Headervalue="Account Name">
+                    <apex:outputLink value="/{!Data.AccountID}" target="_blank" style="width:90px">{!Data.Account.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Opportunity Name">
+                    <apex:outputLink value="/{!Data.Id}" target="_blank" style="width:90px">{!Data.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Actual Close Date">
+                    <apex:outputField value="{!Data.Actual_Close_Date__c}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="Stage">
+                    <apex:inputField id="ddlStageName" value="{!Data.StageName}" style="width:90px"/>                        
+                </apex:column>
+                <apex:column Headervalue="Owner">
+                    <apex:outputField value="{!Data.Owner.Name}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="# Of Vehicles">
+                    <apex:outputField value="{!Data.Num_of_vehicles__c}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="Reason Won/Lost">
+                    <apex:inputField id="ddlReasonWonLost" value="{!Data.Reason_Won_Lost__c}" style="width:90px"/>                    
+                </apex:column>
+                <apex:column Headervalue="Deal lost to/ Won from whom">
+                    <apex:inputField id="ddlWinDealLostToWonFrom" value="{!Data.Deal_lost_to_Won_from_whom__c}" style="width:90px"/>                    
+                </apex:column>
+                <apex:column Headervalue="Who is the Main Incumbent">
+                    <apex:inputField id="ddlIncumbent" value="{!Data.Who_is_the_main_incumbent__c}" style="width:90px"/>                    
+                </apex:column>
+                <apex:column Headervalue="Competitor">
+                    <apex:inputField id="ddlCompetitor" value="{!Data.CMPT_ID__c}" style="width:90px"/>                    
+                </apex:column>
+                <apex:column Headervalue="Local Provider Name">
+                    <apex:inputField id="txtLocalProvider" value="{!Data.Local_Provider_Name__c}" style="width:90px"/>                    
+                </apex:column>            
+                <apex:column >
+                    <apex:facet name="header">
+                        <apex:outputPanel >Approved
+                            <select id="ddlMaster" onchange="changeAll(this, 'ddlStatus', 'chkRecord')">
+                                <option value="">--None--</option>
+                                <option value="Yes">Yes</option>
+                            </select> 
+                        </apex:outputPanel>
+                    </apex:facet>    
+                    <apex:inputField id="ddlStatus" value="{!Data.Approved__c}"/>
+                </apex:column>            
+            </apex:pageBlockTable>            
+        </apex:pageBlock>
+    </apex:form>
+    
+    <script language="JavaScript" type="text/javascript">
+        
+        var selectedChkbox;
+
+        function CheckAll(cb, cbid)
+        {
+            var inputElem = document.getElementsByTagName("input");                     
+            for(var i=0; i<inputElem.length; i++)
+            {             
+                if(inputElem[i].id.indexOf(cbid)!=-1)
+                {                                        
+                    inputElem[i].checked = cb.checked;
+                }
+            }
+        }
+        
+        function changeAll(ddlMaster, ddlChild, chkBox)
+        {
+            var selectElem = document.getElementsByTagName("select");
+            var inputElem = document.getElementsByTagName("input");
+            var chkBoxElem = new Array();
+            var ddlElem = new Array();
+            var j=0;
+            var l=0;
+            
+            for(var i=0; i<inputElem.length; i++)
+            {             
+                if(inputElem[i].id.indexOf(chkBox)!=-1)
+                {
+                    chkBoxElem[j] = inputElem[i];
+                    j++;
+                }
+            }
+           
+            for(var k=0; k<selectElem.length; k++)
+            {             
+                if(selectElem[k].id.indexOf(ddlChild)!=-1)
+                {
+                    ddlElem[l] = selectElem[k];
+                    l++;
+                }
+            }
+                      
+            for(var m=0; m<ddlElem.length; m++)
+            {             
+                if(ddlElem[m].id.indexOf(ddlChild)!=-1)
+                {
+                    if (chkBoxElem[m].checked)
+                    {
+                        ddlElem[m].value = ddlMaster.value;
+                    }
+                }
+            }
+        }
+        
+        function resetControls(ddlMaster, chkMaster)
+        {
+            var selectElem = document.getElementsByTagName("select");
+            var inputElem = document.getElementsByTagName("input");
+
+            for(var i=0; i<inputElem.length; i++)
+            {          
+                if(inputElem[i].id.indexOf(chkMaster)!=-1)
+                {                                        
+                    inputElem[i].checked = false;
+                }
+            }
+           
+            for(var j=0; j<selectElem.length; j++)
+            {             
+                if(selectElem[j].id.indexOf(ddlMaster)!=-1)
+                {                                        
+                    selectElem[j].value = '--None--';
+                }
+            }
+        }
+        
+    </script>
+</apex:page>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tool that outlines prospect/customer options, evaluation criteria, and rankings for each option
+Should be completed by the Sales Force following the face to face meeting</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Evaluation Tool</name>
+    <public>false</public>
+</Document>

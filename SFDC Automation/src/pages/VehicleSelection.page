@@ -1,0 +1,84 @@
+<apex:page StandardController="Lead" extensions="VehicleSelectionController" >
+	<apex:form id="form">
+
+  		<apex:PageBlock >
+        <!-- Page Message -->
+          <apex:outputPanel rendered="{!isPageMessageFound}">
+            <apex:pageMessages />
+          </apex:outputPanel>
+  			<apex:pageblockButtons location="top" rendered="{!!isError}">
+    			<apex:commandButton action="{!save}" value="Save" rerender="form"/>
+   			</apex:pageblockButtons>
+    		<apex:pageblockSection columns="1" rendered="{!!isError}">
+				<apex:outputPanel >
+				<apex:inputCheckBox id="btnSaveALL"  onclick="checkAll(this);"/>
+				<apex:outputText style="margin-right:20px;" value="Select/Deselect all Vehicle Types" />
+				</apex:outputPanel>
+			 	<apex:pageblockSectionItem >
+				    <apex:outputPanel layout="none">
+					    <table>
+					    	<tr>
+					  			<apex:repeat value="{!sortedVehicleTypeList}" var="vehicleType">
+									<td style="vertical-align:top">
+										<table>
+											<tr><th> {!vehicleType}</th></tr>
+					     					<apex:repeat value="{!mapVehicleTypeVehicleList[vehicleType]}" var="vehicle">
+					        					<tr>
+					        						<td>
+												        <apex:outputPanel style="width:200px;">
+												          <apex:inputCheckBox styleClass="checkbox1" value="{!vehicle.isSelected}" Id="checkbox1" onclick="uncheckAll();"/>
+												          <apex:outputText value="{!vehicle.VehicleName}" />
+												         </apex:outputPanel>
+					         						</td>
+					         					</tr>
+					      					</apex:repeat>
+					   					</table>
+					   				</td>
+					  			</apex:repeat>
+					  		</tr>
+					  	</table>
+				  	</apex:outputPanel>
+				</apex:pageblockSectionItem>
+				<b>At least one customer need must be selected.</b>
+			 </apex:pageblockSection>
+
+		</apex:PageBlock>
+	</apex:form>
+
+  <style>
+	  .checkbox1{
+	  	vertical-align:middle;
+	  }
+
+  </style>
+  <script>
+
+/* Uncheck CheckAll checkbox if any one of checkboxes are unchecked*/
+  function uncheckAll(){
+    var inputElem = document.getElementsByTagName("input");
+    var flag = true;
+    var checkAll;
+      for(var i=0; i<inputElem.length; i++) {
+        if(inputElem[i].id.indexOf("checkbox1") != -1) {
+          if(!inputElem[i].checked){
+            flag = false;
+          }
+        }else if(inputElem[i].id.indexOf("btnSaveALL") != -1){
+          checkAll = inputElem[i];
+        }
+      }
+      checkAll.checked = flag;
+  }
+
+  // function to check/uncheck all the check box on click of header checkbox
+  var checkAll = function(cb) {
+      var inputElem = document.getElementsByTagName("input");
+      for(var i=0; i<inputElem.length; i++){
+          if(inputElem[i].id.indexOf("checkbox1")!=-1)
+            inputElem[i].checked = cb.checked;
+      }
+  }
+
+
+  </script>
+</apex:page>

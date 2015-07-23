@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Customer Advocate Pilot-Failed surveys</name>
+    <style>freeForm</style>
+    <subject>Customer Advocate Pilot- Failed survey</subject>
+    <textOnly>*** CUSTOMER ADVOCATE PILOT-FAILED SURVEY ALERT ***
+
+The following survey did not passed the minimum score:
+
+Company:  {!Account.Name}
+Case:  {!Case.CaseNumber}:  {!Case.Subject}
+Owner:  {!Case.OwnerFullName}
+
+Click on the link to access the survey: {!Ryder_CSC_Surveys__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

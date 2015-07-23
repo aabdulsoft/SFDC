@@ -1,0 +1,14 @@
+<!--
+/**=====================================================================
+ * Appirio, Inc
+ * Page Name: OpptyTypeRouter
+ * Description: T-319456 : Route to standard/custom add product page based on the Opp record type ()
+ * Created Date: 09/15/2014
+ * Created By: [Manisha Gupta] (Appirio)
+ *
+ * Date Modified                Modified By                  Description of the update
+ * [MON DD, YYYY]             	[FirstName LastName]		 [Short description for changes]
+ =====================================================================*/
+-->
+<apex:page standardController="Opportunity" action="{!redirectToAddProduct}" extensions="OpptyTypeRouterController">
+</apex:page>

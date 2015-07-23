@@ -1,0 +1,18 @@
+<!--Component to send Email to Non-Key Accounts once the contract cancels-->
+<apex:component controller="RSMCancelEmailtoNonKeyAcCtrl" access="global">
+    <apex:attribute name="ContractId" description="Contract Id" assignTo="{!conId}" type="String" />
+    <!--Should change below link when moved to production-->
+    <apex:image id="Logo" value="https://cs10.salesforce.com/servlet/servlet.ImageServer?oid=00DJ0000001MAFb
+    &id=01560000000jtOy" />
+
+  <br/> Hello,<br/><br/>
+  For the below vehicles Contract has cancelled:
+  <br/>Account Name :{!accountName}
+  <br/>Contract Number :{!contractNumber}
+  <br/>Vehicle Numbers:
+  
+      <apex:outputPanel > 
+      <apex:outputText >{!vehList}</apex:outputText>      
+      </apex:outputPanel>
+  
+</apex:component>

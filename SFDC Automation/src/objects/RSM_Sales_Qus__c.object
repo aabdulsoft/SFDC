@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>RSM_Sales_Questionnaire_View</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To Store RydeSmart Pre-Launch Customer Information</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Account_Number__c</fullName>
+        <description>Account Number</description>
+        <externalId>false</externalId>
+        <label>Account Number</label>
+        <length>7</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Customer_RydeSmart_Locations__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Customer RydeSmart Locations</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Pertinent_Information__c</fullName>
+        <description>Additional, Pertinent Information:</description>
+        <externalId>false</externalId>
+        <label>Additional, Pertinent Information:</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Are_there_any_shop_specific_information__c</fullName>
+        <description>Are there any shop specific information you can share regarding this RydeSmart implementation and ongoing support?</description>
+        <externalId>false</externalId>
+        <label>Are there any shop specific information</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>CPU_Phone__c</fullName>
+        <description>Customer Primary User - Phone</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>CPU_Title__c</fullName>
+        <description>Customer Primary User - Title</description>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Can_the_RS_Account_Manager_contact_the_c__c</fullName>
+        <description>Can the RS Account Manager contact the customer directly or do you require a warm introduction to the customer?</description>
+        <externalId>false</externalId>
+        <label>Can the RS Account Manager contact the c</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>RSM Sales Questionnaires</relationshipLabel>
+        <relationshipName>RSM_Sales_Questionnaires</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Industry_Business__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Industry / Business</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>RSM Sales Questionnaires</relationshipLabel>
+        <relationshipName>RSM_Sales_Questionnaires</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Customer_Primary_RydeSmart_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Primary RydeSmart Location:</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Primary_User__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Primary User</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_RydeSmart_Owner__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer RydeSmart Owner</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Do_Some_or_All_Drivers_Use_the_Same_Truc__c</fullName>
+        <description>Do Some or All Drivers Use the Same Truck Every Day?</description>
+        <externalId>false</externalId>
+        <label>Do Some or All Drivers Use the Same Truc</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Does_the_customer_have_specific_ROI_goal__c</fullName>
+        <description>Does the customer have specific ROI goals involving RydeSmart?</description>
+        <externalId>false</externalId>
+        <label>Does the customer have specific ROI goal</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Email_Address__c</fullName>
+        <description>Customer RydeSmart Owner - Email Address</description>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <description>Customer Primary User - Email</description>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>How_does_the_customer_intend_to_use_Ryde__c</fullName>
+        <description>How does the customer intend to use RydeSmart; will they be using any other logistic tools in conjunction with RydeSmart?</description>
+        <externalId>false</externalId>
+        <label>How does the customer intend to use Ryde</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Long_Haul__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Long Haul</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <description>Sales Persons phone number</description>
+        <externalId>false</externalId>
+        <label>Phone Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>RS Customer Phone</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Please_describe_potential_for_additional__c</fullName>
+        <description>Please describe potential for additional RydeSmart business, if any</description>
+        <externalId>false</externalId>
+        <label>Please describe potential for additional</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Please_describe_the_customer_previous_Te__c</fullName>
+        <description>Please describe the customer previous Telematics experience to include provider, if any</description>
+        <externalId>false</externalId>
+        <label>Please describe the customer previous Te</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Please_describe_the_customer_s_normal_op__c</fullName>
+        <description>Please describe the customer’s normal operation of their trucks to include route information, back hauls, etc.</description>
+        <externalId>false</externalId>
+        <label>Please describe the customer’s normal op</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Person_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Sales Person Name</description>
+        <externalId>false</externalId>
+        <label>Sales Person Name</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>RSM_Sales_Questionnaires</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Short_Haul__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Short Haul</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Slip_Seating__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Slip Seating</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Team_Drivers__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Team Drivers</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title__c</fullName>
+        <description>Customer RydeSmart Owner - Title</description>
+        <externalId>false</externalId>
+        <label>Title</label>
+        <length>250</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RSM Sales Questionnaire</label>
+    <nameField>
+        <label>RSM Sales Qus</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>RSM Sales Questionnaires</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

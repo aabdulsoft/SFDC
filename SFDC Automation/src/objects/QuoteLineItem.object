@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddQuoteLine</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllQuoteLine</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Approval_Level__c</fullName>
+        <description>0 (No approval required), 1 (FAM), 2 (DAM) and 3 (VP AM )</description>
+        <externalId>false</externalId>
+        <label>Approval Level</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Price</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Ryder_Finance_Vendor_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Ryder Finance Vendor Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Approved_to_take__c</fullName>
+        <externalId>false</externalId>
+        <formula>Approved_Price__c/Take_Price2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Approved % to take</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>As_Is_Vehicle__c</fullName>
+        <description>Vehicle&apos;s AsIs field value</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.AS_IS_Vehicle__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>As Is Vehicle</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>BankOfAmerica__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.BankOfAmerica__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BankOfAmerica</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Base__c</fullName>
+        <externalId>false</externalId>
+        <label>Base</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>8</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Book_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.NBV__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Book Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Branch_Name__c</fullName>
+        <description>Vehicle Branch Name</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Branch_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Branch Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>3 month / 25,000 miles - Class 8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 month / 50,000 miles - Class 8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 month / 100,000 miles - Class 8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 month / 10,000 miles - Class A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 month / 20,000 miles - Class A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 month / 40,000 miles - Class A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 month / 10,000 miles - Class B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 month / 20,000 miles - Class B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 month / 40,000 miles - Class B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Offer_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Offer Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Days_held__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Days_At_UTC__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days held</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Display_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.display_code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Display Code</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Document_Fee_del__c</fullName>
+        <externalId>false</externalId>
+        <label>Document Fee</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Down_Payment_Percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Down Payment %</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>18</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>22</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>25</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Down_Payment__c</fullName>
+        <externalId>false</externalId>
+        <label>Down Payment</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Eng_Mdl__c</fullName>
+        <description>Vehicle Engine Model</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.ENG_MDL__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Engine Model</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Finance_Company__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Company</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Agri-Access</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Canada-Bodkin Leasing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Capital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Keystone Equipment Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mission Financial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North American Equipment Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Northland Credit Corp</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wheaten Financial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Financing__c</fullName>
+        <externalId>false</externalId>
+        <label>Financing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Gain_Loss__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice - Book_Value__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gain (Loss)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Interest_Rate__c</fullName>
+        <externalId>false</externalId>
+        <label>Interest Rate</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>13.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>14.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>16</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>16.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5.5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Line_Item_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Document_Fee_del__c  +   Miscellaneous_Fee__c   +  Warranty_Amount__c  +  Sales_Tax__c  +    Transfer_expense_included__c +  UnitPrice</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Line Item Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ListPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Make_Model__c</fullName>
+        <description>Concatenation of Vehicle.Manufacturer__c and Vehicle.Model__c</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Manufacturer__c &amp; &apos; &apos; &amp; Vehicle__r.Model__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Make/Model</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Manufacturer__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Manufacturer</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meq_sale_prc_am__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.meq_sale_prc_am__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Meq sale prc am</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Miles__c</fullName>
+        <description>Vehicle Miles</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.MILES__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Mileage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Miscellaneous_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Miscellaneous Fee</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Vehicle__r.Model_Year__c)</formula>
+        <label>Model Year</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Model__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Model</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Monthly_Payment__c</fullName>
+        <externalId>false</externalId>
+        <formula>((( UnitPrice - Down_Payment__c ) + Sales_Tax__c ) * (VALUE(TEXT(Interest_Rate__c))/1200)) / (1 - (1 / Base__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Monthly Payment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NVI_Percent__c</fullName>
+        <description>NVI Percentage</description>
+        <externalId>false</externalId>
+        <formula>(UnitPrice* 10000) / Vehicle__r.NVI__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NVI %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>NVI__c</fullName>
+        <description>Vehicle NVI</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.NVI__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NVI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NonCompliantCAUnits__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.NonCompliantCAUnits__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NonCompliantCAUnits</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Overstock__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Overstock__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Overstock</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Price_Percentage__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(UnitPrice &gt; 0, Take_Price2__c &gt; 0), UnitPrice / Take_Price2__c *100, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Price Percentage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ProductCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QuoteId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Quote_Line_Item_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Line Item Description</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Line_Item_Number__c</fullName>
+        <displayFormat>QLI-{00000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Quote Line Item Number</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Quote_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RRP_Extended_Warranty_Pricing_URL__c</fullName>
+        <defaultValue>&apos;http://ride//RRRPWCalculator//RRRPCalculator.aspx&apos;</defaultValue>
+        <description>This field displays the link for RRP Extended Warranty Pricing.</description>
+        <externalId>false</externalId>
+        <label>RRP Extended Warranty Pricing URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>SAM_Class__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.SAM_CLASS__c &amp; &apos; &apos; &amp; Vehicle__r.VEH_CLS_SAM_DS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAM Class</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAM_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.SAM_Desc__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAM Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Price__c</fullName>
+        <description>Vehicle Ask Price</description>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.Ask_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ask Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Tax__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Tax</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>SpecialPrice__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.SpecialPrice__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SpecialPrice</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>Take_Price2__c</fullName>
+        <externalId>false</externalId>
+        <label>Take Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Take_Price_percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>UnitPrice/Take_Price2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Take Price (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Term__c</fullName>
+        <externalId>false</externalId>
+        <label>Term</label>
+        <picklist>
+            <picklistValues>
+                <fullName>12</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>18</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>24</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>30</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>36</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>42</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>48</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>54</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>Transfer_expense_included__c</fullName>
+        <externalId>false</externalId>
+        <label>Transfer expense included</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transfer_expense_paid_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Transfer expense paid by</label>
+        <picklist>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>VehicleImage1__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage1</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage2__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage2</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage3__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage3</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage4__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage4</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage5__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage5</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage6__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage6</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage7__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage7</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage8__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage8</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VehicleImage9__c</fullName>
+        <externalId>false</externalId>
+        <label>VehicleImage9</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Quote Line Items</relationshipLabel>
+        <relationshipName>Quote_Line_Items</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vosa__c</fullName>
+        <externalId>false</externalId>
+        <formula>Vehicle__r.VOSA__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Vosa</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Warranty_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Warranty_Provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty Provider</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Ryder</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Premium 2000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Warranty__c</fullName>
+        <externalId>false</externalId>
+        <label>Warranty</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Prevent_From_Editing_Quantity</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Quote.RecordType.DeveloperName = &apos;UVS&apos;, 
+ISCHANGED( Quantity ))</errorConditionFormula>
+        <errorDisplayField>Quantity</errorDisplayField>
+        <errorMessage>Quantity can not be edited.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_From_Editing_When_Approved</fullName>
+        <active>false</active>
+        <description>Prevents the users from editing the quote line item record, when a quote &apos;s BTR is approved.</description>
+        <errorConditionFormula>AND(Quote.RecordType.DeveloperName = &apos;UVS&apos;,
+  ISPICKVAL(Quote.Status, &apos;BTR Approved&apos;),
+  NOT($Profile.Name = &apos;System Administrator&apos;))</errorConditionFormula>
+        <errorMessage>The quote of this quote line item&apos;s BTR is approved and cannot be edited further.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_From_Editing_When_Submitted</fullName>
+        <active>true</active>
+        <description>Prevents the users, except FAMs, DAMs and VP AMs, from editing the quote record, when a quote is submitted for BTR Approval.</description>
+        <errorConditionFormula>AND(
+  Quote.RecordType.DeveloperName = &apos;UVS&apos;,
+  ISPICKVAL(Quote.Status, &apos;Submitted for BTR Approval&apos;),
+  NOT(
+   OR(
+     $Profile.Name = &apos;System Administrator&apos;,
+	 $Profile.Name = &apos;VP Asset Management&apos;,
+     $Profile.Name = &apos;DAM&apos;,
+     $Profile.Name = &apos;FAM&apos;,
+     $Profile.Name = &apos;VSM_VSR&apos;
+   )
+  )
+)</errorConditionFormula>
+        <errorMessage>The quote record that has this quote line items has been submitted for approval and cannot be edited at this moment.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Prevent_Sale_Price_From_Editing</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Quote.RecordType.DeveloperName = &apos;UVS&apos;, 
+ISPICKVAL(Quote.Status, &apos;BTR Approved&apos;), 
+NOT($Profile.Name = &apos;System Administrator&apos;),
+ISCHANGED( UnitPrice ))</errorConditionFormula>
+        <errorMessage>The quote of this quote line item&apos;s BTR is approved and Sale Price can not be edited further.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Add_Product_UVS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Add Product</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/apex/AddProductsCustom?quoteId={!Quote.Id}</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,18 @@
+<!--
+/**=====================================================================
+ * Appirio, Inc
+ * Component Name: 
+ * Description: [Task # with multi-line description here]
+ * Created Date: [MM/DD/YYYY]
+ * Created By: [FirstName LastName] (Appirio)
+ * 
+ * Date Modified                Modified By                  Description of the update
+ * [MON DD, YYYY]             	[FirstName LastName]		 [Short description for changes]
+ =====================================================================*/
+-->
+ <apex:component >
+<!-- Begin Default Content REMOVE THIS -->
+<h1>Congratulations</h1>
+This is your new Component
+<!-- End Default Content REMOVE THIS -->
+</apex:component>

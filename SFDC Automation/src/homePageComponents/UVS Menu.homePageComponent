@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Auxiliary_Power_Units</links>
+    <links>Birthdays</links>
+    <links>Caterpillar_Deisel_Engines_C11</links>
+    <links>Caterpillar_Deisel_Engines_C13</links>
+    <links>Caterpillar_Deisel_Engines_C15</links>
+    <links>Caterpillar_Diesel_Engines_C7</links>
+    <links>Credit_Approved_List</links>
+    <links>Employee_Referral_Forms</links>
+    <links>Employee_Referral_Information</links>
+    <links>Gear_Ratio</links>
+    <links>How_to_Check_For_Contract_Codes</links>
+    <links>My_Vehicle_Termout_Report</links>
+    <links>NITE_Presentation</links>
+    <links>Purchase_of_Takeover_Policy</links>
+    <links>Refrigerated_TK</links>
+    <links>Refrigerated_TK_Equipment</links>
+    <links>Ryder_TK_used_equipment_matrix</links>
+    <links>RYDER_used_TK_equipment_information_matrix_SIngle_Temp_Trailer</links>
+    <links>RYDER_used_TK_unit_supporting_information</links>
+    <links>SAM_Class_Codes_2008</links>
+    <links>Schedule_A_Buy_out_Form</links>
+    <links>Schedule_A_Procedures</links>
+    <links>Team_Excellence_Criteria</links>
+    <links>Title_Process</links>
+    <links>Title_s_Duplicate_Details</links>
+    <links>UVS_Inbound_Call_Sheet</links>
+    <links>UVS_Spec_Training</links>
+    <links>Vehicle_Inspection_Form_4_52_TL</links>
+    <links>Vehicle_Inspection_Form_4_53_PW</links>
+    <links>RRP_Extended_Warranty_Pricing_Calculator</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

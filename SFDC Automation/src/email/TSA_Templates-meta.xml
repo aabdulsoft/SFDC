@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>TSA Templates</name>
+    <publicFolderAccess>ReadWrite</publicFolderAccess>
+    <sharedTo>
+        <role>FMC</role>
+        <role>InsideSales_WesternCanada</role>
+        <role>TSA_Canada</role>
+        <role>TSA_Central</role>
+        <role>TSA_Manager</role>
+        <role>TSA_National_Canada</role>
+        <role>TSA_National_Central</role>
+        <role>TSA_National_East</role>
+        <role>TSA_National_West</role>
+        <role>TSA_Northeast</role>
+        <role>TSA_Southeast</role>
+        <role>TSA_West</role>
+    </sharedTo>
+</EmailFolder>

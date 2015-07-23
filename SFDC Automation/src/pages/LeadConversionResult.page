@@ -1,0 +1,37 @@
+<apex:page id="leadConversionResultPage" showHeader="true"
+	tabStyle="Lead" controller="LeadConversionResult">
+	<apex:sectionHeader title="Lead" subtitle="{!lead.Name}" />
+	<apex:pageBlock >
+{!lead.Name} is converted successfully.<br />
+		<br />
+		<apex:outputText value="Converted To {!accountStatus} Parent Account:"></apex:outputText>
+		<apex:outputLink style="padding-left:5px;"
+			value="{!URLFOR($Action.Account.View, account.id)}">
+			<apex:outputText >{!account.Name}</apex:outputText>
+		</apex:outputLink>
+		<br />
+		<apex:outputPanel rendered="{!ShowChild}">
+			<apex:outputText value="Converted To {!accountStatus} Branch Account:"></apex:outputText>
+			<apex:outputLink style="padding-left:5px;"
+				value="{!URLFOR($Action.Account.View, AccChild.id)}">
+				<apex:outputText >{!AccChild.Name}</apex:outputText>
+			</apex:outputLink>
+			<br />
+		</apex:outputPanel>
+		<apex:outputText value="Converted To {!contactStatus} Contact:"></apex:outputText>
+		<apex:outputLink style="padding-left:5px;"
+			value="{!URLFOR($Action.Contact.View, contact.id)}">
+			<apex:outputText >{!contact.Name}</apex:outputText>
+		</apex:outputLink>
+		<br />
+
+		<apex:outputPanel layout="none" rendered="{!isOppFound}">
+			<apex:outputText value="Converted To Opportunity:"></apex:outputText>
+			<apex:outputLink style="padding-left:5px;"
+				value="{!URLFOR($Action.Opportunity.View, opp.id)}">
+				<apex:outputText >{!opp.Name}</apex:outputText>
+			</apex:outputLink>
+			<br />
+		</apex:outputPanel>
+	</apex:pageBlock>
+</apex:page>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>For Account Owner when the Buy-Out is completed</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Buy-Out Completed</name>
+    <style>freeForm</style>
+    <subject>Buy-Out for UVS</subject>
+    <textOnly>Hi {!UVS_SheduleA_Request__c.Account_Owner__c},
+
+The Buy-Out SheduleA was compeleted for the account below as you requested.
+
+{!UVS_SheduleA_Request__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

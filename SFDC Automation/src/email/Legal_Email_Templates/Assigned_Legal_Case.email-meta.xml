@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To send legal case owner when case is created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Assigned Legal Case</name>
+    <style>freeForm</style>
+    <subject>Your legal request was received for Account: {!Case.Account}</subject>
+    <textOnly>Hello {!Case.CreatedBy},
+
+We received your case request for {!Account.Name}
+
+Your case {!Case.CaseNumber} has been assigned to {!Case.OwnerFullName}
+
+We will contact you if we have any questions.
+
+To view {!Case.CaseNumber}, please click here
+
+Note that you must be logged into salesforce.com before clicking the link.
+
+Thank you,
+
+FMS Law Department</textOnly>
+    <type>html</type>
+</EmailTemplate>

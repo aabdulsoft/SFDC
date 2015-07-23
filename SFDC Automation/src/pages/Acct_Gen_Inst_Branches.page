@@ -1,0 +1,11 @@
+<apex:page standardController="Customer_Branch__c">
+     <apex:pageBlock >
+           <apex:pageBlockSection columns="1" collapsible="False">
+                <apex:outputField value="{!Customer_Branch__c.Ryder_HQ_Account__r.Speed_Changes__c}"/>
+                <apex:outputField value="{!Customer_Branch__c.Ryder_HQ_Account__r.Components_Not_Included__c}"/>
+                <apex:outputField value="{!Customer_Branch__c.Ryder_HQ_Account__r.Other_Instructions__c}"/>                        
+                <apex:outputField value="{!Customer_Branch__c.Ryder_HQ_Account__r.Other_Misc_Billing_Information__c}"/>
+                <apex:outputField value="{!Customer_Branch__c.Ryder_HQ_Account__r.Additional_Comments__c}"/>
+             </apex:pageBlockSection>  
+     </apex:pageBlock>   
+</apex:page>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM YearMakeModelLookup</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM YearMakeModelLookups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Engine Manufacturer Description --></label>
+        <name>Engine_Manufacturer_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Manufacturer ID --></label>
+        <name>Engine_Manufacturer_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Engine Model Description --></label>
+        <name>Engine_Model_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kit Part Number --></label>
+        <name>Kit_Part_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer Description --></label>
+        <name>Manufacturer_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Description --></label>
+        <name>Model_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>Model_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Type --></label>
+        <name>Vehicle_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year make Model --></label>
+        <name>Year_make_Model__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

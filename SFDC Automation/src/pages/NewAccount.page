@@ -1,0 +1,499 @@
+<apex:page id="newAccountPage" standardController="Account" showHeader="true" tabStyle="Account" title="{!pageTitle}" extensions="NewAccountContactController" >
+    <apex:includeScript value="{!URLFOR($Resource.RyderResource, 'scripts/jquery-1.4.4.min.js' )}"/>
+<style>
+ 
+/* Z-index of #mask must lower than #boxes .window  */
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#FFF;
+}
+   
+#boxes .window {
+  position:absolute;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+ 
+ 
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width:375px; 
+  height:203px;
+  background-image:url('{!URLFOR($Resource.RyderResource, 'images/loading.gif' )}'); 
+  background-color:#FFF;
+  background-repeat:no-repeat;
+  background-position:center center;
+  vertical-align:middle;
+  opacity:0.8;filter:alpha(opacity=80);
+  text-align: center;
+  border:solid 1px black;
+}
+</style> 
+
+
+<!-- #dialog is the id of a DIV defined in the code below -->
+<div id="boxes">
+    <!-- #customize your modal window here -->
+    <div id="dialog" class="window">
+        &nbsp;
+    </div>
+    <!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
+    <div id="mask"></div>
+</div>
+
+
+  <apex:form id="newAccountUVSUsers" rendered="{!doNotAllowAccountCreation}">
+   <apex:pageBlock >
+    
+    Accounts must be created by converting a lead.
+    
+    </apex:pageBlock>
+  </apex:form>
+
+ 
+ 
+ 
+ <apex:form id="newAccountForm" rendered="{!NOT(doNotAllowAccountCreation)}">
+    <apex:actionFunction status="statusIndividual" name="actionConvertLead" immediate="true" action="{!convertIndividualLead}" rerender="pgMessageIndividual">
+    </apex:actionFunction> 
+    
+    <!-- Sunil; 09-04-2014; In case of Individual Lead -->
+    <apex:pageBlock id="pbIndividualLead" title="Convert Lead: {!lead.Company}" rendered="{!isIndividualLead}">
+    
+   
+          
+    <apex:pageMessages id="pgMessageIndividual" />
+    <apex:pageBlockSection id="pbSectionIndividualLead" columns="1">
+      <apex:pageBlockSectionItem id="pbSectionItemIndividualLead">
+        <apex:actionstatus id="statusIndividual">
+         <apex:facet name="start">
+        <div>
+          <img class="waitingImage" src="/img/loading.gif" title="Please Wait..." /> 
+          <span class="waitingDescription">Lead is converting please wait...</span>
+        </div></apex:facet></apex:actionstatus>
+      </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+    <script>
+    $(document).ready(function() {
+      //alert('hhhi');
+      actionConvertLead();
+      //alert('bbbi');
+    });
+    
+    </script>
+   </apex:pageBlock>
+   <!-- End block --> 
+    
+        <apex:pageBlock id="newAccountPageBlock" title="New Account" rendered="{!AND(NOT(displayNewAccount), NOT(isIndividualLead))}">
+            <apex:pageBlockButtons location="both" id="newAccountPageBlockButtons">
+                <apex:commandButton id="find" value="Find" action="{!doSearch}" status="searchStatus" tabindex="1" rerender="newAccountForm" />
+                <apex:commandButton id="createAccount" value="{!labelAccountCreation}" status="saveStatus"  disabled="{!disableCreateAccount}" action="{!createNewAccount}" rerender="newAccountForm" />
+                <apex:commandButton action="{!cancel}" value="Cancel" title="Cancel" tabindex="3" />
+            </apex:pageBlockButtons>
+            <apex:pageMessages />
+            <apex:inputHidden id="contactFirstName" value="{!contact.FirstName}"/>
+            <apex:inputHidden id="contactLastName" value="{!contact.LastName}"/>
+            <apex:pageBlockSection id="newAccountPageBlockSection" columns="2">
+                <apex:pageBlockSectionItem id="accountNamePageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.Name.label}" /> 
+                    <apex:inputField id="accountName" value="{!account.Name}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="ownerIdPageBlockSectionItem">
+                    <apex:outputLabel for="recordOwner">Record Owner:</apex:outputLabel>
+                    <apex:outputField id="recordOwner" value="{!recordOwner.OwnerId}" />
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="shippingStreetPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.ShippingStreet.label}" /> 
+                    <apex:inputField id="shippingStreet" value="{!account.ShippingStreet}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="shippingCityPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.ShippingCity.label}" /> 
+                    <apex:inputField id="shippingCity" value="{!account.ShippingCity}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="shippingStatePageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.ShippingState.label}" /> 
+                    <apex:inputField required="{!NOT(isUVSLead)}" id="shippingState" value="{!account.ShippingState}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="shippingPostalCodePageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.ShippingPostalCode.label}" /> 
+                    <apex:inputField id="shippingPostalCode" value="{!account.ShippingPostalCode}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="shippingCountryPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.ShippingCountry.label}" /> 
+                    <apex:selectList id="shippingCountry" value="{!account.ShippingCountry}" multiselect="false" size="1">
+                        <apex:selectOptions value="{!itemsCountries}"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="contactPhonePageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Contact.fields.Phone.label}" /> 
+                    <apex:inputText id="contactPhone" value="{!contact.Phone}"/>
+                </apex:pageBlockSectionItem>
+                <!-- AAK 12/04/2014 Start - Changes for QC 536 Modify Lead Conversion process - For phone numbers -->                
+                <apex:pageBlockSectionItem id="SpacePageBlockSectionItem">
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="contactPhoneExtPageBlockSectionItem">                
+                    <apex:outputLabel value="{!$ObjectType.Contact.fields.Business_Phone_Extension_1__c.label}" /> 
+                    <apex:inputText id="contactPhoneExt" value="{!contact.BUSS_PHONE1_EXTN__c}"/>                        
+                </apex:pageBlockSectionItem>
+                <!-- AAK 12/04/2014 End -->                
+                <apex:pageBlockSectionItem rendered="{!NOT(isIncorporatedLead)}" id="accountCustomerTypeIdPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.CustomerTypeID__c.label}" /> 
+                    <apex:inputField required="true" id="accountCustomerTypeId" value="{!account.CustomerTypeID__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!NOT(isIncorporatedLead)}" id="accountCompanyTypeIdPageBlockSectionItem">
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.CompanyTypeID__c.label}" /> 
+                    <apex:inputField required="true" id="accountCompanyTypeId" value="{!account.CompanyTypeID__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="contactFirstNamePageBlockSectionItem" rendered="{!fromLead}">
+                    <apex:outputLabel value="{!$ObjectType.Contact.fields.FirstName.label}" /> 
+                    <apex:outputField id="contactFirstNameOutput" value="{!contact.FirstName}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem rendered="{!NOT(isIncorporatedLead)}" id="accountSegmentPageBlockSectionItem" >
+                    <apex:outputLabel value="{!$ObjectType.Account.fields.CO_SEGMENT__c.label}" /> 
+                    <apex:inputField required="true" id="accountSegment" value="{!account.CO_SEGMENT__c}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem id="contactLastNamePageBlockSectionItem" rendered="{!fromLead}">
+                    <apex:outputLabel value="{!$ObjectType.Contact.fields.LastName.label}" /> 
+                    <apex:outputField id="contactLastNameOutput" value="{!contact.LastName}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:PageBlock>
+        
+        <apex:actionStatus id="saveStatus" onStart="launchWindow('#dialog')" onStop="closeWindow();"></apex:actionStatus>
+        <apex:actionStatus id="searchStatus" onStart="launchWindow('#dialog')" onStop="closeWindow();"></apex:actionStatus>
+        <apex:actionStatus id="loadingStatus" onStart="launchWindow('#dialog')" onStop="closeWindow();"></apex:actionStatus>
+
+         <apex:actionFunction name="selectAccount" action="{!assignAccount}" rerender="newAccountPageBlock,contactSearchResultPageBlock" status="loadingStatus">
+             <apex:param name="sfdcAccountId" value="tempPiyush" assignTo="{!accountSelected}"/>
+             <apex:param name="createOrAttach" value="createOrAttach" assignTo="{!accountCreateOrAttached}"/>
+         </apex:actionFunction>
+        
+        <apex:actionFunction name="selectDnBAccount" action="{!assignAccount}"  status="loadingStatus"
+                            rerender="newAccountPageBlock,contactSearchResultPageBlock">
+             <apex:param name="dbDunsNumber" value="dunsNumber" assignTo="{!accountSelected}"/>
+        </apex:actionFunction>
+        
+        <apex:actionFunction name="selectContact" action="{!assignContact}" rerender="newAccountPageBlock" status="loadingStatus">
+            <apex:param name="sfdcContactId" value="" assignTo="{!contactSelected}"/>
+        </apex:actionFunction> 
+                                                            
+        <apex:pageBlock id="accountSearchResultPageBlock" title="Salesforce Account Search Result" rendered="{!foundRecords}">
+            <apex:pageBlockSection columns="1" id="accountSearchResults">
+                <apex:pageBlockTable value="{!sfdcAccountSearchResults}" var="sfdcAccount" id="resultsDataTable" styleClass="tableClass list" rowClasses="odd,even">
+                    <apex:column >
+                        <apex:facet name="header">Select an Account to create/attach</apex:facet>
+                        <apex:inputCheckbox id="chkRecord2" value="{!sfdcAccount.selected}" onclick="deSelectOthers2(this, '{!sfdcAccount.account.Id}', '{!sfdcAccount.account.Id}');" rendered="{!sfdcAccount.canBeSelected}">
+                        </apex:inputCheckbox>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">Create/Attach</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.createOrAttach}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Name.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.Name}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Type.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.Type}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.CustomerTypeID__c.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.CustomerTypeID__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.LesseeNo__c.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.LesseeNo__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Site_Duns__c.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.Site_Duns__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.DUNS_HQ__c.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.DUNS_HQ__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Industry.label}</apex:facet>
+                        <apex:outputText value="{!sfdcAccount.account.Industry}"/>
+                    </apex:column>
+                    <!-- changed name of facet to enable/disable display of no records found -->
+                    <apex:facet name="footer{!IF(foundRecords, 'dummyname', '')}"><apex:outputText value="No Records found." rendered="{!!foundRecords}"/></apex:facet>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+    
+            <apex:pageBlock id="contactSearchResultPageBlock" title="Salesforce Contact Search Result" rendered="{!fromLead}">
+                <apex:pageBlockSection columns="1" id="contactSearchResults" >
+                    <apex:pageBlockTable value="{!sfdcContactSearchResults}" var="sfdcContact" id="resultsDataTable" styleClass="tableClass list" rowClasses="odd,even">
+                        <apex:column >
+                            <apex:facet name="header">Select a Contact to attach</apex:facet>
+                            <apex:inputCheckbox id="chkRecord" value="{!sfdcContact.selected}" onclick="deSelectOtherContacts(this, '{!sfdcContact.contact.Id}');" >
+                            </apex:inputCheckbox>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">Create/Attach</apex:facet>
+                            <apex:outputText value="{!sfdcContact.createOrAttach}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">{!$ObjectType.Contact.fields.FirstName.label}</apex:facet>
+                            <apex:outputText value="{!sfdcContact.contact.FirstName}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">{!$ObjectType.Contact.fields.LastName.label}</apex:facet>
+                            <apex:outputText value="{!sfdcContact.contact.LastName}"/>
+                        </apex:column>
+                        <apex:column >
+                            <apex:facet name="header">{!$ObjectType.Contact.fields.Phone.label}</apex:facet>
+                            <apex:outputText value="{!sfdcContact.contact.Phone}"/>
+                        </apex:column>
+                        <!-- changed name of facet to enable/disable display of no records found -->
+                    <apex:facet name="footer{!IF(foundContactRecords, 'dummyname', '')}"><apex:outputText value="No Records found." rendered="{!!foundContactRecords}"/></apex:facet>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:pageBlock>
+
+
+        <!--  AAK 12/04/2014 Start - QC630 Change lead conversion process to use DUNSRIGHT API for matching and restore restricted functionality to create account without match -->        
+        <apex:pageBlock id="dbAccountSearchResultPageBlockMatch" title="D&B Account Search Result (Recommended)" rendered="{!foundRecords}" >
+            <apex:pageBlockSection columns="1" id="dbAccountSearchResultsDUNSRight">           
+                <apex:pageBlockTable value="{!DBAccountToDisplayMatch}" var="dbAccountMatch" id="resultsDataTable" styleClass="tableClass list" rowClasses="odd,even">
+                    <apex:column >
+                        <apex:facet name="header">Select an Account to create</apex:facet>
+                        <apex:inputCheckbox id="chkRecord" value="{!dbAccountMatch.selected}" onclick="deSelectOthersDnB(this, '{!dbAccountMatch.DunsNumber}');" >
+                        </apex:inputCheckbox>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Name.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.Company_Name}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Tradestyle.label}</apex:facet>
+                            <apex:outputText value="{!dbAccountMatch.tradeStyle}" />
+                    </apex:column>
+                    
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingStreet.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.Address_Line}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingCity.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.City}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingState.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.State}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingCountry.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.CountryCode}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingPostalCode.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.ZipCode}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Site_Duns__c.label}</apex:facet>
+                        <apex:outputText value="{!dbAccountMatch.DunsNumber}"/>
+                    </apex:column>
+                    <!-- <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.RyderProbabilityMatch__c.label}</apex:facet>
+                        <p align="center">
+                        <apex:outputText value="{0, number, ##.#%}">
+                            <apex:param value="{!dbAccount.ryderProbability}" />
+                        </apex:outputText>
+                        </p>
+                    </apex:column> -->
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.DB_Loc_Type__c.label}</apex:facet>
+                            <apex:outputText value="{!dbAccountMatch.locationType}" />
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.AnnualRevenue.label}</apex:facet>
+                            <apex:outputText value="{0, number, ###,###,###,###,##0.00}" style="float:right">
+                                <apex:param value="{!dbAccountMatch.AnnualRevenue}" />
+                            </apex:outputText>
+                    </apex:column>
+                    <!-- AAK 12/22/2014 Start - QC630 Change lead conversion process to use DUNSRIGHT API for matching and restore restricted functionality to create account without match -->
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Match_Confidence__c.label}</apex:facet>
+                            <apex:outputText value="{0, number, ###.00}" style="float:right">
+                                <apex:param value="{!dbAccountMatch.matchConfidence}" />
+                            </apex:outputText>
+                    </apex:column>
+                   
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Match_Grade__c.label}</apex:facet>
+                            <apex:outputText value="{!dbAccountMatch.matchGrade}" />
+                    </apex:column>
+					<!-- AAK 12/22/2014 End -->
+                    <!-- changed name of facet to enable/disable display of no records found -->
+                    <apex:facet name="footer{!IF(foundDBRecords, 'dummyname', '')}"><apex:outputText value="No Records found." rendered="{!!foundDBRecords}"/></apex:facet>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <!-- AAK 12/04/2014 End -->
+        
+        <!--  AAK 12/04/2014 Start - QC630 Change lead conversion process to use DUNSRIGHT API for matching and restore restricted functionality to create account without match -->
+        <!--  <apex:pageBlock id="dbAccountSearchResultPageBlock" title="D&B Account Search Result" rendered="{!foundRecords}" > -->
+        <apex:pageBlock id="dbAccountSearchResultPageBlock" title="Data.com Account Search Result" rendered="{!foundRecords}" >
+        <!--  AAK 12/04/2014 End -->
+            <apex:pageBlockSection columns="1" id="dbAccountSearchResults">
+                <apex:pageBlockTable value="{!DBAccountToDisplay}" var="dbAccount" id="resultsDataTable" styleClass="tableClass list" rowClasses="odd,even">
+                    <apex:column >
+                        <apex:facet name="header">Select an Account to create</apex:facet>
+                        <apex:inputCheckbox id="chkRecord" value="{!dbAccount.selected}" onclick="deSelectOthersDnB(this, '{!dbAccount.DunsNumber}');" >
+                        </apex:inputCheckbox>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Name.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.Company_Name}"/>
+                    </apex:column>
+					<!-- AAK 12/22/2014 Start - QC630 Change lead conversion process to use DUNSRIGHT API for matching and restore restricted functionality to create account without match -->
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Tradestyle.label}</apex:facet>
+                            <apex:outputText value="{!dbAccount.tradeStyle}" />
+                    </apex:column>
+					<!-- AAK 12/22/2014 End -->
+                    
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingStreet.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.Address_Line}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingCity.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.City}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingState.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.State}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingCountry.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.CountryCode}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.ShippingPostalCode.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.ZipCode}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.Site_Duns__c.label}</apex:facet>
+                        <apex:outputText value="{!dbAccount.DunsNumber}"/>
+                    </apex:column>
+                    <!--<apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.RyderProbabilityMatch__c.label}</apex:facet>
+                        <p align="center">
+                        <apex:outputText value="{0, number, ##.#%}">
+                            <apex:param value="{!dbAccount.ryderProbability}" />
+                        </apex:outputText>
+                        </p>
+                    </apex:column>-->
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.DB_Loc_Type__c.label}</apex:facet>
+                            <apex:outputText value="{!dbAccount.locationType}" />
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">{!$ObjectType.Account.fields.AnnualRevenue.label}</apex:facet>
+                            <apex:outputText value="{0, number, ###,###,###,###,##0.00}" style="float:right">
+                                <apex:param value="{!dbAccount.AnnualRevenue}" />
+                            </apex:outputText>
+                    </apex:column>
+                    <!-- changed name of facet to enable/disable display of no records found -->
+                    <apex:facet name="footer{!IF(foundDBRecords, 'dummyname', '')}"><apex:outputText value="No Records found." rendered="{!!foundDBRecords}"/></apex:facet>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+        <script>
+function launchWindow(id) {
+
+        
+        //Get the screen height and width
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+     
+        //Set height and width to mask to fill up the whole screen
+        $('#mask').css({'width':maskWidth,'height':maskHeight});
+         
+        //transition effect     
+        $('#mask').fadeIn(1000);    
+        $('#mask').fadeTo("slow",0.8);  
+        $('#mask, .window').show();
+        
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+               
+        //Set the popup window to center
+        $(id).css({'width':maskWidth,'height':maskHeight});
+        
+        $(id).css('top',  winH/2-$(id).height()/2);
+        $(id).css('left', winW/2-$(id).width()/2);
+        
+        //transition effect
+        $(id).fadeIn("fast"); 
+        $(id).fadeTo("fast",0.8);
+        $('#mask, .window').show();
+        $(id).show();
+        }
+        
+function closeWindow() {
+    $('#mask, .window').hide();
+}
+</script>
+
+ <script language="JavaScript" type="text/javascript">
+        var selectedChkbox;
+
+        function deSelectOthersDnB(chkBox, dunsNumber)
+        {
+            if (chkBox.checked) 
+            {
+                if ((chkBox != selectedChkbox) && (selectedChkbox != null)) 
+                {
+                    selectedChkbox.checked = false;
+                }
+                selectedChkbox = chkBox;
+            }
+            selectDnBAccount(dunsNumber);
+        }
+        
+        function deSelectOthers2(chkBox, sfAccountId, createOrAttach) 
+        {
+            if (chkBox.checked) 
+            {
+                if ((chkBox != selectedChkbox) && (selectedChkbox != null)) 
+                {
+                    selectedChkbox.checked = false;
+                }
+                selectedChkbox = chkBox;
+            }
+            
+            if (sfAccountId == null || sfAccountId.length == 0) {
+                sfAccountId = 'CreateNew';
+            }
+            
+            selectAccount(sfAccountId, createOrAttach);
+        }
+
+
+        var selectedContactChkbox;
+        function deSelectOtherContacts(chkBox, sfdcContactId) 
+        {
+            if (chkBox.checked) 
+            {
+                if ((chkBox != selectedContactChkbox) && (selectedContactChkbox != null)) 
+                {
+                    selectedContactChkbox.checked = false;
+                }
+                selectedContactChkbox = chkBox;
+            }
+            selectContact(sfdcContactId);            
+        }
+    </script>
+    
+</apex:page>

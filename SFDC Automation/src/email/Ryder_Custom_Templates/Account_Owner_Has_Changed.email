@@ -1,0 +1,16 @@
+There is a new owner for the following Account:
+
+Account Name: {!Account.Name}
+Account Type: {!Account.Account_Classification__c}
+New Owner: {!Account.OwnerFullName}
+
+Please click on this link to access the record: {!Account.Link}
+
+You are receiving this notification because you are part of the Account Team. Please be aware that this is not a change to one of your accounts, it is a change to the ownership of an account within the hierarchy.
+
+Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link, then review the record and take appropriate action.
+
+If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won't be able to log in from there.
+
+Sincerely,
+Ryder Sales Admin

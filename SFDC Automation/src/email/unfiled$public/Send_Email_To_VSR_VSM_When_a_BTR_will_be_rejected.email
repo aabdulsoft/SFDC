@@ -1,0 +1,16 @@
+Hi  {!BTR__c.OwnerFullName},
+
+Following BTR record submitted by you has been Rejected 
+
+BTR Number: {!BTR__c.Name}
+Is conditional Approval: {!IF(BTR__c.Is_Conditional_Approval__c, "Yes","No")}
+Comments: {!BTR__c.Approver_Comments__c}
+Rejected By: {!BTR__c.LastModifiedBy}
+
+
+Click the link below to take further action.
+{!BTR__c.Link}
+
+
+Thanks
+Salesforce.com

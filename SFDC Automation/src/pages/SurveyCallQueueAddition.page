@@ -1,0 +1,6 @@
+<apex:page standardController="Survey_Assignment__c"  extensions="AddSurveyActivityController" action="{!execute}">
+<apex:sectionHeader title="Manual Addition-Survey Calls to the Queue"/>
+  <apex:outputPanel >
+      Thanks for adding more survey calls to the queue.  If this page is visible, the job did not run successfully.  
+  </apex:outputPanel>
+</apex:page>

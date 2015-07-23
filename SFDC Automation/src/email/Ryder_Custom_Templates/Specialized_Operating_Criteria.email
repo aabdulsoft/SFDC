@@ -1,0 +1,7 @@
+Account Name: {!Account.Name}
+Account Owner: {!Account.OwnerFullName}
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Created Date: {!Opportunity.CreatedDate}
+Close Date: {!Opportunity.CloseDate}
+Owner Region: {!User.Region__c}
+Specialized Operating Criteria: {!Opportunity.Specialized_Operating_Criteria__c}

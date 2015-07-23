@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[Dear {!Case.CreatedBy}<br><br><br>Your case {!Case.CaseNumber} for a {!Case.Type} for {!Case.Account} was completed<br><br>Case Open Date: {!Case.CreatedDate + 0}<br>Case Closed Date: {!Case.ClosedDate + 0}<br><br><br>Kind Regards<br><br>Ryder Legal Team<br>]]></td>
+</tr>
+</table>

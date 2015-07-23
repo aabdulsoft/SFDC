@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>If the user has not updated the Opportunity after 90 days, they will receive a notification</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity: No Updates for 90 Days</name>
+    <style>none</style>
+    <subject>Opportunity requires your attention</subject>
+    <type>text</type>
+</EmailTemplate>

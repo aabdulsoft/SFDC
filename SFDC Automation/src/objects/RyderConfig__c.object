@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Provides configuration information for Ryder</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Accuracy_Mapping__c</fullName>
+        <description>Accurracy Mapping provides Conf_cd to Accuracy mapping based on conf cd number returned from Dunn &amp; BradStreet</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Accurracy Mapping provides Conf_cd to Accuracy mapping based on conf cd number returned from Dunn &amp; BradStreet</inlineHelpText>
+        <label>Accuracy Mapping</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>ContactToCustomerBranchs_rlid__c</fullName>
+        <description>Contact to Customer branch rlid</description>
+        <externalId>false</externalId>
+        <label>ContactToCustomerBranchs_rlid</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_HTMLID__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact HTMLID</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_HTML_LKID__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact HTML LKID</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CustomerBranchKeyContact_rlid__c</fullName>
+        <description>Related list id for customer branch to key contact list</description>
+        <externalId>false</externalId>
+        <label>CustomerBranchKeyContact_rlid</label>
+        <length>20</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch_HTMLID__c</fullName>
+        <description>HTML element id for customer branch. this might  change per environment.</description>
+        <externalId>false</externalId>
+        <label>Customer Branch HTMLID</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch_HTML_LKID__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Branch HTML LKID</label>
+        <length>40</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cutoff_Accuracy_Probability__c</fullName>
+        <defaultValue>0.5</defaultValue>
+        <description>Cutoff Accuracy Probability for forcing users to select account match from DnB instead of allowing them to create new account without DnB search</description>
+        <externalId>false</externalId>
+        <label>Cutoff Accuracy Probability</label>
+        <precision>5</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>DNB_Password__c</fullName>
+        <description>DNB Password used for the web services</description>
+        <externalId>false</externalId>
+        <label>DNB Password</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DNB_UserId__c</fullName>
+        <description>DNB User Id used for the web services</description>
+        <externalId>false</externalId>
+        <label>DNB UserId</label>
+        <length>100</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_comcleanuser__c</fullName>
+        <description>Data.com clean auto update job user</description>
+        <externalId>false</externalId>
+        <label>Data.comcleanuser</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_UVS_Lead_Owner__c</fullName>
+        <description>The field use to set the default value for UVS Lead Owner assignment fro the leads from web to lead, eloqua etc. when rep for the specified zip is missing.</description>
+        <externalId>false</externalId>
+        <label>Default UVS Lead Owner</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Case_Email_Recipient__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Duplicate Case Email Recipient</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Case_Excluded_Customers__c</fullName>
+        <description>This contains list of Customers which are excluded from Duplicate Case email alert.</description>
+        <externalId>false</externalId>
+        <label>Duplicate Case Excluded Customers</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ETL_Username__c</fullName>
+        <externalId>false</externalId>
+        <label>ETL Username</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FollowUpSurveyUser__c</fullName>
+        <description>Contains the id of the user to whom all the follow up survey will be assigned. At the moment, it contains the ID of Holly Lyncooke. Once she gets the survey, she will distribute it between Phone Agents</description>
+        <externalId>false</externalId>
+        <label>FollowUpSurveyUser</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Status_For_Convert__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead Status For Convert</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfRecordsToDisplay__c</fullName>
+        <description>Number of records to display in a grid for Lead Convert and New Account</description>
+        <externalId>false</externalId>
+        <label>Number Of Records To Display</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Perform_Name_Check__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Perform Name Check</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>RADAR_DS_New_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>RADAR DS New Link</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RADAR_RS_Edit_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>RADAR RS Edit Link</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RADAR_RS_New_Link__c</fullName>
+        <externalId>false</externalId>
+        <label>RADAR RS New Link</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RYDER_AUTH_ENDPOINT__c</fullName>
+        <description>Ryder Authentication Service End Point</description>
+        <externalId>false</externalId>
+        <label>RYDER_AUTH_ENDPOINT</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RyderSmart_Billing__c</fullName>
+        <externalId>false</externalId>
+        <label>RydeSmart Billing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RyderSmart_RSS__c</fullName>
+        <externalId>false</externalId>
+        <label>RydeSmart RSS</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ryder_Survey_PDF_Endpoint__c</fullName>
+        <description>Endpoint to generate the survey results in the format to distribute via email to the field and Customer Branch Owner</description>
+        <externalId>false</externalId>
+        <label>Ryder Survey PDF Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ryder_Survey_PDF_Recipients__c</fullName>
+        <description>All automated Ryder survey pdfs will also be sent to this email.</description>
+        <externalId>false</externalId>
+        <label>Ryder Survey PDF Recipients</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ryder_WS_EndPoint__c</fullName>
+        <description>End point for calling all of Ryder Web services without the name of individual web services. Should always consist the ending &quot;/&quot;.</description>
+        <externalId>false</externalId>
+        <label>Ryder_WS_EndPoint</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TruckTypes__c</fullName>
+        <description>This filed contains the type of Trucks that needs to be excluded from the Count of Competitive V ehicles</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This filed contains the type of Trucks that needs to be excluded from the Count of Competitive V ehicles</inlineHelpText>
+        <label>TruckTypes</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Ryder Config</label>
+    <visibility>Protected</visibility>
+</CustomObject>

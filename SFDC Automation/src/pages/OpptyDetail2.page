@@ -1,0 +1,242 @@
+<apex:page tabStyle="Opportunity" standardcontroller="opportunity"
+sidebar="false" extensions="OpportunityControllerExtension2" action="{!retrieveRateSheetsAndDealSummaries}">
+
+<link rel="stylesheet" type="text/css" href="/sCSS/23.0/sprites/1315964851000/Theme3/rlHovers.css"/>
+
+<apex:pageMessages />
+<apex:detail subject="{!opportunity.Id}" showChatter="true"/>
+<apex:outputPanel rendered="{!nonUVS}">
+<apex:includeScript value="{!URLFOR($Resource.RyderResource, 'scripts/prototype_1_7.js' )}" />
+    <!-- Style for Page Messages -->
+    <style type="text/css">
+    #dealSummaryTable
+        {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 12px;
+            text-align: left;
+            border:1px solid #D4DADC;
+            border-collapse: collapse;
+            background-color:#FFFFFF;
+            padding: 0 0 0 0;
+            cellspacing:0;
+            cellpadding:0;
+        }
+        #dealSummaryTable th
+        {
+            background:url("/img/alohaSkin/grid_headerbg.gif") repeat-x scroll 0 bottom #FFFFFF;
+            border-width:0 0 1px 1px;
+            color:#000000;
+            font-size:0.9em;
+            font-weight:bold;
+            padding:5px 2px 4px 5px;
+        }
+        #dealSummaryTable tr
+        {
+            border-top:1px solid #D4DADC;
+        }
+
+        #dealSummaryTable td
+        {
+            padding: 4px;
+            vertical-align:middle;
+            white-space:nowrap;
+        }
+
+    </style>
+    <a name="ratesheetdealsummary_target"></a>
+    <apex:form id="dealSummaryForm">
+        <apex:pageBlock id="dealSummaryPageBlock" title="Rate Sheets and Deal Summaries">
+        	<apex:pageBlockButtons id="dealSummaryPageBlockButtons" location="top">
+                <apex:commandButton rendered="{!CanBeShown}" id="save" value="Save" action="{!updateDSAndRS}"
+                    tabindex="1" />
+
+                    <apex:commandbutton rendered="{!CanBeShown}" rerender="hiddenpanel"  value="New Rate Sheet" onclick="window.open('{!newRateSheetLink}'); return false;" />
+                    <apex:commandbutton rendered="{!CanBeShown}" rerender="hiddenpanel"  value="New Deal Summary" onclick="window.open('{!dealSummaryLink}'); return false;" />
+
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection id="dealsummaryPageBlockSection2" columns="1"
+                title="{!$ObjectType.Deal_Summary__c.LabelPlural}" collapsible="false">
+                <apex:pageBlockTable id="dsTable" value="{!dealSummaryVOList}" var="item"
+                    width="100%" rowClasses="odd,even">
+                    <apex:column onclick="javascript:showOrHide('{!item.dealSummary.id}')">
+                        <apex:image id="expandCollapse" styleClass="expandCollapse{!item.dealSummary.id}" value="{!URLFOR($Resource.RyderResource, 'images/plus.gif')}" />
+                    </apex:column>
+
+                    <apex:column rendered="{!IF(CanBeShown==true,true,false)}" headerValue="{!$ObjectType.Deal_Summary__c.Fields.Include_In_Quote__c.Label}">
+                        <apex:inputCheckbox value="{!item.dealSummary.Include_In_Quote__c}"/>
+                    </apex:column>
+
+                    <apex:column rendered="{!IF(CanBeShown==true,false,true)}" value="{!item.dealSummary.Include_In_Quote__c}"
+                        headerValue="{!$ObjectType.Deal_Summary__c.Fields.Include_In_Quote__c.Label}" />
+
+                    <apex:column headerValue="Deal Summary #">
+                       <apex:outputLink target="_parent" value="{!URLFOR($Action.Deal_Summary__c.View,item.dealSummary.id)}">{!round(item.dealSummary.ext_dealsummary_id__c,0)}</apex:outputLink>
+                    </apex:column>
+
+                    <apex:column value="{!item.dealSummary.Name}"
+                        headerValue="{!$ObjectType.Deal_Summary__c.Fields.Name.Label}" />
+
+                    <!-- <apex:column value="{!CanBeShown}" -->
+                    <!-- headerValue="{!$ObjectType.Deal_Summary__c.Fields.Name.Label}" /> -->
+                    <apex:column headerValue="{!$ObjectType.Deal_Summary__c.Fields.Gross_Revenue__c.Label}"
+                        value="{!item.dealSummary.Gross_Revenue__c}" />
+                    <apex:column value="{!item.dealSummary.EVA__c}"
+                        headerValue="{!$ObjectType.Deal_Summary__c.Fields.EVA__c.Label}" />
+                    <apex:column headerValue="{!$ObjectType.Deal_Summary__c.Fields.No_of_Vehicles__c.Label}"
+                        value="{!item.dealSummary.No_of_Vehicles__c}" />
+                    <apex:column headerValue="{!$ObjectType.Deal_Summary__c.Fields.Status__c.Label}"
+                        value="{!item.dealSummary.Status__c}" />
+
+                    <apex:column headerValue="Radar Link" rendered="{!CanBeShown}">
+                        <apex:outputlink target="_blank" value="{!dealSummaryLink}&DealSummaryId={!round(item.dealSummary.ext_dealsummary_id__c,0)}NOTENCODED">Edit in Radar</apex:outputlink>
+                    </apex:column>
+
+                    <apex:column breakBefore="true" colspan="8" style="display:none" styleClass="{!item.dealSummary.id}">
+                        <apex:outputPanel id="relatedRS">
+                        <apex:pageBlockTable id="relatedRSTable" value="{!item.rateSheetsAssociatedWithDS}"
+                                var="itemRS" width="100%" rowClasses="odd,even">
+                                <!-- <apex:column headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Include_In_Quote__c.Label}"> -->
+                                <!--      <apex:inputCheckbox value="{!itemRS.Include_In_Quote__c}" /> -->
+                                <!-- <apex:column> -->
+                                <!--<apex:column value="{!itemRS.Name}" -->
+                                <!--    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Name.Label}" /> -->
+
+                                <apex:column headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Name.Label}">
+                                   <apex:outputLink target="_parent" value="{!URLFOR($Action.Rate_Sheet__c.View,itemRS.id)}">{!itemRS.Name}</apex:outputLink>
+                                </apex:column>
+                                <apex:column value="{!itemRS.Rate_Sheet_Name__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Rate_Sheet_Name__c.Label}" />
+                                <apex:column value="{!itemRS.Product_Line__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Product_Line__c.Label}" />
+                                <apex:column value="{!itemRS.Package_Type__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Package_Type__c.Label}" />
+                                <apex:column value="{!itemRS.Transaction_Type__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Transaction_Type__c.Label}" />
+                                <apex:column value="{!itemRS.Gross_Revenue__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Gross_Revenue__c.Label}" />
+                               <apex:column value="{!itemRS.Old_Revenue__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Old_Revenue__c.Label}" />
+                                <apex:column value="{!itemRS.No_of_Vehicles__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.No_of_Vehicles__c.Label}" />
+                                <apex:column value="{!itemRS.EVA__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.EVA__c.Label}" />
+                                <!-- <apex:column value="{!itemRS.Deal_Summary__c}"
+                                    headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Deal_Summary__c.Label}" /> -->
+
+                                <apex:column rendered="{!CanBeShown}" headerValue="Radar Link" >
+                                    <apex:outputlink target="_blank" value="{!editRateSheetLink}&RateSheetId={!round(itemRS.ext_ratesheet_id__c,0)}NOTENCODED">Edit in Radar</apex:outputlink>
+                                </apex:column>
+
+                            </apex:pageBlockTable>
+                            </apex:outputPanel>
+                    </apex:column>
+
+                </apex:pageBlockTable>
+
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection id="rateSheetsPageBlockSection" columns="1"
+                title="{!$ObjectType.Rate_Sheet__c.LabelPlural}" collapsible="false">
+                <apex:pageBlockTable value="{!rateSheetsNotAssociatedWithDS}"
+                    var="item" width="100%" rowClasses="odd,even">
+                    <apex:column rendered="{!IF(CanBeShown==true,true,false)}" headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Include_In_Quote__c.Label}">
+                        <apex:inputCheckbox value="{!item.Include_In_Quote__c}" />
+                    </apex:column>
+                    <apex:column rendered="{!IF(CanBeShown==true,false,true)}" value="{!item.Include_In_Quote__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Include_In_Quote__c.Label}" />
+                    <!-- <apex:column value="{!item.Name}" -->
+                    <!--     headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Name.Label}" /> -->
+                    <apex:column headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Name.Label}">
+                       <apex:outputLink target="_parent" value="{!URLFOR($Action.Rate_Sheet__c.View,item.id)}">{!item.Name}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!item.Rate_Sheet_Name__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Rate_Sheet_Name__c.Label}" />
+                    <apex:column value="{!item.FuelType__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.FuelType__c.Label}" />
+                    <apex:column value="{!item.Product_Line__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Product_Line__c.Label}" />
+                    <apex:column value="{!item.Package_Type__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Package_Type__c.Label}" />
+                    <apex:column value="{!item.Transaction_Type__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Transaction_Type__c.Label}" />
+                    <apex:column value="{!item.Gross_Revenue__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Gross_Revenue__c.Label}" />
+                    <apex:column value="{!item.Old_Revenue__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Old_Revenue__c.Label}" />
+                    <apex:column value="{!item.No_of_Vehicles__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.No_of_Vehicles__c.Label}" />
+                    <apex:column value="{!item.EVA__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.EVA__c.Label}" />
+                    <!-- <apex:column value="{!item.Deal_Summary__c}"
+                        headerValue="{!$ObjectType.Rate_Sheet__c.Fields.Deal_Summary__c.Label}" />-->
+                    <apex:column headerValue="Radar Link" rendered="{!CanBeShown}">
+                        <apex:outputlink target="_blank" value="{!editRateSheetLink}&RateSheetId={!round(item.ext_ratesheet_id__c,0)}NOTENCODED">Edit in Radar</apex:outputlink>
+                    </apex:column>
+
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+
+    <!-- <apex:outputPanel id="tempTodisplayIPs">
+        Current User's IP Address: <apex:outputText value="{!currentIPAddress}"/>
+    </apex:outputPanel>
+     -->
+    <apex:outputpanel id="hiddenpanel" rendered="false"/>
+
+    <!-- Javascript  addToHover(); -->
+
+    <script language="javascript">
+
+    var previousOnload = window.onload;
+    window.onload = function() {
+        if (previousOnload) {
+            previousOnload();
+        }
+           //addToHover();
+    }
+
+    function addToHover(){
+        var lhl = getElementByClassName( 'listHoverLinks', document.getElementById('bodyTable'));
+
+        if (lhl != null){
+            lhl.innerHTML = lhl.innerHTML + '<span class="pipe"> | </span> <a href="#ratesheetdealsummary_target" class="linklet"><span class="listTitle">Rate Sheets & Deal Summaries</span></a>';
+        }
+    }
+
+    function getElementByClassName( strClassName, obj ) {
+        var ret = null;
+        if (obj.className == strClassName)
+            return obj;
+
+        for ( var i = 0; i < obj.childNodes.length; i++ ){
+            if ( obj.childNodes[i].className == strClassName )
+                ret = obj.childNodes[i];
+            else
+                ret = getElementByClassName( strClassName, obj.childNodes[i]);
+
+            if(ret != null)
+                return ret;
+            }
+        return ret;
+    }
+
+    function showOrHide(eId)
+        {
+            var imgElement = $$('.expandCollapse' + eId);
+            var tempElement = $$('.' + eId);
+
+            if (imgElement[0].src.indexOf("{!URLFOR($Resource.RyderResource, 'images/plus.gif')}")>0)
+            {
+                imgElement[0].src="{!URLFOR($Resource.RyderResource, 'images/minus.gif')}";
+                tempElement[0].show();
+            }
+            else {
+                imgElement[0].src="{!URLFOR($Resource.RyderResource, 'images/plus.gif')}";
+                tempElement[0].hide();
+            }
+        }
+        </script>
+    </apex:outputPanel>
+</apex:page>

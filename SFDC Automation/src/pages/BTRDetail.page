@@ -1,0 +1,215 @@
+<!--
+/**=====================================================================
+ * Appirio, Inc
+ * Name: BTRDetail
+ * Created Date: 9-24-2012
+ * Created By: Sunil (Appirio)
+  =====================================================================*/
+-->
+<apex:page extensions="BTRDetailController" sidebar="false" standardController="BTR__c" showHeader="false">
+  <apex:form id="muform">
+
+
+    <apex:pageBlock title="BTR Detail" id="mypage" >
+     <apex:pageBlockButtons location="top" >
+      <apex:commandButton value="Back" action="{!cancel}" />
+    </apex:pageBlockButtons>
+
+    <apex:pageMessages escape="false" rendered="{!isPageMesssage}" />
+    
+    
+     <apex:pageBlockSection columns="2">
+       <apex:outputField value="{!currentBTR.Quote__r.Opportunity.Account.Name}" />
+       <apex:outputField label="Submitted Date" value="{!currentBTR.CreatedDate}" />
+       <apex:outputField value="{!currentBTR.Name}" />
+       <apex:outputField label="Submitted By" value="{!currentBTR.OwnerId}" />
+       
+       <apex:outputField label="BTR Status" value="{!currentBTR.Status__c}" />
+         <apex:inputField rendered="{!isApprovers}" value="{!currentBTR.Is_Conditional_Approval__c}" />
+       <apex:outputField rendered="{!NOT(isApprovers)}" value="{!currentBTR.Is_Conditional_Approval__c}" />
+       
+       <apex:outputField value="{!currentBTR.Quote__c}" />
+       
+       
+       <apex:outputField value="{!currentBTR.Requester_Comments__c}" />
+     
+       
+        <apex:outputField rendered="{!(currentBTR.First_Approver__c != null)}" value="{!currentBTR.First_Approver__c}" />
+        <apex:outputField rendered="{!(currentBTR.Second_Approver__c != null)}" value="{!currentBTR.Second_Approver__c}" />
+        <apex:outputField rendered="{!(currentBTR.Third_Approver__c != null)}" value="{!currentBTR.Third_Approver__c}" />
+       
+     
+       
+     </apex:pageBlockSection>
+     </apex:pageBlock>
+
+
+    <apex:pageBlock >
+
+     <apex:pageBlockButtons rendered="{!AND(isApprovers, NOT(isPageMesssage))}" location="bottom" >
+      <apex:commandButton value="Approve" action="{!approve}" reRender="mypage"/>
+      <apex:commandButton value="Reject" action="{!reject}" />
+      <!--<apex:commandButton value="Cancel" action="{!cancel}" />
+
+    --></apex:pageBlockButtons>
+
+    <apex:pageBlockSection columns="1">
+
+    <div style="background-color:#000"><b>
+      <span style="color:#FF3333">Red = Sold</span> &nbsp;&nbsp;
+      <span style="color:#00cc00">Green = OverStock</span> &nbsp;&nbsp;
+      <span style="color:#ccffff"> Lt. Blue = Converted Sleeper Tractors</span>&nbsp;&nbsp;
+      <span style="color:#ffff99"> Yellow = As Is</span> &nbsp;&nbsp;
+      <span style="color:#FF8040"> Orange = Bank Of America</span> &nbsp;&nbsp;
+      <span style="color:#7fe57f"> Light Green = Non Compliant CA Unit</span> &nbsp;&nbsp;
+    </b></div> 
+   
+   <apex:pageBlockTable value="{!lstWrapper}" var="qli" rendered="{!AND(NOT(ISNULL(lstWrapper)),lstWrapper.size > 0)}" id="pBList">
+
+      <apex:column style="background-color:{!qli.color};width:1%;">
+        <apex:outputPanel rendered="{!!qli.isLastRow}">
+           <apex:outputLink rendered="{!qli.showPreBTR}" value="/apex/BTRVehicleHistory?vehNumber={!qli.qliWrap.Vehicle__r.Name}&BTRId={!currentBTR.Id}">Pre. BTR</apex:outputLink>
+        </apex:outputPanel>
+        <!-- <apex:outputLink rendered="{!NOT(qli.showPreBTR)}" value="javascript:void(0)">No Record Found</apex:outputLink> -->
+      </apex:column> 
+
+      <apex:column style="background-color:{!qli.color};width:1%;">
+         <apex:outputLink rendered="{!!qli.isLastRow}" value="/apex/UVS_VehicleStats?Id={!qli.qliWrap.Vehicle__c}&BTRId={!currentBTR.Id}">Stats</apex:outputLink>
+          <apex:outputPanel rendered="{!qli.isLastRow}" style="color: aliceblue !important">
+           <b>Total</b>
+        </apex:outputPanel>
+      </apex:column>
+
+      <apex:column style="background-color:{!qli.color};width:1%;"  >
+       <apex:facet name="header">
+          Vehicle<br/>Number
+      </apex:facet>
+       <apex:outputlink value="/{!qli.qliWrap.Vehicle__c}" target="_parent">{!qli.qliWrap.Vehicle__r.Name} </apex:outputlink>
+      </apex:column>
+
+      <apex:column style="background-color:{!qli.color};width:1%;" value="{!qli.qliWrap.SAM_Class__c}"/>
+      <apex:column style="background-color:{!qli.color};width:1%;" headerValue="Year" >
+        <apex:outputText value="{!qli.qliWrap.Model_Year__c}"></apex:outputText>
+      </apex:column>
+      <apex:column style="background-color:{!qli.color};width:1%;" >
+        <apex:facet name="header">
+          Days<br/>Held
+      </apex:facet>
+      <apex:outputField value="{!qli.qliWrap.Days_held__c}" />
+      </apex:column>
+      <apex:column style="background-color:{!qli.color};" value="{!qli.qliWrap.Make_Model__c}"/>
+      <apex:column style="background-color:{!qli.color};" value="{!qli.qliWrap.Branch_Name__c}"/>
+
+      <apex:column style="background-color:{!qli.color};" value="{!qli.qliWrap.Eng_Mdl__c}"/>
+
+      <apex:column style="background-color:{!qli.color};" headerValue="Odometer"  value="{!qli.qliWrap.Vehicle__r.SAM_Odom__c}"/>
+      
+      <apex:column style="background-color:{!qli.color};" HeaderValue="NVI">
+        <apex:outputText value="{!qli.qliWrap.NVI__c}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputText value="{!uatTotal.total_NVI}"  rendered="{!qli.isLastRow}"/>
+      </apex:column>  
+      
+      <apex:column style="width:1%;background-color:{!qli.color};" HeaderValue="NVI%">
+        <apex:outputText value="{!qli.qliWrap.NVI_Percent__c}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputText value="{!uatTotal.total_NVIPer}%"  rendered="{!qli.isLastRow}"/>
+      </apex:column>
+
+   <!--   <apex:column style="background-color:{!qli.color};width:1%;" value="{!qli.qliWrap.Quantity}"/> -->
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol"  style="background-color:{!qli.color};" headerValue="Book Value">
+        <apex:outputField value="{!qli.qliWrap.Book_Value__c}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputField value="{!vehicleTemp.NBV__c}"  rendered="{!qli.isLastRow}"/>
+      </apex:column>
+
+     <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};" HeaderValue="Sales Price">
+        <apex:outputField value="{!qli.qliWrap.UnitPrice}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputField value="{!vehicleTemp.Ask_Price__c}"  rendered="{!qli.isLastRow}"/>
+      </apex:column>
+      
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};" HeaderValue="Take Price">
+        <apex:outputField value="{!qli.qliWrap.Take_Price2__c}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputField value="{!totalOfAllItems.Take_Price2__c}"  rendered="{!qli.isLastRow}"/>
+      </apex:column>
+      
+      <apex:column style="width:1%;background-color:{!qli.color};" HeaderValue="Take Price (%)">
+        <apex:outputField value="{!qli.qliWrap.Take_Price_percent__c}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputText value="{!uatTotal.total_TakePricePer}%"  rendered="{!qli.isLastRow}"/>
+      </apex:column>
+      
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};"  HeaderValue="Gain (Loss)">
+        <apex:outputField value="{!qli.qliWrap.Gain_Loss__c}"  rendered="{!!qli.isLastRow}"/>
+        <apex:outputField value="{!totalOfAllItems.Customer_Offer_Price__c}"  rendered="{!qli.isLastRow}"/>
+      </apex:column>
+      
+      <apex:column style="background-color:{!qli.color};" >
+        <apex:facet name="header">
+          As Is<br/>Vehicle
+        </apex:facet>
+        <apex:outputField rendered="{!!qli.isLastRow}" value="{!qli.qliWrap.As_Is_Vehicle__c}"/>
+      </apex:column>
+      
+      <apex:column style="background-color:{!qli.color};width:1%;">
+         <apex:outputField rendered="{!!qli.isLastRow}" value="{!qli.qliWrap.Vosa__c}"/> 
+      </apex:column>
+      
+      <apex:column style="background-color:{!qli.color};width:1%;">
+       <apex:facet name="header">
+          Approved<br/>Price
+      </apex:facet>
+       <apex:outputPanel rendered="{!!qli.isLastRow}">
+           <apex:inputField value="{!qli.qliWrap.Approved_Price__c}" rendered="{!AND(isApprovers, NOT(isPageMesssage))}" style="width:64px"/>
+           <apex:outputField value="{!qli.qliWrap.Approved_Price__c}" rendered="{!OR(NOT(isApprovers), isPageMesssage)}" />
+      </apex:outputPanel>
+       
+        <apex:outputPanel rendered="{!qli.isLastRow}">
+           <apex:outputField value="{!totalOfAllItems.Approved_Price__c}"/>
+       </apex:outputPanel>
+       
+      </apex:column>
+
+      <apex:column style="background-color:{!qli.color};width:11%;" >
+       <apex:facet name="header">
+          Approved<br/>% of Take
+      </apex:facet>
+        <apex:outputField value="{!qli.qliWrap.Approved_to_take__c}" rendered="{!!qli.isLastRow}"/>
+        <apex:outputText value="{!uatTotal.total_ApprovedPerofTake}%" rendered="{!qli.isLastRow}"/>
+      </apex:column>
+   </apex:pageBlockTable>
+
+
+
+    <br /><br />
+    <apex:pageBlockSectionItem rendered="{!isApprovers}">
+     <apex:outputText value="Comments" />
+     <apex:inputTextArea value="{!comments}" cols="80" rows="10" />
+
+
+    </apex:pageBlockSectionItem>
+    <apex:pageBlockSectionItem >
+        <apex:outputText value="Is SF1: " />
+        <apex:outputText value="{!isSF1}"></apex:outputText>
+    </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+  </apex:pageBlock>
+  </apex:form>
+
+  <apex:relatedList list="ProcessSteps" ></apex:relatedList>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script>
+ $(document).ready(function() {
+      $(".actionLink").hide();
+      $("input[name = 'piSubmit']").hide();
+      if (typeof(setFocusOnLoad) != 'undefined') {setFocusOnLoad();}
+   });
+ </script>
+ <style>
+.USDInTwoCol{
+   width:1%;
+   white-space:normal !important;
+}
+.USDInTwoCol th{
+   white-space:normal !important;
+}
+</style>
+
+</apex:page>

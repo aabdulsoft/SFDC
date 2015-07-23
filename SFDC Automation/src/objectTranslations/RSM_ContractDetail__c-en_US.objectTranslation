@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM ContractDetail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM ContractDetails</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action ID --></label>
+        <name>Action_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action Name --></label>
+        <name>Action_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Detail ID --></label>
+        <name>Contract_Detail_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Number --></label>
+        <name>Contract_Number__c</name>
+        <relationshipLabel><!-- RSM ContractDetails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EffectiveDate --></label>
+        <name>EffectiveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email sent to De-Activate contract --></label>
+        <name>Email_sent_to_De_Activate_contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Current --></label>
+        <name>Is_Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Revenue --></label>
+        <name>Projected_Revenu__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate --></label>
+        <name>Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Revenue --></label>
+        <name>Remaining_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service ID --></label>
+        <name>Service_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Name --></label>
+        <name>Service_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit Number --></label>
+        <name>Unit_Number__c</name>
+        <relationshipLabel><!-- RSM ContractDetails --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Valid --></label>
+        <name>Valid__c</name>
+    </fields>
+    <layouts>
+        <layout>ContractDetail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit this field --></errorMessage>
+        <name>RSM_ContractDetailID_Readonly_Managers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit this field --></errorMessage>
+        <name>RSM_ContractDetailID_Readonly_Users</name>
+    </validationRules>
+</CustomObjectTranslation>

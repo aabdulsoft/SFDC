@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Meals/Events/Lodging/Transportation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Meals/Events/Lodging/Transportation</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed --></label>
+        <name>Confirmed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HQ Visit --></label>
+        <name>HQ_Visit_del__c</name>
+        <relationshipLabel><!-- Meals/Events/Lodging/Transportation --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- # of Rooms --></label>
+        <name>Number_of_Rooms__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Provide more details at &quot;Comments&quot; section --></help>
+        <label><!-- Request Detail --></label>
+        <name>Request_Detail_del__c</name>
+        <picklistValues>
+            <masterLabel>Baseball</masterLabel>
+            <translation><!-- Baseball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basketball</masterLabel>
+            <translation><!-- Basketball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadway / Play / Musical</masterLabel>
+            <translation><!-- Broadway / Play / Musical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Football</masterLabel>
+            <translation><!-- Football --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golf</masterLabel>
+            <translation><!-- Golf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Breakfast</masterLabel>
+            <translation><!-- HQ Breakfast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ Lunch</masterLabel>
+            <translation><!-- HQ Lunch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HQ PM Snack</masterLabel>
+            <translation><!-- HQ PM Snack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hockey</masterLabel>
+            <translation><!-- Hockey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel Needed</masterLabel>
+            <translation><!-- Hotel Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limo</masterLabel>
+            <translation><!-- Limo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NASCAR</masterLabel>
+            <translation><!-- NASCAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off-site Breakfast</masterLabel>
+            <translation><!-- Off-site Breakfast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off-site Dinner</masterLabel>
+            <translation><!-- Off-site Dinner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off-site Lunch</masterLabel>
+            <translation><!-- Off-site Lunch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Car</masterLabel>
+            <translation><!-- Rental Car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder Rep will coordinate</masterLabel>
+            <translation><!-- Ryder Rep will coordinate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Taxi</masterLabel>
+            <translation><!-- Taxi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type_del__c</name>
+        <picklistValues>
+            <masterLabel>Accommodation</masterLabel>
+            <translation><!-- Accommodation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meals</masterLabel>
+            <translation><!-- Meals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Events</masterLabel>
+            <translation><!-- Social Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>Request_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>Time__c</name>
+        <picklistValues>
+            <masterLabel>1 : 00 AM</masterLabel>
+            <translation><!-- 1 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 : 00 PM</masterLabel>
+            <translation><!-- 1 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 : 30 AM</masterLabel>
+            <translation><!-- 1 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 : 30 PM</masterLabel>
+            <translation><!-- 1 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 00 AM</masterLabel>
+            <translation><!-- 10 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 00 PM</masterLabel>
+            <translation><!-- 10 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 30 AM</masterLabel>
+            <translation><!-- 10 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 30 PM</masterLabel>
+            <translation><!-- 10 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 00 AM</masterLabel>
+            <translation><!-- 11 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 00 PM</masterLabel>
+            <translation><!-- 11 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 30 AM</masterLabel>
+            <translation><!-- 11 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 30 PM</masterLabel>
+            <translation><!-- 11 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 00 AM</masterLabel>
+            <translation><!-- 12 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 00 PM</masterLabel>
+            <translation><!-- 12 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 30 AM</masterLabel>
+            <translation><!-- 12 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 30 PM</masterLabel>
+            <translation><!-- 12 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 00 AM</masterLabel>
+            <translation><!-- 2 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 00 PM</masterLabel>
+            <translation><!-- 2 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 30 AM</masterLabel>
+            <translation><!-- 2 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 30 PM</masterLabel>
+            <translation><!-- 2 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 00 AM</masterLabel>
+            <translation><!-- 3 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 00 PM</masterLabel>
+            <translation><!-- 3 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 30 AM</masterLabel>
+            <translation><!-- 3 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 30 PM</masterLabel>
+            <translation><!-- 3 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 00 AM</masterLabel>
+            <translation><!-- 4 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 00 PM</masterLabel>
+            <translation><!-- 4 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 30 AM</masterLabel>
+            <translation><!-- 4 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 30 PM</masterLabel>
+            <translation><!-- 4 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 00 AM</masterLabel>
+            <translation><!-- 5 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 00 PM</masterLabel>
+            <translation><!-- 5 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 30 AM</masterLabel>
+            <translation><!-- 5 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 30 PM</masterLabel>
+            <translation><!-- 5 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 00 AM</masterLabel>
+            <translation><!-- 6 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 00 PM</masterLabel>
+            <translation><!-- 6 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 30 AM</masterLabel>
+            <translation><!-- 6 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 30 PM</masterLabel>
+            <translation><!-- 6 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 00 AM</masterLabel>
+            <translation><!-- 7 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 00 PM</masterLabel>
+            <translation><!-- 7 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 30 AM</masterLabel>
+            <translation><!-- 7 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 30 PM</masterLabel>
+            <translation><!-- 7 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 00 AM</masterLabel>
+            <translation><!-- 8 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 00 PM</masterLabel>
+            <translation><!-- 8 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 30 AM</masterLabel>
+            <translation><!-- 8 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 30 PM</masterLabel>
+            <translation><!-- 8 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 00 AM</masterLabel>
+            <translation><!-- 9 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 00 PM</masterLabel>
+            <translation><!-- 9 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 30 AM</masterLabel>
+            <translation><!-- 9 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 30 PM</masterLabel>
+            <translation><!-- 9 : 30 PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # in Party --></label>
+        <name>in_Party__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of Days --></label>
+        <name>of_Days__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Meals/Events/Lodging/Transportation Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

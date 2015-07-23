@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Ryder Lead Responses</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <senderEmail>salesadmin@ryder.com</senderEmail>
+            <senderName>Ryder - Sales Admin</senderName>
+            <template>Ryder_Custom_Templates/Lead_Web_to_lead_auto_response</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

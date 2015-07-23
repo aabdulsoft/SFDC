@@ -1,0 +1,93 @@
+<apex:page Controller="RSM_NonLeaseContract_Controller" sidebar="false" tabStyle="NonLease_Contract__tab" >
+	<apex:form id="ContractForm" >
+        <apex:sectionHeader subtitle="New Contract Details" title="Contract Details Edit" />
+        <apex:pageBlock id="FirstPageBlock">
+            <apex:pageBlockButtons >                
+                <apex:commandButton value="Save & New" action="{!SaveData}" reRender="FirstPageBlock" Disabled="{!IF(bShowAll, false, true)}" />
+                <apex:commandButton value="Reset" action="{!ResetData}" immediate="true" rendered="false" />
+                <apex:commandButton value="Cancel" action="{!Cancel}" rendered="{!IF(sAccId != null, true, false)}" immediate="true" />
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="toperror">
+                <apex:pageMessages id="error" escape="false"/>
+            </apex:outputPanel>
+            <apex:pageBlockSection id="ContractBlock" title="Contract Edit" rendered="{!bShowAll}" >
+            	<apex:InputField label="Account" value="{!RSM_Contract.Account__c}" required="true">
+            		<apex:actionSupport event="onchange" action="{!QueryVehicleData}" rerender="Vehicle" /> 
+            	</apex:InputField>
+            	<apex:InputField label="Lessee Email" value="{!RSM_Contract.Lessee_Email__c}" />
+            	<apex:InputField label="Created Date" value="{!RSM_Contract.CreatedDate__c}" required="true" />
+            	<apex:InputField label="Effective Date" value="{!RSM_Contract.Effective_Date__c}" required="true" />
+            	<apex:InputField label="Status Date" value="{!RSM_Contract.Status_Date__c}" required="true" />            	
+            	<apex:pageBlockSectionItem >
+	            	<apex:outputLabel value="Created By" />
+	            	<apex:outputLabel value="{!RSM_Contract.CreatedBy__c}" />
+            	</apex:pageBlockSectionItem>
+            	<apex:pageBlockSectionItem >
+            		<apex:outputLabel value="Document TypeName" />
+	            	<apex:selectList value="{!DocumentTypeName}" multiselect="false" size="1">
+			 	 	 	<apex:selectOptions value="{!DocumentTypeNames}"/>
+			 	 	</apex:selectList>
+		 	 	</apex:pageBlockSectionItem>            	
+            	<apex:pageBlockSectionItem >
+            		<apex:outputLabel value="Status Name" />
+	            	<apex:selectList value="{!StatusName}" multiselect="false" size="1" disabled="true">
+			 	 	 	<apex:selectOptions value="{!StatusNames}"/>
+			 	 	</apex:selectList>
+		 	 	</apex:pageBlockSectionItem>
+		 	 	<apex:InputField label="Description" value="{!RSM_Contract.Description__c}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="ContractDetailsBlock" title="Contract Details Edit" columns="1" rendered="{!bShowAll}">            	
+            	<apex:commandButton value="Add 5 More Rows" action="{!AddRows}" reRender="ContractDetailsBlock, toperror, ContractBlock" />            	
+            	<apex:pageBlockTable value="{!InnerClassObj}" var="Data" id="InnerClassObjtable">
+	                <apex:column Headervalue="Unit Number" rendered="false">
+		                <div class="requiredInput">
+		                    <div class="requiredBlock"></div>
+		                    <apex:inputField value="{!Data.RSM_ContractDetail.Unit_Number__c}" />
+		                </div>
+	                </apex:column>
+	                <apex:column Headervalue="Unit Number">
+	                    <div class="requiredInput">
+		                    <div class="requiredBlock"></div>
+			                    <apex:selectList value="{!Data.Vehicle}" id="Vehicle" style="width:150px" multiselect="false" size="1">
+						 	 	 	<apex:selectOptions value="{!Data.Vehicles}"/>
+						 	 	</apex:selectList>
+						 	 </div>
+	                </apex:column>
+                    <apex:column Headervalue="Service Name">
+	                    <apex:selectList value="{!Data.ServiceName}" multiselect="false" size="1">
+				 	 	 	<apex:selectOptions value="{!Data.ServiceNames}"/>
+				 	 	</apex:selectList>
+	                </apex:column>	                	                
+	                <apex:column Headervalue="Action Name">
+	                    <apex:selectList value="{!Data.ActionName}" multiselect="false" size="1" disabled="true">
+				 	 	 	<apex:selectOptions value="{!Data.ActionNames}"/>
+				 	 	</apex:selectList>
+	                </apex:column>
+	                <apex:column Headervalue="IsCurrent">
+	                    <apex:inputField value="{!Data.RSM_ContractDetail.Is_Current__c}" />
+	                </apex:column>
+	                <apex:column Headervalue="Valid">
+	                    <apex:inputField value="{!Data.RSM_ContractDetail.Valid__c}" />
+	                </apex:column>
+	                <apex:column Headervalue="Rate">
+	                    <div class="requiredInput">
+		                    <div class="requiredBlock"></div>
+		                    <apex:inputField value="{!Data.RSM_ContractDetail.Rate__c}" style="width:100px" />
+		                </div>
+	                </apex:column>
+	                <apex:column Headervalue="Effective Date">
+	                    <div class="requiredInput">
+		                    <div class="requiredBlock"></div>
+		                    <apex:inputField value="{!Data.RSM_ContractDetail.EffectiveDate__c}" />
+		                </div>
+	                </apex:column>
+	                <apex:column Headervalue="Delete Row">
+	                	<apex:commandButton value="Del" action="{!DeleteRow}" reRender="ContractDetailsBlock, toperror" style="width:50px">
+	                		<apex:param name="rowno" value="{!Data.RowNo}"/>
+	                	</apex:commandButton>
+	                </apex:column>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+         </apex:pageBlock>
+	</apex:Form>
+</apex:page>

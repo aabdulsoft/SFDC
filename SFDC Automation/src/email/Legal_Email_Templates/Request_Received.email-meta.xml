@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sending requesters a notification that the case request was received by Legal Team</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Request Received</name>
+    <style>freeForm</style>
+    <subject>Your legal request was received for Account: {!Case.Account}</subject>
+    <textOnly>Hello {!Case.CreatedBy},
+
+We received your case request for {!Account.Name}.
+
+Your case has been assigned to {!Case.OwnerFullName}, We will contact you if we have any questions.
+
+
+To view {!Case.CaseNumber}, please click the link below
+
+{!Case.Link}
+
+
+Thank you,
+
+
+FMS Law Department</textOnly>
+    <type>html</type>
+</EmailTemplate>

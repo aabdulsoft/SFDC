@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto-response when new lead is submitted online.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Lead: Web-to-lead auto response</name>
+    <style>freeForm</style>
+    <subject>Your lead has been submitted</subject>
+    <textOnly>Dear {!Lead.Name}, 
+
+Thanks for your referral. {!Lead.OwnerFullName} has been notified. 
+
+Kind Regards, 
+
+FMS Sales Operations team</textOnly>
+    <type>html</type>
+</EmailTemplate>

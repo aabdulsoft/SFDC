@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>When New HQ Visit is Creted</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>HQ Visit Request</name>
+    <style>freeForm</style>
+    <subject>New HQ Visit Was created</subject>
+    <textOnly>Hello,
+
+A new HQ visit has been created. Please launch the link below and review the request. If you’re in agreement, please &quot;Accept&quot; the status request to start the process.
+
+Date Requested:         {!HQ_Visit__c.Request_Date__c} .
+Company Name:         {!HQ_Visit__c.Company_Name__c}.
+Account Owner:          {!HQ_Visit__c.Account_Manager__c}.
+Created By:                  {!HQ_Visit__c.CreatedBy} .
+Leadership Sponsor: {!HQ_Visit__c.Account_Owner_Manager__c}
+
+
+{!HQ_Visit__c.Link}
+
+Regards</textOnly>
+    <type>html</type>
+</EmailTemplate>

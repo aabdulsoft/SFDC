@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SIC Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SIC Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Food &amp; Beverage Industry --></label>
+        <name>Food_Beverage_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code Description --></label>
+        <name>SIC_Code_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_SICCodeID --></label>
+        <name>ext_SICCodeID__c</name>
+    </fields>
+    <layouts>
+        <layout>SIC Code Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

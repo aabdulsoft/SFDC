@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Legal Team that new Legal Case was ceated</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Notify Legal Team</name>
+    <style>freeForm</style>
+    <subject>New Legal Case Created</subject>
+    <textOnly>Hi {!Case.OwnerFullName}
+
+
+New Case was created for account {!Case.Account}, and assigned to you.
+
+
+
+
+To view the case {!Case.CaseNumber}, please click the link below
+{!Case.Link}
+
+
+Best Regards
+Salesforce Team</textOnly>
+    <type>html</type>
+</EmailTemplate>

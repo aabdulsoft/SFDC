@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify the Owner when new Lead Referral is Created</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>New Lead Referral Created</name>
+    <style>freeForm</style>
+    <subject>New Lead Referral was Created</subject>
+    <textOnly>Hi {!Lead_Referral__c.OwnerFullName}
+
+New Lead Referral was Created.
+
+FMS Account Name: {!Lead_Referral__c.FMS_Account_Name_LU__c}.
+SCS ACC Name: {!Lead_Referral__c.SCS_ACC_Name__c}.
+FMS Description:{!Lead_Referral__c.FMS_Description__c}.
+
+{!Lead_Referral__c.Link}</textOnly>
+    <type>html</type>
+</EmailTemplate>

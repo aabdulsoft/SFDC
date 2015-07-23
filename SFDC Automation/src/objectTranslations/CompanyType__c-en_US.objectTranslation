@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CompanyTypeMapping</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CompanyTypeMapping</value>
+    </caseValues>
+    <fields>
+        <label><!-- CompanyID --></label>
+        <name>CompanyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CompanyType --></label>
+        <name>CompanyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- RyderID --></label>
+        <name>RyderID__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

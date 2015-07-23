@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Enhanced Customer Satisfaction Reporting</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK4</name>
+    <style>none</style>
+    <subject>Enhanced CSI Reporting Now Available on RIDE</subject>
+    <textOnly>The FMS Marketing team is pleased to announce the enhanced CSI reporting which is now available on RIDE. Several features have been added to the reporting structure to help streamline your search. Enhancements to the reports in RIDE include: 
+
+*Security functions to protect customer information, while providing account management and support teams with secure access to customer satisfaction data. 
+*Access to advanced search functions by entering the Customer Name, Customer ID or Field. Search by Year-to-Date or Quarterly Data by specifying the date range. 
+*Summary of reports for a location by the time period specified in search parameters. 
+*Two ways to search and select a campaign or specify the timeframe. 
+*No limit to how far back you can retrieve data. 
+*Ability to display all campaigns run over a given time period by specifying date range. 
+*Ability to delegate user roles to other individuals by emailing the system administrator. 
+*Export of individual reports in key formats: XML, CSV, PDF, MHTML, Excel, Tiff, Word. 
+*FAQ document that provides answers and screen shots to commonly asked questions. 
+*Administrator approved viewing access to other region reports. 
+*If a user is not available, it is possible for them to delegate their role to another individual. The user must send an email to the CSI Reports Administrator with the name of the individual they wish to delegate their authority to. The admin will then setup the delegate. 
+
+With improved access to customer satisfaction survey data and new reporting capabilities, you can access information in a matter of minutes. Stay tuned for ongoing improvements with the Ryder Customer Satisfaction program in the next few months. If you have any questions, please contact Holly Lyncooke at 305-500-4135 or by email at hlyncooke@ryder.com.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

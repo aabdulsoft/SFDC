@@ -1,0 +1,17 @@
+Hello {!Case.CreatedBy},
+
+
+We received your case request for {!Account.Name}
+
+Your case {!Case.CaseNumber} has been assigned to {!Case.OwnerFullName}
+
+We will contact you if we have any questions.
+
+
+The link to access the case is {!Case.Link}
+
+
+Thank you,
+
+
+FMS Law Department

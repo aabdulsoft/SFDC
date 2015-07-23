@@ -1,0 +1,5 @@
+Hello Sales Admin
+
+The following opportunity {!Opportunity.Link} has been identified in SFDC as “Flex to Green”. Please add Rueben Stokes and Allen Nielsen to the account team with read write access for the account - {!Account.Link}
+
+Thank you

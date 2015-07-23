@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ryder Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ryder Config</value>
+    </caseValues>
+    <fields>
+        <help><!-- Accurracy Mapping provides Conf_cd to Accuracy mapping based on conf cd number returned from Dunn &amp; BradStreet --></help>
+        <label><!-- Accuracy Mapping --></label>
+        <name>Accuracy_Mapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContactToCustomerBranchs_rlid --></label>
+        <name>ContactToCustomerBranchs_rlid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact HTMLID --></label>
+        <name>Contact_HTMLID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact HTML LKID --></label>
+        <name>Contact_HTML_LKID__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerBranchKeyContact_rlid --></label>
+        <name>CustomerBranchKeyContact_rlid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch HTMLID --></label>
+        <name>Customer_Branch_HTMLID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch HTML LKID --></label>
+        <name>Customer_Branch_HTML_LKID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cutoff Accuracy Probability --></label>
+        <name>Cutoff_Accuracy_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- DNB Password --></label>
+        <name>DNB_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- DNB UserId --></label>
+        <name>DNB_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data.comcleanuser --></label>
+        <name>Data_comcleanuser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default UVS Lead Owner --></label>
+        <name>Default_UVS_Lead_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Case Email Recipient --></label>
+        <name>Duplicate_Case_Email_Recipient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duplicate Case Excluded Customers --></label>
+        <name>Duplicate_Case_Excluded_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- ETL Username --></label>
+        <name>ETL_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- FollowUpSurveyUser --></label>
+        <name>FollowUpSurveyUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Status For Convert --></label>
+        <name>Lead_Status_For_Convert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Records To Display --></label>
+        <name>NumberOfRecordsToDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Perform Name Check --></label>
+        <name>Perform_Name_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- RADAR DS New Link --></label>
+        <name>RADAR_DS_New_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- RADAR RS Edit Link --></label>
+        <name>RADAR_RS_Edit_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- RADAR RS New Link --></label>
+        <name>RADAR_RS_New_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- RYDER_AUTH_ENDPOINT --></label>
+        <name>RYDER_AUTH_ENDPOINT__c</name>
+    </fields>
+    <fields>
+        <label><!-- RydeSmart Billing --></label>
+        <name>RyderSmart_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- RydeSmart RSS --></label>
+        <name>RyderSmart_RSS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Survey PDF Endpoint --></label>
+        <name>Ryder_Survey_PDF_Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Survey PDF Recipients --></label>
+        <name>Ryder_Survey_PDF_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder_WS_EndPoint --></label>
+        <name>Ryder_WS_EndPoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- This filed contains the type of Trucks that needs to be excluded from the Count of Competitive V ehicles --></help>
+        <label><!-- TruckTypes --></label>
+        <name>TruckTypes__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

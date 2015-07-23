@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Document containing guidelines for objection handling</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Objection Handling</name>
+    <public>false</public>
+</Document>

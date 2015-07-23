@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreatePdf</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SyncQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AdditionalName</fullName>
+    </fields>
+    <fields>
+        <fullName>BillingName</fullName>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Discount</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>ExpirationDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+    </fields>
+    <fields>
+        <fullName>Finance_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Finance Count</label>
+        <summaryFilterItems>
+            <field>QuoteLineItem.Financing__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </summaryFilterItems>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>GrandTotal</fullName>
+    </fields>
+    <fields>
+        <fullName>IsSyncing</fullName>
+    </fields>
+    <fields>
+        <fullName>LineItemCount</fullName>
+    </fields>
+    <fields>
+        <fullName>Line_Item_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Line Item Total</label>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Max_Approval_Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Max Approval Level</label>
+        <summarizedField>QuoteLineItem.Approval_Level__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Max_Approver__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS( $Setup.UVS_Approval_Setting__c.Role_Names__c,$UserRole.Name),
+(
+IF(Max_Approval_Level__c == 1, &apos;DAM&apos;, 
+  IF(Max_Approval_Level__c == 2, &apos;VP AM&apos;, 
+    IF(Max_Approval_Level__c == 3, &apos;SVP AM&apos;, &apos;&apos;)
+  )
+))
+,
+
+(
+IF(Max_Approval_Level__c == 1, &apos;FAM&apos;, 
+  IF(Max_Approval_Level__c == 2, &apos;DAM&apos;, 
+    IF(Max_Approval_Level__c == 3, &apos;VP AM&apos;, &apos;&apos;)
+  )
+))
+
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Max Approver</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Number__c</fullName>
+        <description>This formula field points to the Opportunity Number in the opportunity field.</description>
+        <externalId>false</externalId>
+        <formula>Opportunity.ext_pipeline_id__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Number</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>QuoteToName</fullName>
+    </fields>
+    <fields>
+        <fullName>Requester_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>BTR Comments</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Selected_Image1__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Image1</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selected_Image2__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Image2</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selected_Image3__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Image3</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selected_Image4__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Image4</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Selected_Image5__c</fullName>
+        <externalId>false</externalId>
+        <label>Selected Image5</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ShippingHandling</fullName>
+    </fields>
+    <fields>
+        <fullName>ShippingName</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <allowEmail>true</allowEmail>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Needs Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presented</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denied</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Submitted for BTR Approval</fullName>
+                <allowEmail>false</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BTR Approved</fullName>
+                <allowEmail>false</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subtotal</fullName>
+    </fields>
+    <fields>
+        <fullName>Tax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>UTC_Assigned__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Look up to Ryder Branch in order to know the location</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Look up to Ryder Branch in order to know the location</inlineHelpText>
+        <label>UTC Assigned</label>
+        <referenceTo>Ryder_Branch__c</referenceTo>
+        <relationshipLabel>Quotes</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>UTC__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.UTC__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>UTC</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>UVS</fullName>
+        <active>true</active>
+        <description>Used vehicle Sales</description>
+        <label>UVS</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BTR Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>In Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Needs Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Presented</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted for BTR Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>QUOTE.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Discount</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GrandTotal</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QUOTE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Discount</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GrandTotal</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QUOTE.PHONE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>QUOTE.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Discount</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GrandTotal</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Add_Product_UVS</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Add Product</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/AddProductsCustom?quoteId={!Quote.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Formal_Quote</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Formal Quote</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var qid= &apos;{!Quote.Id}&apos;;
+var sid= &apos;{!API.Session_ID}&apos;;
+var urlid= &apos;{!API.Partner_Server_URL_80}&apos;;
+var total= &apos;{!Quote.Line_Item_Total__c}&apos;;
+var fitotal= &apos;{!Quote.Finance_Count__c}&apos;; 
+var tempid =&apos;a1Lg0000000dcMH&apos;;
+var fitempid =&apos;a1Lg0000000dcMK&apos;; 
+var qpdf =&apos;1&apos;;
+var lg3 = &apos;2&apos;;
+var quid = &apos;[VehicleLines]a1Kg0000000LsrX,[QuoteLineAggregates]a1Kg0000000LsrY&apos;; 
+var url= &apos;https://composer.congamerge.com?sessionId=&apos;+sid+&apos;&amp;serverUrl=&apos;+urlid+&apos;&amp;id=&apos;+qid+&apos;&amp;templateId=&apos;+tempid+&apos;&amp;QueryId=&apos;+quid+&apos;&amp;DefaultPDF=&apos;+qpdf+&apos;&amp;LG4=&apos;+qpdf+&apos;&amp;LG3=&apos;+lg3;
+
+var fiurl= &apos;https://composer.congamerge.com?sessionId=&apos;+sid+&apos;&amp;serverUrl=&apos;+urlid+&apos;&amp;id=&apos;+qid+&apos;&amp;templateId=&apos;+fitempid+&apos;&amp;QueryId=&apos;+quid+&apos;&amp;DefaultPDF=&apos;+qpdf+&apos;&amp;LG4=&apos;+qpdf+&apos;&amp;LG3=&apos;+lg3;
+
+
+if(total &gt;= 1){
+  if(fitotal &gt;=1) 
+{window.open(fiurl,true, &quot;height=800,width=1200&quot;);} 
+else 
+{ 
+window.open(url,true, &quot;height=800,width=1200&quot;);}}
+else 
+{ 
+alert(&apos;Add Product to create Quote&apos;); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>QuickQuote</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>QuickQuote</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var qid= &apos;{!Quote.Id}&apos;; 
+var sid= &apos;{!API.Session_ID}&apos;; 
+var urlid= &apos;{!API.Partner_Server_URL_80}&apos;; 
+var total= &apos;{!Quote.Line_Item_Total__c}&apos;; 
+var fitotal= &apos;{!Quote.Finance_Count__c}&apos;; 
+var tempid =&apos;a1Lg0000000dcMI&apos;;
+var fitempid =&apos;a1Lg0000000dcMJ&apos;; 
+var qpdf =&apos;1&apos;; 
+var lg3 = &apos;2&apos;; 
+var quid = &apos;[VehicleLines]a1Kg0000000LsrX,[QuoteLineAggregates]a1Kg0000000LsrY&apos;; 
+var url= &apos;https://composer.congamerge.com?sessionId=&apos;+sid+&apos;&amp;serverUrl=&apos;+urlid+&apos;&amp;id=&apos;+qid+&apos;&amp;templateId=&apos;+tempid+&apos;&amp;QueryId=&apos;+quid+&apos;&amp;DefaultPDF=&apos;+qpdf+&apos;&amp;LG4=&apos;+qpdf+&apos;&amp;LG3=&apos;+lg3; 
+
+var fiurl= &apos;https://composer.congamerge.com?sessionId=&apos;+sid+&apos;&amp;serverUrl=&apos;+urlid+&apos;&amp;id=&apos;+qid+&apos;&amp;templateId=&apos;+fitempid+&apos;&amp;QueryId=&apos;+quid+&apos;&amp;DefaultPDF=&apos;+qpdf+&apos;&amp;LG4=&apos;+qpdf+&apos;&amp;LG3=&apos;+lg3; 
+
+
+if(total &gt;= 1 ){ 
+  if(fitotal &gt;=1)
+   {window.open(fiurl,true, &quot;height=800,width=1200&quot;);}
+      else
+     {
+    window.open(url,true, &quot;height=800,width=1200&quot;);}} 
+  else 
+  { 
+   alert(&apos;Add Product to create Quote&apos;); 
+   }</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Quote_Image_Selector</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Quote Image Selector</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>if(&apos;{!Quote.Line_Item_Total__c}&apos;&gt;=1)
+{
+  window.open(&apos;/apex/QuoteVehicleImages?quoteId={!Quote.Id}&apos;, &apos;Popup&apos;,&apos;height=400,width=850,left=100,top=100,resizable=no,scrollbars=yes,toolbar=no,status=no&apos;);
+                                               }
+else
+  {
+    alert(&apos;Add Product to create Quote&apos;);
+  }</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Start_Bill_of_Sale</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Start Bill of Sale</masterLabel>
+        <openType>replace</openType>
+        <page>SyncOppWithSAM</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Submit_for_Approval</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Submit for Approval</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)} 
+
+function sendSumbmitForApproval(){ 
+var res2 = sforce.apex.execute(&quot;SubmitBTRService&quot;,&quot;submitBTR&quot;, {Id:&apos;{!Quote.Id}&apos;}); 
+if(res2 == &apos;success&apos;){ 
+alert(&apos;Quote is submitted for Approval process successfully.&apos;); 
+window.location.href = &quot;/{!Quote.Id}&quot;; 
+} 
+else{ 
+alert(res2); 
+} 
+
+} 
+var OktoSubmit = sforce.apex.execute(&quot;SubmitBTRService&quot;,&quot;CheckIfQLIHasZeroSalesPrice&quot;, {Id:&apos;{!Quote.Id}&apos;}); 
+if(OktoSubmit == &apos;true&apos;) 
+{ 
+var meetingID = &apos;{!Event.Id}&apos;; 
+
+var agree = confirm(&quot;Once you submit this record for approval, you might not be able to edit it or recall it from the approval process depending on your settings. Continue?&quot;); 
+
+if(agree){ 
+var res = sforce.apex.execute(&quot;SubmitBTRService&quot;,&quot;checkAlreadySubmitted&quot;, {Id:&apos;{!Quote.Id}&apos;}); 
+
+
+if(res == &apos;already approved&apos;){ 
+alert(&apos;This Quote BTR is approved and cannot be submitted further&apos;); 
+} 
+
+if(res == &apos;already submitted&apos;){ 
+var confirmResult = confirm(&apos;This quote was already submitted for approval. Are you sure you want to submit it again?&apos;); 
+if(confirmResult){ 
+sendSumbmitForApproval(); 
+} 
+} 
+else if(res == &apos;success&apos;){ 
+sendSumbmitForApproval(); 
+} 
+} 
+
+} 
+else 
+{ 
+alert(&apos;Sales Price on Quote Line Item is 0, you can not submit this Quote for Approval!&apos;); 
+}</url>
+    </webLinks>
+</CustomObject>

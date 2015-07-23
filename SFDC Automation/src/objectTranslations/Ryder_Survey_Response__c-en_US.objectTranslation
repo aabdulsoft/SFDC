@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ryder Survey Response</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ryder Survey Responses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity ID --></label>
+        <name>Activity_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clicktools ID that identifies the actual survey and the responses. --></help>
+        <label><!-- CT Survey ID --></label>
+        <name>CT_Survey_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- The lessee number associated to the company. --></help>
+        <label><!-- Company Lessee --></label>
+        <name>Company_Lessee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the company associated to the contact and customer/branch survey response. --></help>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The individual survey respondent&apos;s first name. --></help>
+        <label><!-- Contact First Name --></label>
+        <name>Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The individual survey respondent&apos;s last name. --></help>
+        <label><!-- Contact Last Name --></label>
+        <name>Contact_Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The individual survey respondent&apos;s phone number. --></help>
+        <label><!-- Contact Phone Number --></label>
+        <name>Contact_Phone_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The individual survey respondent. --></help>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Ryder Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The customer/branch associated to the survey respondent. --></help>
+        <label><!-- Customer / Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Ryder Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The prospect number of the customer associated to the survey respondent. --></help>
+        <label><!-- Customer Prospect Number --></label>
+        <name>Customer_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Question Number presented in the survey (not necessarily to the agent at the time of conducting survey) as hidden fields would also be included. --></help>
+        <label><!-- Question Number --></label>
+        <name>Question_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Question Response --></label>
+        <name>Question_Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- The text associated to the question that may or may not be displayed to the agent at the time of conducting the survey. --></help>
+        <label><!-- Question Text --></label>
+        <name>Question_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Key --></label>
+        <name>Response_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Branch --></label>
+        <name>Ryder_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Survey Question --></label>
+        <name>Ryder_Survey_Question__c</name>
+        <relationshipLabel><!-- Ryder Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ryder Survey --></label>
+        <name>SurveyId__c</name>
+        <relationshipLabel><!-- Ryder Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The name of the individual that conducted the survey. --></help>
+        <label><!-- Survey Conducted By ID --></label>
+        <name>Survey_Conducted_By_ID__c</name>
+        <relationshipLabel><!-- Ryder Survey Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The alias of the person that conducted the survey. --></help>
+        <label><!-- Survey Conducted By --></label>
+        <name>Survey_Conducted_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date the survey responses were submitted. --></help>
+        <label><!-- Survey Submission Date --></label>
+        <name>Survey_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- upload key --></label>
+        <name>upload_key__c</name>
+    </fields>
+    <layouts>
+        <layout>Ryder CS Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

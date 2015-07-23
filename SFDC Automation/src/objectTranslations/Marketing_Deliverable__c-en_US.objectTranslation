@@ -1,0 +1,2002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Deliverable</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Deliverables</value>
+    </caseValues>
+    <fields>
+        <help><!-- Relates this communication initiative to a specific Ryder customer. --></help>
+        <label><!-- Related Customer --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Marketing Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- describe position of advertisement in publication book --></help>
+        <label><!-- Ad Position --></label>
+        <name>Ad_Position__c</name>
+        <picklistValues>
+            <masterLabel>Cover - Inside Front or Back</masterLabel>
+            <translation><!-- Cover - Inside Front or Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cover - Outside Back</masterLabel>
+            <translation><!-- Cover - Outside Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First 1/3 of book</masterLabel>
+            <translation><!-- First 1/3 of book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pages 1 - 5</masterLabel>
+            <translation><!-- Pages 1 - 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Table of Contents (Pg. 1 or 2)</masterLabel>
+            <translation><!-- Table of Contents (Pg. 1 or 2) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Within Lead Story</masterLabel>
+            <translation><!-- Within Lead Story --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Artwork on Content (Reader&apos;s) --></label>
+        <name>Artwork_on_Content_Reader_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Artwork on Shared Drive (Read &amp; Print) --></label>
+        <name>Artwork_on_Shared_Drive_Read_Print__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assign Item # --></label>
+        <name>Assign_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Author/Guest Commentator --></label>
+        <name>Author_Guest_Commentator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booth Number --></label>
+        <name>Booth_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booth Size --></label>
+        <name>Booth_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- details about who and when the booth will be staffed by Ryder attendees --></help>
+        <label><!-- Booth Staffing --></label>
+        <name>Booth_Staffing__c</name>
+    </fields>
+    <fields>
+        <help><!-- indicates if the article was bylined by Ryder --></help>
+        <label><!-- Bylined Article --></label>
+        <name>Bylined_Article__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>Advertising</masterLabel>
+            <translation><!-- Advertising --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertorial</masterLabel>
+            <translation><!-- Advertorial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternative Fuels / Natural Gas Vehicles</masterLabel>
+            <translation><!-- Alternative Fuels / Natural Gas Vehicles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banner Ad</masterLabel>
+            <translation><!-- Banner Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brand</masterLabel>
+            <translation><!-- Brand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brochure</masterLabel>
+            <translation><!-- Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Study</masterLabel>
+            <translation><!-- Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Recognition</masterLabel>
+            <translation><!-- Customer Recognition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Visit</masterLabel>
+            <translation><!-- Customer Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dedicated</masterLabel>
+            <translation><!-- Dedicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dimensional</masterLabel>
+            <translation><!-- Dimensional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Marketing</masterLabel>
+            <translation><!-- Direct Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directory / Buyers Guide</masterLabel>
+            <translation><!-- Directory / Buyers Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Marketing</masterLabel>
+            <translation><!-- E-Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engine Technology</masterLabel>
+            <translation><!-- Engine Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Events</masterLabel>
+            <translation><!-- Events --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Management</masterLabel>
+            <translation><!-- Fleet Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Products</masterLabel>
+            <translation><!-- Fleet Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuel Services</masterLabel>
+            <translation><!-- Fuel Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive/Promotion</masterLabel>
+            <translation><!-- Incentive/Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leasing</masterLabel>
+            <translation><!-- Leasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter</masterLabel>
+            <translation><!-- Letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>List Request</masterLabel>
+            <translation><!-- List Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Automation</masterLabel>
+            <translation><!-- Marketing Automation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meetings</masterLabel>
+            <translation><!-- Meetings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter</masterLabel>
+            <translation><!-- Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil &amp; Gas</masterLabel>
+            <translation><!-- Oil &amp; Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Line</masterLabel>
+            <translation><!-- On-Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Line Tool</masterLabel>
+            <translation><!-- On-Line Tool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography</masterLabel>
+            <translation><!-- Photography --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast</masterLabel>
+            <translation><!-- Podcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Positioning</masterLabel>
+            <translation><!-- Positioning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postcard</masterLabel>
+            <translation><!-- Postcard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presentation</masterLabel>
+            <translation><!-- Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press / Media</masterLabel>
+            <translation><!-- Press / Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Material</masterLabel>
+            <translation><!-- Promotional Material --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recognition</masterLabel>
+            <translation><!-- Recognition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reporting</masterLabel>
+            <translation><!-- Reporting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safety &amp; Environment</masterLabel>
+            <translation><!-- Safety &amp; Environment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Request</masterLabel>
+            <translation><!-- Sales Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Media</masterLabel>
+            <translation><!-- Social Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speaker / Keynote</masterLabel>
+            <translation><!-- Speaker / Keynote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain</masterLabel>
+            <translation><!-- Supply Chain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telemarketing</masterLabel>
+            <translation><!-- Telemarketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Analysis</masterLabel>
+            <translation><!-- Territory Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testimonial</masterLabel>
+            <translation><!-- Testimonial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tradeshows</masterLabel>
+            <translation><!-- Tradeshows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Sales</masterLabel>
+            <translation><!-- Vehicle Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar</masterLabel>
+            <translation><!-- Webinar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website</masterLabel>
+            <translation><!-- Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White Paper</masterLabel>
+            <translation><!-- White Paper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Check Online Catalogue (Set-Up) --></label>
+        <name>Check_Online_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Approver --></label>
+        <name>Client_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collateral Type --></label>
+        <name>Collateral_Type__c</name>
+        <picklistValues>
+            <masterLabel>Article Reprint</masterLabel>
+            <translation><!-- Article Reprint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brochure</masterLabel>
+            <translation><!-- Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-mail Touch</masterLabel>
+            <translation><!-- E-mail Touch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Communication</masterLabel>
+            <translation><!-- General Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newsletter</masterLabel>
+            <translation><!-- Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Powerpoint Deck</masterLabel>
+            <translation><!-- Powerpoint Deck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White Paper</masterLabel>
+            <translation><!-- White Paper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>APL Logistics</masterLabel>
+            <translation><!-- APL Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Americold</masterLabel>
+            <translation><!-- Americold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEVA (formerly TNT Logistics)</masterLabel>
+            <translation><!-- CEVA (formerly TNT Logistics) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CH Robinson</masterLabel>
+            <translation><!-- CH Robinson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRST Logistics</masterLabel>
+            <translation><!-- CRST Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardinal Logistics</masterLabel>
+            <translation><!-- Cardinal Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caterpillar Logistics</masterLabel>
+            <translation><!-- Caterpillar Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Con-Way Logistics</masterLabel>
+            <translation><!-- Con-Way Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHL-Exel</masterLabel>
+            <translation><!-- DHL-Exel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSC Logistics</masterLabel>
+            <translation><!-- DSC Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eagle Global Logistics</masterLabel>
+            <translation><!-- Eagle Global Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exel</masterLabel>
+            <translation><!-- Exel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FedEx</masterLabel>
+            <translation><!-- FedEx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENCO Distribution System</masterLabel>
+            <translation><!-- GENCO Distribution System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hub Group Inc.</masterLabel>
+            <translation><!-- Hub Group Inc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JB Hunt</masterLabel>
+            <translation><!-- JB Hunt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenco</masterLabel>
+            <translation><!-- Kenco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knight</masterLabel>
+            <translation><!-- Knight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kuehne &amp; Nagel</masterLabel>
+            <translation><!-- Kuehne &amp; Nagel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landstar Logistics</masterLabel>
+            <translation><!-- Landstar Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LeSaint Logistics</masterLabel>
+            <translation><!-- LeSaint Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lynden Logistics</masterLabel>
+            <translation><!-- Lynden Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maersk Logistics</masterLabel>
+            <translation><!-- Maersk Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Menlo Worldwide</masterLabel>
+            <translation><!-- Menlo Worldwide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NYK Logistics</masterLabel>
+            <translation><!-- NYK Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Breed</masterLabel>
+            <translation><!-- New Breed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OIA Global Logistics</masterLabel>
+            <translation><!-- OIA Global Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ozburn Hessey Logistics</masterLabel>
+            <translation><!-- Ozburn Hessey Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PBB Global Logistics</masterLabel>
+            <translation><!-- PBB Global Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pacer Global</masterLabel>
+            <translation><!-- Pacer Global --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Penske Logistics</masterLabel>
+            <translation><!-- Penske Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ruan</masterLabel>
+            <translation><!-- Ruan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder</masterLabel>
+            <translation><!-- Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saddle Creek</masterLabel>
+            <translation><!-- Saddle Creek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salem Logistics</masterLabel>
+            <translation><!-- Salem Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schenker (formerly BAX Global)</masterLabel>
+            <translation><!-- Schenker (formerly BAX Global) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schneider Logistics</masterLabel>
+            <translation><!-- Schneider Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schneider National</masterLabel>
+            <translation><!-- Schneider National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swift</masterLabel>
+            <translation><!-- Swift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TransGroup Worldwide Logistics</masterLabel>
+            <translation><!-- TransGroup Worldwide Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transplace</masterLabel>
+            <translation><!-- Transplace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation><!-- UPS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USF Logistics</masterLabel>
+            <translation><!-- USF Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UTiWorldwide</masterLabel>
+            <translation><!-- UTiWorldwide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Werner</masterLabel>
+            <translation><!-- Werner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow-Roadway</masterLabel>
+            <translation><!-- Yellow-Roadway --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conference Room --></label>
+        <name>Conference_Room__c</name>
+    </fields>
+    <fields>
+        <label><!-- Consent Form in Binder --></label>
+        <name>Consent_Form_in_Binder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the individual at CorporateInk who is leading the coverage initiative --></help>
+        <label><!-- CorporateInk Lead --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Marketing Deliverables (CorporateInk Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Copy Approver --></label>
+        <name>Copy_Approver__c</name>
+        <relationshipLabel><!-- Marketing Deliverables (Copy Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Copy Completion Date --></label>
+        <name>Copy_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Person --></label>
+        <name>Copy_Person__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jan</masterLabel>
+            <translation><!-- Jan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meredith</masterLabel>
+            <translation><!-- Meredith --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Copy Start Date --></label>
+        <name>Copy_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy Days --></label>
+        <name>Copy_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Copy of Consent to Director --></label>
+        <name>Copy_of_Consent_to_Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Per Impression --></label>
+        <name>Cost_Per_Impression__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost/Value --></label>
+        <name>Cost_Value_Per_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create File in SCS Cabinet --></label>
+        <name>Create_File_in_SCS_Cabinet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creative --></label>
+        <name>Creative__c</name>
+        <picklistValues>
+            <masterLabel>Boom De Yada</masterLabel>
+            <translation><!-- Boom De Yada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EGX</masterLabel>
+            <translation><!-- EGX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerson</masterLabel>
+            <translation><!-- Emerson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JC Alonzo</masterLabel>
+            <translation><!-- JC Alonzo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deliverable Completion Date --></label>
+        <name>Deliverable_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deliverable Days --></label>
+        <name>Deliverable_Days__c</name>
+    </fields>
+    <fields>
+        <help><!-- Title of the individual deliverable of a project --></help>
+        <label><!-- Deliverable Name --></label>
+        <name>Deliverable_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Required action steps and/or components to support this communication initiative --></help>
+        <label><!-- Deliverables --></label>
+        <name>Deliverables__c</name>
+        <picklistValues>
+            <masterLabel>Added to Ryder POD</masterLabel>
+            <translation><!-- Added to Ryder POD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agenda</masterLabel>
+            <translation><!-- Agenda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Booth</masterLabel>
+            <translation><!-- Booth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brochures</masterLabel>
+            <translation><!-- Brochures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client consent form signed/approved</masterLabel>
+            <translation><!-- Client consent form signed/approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Briefing</masterLabel>
+            <translation><!-- Executive Briefing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Framed copy mailed to client</masterLabel>
+            <translation><!-- Framed copy mailed to client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Give Aways</masterLabel>
+            <translation><!-- Give Aways --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel Reservation</masterLabel>
+            <translation><!-- Hotel Reservation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identified client approver</masterLabel>
+            <translation><!-- Identified client approver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Onsite Rental(s)</masterLabel>
+            <translation><!-- Onsite Rental(s) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography posted to Ryder library</masterLabel>
+            <translation><!-- Photography posted to Ryder library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Photography sent to client</masterLabel>
+            <translation><!-- Photography sent to client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presentation</masterLabel>
+            <translation><!-- Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print collateral inventory</masterLabel>
+            <translation><!-- Print collateral inventory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printed copies mailed to client</masterLabel>
+            <translation><!-- Printed copies mailed to client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reprint Order</masterLabel>
+            <translation><!-- Reprint Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant Reservations</masterLabel>
+            <translation><!-- Restaurant Reservations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Arrangements</masterLabel>
+            <translation><!-- Transportation Arrangements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>What&apos;s New Mailing</masterLabel>
+            <translation><!-- What&apos;s New Mailing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UVS</masterLabel>
+            <translation><!-- UVS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Detailed description of this communication initiative --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Approver --></label>
+        <name>Design_Approver__c</name>
+        <relationshipLabel><!-- Marketing Deliverables (Design Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Design Completion Date --></label>
+        <name>Design_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Days --></label>
+        <name>Design_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Fees --></label>
+        <name>Design_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Person --></label>
+        <name>Design_Person__c</name>
+        <picklistValues>
+            <masterLabel>Boom De Yada</masterLabel>
+            <translation><!-- Boom De Yada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EGX</masterLabel>
+            <translation><!-- EGX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emerson</masterLabel>
+            <translation><!-- Emerson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JC Alonzo</masterLabel>
+            <translation><!-- JC Alonzo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Design Start Date --></label>
+        <name>Design_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dismantle End Date/Time --></label>
+        <name>Dismantle_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dismantle Start Date/Time --></label>
+        <name>Dismantle_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribute - E-mail Template --></label>
+        <name>Distribute_E_mail_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribute - What&apos;s New --></label>
+        <name>Distribute_What_s_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distribute - Ryder.com --></label>
+        <name>Distribute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electronic Version Only --></label>
+        <name>Electronic_Version_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- the last day the event takes place --></help>
+        <label><!-- Event End Date --></label>
+        <name>Event_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- the first day the event takes place --></help>
+        <label><!-- Event Start Date --></label>
+        <name>Event_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Website Link --></label>
+        <name>Event_Website_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- website for the conference/tradeshow/event --></help>
+        <label><!-- Event Website --></label>
+        <name>Event_Website__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Ryder executive featured, interviewed, speaking, etc. --></help>
+        <label><!-- Executive Name --></label>
+        <name>Executive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exhibit --></label>
+        <name>Exhibit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the coverage is a feature story where Ryder and or Ryder&apos;s client were showcased as the central message --></help>
+        <label><!-- Feature Story --></label>
+        <name>Feature_Story__c</name>
+    </fields>
+    <fields>
+        <label><!-- Press Proof Approval Complete --></label>
+        <name>Final_Print_Proof_Approval_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Proof Approval Complete --></label>
+        <name>Final_Proof_Approval_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the stock number for fulfillment and reorders --></help>
+        <label><!-- Form/Stock Number --></label>
+        <name>Form_Stock_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Framed Copy to Client (If App) --></label>
+        <name>Framed_Copy_to_Client_If_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Channel --></label>
+        <name>Fulfillment_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Brainshark</masterLabel>
+            <translation><!-- Brainshark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Library</masterLabel>
+            <translation><!-- Digital Library --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inxpo</masterLabel>
+            <translation><!-- Inxpo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIDE - Brand Center</masterLabel>
+            <translation><!-- RIDE - Brand Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC</masterLabel>
+            <translation><!-- SFDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales &amp; Marketing Portal</masterLabel>
+            <translation><!-- Sales &amp; Marketing Portal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Completion Date --></label>
+        <name>Fulfillment_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Days --></label>
+        <name>Fulfillment_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Person --></label>
+        <name>Fulfillment_Person__c</name>
+        <relationshipLabel><!-- Marketing Deliverables (Fulfillment Person) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fulfillment Start Date --></label>
+        <name>Fulfillment_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fullfilment Completion Notes --></label>
+        <name>Fullfilment_Completion_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The entity, such as a publication, customer name, or other third party, issuing the communication (ie. editorial, award, ranking, etc.) --></help>
+        <label><!-- Given By --></label>
+        <name>Given_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identify Client Approver --></label>
+        <name>Identify_Client_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, indicates that Ryder was solicited for this communication opportunity, and did not proactively initiate it. --></help>
+        <label><!-- Inbound/Solicited by Media Outlet --></label>
+        <name>Inbound_Solicited_by_Media_Outlet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landing Page --></label>
+        <name>Landing_Page__c</name>
+    </fields>
+    <fields>
+        <help><!-- City and State where event will take place. --></help>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing ID --></label>
+        <name>Marketing_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- materials on order that were not included with the booth space rental --></help>
+        <label><!-- Materials Ordered --></label>
+        <name>Materials_Ordered__c</name>
+    </fields>
+    <fields>
+        <help><!-- materials (chairs, tables, etc.)  provided/included with the booth space rental --></help>
+        <label><!-- Materials Provided --></label>
+        <name>Materials_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Fee --></label>
+        <name>Media_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- The media outlet, such as publication, TV station, or other media source where editorial or advertising appears. --></help>
+        <label><!-- Media Outlet --></label>
+        <name>Media_Outlet__c</name>
+        <picklistValues>
+            <masterLabel>CCJ</masterLabel>
+            <translation><!-- CCJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Maintenance</masterLabel>
+            <translation><!-- Fleet Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleet Owner</masterLabel>
+            <translation><!-- Fleet Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleets &amp; Fuel</masterLabel>
+            <translation><!-- Fleets &amp; Fuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heavy Duty Trucking</masterLabel>
+            <translation><!-- Heavy Duty Trucking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Light &amp; Medium Truck</masterLabel>
+            <translation><!-- Light &amp; Medium Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transport Topics</masterLabel>
+            <translation><!-- Transport Topics --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Media Placement Paid --></label>
+        <name>Media_Placement_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Placement Value --></label>
+        <name>Media_Placement_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- indicates if coverage is secured with a National Business Press publication (ie. Wall Street Journal, BusinessWeek, etc.) --></help>
+        <label><!-- National Business Press --></label>
+        <name>National_Business_Press__c</name>
+    </fields>
+    <fields>
+        <label><!-- Click-Thru (Per Pub) --></label>
+        <name>No_of_Click_Through_s_From_Pub__c</name>
+    </fields>
+    <fields>
+        <label><!-- Click-Thru (PerRyder) --></label>
+        <name>No_of_Click_through_s_Ryder_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts --></label>
+        <name>No_of_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impressions Delivered --></label>
+        <name>No_of_Impressions_Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Impressions Guaranteed --></label>
+        <name>No_of_Impressions_Guaranteed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contacts Qualified --></label>
+        <name>No_of_Qualified_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer --></label>
+        <name>Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- On-Line Required --></label>
+        <name>On_Line_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL link to the coverage on the internet --></help>
+        <label><!-- Online Link --></label>
+        <name>Online_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows this communication initiative to be related to an opportunity in Ryder&apos;s pipeline. (ie. Press Releases can be related to a Signed Business opportunity.) --></help>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Marketing Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order 25 Copies for SCS Cabinet --></label>
+        <name>Order_25_Copies_for_SCS_Cabinet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Copy Person --></label>
+        <name>Other_Copy_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Design Person --></label>
+        <name>Other_Design_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page Visits --></label>
+        <name>Page_Visits__c</name>
+    </fields>
+    <fields>
+        <help><!-- the type of tangible or intangible collateral being offered as the &apos;hook&apos; for the pitch --></help>
+        <label><!-- Pitch Type --></label>
+        <name>Pitch_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Case Study</masterLabel>
+            <translation><!-- Customer Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Interview (Customer)</masterLabel>
+            <translation><!-- Executive Interview (Customer) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Interview (Ryder)</masterLabel>
+            <translation><!-- Executive Interview (Ryder) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White Paper</masterLabel>
+            <translation><!-- White Paper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Presentation Description --></label>
+        <name>Presentation_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presentation Duration --></label>
+        <name>Presentation_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presentation Type --></label>
+        <name>Presentation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Introduction</masterLabel>
+            <translation><!-- Introduction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keynote</masterLabel>
+            <translation><!-- Keynote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Session</masterLabel>
+            <translation><!-- Regular Session --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Workshop</masterLabel>
+            <translation><!-- Workshop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Presentation --></label>
+        <name>Presentation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presentation Date/Time --></label>
+        <name>Presentation_date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presenter Company --></label>
+        <name>Presenter_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presenter --></label>
+        <name>Presenter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Press Proof Approver 1 / Date --></label>
+        <name>Press_Proof_Approver_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Press Proof Approver 2 / Date --></label>
+        <name>Press_Proof_Approver_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The media mode where the communication initiative takes place. --></help>
+        <label><!-- Primary Mode --></label>
+        <name>Primary_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Online</masterLabel>
+            <translation><!-- Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print - Magazine</masterLabel>
+            <translation><!-- Print - Magazine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print - Newspaper</masterLabel>
+            <translation><!-- Print - Newspaper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TV</masterLabel>
+            <translation><!-- TV --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Print Fees --></label>
+        <name>Print_Fees__c</name>
+    </fields>
+    <fields>
+        <help><!-- The &quot;type&quot; of communication initiative.  This is a subcategory of the record types for Editorial, Advertising, Customer Profiles, etc. --></help>
+        <label><!-- Program Type --></label>
+        <name>Program_Type__c</name>
+        <picklistValues>
+            <masterLabel>1 page PPT</masterLabel>
+            <translation><!-- 1 page PPT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertisement/Insertion</masterLabel>
+            <translation><!-- Advertisement/Insertion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertorial</masterLabel>
+            <translation><!-- Advertorial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Article Reprint</masterLabel>
+            <translation><!-- Article Reprint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Article Sponsorship</masterLabel>
+            <translation><!-- Article Sponsorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Award</masterLabel>
+            <translation><!-- Award --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bellyband/Special Ad</masterLabel>
+            <translation><!-- Bellyband/Special Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate/General</masterLabel>
+            <translation><!-- Corporate/General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Directory / Buyers Guide</masterLabel>
+            <translation><!-- Directory / Buyers Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enewsletter</masterLabel>
+            <translation><!-- Enewsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exhibit</masterLabel>
+            <translation><!-- Exhibit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headquarters</masterLabel>
+            <translation><!-- Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incentive/Promotion</masterLabel>
+            <translation><!-- Incentive/Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Ads / Banners</masterLabel>
+            <translation><!-- Online Ads / Banners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Visit Type</masterLabel>
+            <translation><!-- Other Visit Type --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podcast</masterLabel>
+            <translation><!-- Podcast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press/Media</masterLabel>
+            <translation><!-- Press/Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Ad</masterLabel>
+            <translation><!-- Print Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Ad + Online Ad</masterLabel>
+            <translation><!-- Print Ad + Online Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Profiles / Letters</masterLabel>
+            <translation><!-- Profiles / Letters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ranking</masterLabel>
+            <translation><!-- Ranking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Researched Project</masterLabel>
+            <translation><!-- Researched Project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Print + Online Ad</masterLabel>
+            <translation><!-- Small Print + Online Ad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot</masterLabel>
+            <translation><!-- Snapshot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speak/Keynote</masterLabel>
+            <translation><!-- Speak/Keynote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speak/Other</masterLabel>
+            <translation><!-- Speak/Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speak/Panel</masterLabel>
+            <translation><!-- Speak/Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsor</masterLabel>
+            <translation><!-- Sponsor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Add:  Print &amp; Online</masterLabel>
+            <translation><!-- Value Add:  Print &amp; Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Add: Online</masterLabel>
+            <translation><!-- Value Add: Online --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Add: Print</masterLabel>
+            <translation><!-- Value Add: Print --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Post</masterLabel>
+            <translation><!-- Video Post --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Integration Program</masterLabel>
+            <translation><!-- Web Integration Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Link</masterLabel>
+            <translation><!-- Web Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinar / Videocast</masterLabel>
+            <translation><!-- Webinar / Videocast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White Paper / Case Study</masterLabel>
+            <translation><!-- White Paper / Case Study --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>edge</masterLabel>
+            <translation><!-- edge --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Track --></label>
+        <name>Project_Track__c</name>
+        <picklistValues>
+            <masterLabel>Complex</masterLabel>
+            <translation><!-- Complex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simple</masterLabel>
+            <translation><!-- Simple --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Marketing Deliverables --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proof Approver 1 / Date --></label>
+        <name>Proof_Approver_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proof Approver 2 / Date --></label>
+        <name>Proof_Approver_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date that the communication appeared in public, or was fully completed and closed. --></help>
+        <label><!-- Publish / Complete Date --></label>
+        <name>Publish_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, indicates that the &quot;in print&quot; version was audited and determined to have been published correctly. --></help>
+        <label><!-- Published Successfully --></label>
+        <name>Published_Successfully__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receive Customer Consent Form --></label>
+        <name>Receive_Customer_Consent_Form__c</name>
+    </fields>
+    <fields>
+        <help><!-- The geographic part of Ryder where the communication initiative takes place. --></help>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation><!-- North America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- indicates when CorporateInk recommends a reprint of the coverage be ordered --></help>
+        <label><!-- Reprint Recommended --></label>
+        <name>Reprint_Recommended__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Photography (2 copies) --></label>
+        <name>Request_Photography_2_copies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Print Quotes (If App) --></label>
+        <name>Request_Print_Quotes_If_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- indicates person at Ryder who will be the lead point person for this initiative --></help>
+        <label><!-- Ryder Lead --></label>
+        <name>Ryder_Lead__c</name>
+        <relationshipLabel><!-- Marketing Deliverables (Ryder Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Ryder&apos;s internal unique item # for new piece of marketing collateral --></help>
+        <label><!-- Ryder Item # --></label>
+        <name>Ryder_ReprintNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Customer Photos --></label>
+        <name>Send_Customer_Photos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set up w/ Supplier --></label>
+        <name>Set_up_w_Supploer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup End Date/Time --></label>
+        <name>Setup_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Start Date/Time --></label>
+        <name>Setup_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Printed Copies to Client (If App) --></label>
+        <name>Ship_Printed_Copies_to_Client_If_App__c</name>
+    </fields>
+    <fields>
+        <help><!-- details of what&apos;s included in Ryder&apos;s sponsorship package --></help>
+        <label><!-- Sponsorship Package --></label>
+        <name>Sponsorship_Package__c</name>
+    </fields>
+    <fields>
+        <help><!-- Details about where the communication initiative is at in the process towards being completed. --></help>
+        <label><!-- Status Comments --></label>
+        <name>Status_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- NOT STARTED -no action taken to date
+DEVELOPMENT -decided to pursue, developing content
+APPROVALS -content proposed to approvers - ie. legal, client
+SUBMITTED/UPCOMING -content approved, awaiting publication --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy</masterLabel>
+            <translation><!-- Copy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Copy Review</masterLabel>
+            <translation><!-- Copy Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design Review</masterLabel>
+            <translation><!-- Design Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development</masterLabel>
+            <translation><!-- Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fullfillment</masterLabel>
+            <translation><!-- Fullfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Progress</masterLabel>
+            <translation><!-- In-Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold / Deferred</masterLabel>
+            <translation><!-- On Hold / Deferred --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printing</masterLabel>
+            <translation><!-- Printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing for Approvals</masterLabel>
+            <translation><!-- Routing for Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted/Upcoming</masterLabel>
+            <translation><!-- Submitted/Upcoming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date that the communication initiative must be submitted in order to meet publish deadline, reservation cut-off, etc. --></help>
+        <label><!-- Submission Deadline --></label>
+        <name>Submission_Deadline__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique URL generated from Ryder.com&apos;s web traffic tracking tool, Coremetrics, in order to track/record the number of hits we receive from this unique link embedded in a Ryder web or email advertisement --></help>
+        <label><!-- Trackable URL --></label>
+        <name>Trackable_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- telephone number for event venue --></help>
+        <label><!-- Venue Phone --></label>
+        <name>Venue_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- hotel/venue website where the conference/tradeshow will take place --></help>
+        <label><!-- Venue Website --></label>
+        <name>Venue_Website__c</name>
+    </fields>
+    <fields>
+        <help><!-- address of the venue where the conference/tradeshow will take place --></help>
+        <label><!-- Venue &amp; Address --></label>
+        <name>Venue_address_city_state__c</name>
+    </fields>
+    <fields>
+        <help><!-- indicates the white paper being used as the &apos;hook&apos; for the pitch/coverage --></help>
+        <label><!-- White Paper --></label>
+        <name>White_Paper__c</name>
+        <picklistValues>
+            <masterLabel>Managing Carrier-Shipper Relationships</masterLabel>
+            <translation><!-- Managing Carrier-Shipper Relationships --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimizing DC Networks</masterLabel>
+            <translation><!-- Optimizing DC Networks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Streamlining ERP Implementations</masterLabel>
+            <translation><!-- Streamlining ERP Implementations --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Writer Fees --></label>
+        <name>Writer_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Writer --></label>
+        <name>Writer__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jan</masterLabel>
+            <translation><!-- Jan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meredith</masterLabel>
+            <translation><!-- Meredith --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Ryder SCS vertical that the event is aligned to --></help>
+        <label><!-- SCS Vertical --></label>
+        <name>scs_vertical__c</name>
+        <picklistValues>
+            <masterLabel>Auto/Aero/Industrial</masterLabel>
+            <translation><!-- Auto/Aero/Industrial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CORP</masterLabel>
+            <translation><!-- CORP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPG</masterLabel>
+            <translation><!-- CPG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dedicated</masterLabel>
+            <translation><!-- Dedicated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMS</masterLabel>
+            <translation><!-- FMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hi-Tech/Electronics</masterLabel>
+            <translation><!-- Hi-Tech/Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logistics/General</masterLabel>
+            <translation><!-- Logistics/General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oil &amp; Gas</masterLabel>
+            <translation><!-- Oil &amp; Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Advertising</layout>
+        <sections>
+            <label><!-- Copy Details --></label>
+            <section>Copy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Design Details --></label>
+            <section>Design Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fulfillment Details --></label>
+            <section>Fulfillment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Blog</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Metrics --></label>
+            <section>Metrics</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Client Profile</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fees --></label>
+            <section>Fees</section>
+        </sections>
+        <sections>
+            <label><!-- New Collateral Check-List --></label>
+            <section>New Collateral Check-List</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Collateral</layout>
+        <sections>
+            <label><!-- Copy Details --></label>
+            <section>Copy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Design Details --></label>
+            <section>Design Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fullfilment Details --></label>
+            <section>Fullfilment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Competitor</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Editorial</layout>
+        <sections>
+            <label><!-- Coverage Attributes --></label>
+            <section>Coverage Attributes</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Post Coverage --></label>
+            <section>Post Coverage</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Events</layout>
+        <sections>
+            <label><!-- Copy Details --></label>
+            <section>Copy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Design Details --></label>
+            <section>Design Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Fulfillment Details --></label>
+            <section>Fulfillment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Internal Projects</layout>
+        <sections>
+            <label><!-- Copy Details --></label>
+            <section>Copy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Design Details --></label>
+            <section>Design Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fulfillment Details --></label>
+            <section>Fulfillment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MARCOM Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Event Information --></label>
+            <section>Event Information</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Online</layout>
+        <sections>
+            <label><!-- Copy Details --></label>
+            <section>Copy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Design Details --></label>
+            <section>Design Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fulfillment Details --></label>
+            <section>Fulfillment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Press Release</layout>
+        <sections>
+            <label><!-- Copy Details --></label>
+            <section>Copy Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Design Details --></label>
+            <section>Design Details</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Fulfillment Details --></label>
+            <section>Fulfillment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Status Tracking --></label>
+            <section>Status Tracking</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Advertising --></label>
+        <name>Advertising</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Award-Rankings --></label>
+        <name>AwardRankings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Blog --></label>
+        <name>Blog</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Client Profile --></label>
+        <name>ClientProfile</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Collateral --></label>
+        <name>Collateral</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Competitor Advertising --></label>
+        <name>CompetitorAdvertising</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Events --></label>
+        <name>ConferenceTradeShow</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer Visit --></label>
+        <name>CustomerVisit</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Direct Mail --></label>
+        <name>Direct_Mail</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- E-mail Touch --></label>
+        <name>E_mail_Touch</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Editorial --></label>
+        <name>Editorial</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal Projects --></label>
+        <name>Internal_Projects</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Online --></label>
+        <name>Online</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Press Release --></label>
+        <name>PressRelease</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If the deliverable has been completed, you need to indicate a completion date --></errorMessage>
+        <name>Completion_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the deliverable has not been completed, you cannot indicate a completion date --></errorMessage>
+        <name>Completion_Date_but_no_completion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are entering a copy completion date, you need to have a copy start date --></errorMessage>
+        <name>Copy_completion_without_start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are starting design, you need to have a copy completion date --></errorMessage>
+        <name>Design_Start_without_Copy_completion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are entering a design completion date, you need to have a design start date --></errorMessage>
+        <name>Design_completion_without_start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are entering a fulfillment completion date, you need to have a fulfillment start date --></errorMessage>
+        <name>Fulfillment_completion_without_start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you are starting fulfillment, you need to have a design completion date --></errorMessage>
+        <name>Fullfilment_Start_wo_Design_completion</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either Other was indicated as the copy person but no detail was indicated in the corresponding field, or a detail for other was provided but the selection for copy person was not Other --></errorMessage>
+        <name>Other_copy_person_control</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Either Other was indicated as the design person but no detail was indicated in the corresponding field, or a detail for other was provided but the selection for design person was not Other --></errorMessage>
+        <name>Other_design_person_control</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body bgcolor="#0099cc">
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#0099cc"><img src="http://e2ma.net/userdata/41997/assets/sfdc_tips-r1_s1.jpg" width="700" height="198"></td>
+  </tr>
+</table>
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#0099cc"><img src="http://e2ma.net/userdata/41997/assets/sfdc_tips-r1_r2_c2_s1.jpg" width="700" height="29"></td>
+  </tr>
+</table>
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="50">&nbsp;</td>
+    <td width="600">&nbsp;</td>
+    <td width="50">&nbsp;</td>
+  </tr>
+</table>
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="50">&nbsp;</td>
+    <td width="600"><p style="color:#000000;font-family: Arial,Helvetica,sans-serif;font-size:13px;line-height:16px;margin-left:0;margin-right:0;padding-left:0;padding-right:0;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;"><img src="http://e2ma.net/userdata/41997/assets/contactvskey.jpg" width="600" height="74" alt="Contacts vs. Key Contacts"><br>
+    </p>
+<p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">Each contact loaded into salesforce.com has its own record which can be accessed through the account or contact tab (as well as using the search feature).  Contacts not associated with accounts are private and cannot be viewed by other users or included in reports.</p>
+<p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;">CSI and Maintenance contacts are considered "Key Contacts". A contact can be designated as a <strong><em>key contact</em></strong> for all branch locations (by assigning the contact's role status at the "contact" level) or for specific branch(s).
+  
+</p>
+      <p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><strong>Designating Key Contact (s) at the Branch Level
+        </strong><br>
+        Designating a key contact at the branch level is simply a matter of accessing the Account record; selecting the appropriate branch; scrolling down to the Key Contacts section and selecting <em><strong>"New Key Contact"
+      </strong></em><strong></strong></p>
+      <p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><img src="http://e2ma.net/userdata/41997/assets/newkeycontact_sfdc.jpg" width="600" height="300" alt="Designating Key Contact at the Branch Level"></p>
+      <p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><strong>Inactivating a Contact
+        </strong><br>
+        Each contact record includes a "Status Active" flag in the "Contact Detail" section.  The default setting is active.  To inactivate a contact, simply deselect the checked box within this flag.  Once deselected, the contact will no longer show up on a user's "contacts list".  
+      </p>
+      <p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><img src="http://e2ma.net/userdata/41997/assets/inactivating_sfdc.jpg" width="600" height="300" alt="Inactivating a Contact"></p>
+<p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><strong>Key Contacts Cannot be Deactivated
+  </strong><br>
+If your contact is a "key contact", the system will not allow you to deactivate.  If a contact is no longer a key contact (i.e. CSI or Maintenance), you need to un-assign it. If this is a key contact for all branch locations, this is done by resetting the All Branches designation at the contact level back to "None".</p>
+<p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><img src="http://e2ma.net/userdata/41997/assets/cannotdeactivate_sfdc.jpg" width="600" height="370" alt="Key Contacts Cannot be Deactivated"><br>
+  <br>
+   If it is a key contact for specific branches, you need to delete the key contact designation in that branch. Once deleted, a different contact should be assigned to this  role. </p>
+<p style="color:#000000; font-family: Arial,Helvetica,sans-serif; font-size:13px; line-height:16px; margin-left:0; margin-right:0; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;"><img src="http://e2ma.net/userdata/41997/assets/last.jpg" width="599" height="212"><br>
+</p></td>
+    <td width="50">&nbsp;</td>
+  </tr>
+</table>
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="50">&nbsp;</td>
+    <td width="600">&nbsp;</td>
+    <td width="50">&nbsp;</td>
+  </tr>
+</table>
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#0099cc"><img src="http://e2ma.net/userdata/41997/assets/sfdc_tips-r1_r6_c2_s1.jpg" width="700" height="120"></td>
+  </tr>
+</table>
+<table width="700px" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td bgcolor="#0099cc"><span style="color:#FFFFFF;font-family: Arial,Helvetica,sans-serif;font-size:10px;line-height:16px;margin-left:0;margin-right:0;padding-left:0;padding-right:0;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;">The information contained in this electronic communication and any accompanying document is confidential, may be attorney-client privileged, and is intended only for the use of the addressee. It is the property of Ryder System,
+      Inc. Unauthorized use, disclosure or copying of this communication, or any part of it, is strictly prohibited and<
+      may be unlawful.  If you have received this communication in error, please notify the sender immediately by return
+      email, and destroy this communication and all copies of it, including all attachments. Electronic communication
+      may be susceptible to data corruption, interception and unauthorized tampering and Ryder disclaims all liability
+    of any kind for such actions or any consequences that may arise directly or indirectly therefrom.</span> </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Postal Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Postal Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Area Code --></label>
+        <name>Area_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDM / COMBO --></label>
+        <name>BDM_COMBO__c</name>
+        <relationshipLabel><!-- Postal Codes (BDM / COMBO) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBD --></label>
+        <name>DBD__c</name>
+        <relationshipLabel><!-- Postal Codes (DBD) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DOS --></label>
+        <name>DOS__c</name>
+        <relationshipLabel><!-- Postal Codes (DOS) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Observes Day Light Savings --></help>
+        <label><!-- DST --></label>
+        <name>DST__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dist to Ryder Branch --></label>
+        <name>Dist_to_Ryder_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- IAM --></label>
+        <name>IAM__c</name>
+        <relationshipLabel><!-- Postal Codes (IAM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LOCAL TSA --></label>
+        <name>LOCAL_TSA__c</name>
+        <relationshipLabel><!-- Postal Codes (LOCAL TSA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- NATIONAL_TSA --></label>
+        <name>NATIONAL_TSA__c</name>
+        <relationshipLabel><!-- Postal Codes (NATIONAL_TSA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This field will hold the data of the nearest Ryder Branch from the selected Postal Code --></help>
+        <label><!-- Nearest Ryder Branch --></label>
+        <name>Nearest_Ryder_Branch__c</name>
+        <relationshipLabel><!-- Postal Codes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Name --></label>
+        <name>State_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTC --></label>
+        <name>UTC__c</name>
+    </fields>
+    <fields>
+        <label><!-- UVS Assignee --></label>
+        <name>UVS_Assignee__c</name>
+        <relationshipLabel><!-- Postal Codes (UVS Assignee) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Postal Code Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

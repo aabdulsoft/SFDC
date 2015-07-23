@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DuplicateContact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DuplicateContact</value>
+    </caseValues>
+    <fields>
+        <label><!-- Create Duplicate Contacts --></label>
+        <name>Create_Duplicate_Contacts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Search contact using SOSL query, use in case of bulk data. --></help>
+        <label><!-- Search Using SOSL --></label>
+        <name>Search_Using_SOSL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

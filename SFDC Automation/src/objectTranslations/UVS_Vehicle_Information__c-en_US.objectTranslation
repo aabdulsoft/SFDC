@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vehicle Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vehicles Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount Due (w/o applicable fees) --></label>
+        <name>Amount_Due_w_o_applicable_fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anniversary Date --></label>
+        <name>Anniversary_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Book Value --></label>
+        <name>Book_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buy-Out Date --></label>
+        <name>Buy_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discount --></label>
+        <name>Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gains/Losses --></label>
+        <name>Gains_Losses__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Service Date --></label>
+        <name>In_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lease Term --></label>
+        <name>Lease_Term__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Code --></label>
+        <name>Location_Code__c</name>
+        <relationshipLabel><!-- Vehicles Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Months Inservice --></label>
+        <name>Months_Inservice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mths btw Anniversary &amp; Buy-Out Date --></label>
+        <name>Mths_btw_Anniversary_Buy_Out_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mths in-service to Anniversary Date --></label>
+        <name>Mths_in_service_to_Anniversary_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Paid Interest --></label>
+        <name>Pre_Paid_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotional Incentive Fee --></label>
+        <name>Promotional_Insentive_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Tax --></label>
+        <name>Sales_Tax__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScheduleA Monthly Depreciation --></label>
+        <name>ScheduleA_Monthly_Depreciation__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScheduleA Monthly Fixed Rate --></label>
+        <name>ScheduleA_Monthly_Fixed_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScheduleA Original Value --></label>
+        <name>ScheduleA_Original_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- ScheduleA Request --></label>
+        <name>ScheduleA_Request__c</name>
+        <relationshipLabel><!-- Vehicle_Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ScheduleA Value --></label>
+        <name>ScheduleA_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- SheduleA Value at Anniversary Date --></label>
+        <name>SheduleA_Value_at_Anniversary_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Purchase Price --></label>
+        <name>Total_Purchase_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SheduleA Fixed Rate --></label>
+        <name>Total_SheduleA_Fixed_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unexpired License --></label>
+        <name>Unexpired_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Number --></label>
+        <name>Vehicle_Number__c</name>
+        <relationshipLabel><!-- Vehicles Information --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>SheduleA Vehicle Information</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

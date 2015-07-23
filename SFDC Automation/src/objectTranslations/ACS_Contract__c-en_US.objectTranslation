@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ACS Contract</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ACS Contracts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch ID --></label>
+        <name>Branch_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Combined Single Limit --></label>
+        <name>Combined_Single_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Package ID --></label>
+        <name>Contract_Package_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Accommodation --></label>
+        <name>Customer_Accommodation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer / Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Contract Packages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel Description --></label>
+        <name>Fuel_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel --></label>
+        <name>Fuel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hazardous Material Description --></label>
+        <name>Hazardous_Material_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Operation --></label>
+        <name>Hours_Operation__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID Service --></label>
+        <name>ID_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insurance Description --></label>
+        <name>Insurance_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Update Date --></label>
+        <name>Last_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Insurance Deductible --></label>
+        <name>Liability_Insurance_Deductible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Insured By --></label>
+        <name>Liability_Insured_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Of Washes Provided --></label>
+        <name>No_Of_Washes_Provided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onsite Maintenance --></label>
+        <name>Onsite_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package ID --></label>
+        <name>Package_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parking --></label>
+        <name>Parking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pegged --></label>
+        <name>Pegged__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Damage Deductible --></label>
+        <name>Physical_Damage_Deductible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Damage Responsibility --></label>
+        <name>Physical_Damage_Responsibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pickup Delivery --></label>
+        <name>Pickup_Delivery__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line Code --></label>
+        <name>Product_Line_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rate Sheet ID --></label>
+        <name>Rate_Sheet_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Service --></label>
+        <name>Reefer_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAM Class --></label>
+        <name>SAM_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Safety Program --></label>
+        <name>Safety_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Island --></label>
+        <name>Service_Island__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Instructions --></label>
+        <name>Special_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subs During PM --></label>
+        <name>Subs_During_PM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subs --></label>
+        <name>Subs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Substitution --></label>
+        <name>Substitution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tires --></label>
+        <name>Tires__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Count --></label>
+        <name>Vehicle_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wash Provided By --></label>
+        <name>Wash_Provided_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wash --></label>
+        <name>Wash__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

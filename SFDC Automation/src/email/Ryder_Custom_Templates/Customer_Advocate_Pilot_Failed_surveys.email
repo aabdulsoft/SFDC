@@ -1,0 +1,8 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<P>** CUSTOMER ADVOCATE PILOT-FAILED SURVEY ALERT *** <BR><BR>The following survey did not passed the minimum score: <BR><BR>Case:&nbsp;{!Ryder_CSC_Surveys__c.Case__c}&nbsp;</P>
+<P>Contact: {!Ryder_CSC_Surveys__c.Contact__c}</P>
+<P><BR>Click on the link to access the survey: {!Ryder_CSC_Surveys__c.Link}</P>]]></td>
+</tr>
+</table>

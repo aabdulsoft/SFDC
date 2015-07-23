@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email follow up to the Bi Monthly Call - June 2013</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Roadcheck Email</name>
+    <style>none</style>
+    <subject>Ryder: Preparing Your Drivers for CVSA Roadcheck 2013</subject>
+    <type>text</type>
+</EmailTemplate>

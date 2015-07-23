@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify opportunity owner that estimated close date is 90 days out</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Opportunity: Deal Closing in 90 days</name>
+    <style>freeForm</style>
+    <subject>Your opportunity is estimated to close in less than 90 days</subject>
+    <textOnly>The following opportunity is expected to close in 0-90 days: Opportunity Name: {!Opportunity.Name} Account: {!Opportunity.Account} Stage: {!Opportunity.StageName} Estimated Close Date: {!Opportunity.CloseDate} Detail Link: {!Opportunity.Link}
+
+IMPORTANT NOTE: Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the opportunity link, then review your opportunity and take appropriate action.
+ 
+If you click on the opportunity link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won&apos;t be able to log in from there.
+ 
+Kind Regards
+Sales Admin</textOnly>
+    <type>html</type>
+</EmailTemplate>

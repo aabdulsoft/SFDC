@@ -1,0 +1,112 @@
+<apex:page standardController="Quote" extensions="ImageSelectorController_V1" showheader="false" id="pg" >
+  <apex:form id="fm">
+   
+         <style type="text/css">
+         .messagetxt {
+             color : blue;
+             text-align: center;
+             font-family: "Times New Roman;;
+             font-size:14px;
+            }
+            
+            .button {
+              padding:5px;
+              background-color: #dcdcdc;
+              border: 1px solid #666;
+              color:#000;
+              text-decoration:none;
+                }
+                
+            .custPopup{
+              background-color: white;
+              border-width: 2px;
+              border-style: solid;
+              z-index: 9999;
+              left: 50%;
+              padding:10px;
+              position: absolute;
+              width: 500px;
+              height:100px;
+              margin-left: -250px;
+              top:100px;
+             } 
+        .popupBackground{
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+        }
+  
+    </style>
+    <script>
+        
+          <apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/jquery-1.9.1.js')}"/>
+          <apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.core.js')}"/>
+          <apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.widget.js')}"/>
+          <apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.mouse.js')}"/>
+          <apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.draggable.js')}"/>
+          <apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.sortable.js')}"/>  
+    
+        
+          var $ = jQuery.noConflict();
+          var newWin=null;
+       
+    </script>
+   
+   <apex:pageBlock id="pgb" >
+     <apex:stylesheet value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/themes/base/jquery.ui.all.css')}"/>
+     <apex:stylesheet value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/demos/demos.css')}"/>
+     <apex:outputPanel id="msgs">
+       <apex:pageMessages />
+      
+      </apex:outputPanel>       
+       <apex:inputHidden value="{!isError}" id="isErr" />
+       <apex:pageBlockButtons >
+       <apex:commandButton action="{!validateImageUrl}" Value="Next"  reRender="msgs,pg:fm:pgb:op2,pg:fm:pgb:isErr,pg:fm:pgb:tstpopup" />
+       <apex:commandButton action="{!cancel}" Value="Cancel" onclick="window.top.close();" styleClass="button"/>
+     </apex:pageBlockButtons>
+     
+  <apex:repeat value="{!vehImageWrap}" var="viw" rendered="{!isImagesNull==false}" id="vehImg">
+   <apex:outputPanel layout="block" style="float:left;padding-top:10px;padding-left:10px">
+      <apex:image URL="{!viw.imageURL}" width="175" height="175" />
+       <apex:outputPanel layout="block" style="text-align:center" id="vehOrder">
+          <apex:outputtext value="{!viw.vehNo}"/>
+          <apex:inputCheckbox value="{!viw.imageSelect}"  id="chck" > 
+               </apex:inputCheckbox>         
+          </apex:outputPanel>
+      </apex:outputPanel>
+    </apex:repeat>  
+     <apex:outputPanel id="tstpopup">
+        <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/>
+            <apex:outputPanel styleClass="custPopup" layout="block" rendered="{!displayPopUp}">
+              <p class="messagetxt"> Images are successfully attached to the Quote. Next step is to create a Formal Quote</p> <br/><br/><br/>
+                <apex:commandButton value="Ok" action="{!closePopup}" rerender="tstpopup" oncomplete="window.top.close();" style="align:centre;"/>
+            </apex:outputPanel>
+        </apex:outputPanel>
+     <apex:outputPanel rendered="{!isImagesNull}">
+        There are No images associated with this vehicle
+     </apex:outputPanel>
+      <apex:outputPanel id="op2" rendered="{!issorted}">
+          
+           <h1  style="background:none;font-size:150%;padding-left:10px;">Selected Images</h1><br/>
+           <!--    <div id="sortable1" class="droptrue">
+                   <apex:repeat value="{!checkedURLs}" var="img" id="rp">                         
+                           <apex:image value="{!img}" id="w" alt="{!img}" styleClass="img"/>                       
+                     </apex:repeat>
+                 </div> -->
+     </apex:outputPanel>
+   </apex:pageBlock>
+ 
+               
+    <!-- Sorting Images -->  
+     
+    
+
+    
+  </apex:form>
+</apex:page>

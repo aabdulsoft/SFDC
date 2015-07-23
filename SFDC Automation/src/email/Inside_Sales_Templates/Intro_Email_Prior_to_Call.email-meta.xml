@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Use this email prior to making a call. Let the customer know you will be calling.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Intro Email Prior to Call</name>
+    <style>none</style>
+    <subject>New Ryder Contact</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>RSM Contract</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>RSM Contracts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- RSM Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancelled Contract details --></label>
+        <name>Cancelled_Contract_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Number --></label>
+        <name>Contract_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedBy --></label>
+        <name>CreatedBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedDate --></label>
+        <name>CreatedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- DocumentTypeID --></label>
+        <name>DocumentTypeID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type Name --></label>
+        <name>Document_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lessee Email --></label>
+        <name>Lessee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lessee --></label>
+        <name>Lessee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Date --></label>
+        <name>Status_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Name --></label>
+        <name>Status_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contract Detail --></label>
+        <name>Total_Contract_Detail__c</name>
+    </fields>
+    <layouts>
+        <layout>RS Contract Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RSM Contract Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You Do not have permission to edit this field --></errorMessage>
+        <name>RSM_Contract_Number_Readonly_Managers</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You Do not have permission to edit this field --></errorMessage>
+        <name>RSM_Contract_Number_Readonly_Users</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- History_Viewer --></label>
+        <name>History_Viewer</name>
+    </webLinks>
+</CustomObjectTranslation>

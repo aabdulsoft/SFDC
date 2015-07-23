@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>External Lead Cross Check</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>External Lead Cross Checks</value>
+    </caseValues>
+    <fields>
+        <label><!-- AlreadyConverted --></label>
+        <name>AlreadyConverted__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDM CODE --></label>
+        <name>BDM_CODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- BDM NAME --></label>
+        <name>BDM_NAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- CALL DATE --></label>
+        <name>CALL_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company --></label>
+        <name>Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- DISPOSITION CODE --></label>
+        <name>DISPOSITION_CODE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Download Date --></label>
+        <name>Download_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXTRACT NAME --></label>
+        <name>EXTRACT_NAME__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IgnoreInCheck --></label>
+        <name>IgnoreInCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- LeadSource --></label>
+        <name>LeadSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Lead Id --></label>
+        <name>Legacy_Lead_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Queue Desc --></label>
+        <name>Queue_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- VEHICLE CNT --></label>
+        <name>VEHICLE_CNT__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

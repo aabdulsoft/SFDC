@@ -1,0 +1,4 @@
+<apex:page >
+<apex:includeScript value="{!URLFOR($Resource.clientjs, 'radarproxy.js')}" />
+<input type="button" onclick="init()">test</input>
+</apex:page>

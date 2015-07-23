@@ -1,0 +1,17 @@
+<apex:page standardController="Quote" extensions="QuoteExtensions">
+
+<apex:outputPanel rendered="{!showMessage}">
+  <div class="showMessge"> Warning: This quote requires an approved Below Take Request.
+  </div>
+</apex:outputPanel>
+
+<style>
+.showMessge{
+  background-color: #f0c36d;
+  margin: 3px;
+  position: relative;
+  padding: 3px;
+  border: 1px solid transparent;
+}
+</style>
+</apex:page>

@@ -1,0 +1,89 @@
+<apex:page standardController="Opportunity" extensions="UVS_OLIRelatedList">
+<style>
+ .dataCell {
+    /*white-space:nowrap !important;*/
+  }
+</style>
+<apex:form >
+    <apex:outputPanel id="thePanel" layout="block" style="width:1400px">
+
+      <apex:pageBlock title="Products(UVS)" id="pBList">
+        <apex:pageBlockButtons location="top" >
+        <apex:commandButton value="Sort" onClick="sortProducts();" />
+        <apex:commandButton value="Add Product" onClick="addProduct();"/>
+
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!oliList}" var="oli" rendered="{!AND(NOT(ISNULL(oliList)),oliList.size > 0)}" id="pBList">
+          <apex:column style="width:1%;" styleClass="actionColumn" headerValue="Action">
+            <apex:outputLink onClick="editOLI('{!oli.Id}');" title="Edit - Record 1 - {!oli.Unit_Number__r.Name}" styleClass="actionLink">
+              Edit
+            </apex:outputLink>
+            &nbsp;|&nbsp;
+            <apex:commandLink value="Del" onclick="if(!confirm('Are you sure?')) return false;" title="Delete - Record 1 - {!oli.Unit_Number__r.Name}"
+            action="{!deleteRecord}" oncomplete="refreshParent();" styleClass="actionLink">
+              <apex:param name="deleteRecordId" assignTo="{!deleteRecordId}" value="{!oli.id}"/>
+            </apex:commandLink>
+          </apex:column>
+          <apex:column style="width:1%;" >
+           <apex:facet name="header">
+              Vehicle<br/>Number
+           </apex:facet>
+           <apex:outputlink value="/{!oli.Unit_Number__c}" target="_parent">{!oli.Unit_Number__r.Name} </apex:outputlink>
+          </apex:column>
+          <apex:column style="width:1%;" value="{!oli.SAM_Class__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Model_Year__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Make_Model__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Branch_Name__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Days_held__c}">
+            <apex:facet name="header">
+              Days<br/>Held
+           </apex:facet>
+           </apex:column>
+          <apex:column style="width:1%;" value="{!oli.Eng_Mdl__c}"/>
+          <apex:column style="width:1%;" headerValue="Odometer" value="{!oli.Unit_Number__r.SAM_Odom__c}"/>
+          <apex:column style="width:1%;" value="{!oli.NVI__c}"/>
+          <apex:column style="width:1%;" value="{!oli.NVI_Percent__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Book_Value__c}"/>
+          
+          <apex:column style="width:1%;" value="{!oli.UnitPrice}"/>
+          <apex:column style="width:1%;" value="{!oli.Take_Price2__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Take_Price_percent__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Gain_Loss__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Unit_Number__r.AS_IS_Vehicle__c}" >
+            <apex:facet name="header">
+              As Is<br/>Vehicle
+           </apex:facet>
+          </apex:column>
+          <apex:column style="width:1%;" value="{!oli.Vosa__c}"/>
+          <apex:column style="width:1%;" value="{!oli.Approved_Price__c}">
+            <apex:facet name="header">
+              Approved<br/>Price
+           </apex:facet>
+          </apex:column>
+          <apex:column style="width:1%;" value="{!oli.Approved_to_take__c}">
+          <apex:facet name="header">
+              Approved<br/>% of Take
+           </apex:facet>
+          </apex:column>
+
+        </apex:pageBlockTable>
+      </apex:pageBlock>
+
+    </apex:outputPanel>
+</apex:form>
+<script>
+  function addProduct() {
+    window.parent.location.href="/apex/AddProductsCustom?oppId={!opp.Id}";
+  }
+  function editOLI(oliId){
+
+    window.parent.location.href="/"+oliId+"/e?retURL=/{!opp.Id}";
+  }
+  function sortProducts() {
+    window.parent.location.href="/oppitm/lineitemsort.jsp?id={!opp.Id}&retURL=/{!opp.Id}";
+  }
+  function refreshParent() {
+    window.parent.location.href ="/{!opp.Id}";
+  }
+</script>
+</apex:page>

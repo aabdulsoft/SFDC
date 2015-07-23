@@ -1,0 +1,14 @@
+*** NEW CASE ASSIGNMENT NOTIFICATION ***  
+
+The following case has been assigned to you.  
+Company:  {!Account.Name} 
+Contact Name:  {!Contact.Name} 
+Case #:  {!Case.CaseNumber} 
+Subject:  {!Case.Subject} 
+Description: {!Case.Description}  
+
+Click on the link to access the case:  {!Case.Link}
+
+Make sure you are logged to Salesforce.com (http://crm.ryder.com) before clicking on the link, then review the record and take appropriate action.
+
+If you click on the link before logging to Salesforce.com, you will be taken to the standard Salesforce.com login page and you won't be able to log in from there.

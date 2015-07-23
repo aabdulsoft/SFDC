@@ -1,0 +1,211 @@
+<!-- ******************************************************************************************
+ *
+ *  Purpose   : Custom Add Products Functionality
+ *  Author    : Manisha Gupta
+ *  Date      : 2014-09-05
+ *  Version   : 1.0
+ *  Description : This page provides custom add products functionality on Quotes and Opportunities (T-317748)
+ *
+ *  Modification History
+ *  Date  Who   Description
+ *
+ ********************************************************************************************-->
+<!-- Change the tab style to vf tab of the page -->
+<apex:page controller="AddProductsCustomController" id="thePage" title="Add Product" standardStylesheets="false" sidebar="false">
+
+    <!-- Adding styles required for loading or processing popup  -->
+    <style>
+        .popupBackground {
+            background-color:black;
+            opacity: 0.20;
+            filter: alpha(opacity = 20);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 998;
+            position: absolute;
+        }
+        .popupPanel {
+            border: solid 1px;
+            background-color: white;
+            left: 50%;
+            width: 200px;
+            margin-left: -100px;
+            top: 50%;
+            height: 50px;
+            margin-top: -25px;
+            z-index: 999;
+            position: fixed;
+        }
+        .labelCol {
+          vertical-align: middle !important;
+        }
+
+        .dataCell{
+          white-space:nowrap !important;
+        }
+    </style>
+  <apex:form id="theForm">
+  <apex:outputPanel rendered="{!isError}">
+    <apex:pagemessages />
+    <apex:commandButton value="Go Back" onClick="window.location.href='/{!recordId}'; return false;" style="left: 30px; position: absolute;"/>
+  </apex:outputPanel>
+    <apex:outputPanel rendered="{!!isError}">
+        <apex:sectionheader title="Add Products"/>
+            <!-- "Loading" or "Processing" popup whenever we are waiting for the page to return from a "Search" or page size being changed.  -->
+            <apex:actionStatus id="processingStatus" stopText="" >
+                <apex:facet name="start">
+                    <div>
+                        <div class="popupBackground" />
+                        <div class="popupPanel">
+                            <table border="0" width="100%" height="100%">
+                                <tr>
+                                    <td align="center" style="font-family: Calibri; font-size: 13px; font-weight: normal;"><b>Processing... Please Wait</b></td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><img src="/img/loading.gif"/></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </apex:facet>
+            </apex:actionStatus>
+        <apex:actionFunction name="search" action="{!search}" status="processingStatus" rerender="pbResults" onComplete="setHeight();"/>
+        <apex:pageblock id="pbSerach" title="Search">
+                <apex:pageblockSection columns="4">
+                <apex:pageblockSectionItem >
+                    <apex:outputlabel value="Vehicle Unit Number:" for="unitNumber" />
+                    <apex:inputText value="{!unitNumber}" label="Vehicle Unit Number"
+                                        maxlength="10" size="10" id="unitNumber" onkeydown="validateKey();"/>
+                </apex:pageblockSectionItem>
+                  <apex:outputpanel >
+                        <apex:commandButton value="Search" action="{!search}" status="processingStatus" rerender="pbResults" /> &nbsp;&nbsp;&nbsp;&nbsp;
+                        <apex:commandButton value="Cancel" action="{!cancel}" />
+                      </apex:outputpanel>
+
+                </apex:pageblockSection>
+        </apex:pageblock>
+
+
+
+      <apex:pageBlock id="pbResults" title="Results" >
+       <apex:pageMessages id="messageSec"/>
+      <apex:actionFunction name="selectVehicles" action="{!selectVehicles}" rerender="pbResults" status="processingStatus"/>
+      <apex:pageblockButtons rendered="{!searchResults.size > 0}">
+        <apex:commandButton onClick="validateSelect();return false;" value="Select" styleClass="btnDisabled selectBtn"/>
+        <apex:commandButton value="Cancel" action="{!cancel}" />
+      </apex:pageblockButtons>
+      <apex:outputPanel rendered="{!searchResults.size == 0}">Search returned no result.</apex:outputPanel>
+
+      <apex:outputPanel rendered="{!searchResults.size > 0}" style=" width:1170.545px;overflow-x:auto !important; height:300px; overflow-y:auto !important;" layout="block" ><!--  > -->
+        <apex:pageblocktable id="pbTable" rendered="{!searchResults.size > 0}" value="{!searchResults}" var="record" >
+            <apex:column ><apex:inputcheckBox value="{!record.isSelected}" id="selectOne" onclick="uncheckAll();"/>
+              <apex:facet name="header"><apex:inputcheckBox id="selectAll" onclick="checkAll(this);"/></apex:facet>
+            </apex:column>
+            <apex:repeat value="{!resultFieldSet}" var="f">
+                <apex:column value="{!record.vehicle[f.FieldPath]}" />
+            </apex:repeat>
+        </apex:pageblocktable>
+        Showing {!searchResults.size} records.
+      </apex:outputPanel>
+
+    </apex:pageBlock>
+
+</apex:outputPanel>
+
+    </apex:form>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    var j$ = jQuery;//.noConflict();
+    var validateOperator = function(operator){
+      var parentElementOfValueText = j$(operator).parent().parent().siblings()[1];
+      if(operator.value == 'isn' || operator.value == 'nisn'){
+        j$(parentElementOfValueText).children()[0].style.display= 'none';
+      }else{
+        j$(parentElementOfValueText).children()[0].style.display= '';
+      }
+    }
+
+  // function to check/uncheck all the check box on click of header checkbox
+  var checkAll = function(cb) {
+      var inputElem = document.getElementsByTagName("input");
+      for(var i=0; i<inputElem.length; i++){
+          if(inputElem[i].id.indexOf("select")!=-1)
+            inputElem[i].checked = cb.checked;
+      }
+
+      toggleSelectBtn(cb.checked);
+  }
+
+  function validateSelect(){
+      var isValid = false;
+      var inputElem = document.getElementsByTagName("input");
+        for(var i=0; i<inputElem.length; i++)
+        {
+            if(inputElem[i].id.indexOf("select")!=-1 && inputElem[i].checked){
+              isValid = true;
+            }
+        }
+        if(isValid){
+          selectVehicles();
+        }else{
+          return false;
+        }
+  }
+
+  /* Uncheck CheckAll checkbox if any one of checkboxes are unchecked*/
+  function uncheckAll(){
+   //alert('hi');
+    var inputElem = document.getElementsByTagName("input");
+    var flag = true;
+    var selectValid = false;
+    var checkAll;
+      for(var i=0; i<inputElem.length; i++) {
+        if(inputElem[i].id.indexOf("selectOne") != -1) {
+          if(!inputElem[i].checked){
+            flag = false;
+            }else {
+                selectValid = true;
+            }
+        }else if(inputElem[i].id.indexOf("selectAll") != -1){
+          checkAll = inputElem[i];
+        }
+      }
+      //alert('hi2');
+      toggleSelectBtn(selectValid);
+      checkAll.checked = flag;
+  }
+
+  function toggleSelectBtn(selectValid){
+   //alert(selectValid);
+    if(!selectValid){
+        j$(".selectBtn").addClass("btnDisabled");
+        j$(".selectBtn").removeClass("btn");
+      }else{
+      //alert(selectValid);
+        j$(".selectBtn").removeClass("btnDisabled");
+        j$(".selectBtn").addClass("btn");
+      }
+  }
+
+  // on pressing enter perform search
+  function validateKey(){
+    if(event.keyCode == 13 || event.which == 13){
+
+      search();
+      event.preventDefault();
+    }
+    return false;
+  }
+
+  function setHeight() {
+      console.log('set height');
+       var marginWidth = 100;
+       document.getElementById('pbTable').style.width = window.innerWidth - marginWidth + 'px';
+    }
+
+
+
+</script>
+</apex:page>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Turn in letter</name>
+    <style>freeForm</style>
+    <subject>Save Money at Turn-In Time</subject>
+    <textOnly>Thank you for leasing from Ryder! Our records indicate that the vehicle(s) below are nearing the end of the lease term:
+
+{!Account.Name}
+
+Unit#
+
+Year
+
+Make
+
+Type
+
+Expiration
+
+You may have already discussed this with your Account Manager {!Customer_Branch__c.Customer_Branch_Owner__c}; if so, you may disregard this email.
+
+If you have not already discussed these vehicles, please give your {!Ryder_Branch__c.Service_Manager_Name__c} a call at {!Ryder_Branch__c.Service_Manager_Phone__c} to schedule a vehicle inspection.  Scheduling a pre-return inspection now will expedite the turn-in process and help you save money.  Physical damage to a Ryder vehicle is your responsibility and must be repaired before the vehicle is returned.  Lease charges continue until the repairs are made. When you repair damage noted before the turn-in date, there’s no continuation of the lease charges.
+
+It’s a simple step that saves you money – and it begins by scheduling that pre-return inspection now.
+
+To start, simply let us know what time is convenient for you. We can provide repair estimates and schedule repairs with your insurance carrier or repair shop. If you prefer, Ryder can coordinate the repairs for an additional charge. If you have Ryder’s extended coverage, an appropriate accident report must be completed for any damage noted.
+
+Take a minute today and avoid additional and unnecessary lease charges later. Please contact [Service Manager] at [SM phone] today to schedule your pre-return inspection. Our goal is to make the turn in of your Ryder lease unit as easy and cost effective as possible.
+
+Ryder is here to help you Drive What Matters. If you have any questions about this inspection or any other issues, don’t hesitate to contact your Account Manager, {!Customer_Branch__c.Customer_Branch_Owner__c} at [Account Manager phone].
+
+Best regards,
+
+Ryder Transportation</textOnly>
+    <type>html</type>
+</EmailTemplate>

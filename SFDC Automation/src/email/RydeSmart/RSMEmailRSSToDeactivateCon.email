@@ -1,0 +1,8 @@
+<!--Fr033-Generate Email to RSS once unit cancels their contract to request de-activation-->
+<messaging:emailTemplate subject="De-Activate Contract" recipientType="User" relatedToType="RSM_ContractDetail__c">
+<messaging:htmlEmailBody > 
+
+<c:RSMEmailRSSToDeactivateCon_Comp ></c:RSMEmailRSSToDeactivateCon_Comp>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

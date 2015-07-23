@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ryder Account Team Role Map</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ryder Account Team Role Map</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Team Role --></label>
+        <name>Account_Team_Role__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

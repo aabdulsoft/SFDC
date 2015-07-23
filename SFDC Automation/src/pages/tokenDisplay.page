@@ -1,0 +1,5 @@
+<apex:page controller="tokenGeneratorCalloutController" action="{!callTokenWS}"> 
+
+<apex:outputText value="{!token}"/>
+
+</apex:page>

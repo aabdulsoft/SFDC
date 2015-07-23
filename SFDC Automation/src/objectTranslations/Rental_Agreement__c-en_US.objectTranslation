@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rental Agreement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rental Agreements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Rental Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement Number --></label>
+        <name>Agreement_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Type --></label>
+        <name>Billing_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer / Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Rental Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Daily Rate --></label>
+        <name>Daily_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Description --></label>
+        <name>Damage_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Rate --></label>
+        <name>Damage_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Weekly Monthly Rate --></label>
+        <name>Damage_Weekly_Monthly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Damage Description --></label>
+        <name>Damage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Used --></label>
+        <name>Days_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driver Name --></label>
+        <name>Driver_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Revenue --></label>
+        <name>Estimated_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ext Ref Id --></label>
+        <name>Ext_Ref_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- FIS Account --></label>
+        <name>FIS_Account__c</name>
+        <relationshipLabel><!-- Rental Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Liability Description --></label>
+        <name>Liability_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Rate --></label>
+        <name>Liability_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liability Weekly Monthly Rate --></label>
+        <name>Liability_Weekly_Monthly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Rate --></label>
+        <name>Mileage_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Odometer In --></label>
+        <name>Odometer_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Odometer Out --></label>
+        <name>Odometer_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Odometer Used --></label>
+        <name>Odometer_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pick Up Date --></label>
+        <name>Pick_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Rate --></label>
+        <name>Reefer_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reefer Used --></label>
+        <name>Reefer_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rental Type --></label>
+        <name>Rental_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return Date --></label>
+        <name>Return_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subbed Vehicle No --></label>
+        <name>Subbed_Vehicle_No__c</name>
+        <relationshipLabel><!-- Rental Agreements (Subbed Vehicle No) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- Rental Agreements (Vehicle) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weekly Monthly Rate --></label>
+        <name>Weekly_Monthly_Rate__c</name>
+    </fields>
+    <layouts>
+        <layout>Rental Agreement Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

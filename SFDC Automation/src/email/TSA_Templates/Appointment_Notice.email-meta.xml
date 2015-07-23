@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Ryder_Standard_Letterhead</letterhead>
+    <name>Appointment Notice</name>
+    <style>freeForm</style>
+    <subject>Appointment Notice</subject>
+    <textOnly>Company Name:
+
+Address: 	
+
+
+# of  years in business	 
+
+Contact Name: 
+	 
+Title: 	
+ 
+Email: 	
+ 
+Industry: 	 
+
+Type of Cargo: 
+	 
+Rent ? If Yes, with whom: 	
+ 
+Are your rental’s seasonal: If yes, Season: 
+	 
+Own? (Capital or Bank): 	
+ 
+Ever Leased? With Whom?
+	 
+# of trucks: Make/Model/Year
+	 
+Miles per year, per truck:
+ 	 
+States Traveled:
+	 
+MAINTENANCE: Inside or Outside? With Whom?
+	 
+Distance from shop (review book) 	 
+
+Pre-Qualified Credit Score: (1-3: Pursue Opp, 3-4, Pursue with caution, 4-5 High Risk)
+	 
+Budget? 
+Timeline?	
+ 
+Objective</textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Assignment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Assignments</value>
+    </caseValues>
+    <fields>
+        <help><!-- Date the assignment should end. --></help>
+        <label><!-- Assignment End Date --></label>
+        <name>Assignment_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the assignment should start --></help>
+        <label><!-- Assignment Start Date --></label>
+        <name>Assignment_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of survey activities that will be distributed in a given day. --></help>
+        <label><!-- Number of Activities --></label>
+        <name>Number_of_Activities__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of users that will be assigned survey activities. --></help>
+        <label><!-- Number of Users --></label>
+        <name>Number_of_Users__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the type of survey that is being conducted. --></help>
+        <label><!-- Survey Sub-Type --></label>
+        <name>Survey_Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAFETY-KLEEN</masterLabel>
+            <translation><!-- SAFETY-KLEEN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Type --></label>
+        <name>Survey_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer Sat Survey</masterLabel>
+            <translation><!-- Customer Sat Survey --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Survey Assignment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Add_More --></label>
+        <name>Add_More</name>
+    </webLinks>
+</CustomObjectTranslation>

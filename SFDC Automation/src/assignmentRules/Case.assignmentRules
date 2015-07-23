@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>District Case Assignment</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>Proposal_Response_Team</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.Name = &apos;Proposal Response&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>CreatedBy.Profile.Name = &apos;Legal&apos; &amp;&amp; RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>isabel_cardona@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Sales_Territory__c = &apos;National Sales - East&apos; &amp;&amp; RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>isabel_cardona@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Sales_Territory__c = &apos;National Enterprise Sales&apos; &amp;&amp; RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>isabel_cardona@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Region__c  = &apos;Northeast&apos; &amp;&amp;  RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>lina_trennert@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Sales_Territory__c = &apos;National Sales - West&apos; &amp;&amp;  RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>lina_trennert@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>(CreatedBy.Region__c = &apos;Southeast&apos;) &amp;&amp;  RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>lina_trennert@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Region__c = &apos;Central&apos; &amp;&amp;  RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>lina_trennert@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Sales_Territory__c = &apos;National Sales - Central&apos; &amp;&amp;  RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>angela_c_rueda@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Region__c = &apos;West&apos; &amp;&amp; RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>angela_c_rueda@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>CreatedBy.Region__c = &apos;Canada&apos; &amp;&amp;  RecordType.Name = &apos;Legal Cases&apos;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>isabel_cardona@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Account.CustomerTypeID__c</field>
+                <operation>equals</operation>
+                <value>FMS Rental</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Legal Cases</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos;  &amp;&amp;
+or(ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3001&quot;), MID( FIS_Account__c , 9,4) =&quot;3001&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3002&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3004&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3006&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3008&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3009&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3010&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3011&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3012&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3013&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3014&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3015&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3017&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3018&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3020&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3022&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3023&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3024&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3025&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3026&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3027&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3030&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3033&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3035&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3036&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3040&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3041&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3043&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3046&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3047&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3048&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3049&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3050&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3052&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3053&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3054&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3058&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3060&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3061&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3062&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3064&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3065&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3066&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3067&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3070&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3071&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3074&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3075&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3078&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3080&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3081&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3083&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3086&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3090&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3091&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3096&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3097&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3110&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>sonya_simmons@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3115&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3117&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3119&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3130&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_haggerty@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; 
+or(ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3131&quot;), MID( trim(FIS_Account__c) , 9,4) =&quot;3131&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3137&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3141&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3142&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ermelinda_brown@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3152&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>tanya_mitchell@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3162&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>terri_curry@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3163&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>ralph_j_decasseres@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3170&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>amy_winland@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3174&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>rlloyd@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3179&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>atucker@ryder.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <formula>$RecordType.Name &lt;&gt; &apos;Sales Pilot&apos; &amp;&amp; ISPICKVAL(Customer_Branch__r.Ryder_Branch__r.District__c, &quot;3122&quot;)</formula>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

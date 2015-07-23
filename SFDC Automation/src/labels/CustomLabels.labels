@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AbuseAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AbuseAmount</shortDescription>
+        <value>Abuse Amount</value>
+    </labels>
+    <labels>
+        <fullName>AbuseType</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AbuseType</shortDescription>
+        <value>Abuse Type</value>
+    </labels>
+    <labels>
+        <fullName>AccidentAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccidentAmount</shortDescription>
+        <value>Accident Amount</value>
+    </labels>
+    <labels>
+        <fullName>AccidentType</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccidentType</shortDescription>
+        <value>Accident Type</value>
+    </labels>
+    <labels>
+        <fullName>AccomodationAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccomodationAmount</shortDescription>
+        <value>Accomodation Amount</value>
+    </labels>
+    <labels>
+        <fullName>AccomodationType</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccomodationType</shortDescription>
+        <value>Accomodation Type</value>
+    </labels>
+    <labels>
+        <fullName>Activity_Type</fullName>
+        <categories>Activity Types for Last Activity Date</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Activity Type</shortDescription>
+        <value>Cold Call Face to Face,Deliver Proposal,Face to Face,Face to Face with Decision Maker,Get Signed Deal</value>
+    </labels>
+    <labels>
+        <fullName>AlgorithCode</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AlgorithCode</shortDescription>
+        <value>Algorith Code</value>
+    </labels>
+    <labels>
+        <fullName>ApproveLargeOppCount</fullName>
+        <categories>VehicleCountOnOpportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApproveLargeOppCount</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>ApproveLargeOppDate</fullName>
+        <categories>DateFromWhichLargeOpportunityToBeConsidered</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApproveLargeOppDate</shortDescription>
+        <value>2015-07-09</value>
+    </labels>
+    <labels>
+        <fullName>ApproveLargeOppStage</fullName>
+        <categories>StageName of Opportunities</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ApproveLargeOppStage</shortDescription>
+        <value>&apos;Booked&apos;,&apos;Lost&apos;</value>
+    </labels>
+    <labels>
+        <fullName>CeilingAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CeilingAmount</shortDescription>
+        <value>Ceiling Amount</value>
+    </labels>
+    <labels>
+        <fullName>Daily</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Daily</shortDescription>
+        <value>Daily</value>
+    </labels>
+    <labels>
+        <fullName>Disel</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Disel</shortDescription>
+        <value>Disel</value>
+    </labels>
+    <labels>
+        <fullName>Exclude_RecordTypes_On_HQ_Visit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exclude RecordTypes On HQ Visit</shortDescription>
+        <value>01260000000ULy2AAG</value>
+    </labels>
+    <labels>
+        <fullName>FPSScore</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FPSScore</shortDescription>
+        <value>FPS Score</value>
+    </labels>
+    <labels>
+        <fullName>FloorAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FloorAmount</shortDescription>
+        <value>Floor Amount</value>
+    </labels>
+    <labels>
+        <fullName>FuelRatesInformation</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FuelRatesInformation</shortDescription>
+        <value>Fuel Rates Information</value>
+    </labels>
+    <labels>
+        <fullName>HostURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HostURL</shortDescription>
+        <value>https://cs17.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>IAMProfiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IAMProfiles</shortDescription>
+        <value>00e60000001BfDIAA0
+00e60000001BbFcAAK
+00e60000001BbFXAA0
+00e60000001BUz2AAG
+00e60000001BUzAAAW</value>
+    </labels>
+    <labels>
+        <fullName>Labor</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Labor</shortDescription>
+        <value>Labor</value>
+    </labels>
+    <labels>
+        <fullName>LaborDoubleOvertime</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LaborDoubleOvertime</shortDescription>
+        <value>Labor Double Overtime</value>
+    </labels>
+    <labels>
+        <fullName>LaborOvertime</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LaborOvertime</shortDescription>
+        <value>Labor Overtime</value>
+    </labels>
+    <labels>
+        <fullName>LatestUpdateProfiles</fullName>
+        <categories>Profiles</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LatestUpdateProfiles</shortDescription>
+        <value>SAC,NCA</value>
+    </labels>
+    <labels>
+        <fullName>LatestUpdateType</fullName>
+        <categories>TaskType</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LatestUpdateType</shortDescription>
+        <value>Account/Opportunity Update</value>
+    </labels>
+    <labels>
+        <fullName>Lease</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lease</shortDescription>
+        <value>Lease</value>
+    </labels>
+    <labels>
+        <fullName>LeaseExtra</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeaseExtra</shortDescription>
+        <value>Lease Extra</value>
+    </labels>
+    <labels>
+        <fullName>MarkupCostPerGallon</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MarkupCostPerGallon</shortDescription>
+        <value>Markup Cost Per Gallon</value>
+    </labels>
+    <labels>
+        <fullName>MarkupRate</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MarkupRate</shortDescription>
+        <value>Markup Rate</value>
+    </labels>
+    <labels>
+        <fullName>Mileage</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mileage</shortDescription>
+        <value>Mileage</value>
+    </labels>
+    <labels>
+        <fullName>MiscellaneousAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MiscellaneousAmount</shortDescription>
+        <value>Miscellaneous Amount</value>
+    </labels>
+    <labels>
+        <fullName>MiscellaneousType</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MiscellaneousType</shortDescription>
+        <value>Miscellaneous Type</value>
+    </labels>
+    <labels>
+        <fullName>Monthly</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Monthly</shortDescription>
+        <value>Monthly</value>
+    </labels>
+    <labels>
+        <fullName>NVI_Default_Amount</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NVI Default Amount</shortDescription>
+        <value>Truck,60000#Tractor,100000#Trailer,40000#Van,30000#Refrigerated,80000</value>
+    </labels>
+    <labels>
+        <fullName>NewsafetyDirectors</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NewSafetyDirectors</shortDescription>
+        <value>Northeast,Jeff Rogers,jeff_rogers@ryder.com#
+Central,Chris Marks,cmarks@ryder.cm#
+Southeast,Larry Heldt,lheldt@ryder.com#
+West,George Bowers,george_bowers@ryder.com#</value>
+    </labels>
+    <labels>
+        <fullName>Oil</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Oil</shortDescription>
+        <value>Oil</value>
+    </labels>
+    <labels>
+        <fullName>OppRecordTypeUVS</fullName>
+        <categories>Id of the UVS Opp Record Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OppRecordTypeUVS</shortDescription>
+        <value>01260000000YKrZAAW</value>
+    </labels>
+    <labels>
+        <fullName>OutsideAccident</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OutsideAccident</shortDescription>
+        <value>Outside Accident</value>
+    </labels>
+    <labels>
+        <fullName>OutsideMarkupRate</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OutsideMarkupRate</shortDescription>
+        <value>Outside Markup Rate</value>
+    </labels>
+    <labels>
+        <fullName>PartsPercentage</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Parts%</shortDescription>
+        <value>Parts%</value>
+    </labels>
+    <labels>
+        <fullName>PureRentalAccRecType</fullName>
+        <categories>RecordTypeId of Pure Rental Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PureRentalAccRecType</shortDescription>
+        <value>01260000000UEihAAG</value>
+    </labels>
+    <labels>
+        <fullName>RSMNonKeyAccountCCMUser</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RSMNonKeyAccountCCMUser</shortDescription>
+        <value>00560000003dMTcAAM</value>
+    </labels>
+    <labels>
+        <fullName>RebillableRatesInformation</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RebillableRatesInformation</shortDescription>
+        <value>Rebillable Rates Information</value>
+    </labels>
+    <labels>
+        <fullName>RebillableRatesInformationText</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RebillableRatesInformationText</shortDescription>
+        <value>(*) rates differ between vehicles of this branch. Check individual vehicle detail.</value>
+    </labels>
+    <labels>
+        <fullName>Reefer</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reefer</shortDescription>
+        <value>Reefer</value>
+    </labels>
+    <labels>
+        <fullName>Rental</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Rental</shortDescription>
+        <value>Rental</value>
+    </labels>
+    <labels>
+        <fullName>RentalRatesInformation</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RentalRatesInformation</shortDescription>
+        <value>Rental Rates Information</value>
+    </labels>
+    <labels>
+        <fullName>RepairAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RepairAmount</shortDescription>
+        <value>Repair Amount</value>
+    </labels>
+    <labels>
+        <fullName>RepairType</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RepairType</shortDescription>
+        <value>Repair Type</value>
+    </labels>
+    <labels>
+        <fullName>Ryder_Event_Record_ID</fullName>
+        <categories>Record Type ID for Last Activity Date</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ryder Event Record ID</shortDescription>
+        <value>01260000000UDx0AAG</value>
+    </labels>
+    <labels>
+        <fullName>Ryder_Sales_Profiles</fullName>
+        <categories>Ryder Sales Profiles for Last Activity Date</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ryder Sales Profiles</shortDescription>
+        <value>BDM,CDM,DNA,DBD,Inside Sales,Inside Sales Manager,National Inside Account Manager</value>
+    </labels>
+    <labels>
+        <fullName>Ryder_Task_Record_ID</fullName>
+        <categories>Record Type ID for Last Activity Date</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ryder Task Record ID</shortDescription>
+        <value>01260000000UDwvAAG</value>
+    </labels>
+    <labels>
+        <fullName>SafetyDirectors</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SafetyDirectors</shortDescription>
+        <value>Parking Lot#donnelly@ryder.com;Natrual Gas#Chris_Nordh@ryder.com</value>
+    </labels>
+    <labels>
+        <fullName>ServiceVehicle</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ServiceVehicle</shortDescription>
+        <value>Service Vehicle</value>
+    </labels>
+    <labels>
+        <fullName>SpecialAmount</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SpecialAmount</shortDescription>
+        <value>Special Amount</value>
+    </labels>
+    <labels>
+        <fullName>SpecialType</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SpecialType</shortDescription>
+        <value>Special Type</value>
+    </labels>
+    <labels>
+        <fullName>Standby</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Standby</shortDescription>
+        <value>Standby</value>
+    </labels>
+    <labels>
+        <fullName>TSA_Lead_Assignment_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TSA Lead Assignment Queue</shortDescription>
+        <value>Northeast,00G60000002hdoPEAQ#Canada,00G60000002hdoAEAQ#Central,00G60000002hdoFEAQ#Southeast,00G60000002hdoUEAQ#West,00G60000002hdoZEAQ#General,00G60000002hdoKEAQ</value>
+    </labels>
+    <labels>
+        <fullName>TSA_Lead_Assignment_QueueIncluded</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TSA_Lead_Assignment_QueueIncluded</shortDescription>
+        <value>00560000001P0FrAAK</value>
+    </labels>
+    <labels>
+        <fullName>TiresPercentage</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tires%</shortDescription>
+        <value>Tires%</value>
+    </labels>
+    <labels>
+        <fullName>UVSProfileForUTC</fullName>
+        <categories>User Profile for which UTC needs to be assigned.</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UVSProfileForUTC</shortDescription>
+        <value>00e60000001JhmC</value>
+    </labels>
+    <labels>
+        <fullName>UVS_Profile_Ids</fullName>
+        <categories>UserProfile</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UVS Profile Ids</shortDescription>
+        <value>00e60000001Jhm9AAC
+00e60000001JhmAAAS
+00e60000001JhmCAAS
+00e60000001Jhm7AAC
+00e60000001Jhm8AAC</value>
+    </labels>
+    <labels>
+        <fullName>UVS_SA_Pricing_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UVS_SA_Pricing_User</shortDescription>
+        <value>Stephnie#00560000003d7QsAAI,Greta#00532000004KWQC</value>
+    </labels>
+    <labels>
+        <fullName>UVS_SIC_Code</fullName>
+        <categories>Default SIC Code</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UVS SIC Code</shortDescription>
+        <value>4789</value>
+    </labels>
+    <labels>
+        <fullName>UsageCode</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UsageCode</shortDescription>
+        <value>Usage Code</value>
+    </labels>
+    <labels>
+        <fullName>Weekly</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Weekly</shortDescription>
+        <value>Weekly</value>
+    </labels>
+    <labels>
+        <fullName>Wreckage</fullName>
+        <categories>VehicleRate</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wreckage</shortDescription>
+        <value>Wreckage</value>
+    </labels>
+</CustomLabels>

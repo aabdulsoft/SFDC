@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Solutions Interest</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Solutions Interests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact Id --></label>
+        <name>Contact_Id__c</name>
+        <relationshipLabel><!-- Solutions Interests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Latest Source --></label>
+        <name>Latest_Source__c</name>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blitz</masterLabel>
+            <translation><!-- Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation><!-- CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMBO</masterLabel>
+            <translation><!-- COMBO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concentrix</masterLabel>
+            <translation><!-- Concentrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Marketing</masterLabel>
+            <translation><!-- Corporate Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBD</masterLabel>
+            <translation><!-- DBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNA</masterLabel>
+            <translation><!-- DNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B Local Marketing</masterLabel>
+            <translation><!-- F&amp;B Local Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRM</masterLabel>
+            <translation><!-- NRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Counter</masterLabel>
+            <translation><!-- Rental Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Id --></label>
+        <name>Lead_Id__c</name>
+        <relationshipLabel><!-- Solutions Interests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Source --></label>
+        <name>Original_Source__c</name>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blitz</masterLabel>
+            <translation><!-- Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation><!-- CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMBO</masterLabel>
+            <translation><!-- COMBO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concentrix</masterLabel>
+            <translation><!-- Concentrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Marketing</masterLabel>
+            <translation><!-- Corporate Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBD</masterLabel>
+            <translation><!-- DBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNA</masterLabel>
+            <translation><!-- DNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B Local Marketing</masterLabel>
+            <translation><!-- F&amp;B Local Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRM</masterLabel>
+            <translation><!-- NRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Counter</masterLabel>
+            <translation><!-- Rental Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Detail --></label>
+        <name>Product_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Choice Lease</masterLabel>
+            <translation><!-- Choice Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comprehensive</masterLabel>
+            <translation><!-- Comprehensive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dry Trailer</masterLabel>
+            <translation><!-- Dry Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flatbed Trailer</masterLabel>
+            <translation><!-- Flatbed Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flex</masterLabel>
+            <translation><!-- Flex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gap</masterLabel>
+            <translation><!-- Gap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hazmat</masterLabel>
+            <translation><!-- Hazmat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liability</masterLabel>
+            <translation><!-- Liability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market</masterLabel>
+            <translation><!-- Market --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPIS</masterLabel>
+            <translation><!-- OPIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Demand</masterLabel>
+            <translation><!-- On Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Damage</masterLabel>
+            <translation><!-- Physical Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus</masterLabel>
+            <translation><!-- Plus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plus One</masterLabel>
+            <translation><!-- Plus One --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preventive</masterLabel>
+            <translation><!-- Preventive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reefer Trailer</masterLabel>
+            <translation><!-- Reefer Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reefer Truck</masterLabel>
+            <translation><!-- Reefer Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Axle Sleeper</masterLabel>
+            <translation><!-- Single Axle Sleeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Axle Tractor</masterLabel>
+            <translation><!-- Single Axle Tractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stake or Flatbed Truck</masterLabel>
+            <translation><!-- Stake or Flatbed Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tandem Axle Sleeper</masterLabel>
+            <translation><!-- Tandem Axle Sleeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tandem Axle Tractor</masterLabel>
+            <translation><!-- Tandem Axle Tractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tank Truck</masterLabel>
+            <translation><!-- Tank Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tanker Trailer</masterLabel>
+            <translation><!-- Tanker Trailer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck</masterLabel>
+            <translation><!-- Truck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VOSA</masterLabel>
+            <translation><!-- VOSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Van</masterLabel>
+            <translation><!-- Van --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>Dedicated Carrier</masterLabel>
+            <translation><!-- Dedicated Carrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuel</masterLabel>
+            <translation><!-- Fuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease</masterLabel>
+            <translation><!-- Lease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RydeSmart</masterLabel>
+            <translation><!-- RydeSmart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder Fleet Products</masterLabel>
+            <translation><!-- Ryder Fleet Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply Chain &amp; Logistics</masterLabel>
+            <translation><!-- Supply Chain &amp; Logistics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Vehicles</masterLabel>
+            <translation><!-- Used Vehicles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Score --></label>
+        <name>Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>-- None --</masterLabel>
+            <translation><!-- - -  None - -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified</masterLabel>
+            <translation><!-- Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renurture</masterLabel>
+            <translation><!-- Renurture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspect</masterLabel>
+            <translation><!-- Suspect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unqualified</masterLabel>
+            <translation><!-- Unqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unread</masterLabel>
+            <translation><!-- Unread --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Solutions Interest Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

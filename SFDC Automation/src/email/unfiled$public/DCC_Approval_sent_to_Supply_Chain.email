@@ -1,0 +1,10 @@
+The FMS sales team has identified a newly approved FMS National Account for DCC conversion.  Please take a look at this account and assign to a team member for immediate follow up. 
+
+Account: {!Account.Name}
+Branch:{!Customer_Branch__c.Name}
+Branch Owner: {!Customer_Branch__c.Customer_Branch_Owner__c}
+Vehicle Count at Customer Branch: {!Customer_Branch__c.VEH_COUNT__c}
+Vehicle Count at Parent Account:{!Account.Total_Active_Vehicles__c}
+
+Thank you,
+FMS Product Management

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Contacts vs Key Contacts</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>DYK3</name>
+    <style>none</style>
+    <subject>Contacts vs. Key Contacts</subject>
+    <textOnly>Contacts vs. Key Contacts
+Each contact loaded into salesforce.com has its own record which can be accessed through the account or contact tab (as well as using the search feature).  Contacts not associated with accounts are private and cannot be viewed by other users or included in reports.
+CSI and Maintenance contacts are considered “Key Contacts”. A contact can be designated as a key contact for all branch locations (by assigning the contact’s role status at the “contact” level) or for specific branch(s).
+ 
+Designating Key Contact (s) at the Branch Level
+Designating a key contact at the branch level is simply a matter of accessing the Account record; selecting the appropriate branch; scrolling down to the Key Contacts section and selecting &quot;New Key Contact&quot;
+
+ 
+Inactivating a Contact
+Each contact record includes a &quot;Status Active&quot; flag in the &quot;Contact Detail&quot; section. The default setting is active. To inactivate a contact, simply deselect the checked box within this flag. Once deselected, the contact will no longer show up on a user&apos;s &quot;contacts list&quot;. 
+ 
+ 
+Key Contacts Cannot be Deactivated
+If your contact is a &quot;key contact&quot;, the system will not allow you to deactivate.  If a contact is no longer a key contact (i.e. CSI or Maintenance), you need to un-assign it. If this is a key contact for all branch locations, this is done by resetting the All Branches designation at the contact level back to “None”. 
+
+If it is a key contact for specific branches, you need to delete the key contact designation in that branch. Once deleted, a different contact should be assigned to this role. 
+
+ 
+ The information contained in this electronic communication and any accompanying document is confidential, may be attorney-client privileged, and is intended only for the use of the addressee. It is the property of Ryder System,
+ Inc. Unauthorized use, disclosure or copying of this communication, or any part of it, is strictly prohibited and&lt;
+ may be unlawful. If you have received this communication in error, please notify the sender immediately by return
+ email, and destroy this communication and all copies of it, including all attachments. Electronic communication
+ may be susceptible to data corruption, interception and unauthorized tampering and Ryder disclaims all liability
+ of any kind for such actions or any consequences that may arise directly or indirectly therefrom.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

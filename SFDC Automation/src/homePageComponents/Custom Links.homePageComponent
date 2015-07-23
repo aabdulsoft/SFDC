@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>My_Pipeline_Summary</links>
+    <links>My_Vehicle_Termout_Report</links>
+    <links>Vehicle_Term_Out_Report_by_Account_Owner</links>
+    <links>Vehicle_Term_Out_Report_for_IAMs</links>
+    <links>Pipeline_Cleanup_Lost_Deals</links>
+    <links>Pipeline_Cleanup_Won_Deals</links>
+    <links>Pipeline_Cleanup_Lost_Deals_National</links>
+    <links>Pipeline_Cleanup_Won_Deals_National</links>
+    <links>My_Customer_Branches_Branch_Detail</links>
+    <links>My_Customer_Branches_Unit_Detail</links>
+    <links>My_BOB_Summary</links>
+    <links>My_BOB_Summary_IAM</links>
+    <links>My_BOB_with_Expirations_over_Time</links>
+    <links>Key_Contacts_for_My_Customer_Branches</links>
+    <links>My_Credit_Tasks</links>
+    <links>Failed_Surveys_for_My_Sales_Territory</links>
+    <links>RRP_Extended_Warranty_Pricing_Calculator</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer / Branch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer / Branch</value>
+    </caseValues>
+    <fields>
+        <help><!-- Place additional comments for service handling
+
+SMO Field: Text in this field and Other Misc. Billing Information field make up the Comments field in SMO --></help>
+        <label><!-- Additional Comments --></label>
+        <name>Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- The region associated to this customer/branch - a correlation to the region of the Ryder branch. --></help>
+        <label><!-- Area Name --></label>
+        <name>Area_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Roll-up for # of Billing Contacts on Customer Branch --></help>
+        <label><!-- Billing Key Contact Roll-up --></label>
+        <name>Billing_Key_Contact_Roll_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blanket PO Number --></label>
+        <name>Blanket_PO_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Branch Anniversary Date --></help>
+        <label><!-- Branch Anniversary Date --></label>
+        <name>BranchAnniversaryDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSI Key Contact Roll-up --></label>
+        <name>CSI_Key_Contact_Roll_up__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe any components not included in Service
+
+SMO Field: Component Not Included in Maintenance Plan --></help>
+        <label><!-- Components Not Included --></label>
+        <name>Components_Not_Included__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Customer Branches --></label>
+        <name>Count_of_Customer_Branches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch Owner --></label>
+        <name>Customer_Branch_Owner__c</name>
+        <relationshipLabel><!-- Customer / Branch (Customer Branch Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether a Customer/Branch has active vehicles. --></help>
+        <label><!-- Customer Branch Status --></label>
+        <name>Customer_Branch_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Requires PO --></label>
+        <name>Customer_Requires_PO__c</name>
+    </fields>
+    <fields>
+        <label><!-- DCC Approval --></label>
+        <name>DCC_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field shows that you cannot change the IAM field --></help>
+        <label><!-- Do Not Change IAM --></label>
+        <name>Do_Not_Change_IAM__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field denotes that this CB is managed by an IAM --></help>
+        <label><!-- IAM Managed --></label>
+        <name>IAM_Managed__c</name>
+    </fields>
+    <fields>
+        <label><!-- IAM --></label>
+        <name>IAM__c</name>
+        <relationshipLabel><!-- Customer / Branch (IAM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Date --></label>
+        <name>LastSurveyDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Survey Submission Date --></label>
+        <name>LastSurveySubmissionDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 months FSL revenue --></label>
+        <name>Last_12_months_FSL_revenue_c_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 months RPM revenue --></label>
+        <name>Last_12_months_RPM_revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Score for the branch that identifies the customer satisfaction ranking from the results of the surveys. --></help>
+        <label><!-- Lease - CS Score --></label>
+        <name>Lease_CS_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maint Key Contact Roll-up --></label>
+        <name>Maint_Key_Contact_Roll_up__c</name>
+    </fields>
+    <fields>
+        <label><!-- MigratedFrom --></label>
+        <name>MigratedFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing Key Contact Flag --></label>
+        <name>Missing_Key_Contact_Flag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please specify Subs for PM&apos;s
+
+SMO Field: Other Instructions --></help>
+        <label><!-- Other Instructions --></label>
+        <name>Other_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter billing information details
+
+SMO Field: Text in this field and Additional Comments field make up the Comments field in SMO --></help>
+        <label><!-- Other Misc. Billing Information --></label>
+        <name>Other_Misc_Billing_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Power Unit Count --></label>
+        <name>Power_Unit_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- SMO Field: Approval or PO if exceeds --></help>
+        <label><!-- Pre-authorized Repair Amount --></label>
+        <name>Pre_authorized_Repair_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- If Checked, the Customer has pre-authorized repairs. 
+
+SMO Field: Customer PO Required --></help>
+        <label><!-- Pre-authorized Repairs --></label>
+        <name>Pre_authorized_Repairs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Account Contact --></label>
+        <name>Primary_Account_Contact__c</name>
+        <relationshipLabel><!-- Customer / Branch --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact Count --></label>
+        <name>Primary_Contact_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plus1 Approved Vehicle Count --></label>
+        <name>RSM_Plus1_Approved_Vehicle_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plus Approved Vehicle Count --></label>
+        <name>RSM_Plus_Approved_Vehicle_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- STD Approved Vehicle Count --></label>
+        <name>RSM_STD_Approved_Vehicle_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rated FSL revenue --></label>
+        <name>Rated_FSL_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rated RPM revenue --></label>
+        <name>Rated_RPM_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk Status --></label>
+        <name>Risk_Status__c</name>
+        <picklistValues>
+            <masterLabel>At Risk</masterLabel>
+            <translation><!-- At Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation><!-- Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Status</masterLabel>
+            <translation><!-- No Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stable</masterLabel>
+            <translation><!-- Stable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ryder Branch --></label>
+        <name>Ryder_Branch__c</name>
+        <relationshipLabel><!-- Customer / Branch --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ryder HQ Account --></label>
+        <name>Ryder_HQ_Account__c</name>
+        <relationshipLabel><!-- Customer / Branch --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Are speed changes authorized and by whom
+
+SMO Field: Are speed changes authorized and by whom --></help>
+        <label><!-- Speed Changes --></label>
+        <name>Speed_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Zone --></label>
+        <name>Time_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- User on Hierarchy --></label>
+        <name>User_on_Hierarchy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Count --></label>
+        <name>VEH_COUNT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ext Cust Branch Id --></label>
+        <name>ext_customerbranch_id__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer Branch Layout</layout>
+        <sections>
+            <label><!-- Account General Instructions for All Branches --></label>
+            <section>Account General Instructions for All Branches</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Key Contacts --></label>
+            <section>Custom Key Contacts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Care Plan --></label>
+            <section>Customer Care Plan</section>
+        </sections>
+        <sections>
+            <label><!-- General Instructions --></label>
+            <section>General Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Instruction for Repair Work --></label>
+            <section>Instruction for Repair Work</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Branch Layout for National Profile</layout>
+        <sections>
+            <label><!-- Account General Instructions for All Branches --></label>
+            <section>Account General Instructions for All Branches</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Key Contacts --></label>
+            <section>Custom Key Contacts</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Care Plan --></label>
+            <section>Customer Care Plan</section>
+        </sections>
+        <sections>
+            <label><!-- General Instructions --></label>
+            <section>General Instructions</section>
+        </sections>
+        <sections>
+            <label><!-- Instruction for Repair Work --></label>
+            <section>Instruction for Repair Work</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Lease --></label>
+        <name>Contractual</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- UVS --></label>
+        <name>UVS</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the Customer Branch Name --></errorMessage>
+        <name>CannotEditCustomerBranchName</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot edit the Ryder HQ Account. --></errorMessage>
+        <name>CannotEditRyderHQAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You may only select one Primary Contact for the Customer / Branch.  Please change remove the existing Primary Contact before adding a new one. --></errorMessage>
+        <name>Primary_Contact_Count_Less_than_2</name>
+    </validationRules>
+</CustomObjectTranslation>

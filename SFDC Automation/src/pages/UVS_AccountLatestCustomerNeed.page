@@ -1,0 +1,26 @@
+<apex:page StandardController="Account" extensions="UVSAccountLatestCustomerNeedController">
+  <apex:pageblock mode="mainDetail">
+  <apex:pageBlockTable value="{!custNeed}" var="cn" rendered="{!IF(custNeed.size > 0 , true, false)}">
+    <!-- <apex:column headerValue="Solution Interest Detail Name">
+      <apex:outputLink value="/{!cn.Id}" target="_parent">
+      {!cn.Name}
+      </apex:outputLink>
+    </apex:column>
+    <apex:column headerValue="Solution Interest">
+      <apex:outputLink value="/{!cn.Solutions_Interest__c}" target="_parent">
+        {!cn.Solutions_Interest__r.Name}
+      </apex:outputLink>
+    </apex:column>
+    <apex:column headerValue="Contact">
+      <apex:outputLink value="/{!cn.Solutions_Interest__r.Contact_Id__c}" target="_parent" >
+        {!cn.Solutions_Interest__r.Contact_Id__r.Name}
+      </apex:outputLink>
+    </apex:column> -->
+    <apex:column value="{!cn.Vehicle_Name__c}"/>
+    <apex:column value="{!cn.Vehicle_Type__c}"/>
+  </apex:pageBlockTable>
+
+  <apex:pageMessages rendered="{!custNeed.size == 0}"/>
+  </apex:pageblock>
+
+</apex:page>

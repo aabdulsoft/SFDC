@@ -1,0 +1,122 @@
+<apex:page standardController="Quote" extensions="UVS_QLIRelatedList">
+<style>
+ .dataCell {
+   /* white-space:nowrap !important;*/
+  }
+</style>
+<apex:form >
+<apex:outputPanel id="thePanel" layout="block" style="width:1400px">
+  <apex:pageBlock title="Quote Line Items (UVS)" id="pBList">
+    <apex:pageBlockButtons location="top" >
+      <apex:commandButton value="Edit All" onClick="EditAll();" />
+      <apex:commandButton value="Sort" onClick="sortQuotes();" />
+      <apex:commandButton value="Add Product" onClick="addProduct();"/>
+
+    </apex:pageBlockButtons>
+    <div style="background-color:#000"><b>
+      <span style="color:#FF3333">Red = Sold</span> &nbsp;&nbsp;
+      <span style="color:#00cc00">Green = OverStock</span> &nbsp;&nbsp;
+      <span style="color:#ccffff"> Lt. Blue = Converted Sleeper Tractors</span>&nbsp;&nbsp;
+      <span style="color:#ffff99"> Yellow = As Is</span> &nbsp;&nbsp;
+      <span style="color:#FF8040"> Orange = Bank Of America</span> &nbsp;&nbsp;
+      <span style="color:#7fe57f"> Light Green = Non Compliant CA Unit</span> &nbsp;&nbsp;
+    </b></div>
+    <apex:pageBlockTable value="{!qliColorList}" var="qli" rendered="{!AND(NOT(ISNULL(qliColorList)),qliColorList.size > 0)}" id="pBList">
+      <apex:column styleClass="actionColumn"  headerValue="Action" style="width:1%;background-color:{!qli.color};">
+        <apex:outputLink onClick="editQLI('{!qli.qliWrap.Id}');" title="Edit - Record 1 - {!qli.qliWrap.Vehicle__r.Name}" styleClass="actionLink">
+           Edit
+        </apex:outputLink>
+          &nbsp;|&nbsp;
+
+        <apex:commandLink value="Del" onclick="if(!confirm('Are you sure?')) return false;" title="Delete - Record 1 - {!qli.qliWrap.Vehicle__r.Name}"
+        action="{!deleteRecord}" oncomplete="refreshParent();" styleClass="actionLink">
+          <apex:param name="deleteRecordId" assignTo="{!deleteRecordId}" value="{!qli.qliWrap.id}"/>
+        </apex:commandLink>
+      </apex:column>
+      <apex:column style="width:1%;background-color:{!qli.color};"  HeaderValue="Vehicle Number">
+        <apex:facet name="header">
+          Vehicle<br/>Number
+      </apex:facet>
+       <apex:outputlink value="/{!qli.qliWrap.Vehicle__c}" target="_parent">{!qli.qliWrap.Vehicle__r.Name} </apex:outputlink>
+      </apex:column>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.SAM_Class__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};" headerValue="Year" >
+        <apex:outputText value="{!qli.qliWrap.Model_Year__c}"></apex:outputText>
+      </apex:column>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Make_Model__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Vehicle__r.Branch_Name__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};">
+        <apex:facet name="header">
+          Days<br/>Held
+      </apex:facet>
+      <apex:outputField value="{!qli.qliWrap.Days_held__c}" />
+      </apex:column>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Eng_Mdl__c}"/>
+
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Vehicle__r.SAM_Odom__c}" HeaderValue="Odometer"/>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.NVI__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.NVI_Percent__c}"/>
+<!--  <apex:column style="width:1%;background-color:{!qli.color};" headervalue="Quantity" value="{!qli.qliWrap.Quantity}"/>  -->
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};" headerValue="Book Value" value="{!qli.qliWrap.Book_Value__c}">
+      </apex:column>
+
+      
+
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};" value="{!qli.qliWrap.UnitPrice}"/>
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};" value="{!qli.qliWrap.Take_Price2__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Take_Price_percent__c}"/>
+      <apex:column styleClass="USDInTwoCol" headerClass="USDInTwoCol" style="background-color:{!qli.color};" value="{!qli.qliWrap.Gain_Loss__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Vehicle__r.AS_IS_Vehicle__c}">
+      <apex:facet name="header">
+          As Is<br/>Vehicle
+      </apex:facet>
+      </apex:column>
+      <apex:column style="width:1%;background-color:{!qli.color};" value="{!qli.qliWrap.Vosa__c}"/>
+      <apex:column style="width:1%;background-color:{!qli.color};">
+       <apex:facet name="header">
+          Approved<br/>Price
+      </apex:facet>
+       <apex:outputField value="{!qli.qliWrap.Approved_Price__c}" />
+      </apex:column>
+      <apex:column style="width:1%;background-color:{!qli.color};">
+       <apex:facet name="header">
+          Approved<br/>% of Take
+      </apex:facet>
+      <apex:outputField value="{!qli.qliWrap.Approved_to_take__c}" />
+      </apex:column>
+    </apex:pageBlockTable>
+
+  </apex:pageBlock>
+ </apex:outputPanel>
+</apex:form>
+<script>
+  function addProduct() {
+
+    window.parent.location.href="/apex/AddProductsCustom?quoteId={!quote.Id}";
+  }
+  function editQLI(qliId){
+
+    window.parent.location.href="/"+qliId+"/e?retURL=/{!quote.Id}";
+  }
+  function sortQuotes() {
+    window.parent.location.href="/oppitm/lineitemsort.jsp?id={!quote.Id}&retURL=/{!quote.Id}";
+  }
+  function EditAll() {
+    window.parent.location.href="/quoteitm/multilineitem.jsp?quoteId={!quote.Id}&retURL=%2F{!quote.Id}";
+  }
+
+  function refreshParent() {
+    window.parent.location.href ="/{!quote.Id}";
+  }
+
+</script>
+ <style>
+.USDInTwoCol{
+   width:1%;
+   white-space:normal !important;
+}
+.USDInTwoCol th{
+   white-space:normal !important;
+}
+</style>
+</apex:page>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Provides an easy-to-use mechanism for the Marketing group to exclude specific accounts with key criteria and to change the active vehicle criteria for different survey types.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Exclusion_Field__c</fullName>
+        <description>Field used to exclude or include criteria from the list of survey candidates.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the criteria that should be excluded when determining the list of survey candidates.  Please remember each exclusion type will be used to remove any customers that meet this criteria from being surveyed.</inlineHelpText>
+        <label>Exclusion Field</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Account Name</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Country</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account State</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Type</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Lessee No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Risk Level</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Top 10 Ranking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle Count</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account City</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle Term Out</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Exclusion_Operator__c</fullName>
+        <description>Operator used to determine how the exclusion should be evaluated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please choose the operator that best describes how the exclusion should be evaluated.</inlineHelpText>
+        <label>Exclusion Operator</label>
+        <picklist>
+            <controllingField>Exclusion_Field__c</controllingField>
+            <picklistValues>
+                <fullName>starts with</fullName>
+                <controllingFieldValues>Account City</controllingFieldValues>
+                <controllingFieldValues>Account Country</controllingFieldValues>
+                <controllingFieldValues>Account Lessee No</controllingFieldValues>
+                <controllingFieldValues>Account Name</controllingFieldValues>
+                <controllingFieldValues>Account State</controllingFieldValues>
+                <controllingFieldValues>Account Type</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>contains</fullName>
+                <controllingFieldValues>Account City</controllingFieldValues>
+                <controllingFieldValues>Account Country</controllingFieldValues>
+                <controllingFieldValues>Account Lessee No</controllingFieldValues>
+                <controllingFieldValues>Account Name</controllingFieldValues>
+                <controllingFieldValues>Account State</controllingFieldValues>
+                <controllingFieldValues>Account Type</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>equals</fullName>
+                <controllingFieldValues>Account City</controllingFieldValues>
+                <controllingFieldValues>Account Country</controllingFieldValues>
+                <controllingFieldValues>Account Lessee No</controllingFieldValues>
+                <controllingFieldValues>Account Name</controllingFieldValues>
+                <controllingFieldValues>Account Risk Level</controllingFieldValues>
+                <controllingFieldValues>Account State</controllingFieldValues>
+                <controllingFieldValues>Account Top 10 Ranking</controllingFieldValues>
+                <controllingFieldValues>Account Type</controllingFieldValues>
+                <controllingFieldValues>Vehicle Count</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>not equal</fullName>
+                <controllingFieldValues>Account City</controllingFieldValues>
+                <controllingFieldValues>Account Country</controllingFieldValues>
+                <controllingFieldValues>Account Lessee No</controllingFieldValues>
+                <controllingFieldValues>Account Name</controllingFieldValues>
+                <controllingFieldValues>Account Risk Level</controllingFieldValues>
+                <controllingFieldValues>Account State</controllingFieldValues>
+                <controllingFieldValues>Account Top 10 Ranking</controllingFieldValues>
+                <controllingFieldValues>Account Type</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>less than</fullName>
+                <controllingFieldValues>Vehicle Count</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>greater than</fullName>
+                <controllingFieldValues>Vehicle Count</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>less than or equal</fullName>
+                <controllingFieldValues>Vehicle Count</controllingFieldValues>
+                <controllingFieldValues>Vehicle Term Out</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>greater than or equal</fullName>
+                <controllingFieldValues>Vehicle Count</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Exclusion_Value__c</fullName>
+        <description>Value used for the exclusion criteria.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please type the value (case-sensitive) desired to exclude based on the exclusion field.  (i.e. Exclusion Field = Account State, Exclusion Operator = equals, Exclusion Value = HI)</inlineHelpText>
+        <label>Exclusion Value</label>
+        <length>100</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Assignment__c</fullName>
+        <description>Survey exclusion can only apply to one survey type and one assignment group.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Survey exclusions only apply to one survey type and one assignment group.</inlineHelpText>
+        <label>Survey Assignment</label>
+        <referenceTo>Survey_Assignment__c</referenceTo>
+        <relationshipLabel>Survey Exclusions</relationshipLabel>
+        <relationshipName>Survey_Exclusions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Survey Exclusion</label>
+    <nameField>
+        <displayFormat>SE-{0000}</displayFormat>
+        <label>Survey Exclusion Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Survey Exclusions</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

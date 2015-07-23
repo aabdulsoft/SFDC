@@ -1,0 +1,1927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityType__c</fullName>
+        <description>Used to clone the type field value to use it in custom reporting. https://help.salesforce.com/apex/HTViewSolution?language=en_US&amp;id=000004232</description>
+        <externalId>false</externalId>
+        <label>Activity Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appointment_Set__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Appointment Set</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Area_Name__c</fullName>
+        <description>Region of the customer branch</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Region associated to the customer branch - used to determine how calls will be handled.</inlineHelpText>
+        <label>Area Name</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssignedToCurrentUser__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Id = $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AssignedToCurrentUser</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Assignment_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Mod(Value( RR_Number__c),5)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Assignment Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_24_7__c</fullName>
+        <description>Identify whether contact is available 24/7 for calls.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Determines whether contact is available 24/7 for calls.</inlineHelpText>
+        <label>Available_24_7</label>
+        <length>3</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_From__c</fullName>
+        <description>Identifies the timeframe from which the contact is available to talk to an agent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the time frame from which the contact is available to talk to an agent.</inlineHelpText>
+        <label>Available From</label>
+        <length>7</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Available_To__c</fullName>
+        <description>Identifies the end time for which the contact is available to talk to an agent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the end time for which the contact is available to talk to an agent.</inlineHelpText>
+        <label>Available To</label>
+        <length>7</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Branch__c</fullName>
+        <description>Location code, branch code to show which customer branch the task is related to</description>
+        <externalId>false</externalId>
+        <label>Branch Code</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CCO_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>CCO Reason</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CSI_Customer_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>CSI Customer ID</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Attempts__c</fullName>
+        <defaultValue>1</defaultValue>
+        <description>The number of attempts a call has been made to this customer branch this year.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The number of attempts a call has been made to this customer branch this year.</inlineHelpText>
+        <label>Call Attempts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Campaign_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign  ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCallDispositionId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Call Disposition Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCallDispositionOther__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Call Disposition Other</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCallDisposition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Call Disposition</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCampaignId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC CampaignId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCommitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Committed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCustomerCallDispositionId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Customer Call Disposition Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCustomerCallDisposition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Customer Call Disposition</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICCustomerNotes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Customer Notes</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Connection__ICEndTime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC End Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Connection__ICNoteCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Note Created</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Connection__ICRowNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC RowNumber</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICSessionID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC SessionID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICSessionName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC SessionName</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>DATE(
+     YEAR(DATEVALUE( Connection__ICStartTime__c )),
+     MONTH(DATEVALUE( Connection__ICStartTime__c )),
+     DAY(DATEVALUE( Connection__ICStartTime__c ))
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IC Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Connection__ICStartTime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Start Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Connection__ICUniqueId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Unique Id</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__ICWrapUpTime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Wrap Up Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_ContactDuration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total time spent with client (talk + wrap up) in minutes</description>
+        <externalId>false</externalId>
+        <formula>(Connection__ICWrapUpTime__c - Connection__ICStartTime__c ) * 1440</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total time spent with client (talk + wrap up) in minutes</inlineHelpText>
+        <label>IC Contact Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_EventDescription__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Event Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_EventEnd__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Event End</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_EventStart__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>IC Event Start</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_TalkDuration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>End - Start</description>
+        <externalId>false</externalId>
+        <formula>(Connection__ICEndTime__c - Connection__ICStartTime__c ) * 1440</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IC Talk Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_WrapupDuration__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Wrap up - End</description>
+        <externalId>false</externalId>
+        <formula>(Connection__ICWrapUpTime__c - Connection__ICEndTime__c)  * 1440</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IC Wrap-up Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Connection__IC_isIntelliconnectionEvent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>set to true if IC event</description>
+        <externalId>false</externalId>
+        <formula>IF((Subject  = &apos;IntelliConnection follow up call&apos;), true, false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IC Is Intelliconnection Event</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CreatedByCurrentUser__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Id = $User.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CreatedByCurrentUser</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100, &quot;Key Event/Task Details Captured&quot;,&quot;Missing: &quot;&amp;IF( LEN( Subject ) &lt; 3,&quot;Quality Subject Description, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN(WhoId)=0,&quot;Contact/Lead Reference, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN(WhatId)=0,&quot;Account/Opportunity Reference&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( LEN(  Subject  ) &lt; 3, 0,30) + IF( LEN(  WhoId ) = 0, 0,40) + IF( LEN(  WhatId ) = 0, 0,30)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_Overdue__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+AND (Today() -  Original_Due_Date__c &lt; 0, ISPICKVAL(Status, &apos;Not Started&apos;),Subject = &apos;Customer Sat Survey&apos;),
+AND(Today() - Original_Due_Date__c &lt; 0, NOT(ISPICKVAL(Status,&apos;Not Started&apos;)), Subject = &apos;Customer Sat Survey&apos;, DATEVALUE(LastModifiedDate) &lt;= Original_Due_Date__c)
+),0, 
+IF (
+AND (NOT(ISPICKVAL(Status,&apos;Not Started&apos;)), Subject = &apos;Customer Sat Survey&apos;,  DATEVALUE(LastModifiedDate) &gt;Original_Due_Date__c ), 
+DATEVALUE(LastModifiedDate) - Original_Due_Date__c, Today() - Original_Due_Date__c
+)
+)</formula>
+        <label>Days Overdue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Describe_the_customer_issue__c</fullName>
+        <externalId>false</externalId>
+        <label>Describe the customer issue(s)?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Disposition__c</fullName>
+        <externalId>false</externalId>
+        <label>Disposition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Incorrect contact/ info</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Left message</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spoke to contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Duration__c</fullName>
+        <externalId>false</externalId>
+        <formula>ROUND((NOW() - CreatedDate),0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Duration</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__ActivityDate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Activity Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EDP1__ActivityType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Activity Type</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__ActivityURL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Activity URL</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>EDP1__AssetName__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Asset Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__AssetType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Asset Type</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__Asset__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Asset</label>
+        <length>36</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Description</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>EDP1__ErrorText__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Error Text</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__IsError__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Is Error</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EDP1__IsProcessed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Eloqua Discover Is Processed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EDP1__OwnerId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Eloqua Discover Owner Id</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__ProspectId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Eloqua Discover Prospect Id</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EDP1__SortKey__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>Eloqua Discover Sort Key</label>
+        <length>30</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Estimated_Completion__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Completion</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>How_long_has_the_issue_been_going_on__c</fullName>
+        <externalId>false</externalId>
+        <label>How long has the issue been going on?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Initiative__c</fullName>
+        <externalId>false</externalId>
+        <label>Initiative</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BDM Target</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DBD Target</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Campaigns</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder OK (800#)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Legacy_Acivity_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Legacy Acivity Id</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>OnBehalfOfCurrentUser__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( $User.ContactId != null, If(WhoId= $User.ContactId,true,false), false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>OnBehalfOfCurrentUser</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Original_Assigned__c</fullName>
+        <description>The alias of the person that was originally assigned to the activity/task - used only for Survey Activities for Customer Satisfaction Survey.</description>
+        <externalId>false</externalId>
+        <label>Original Assigned</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Original_Due_Date__c</fullName>
+        <description>Due Date originally assigned to the survey activity.   This is used because there can be no formulas or data manipulations on the Due Date field as part of the standard SFDC limitations.</description>
+        <externalId>false</externalId>
+        <label>Original Due Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Orignal_Task_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Orignal Task Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RR_Number__c</fullName>
+        <description>Round robin number that will be used to assign activities to the users.</description>
+        <displayFormat>{0000000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>RR_Number</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RydeSmart_Sales_Questionnaire__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Subject = &apos;RydeSmart Sales Questionnaire&apos;, HYPERLINK(&apos;/apex/RSM_Sales_Questionnaire_Task_List?accId=&apos; +  WhatId+&apos;&amp;tId=&apos;+ Id    , &apos;RydeSmart Sales Questionnaire&apos; , &apos;_self&apos;), &apos;&apos;)</formula>
+        <label>&lt;font color=&quot;white&quot;&gt;&lt;/font&gt;</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_of_Issue__c</fullName>
+        <externalId>false</externalId>
+        <label>Source of Issue</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ACCOUNT MANAGEMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ASSET MANAGEMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BREAKDOWN ANALYSIS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAMPAIGN REQUEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAPTIVE SHOP ISSUE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>COMMUNICATION RECEIVED FROM SHOP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CSA 2010</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CUSTOMER CARE PLAN ISSUE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CUSTOMER REQUESTED ANALYSIS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CUSTOMER SPECIFIC REQUIREMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CUSTOMER TRAINING REQUEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CUSTOM REPORT REQUEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DVIR PROCESS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMERGENCY ROAD SERVICES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ENGINE PARAMETER SETTINGS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EXCESSIVE DOWNTIME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FACILITY MANAGEMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FACILITY PARKING</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FACILITY PARTS ISSUE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FACILITY SAFETY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FACILITY SECURITY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>FACILITY TOOLING ISSUE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HOURS OF OPERATION</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>INFORMATION REQUEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NEW EQUIPMENT ISSUE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NEW EQUIPMENT TRAINING</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OUTSIDE REPAIR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PM CURRENCY ISSUE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RCRC DECALS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RCRC SPECIAL INSTRUCTIONS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REGEN/DEF ISSUES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RENTAL/SUB VEHICLE AVAILABILITY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RENTAL/SUB VEHICLE CONDITION</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REPAIRS COMPLETED IN TIME PROMISED</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>REPAIRS DONE RIGHT THE FIRST TIME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RYDERS BILLING</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RYDESMART ISSUES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAFETY COMPLIANCE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SERVICE ISLAND ISSUES</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SERVICE REQUEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SPECIFICATIONS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TECH DESK TICKET</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TECHNICIAN QUALIFICATIONS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TRAINING MANAGEMENT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TRUCK WASHING SERVICE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>VEHICLE CONDITION DURING FLEET CHECK</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SurveyID__c</fullName>
+        <description>This field is used to store the ID of the Survey due to which this Task was created.</description>
+        <externalId>false</externalId>
+        <label>SurveyID</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Call_Date_Time__c</fullName>
+        <description>Date/Time that the survey should either be called or called back (based on conversation with survey respondent)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Choose the date/time the survey should take place based on a callback request.  (Note:  This is automatically set at the beginning of the day.)</inlineHelpText>
+        <label>Survey Call Date/Time</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Call_Result__c</fullName>
+        <description>Choose the call result once the initial call is made.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The call results should only be answered in the case of the status is Completed, Retry, or Deferred/Callback.</inlineHelpText>
+        <label>Survey Call Result</label>
+        <picklist>
+            <controllingField>Status</controllingField>
+            <picklistValues>
+                <fullName>Hangup</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refusal</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Disconnect</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <controllingFieldValues>Retry</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Same Day Reschedule</fullName>
+                <controllingFieldValues>Deferred/Callback</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Future Reschedule</fullName>
+                <controllingFieldValues>Deferred/Callback</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unavailable</fullName>
+                <controllingFieldValues>Retry</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Left Message</fullName>
+                <controllingFieldValues>Retry</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refusal - Too Busy</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Number Disconnected</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Contact</fullName>
+                <controllingFieldValues>Completed</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Survey_ID__c</fullName>
+        <description>The url provides a hyperlink to the results of the survey.  The survey is stored on the ClickTools server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The url provides a hyperlink to the results of the completed survey.</inlineHelpText>
+        <label>Survey Link</label>
+        <required>false</required>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Name__c</fullName>
+        <description>Used to store the Survey Name and ID for which the follow up task is created.</description>
+        <externalId>false</externalId>
+        <label>Survey Name</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Opt_Out_Reason__c</fullName>
+        <description>The reason is selected for a drop-down of values as to why the contact does not wish to participate in future surveys.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify the reason the contact does not wish to participate in future surveys.</inlineHelpText>
+        <label>Survey Opt-Out Reason</label>
+        <picklist>
+            <controllingField>Survey_Opt_Out__c</controllingField>
+            <picklistValues>
+                <fullName>Customer Request</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Interest</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lengthy Surveys</fullName>
+                <controllingFieldValues>No</controllingFieldValues>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Opt_Out__c</fullName>
+        <description>Once a refusal is detected and noted on the Survey Activity, the agent must accurately identify the caller requesting an opt-out of all surveys.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select yes/no to identify the contact does not wish to participate in any surveys in the future.</inlineHelpText>
+        <label>Survey Opt-Out</label>
+        <picklist>
+            <controllingField>Survey_Call_Result__c</controllingField>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <controllingFieldValues>Refusal</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <controllingFieldValues>Refusal</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Sub_Type__c</fullName>
+        <description>Identifies the type of survey that will be conducted.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identifies the type of survey that should be conducted.</inlineHelpText>
+        <label>Survey Sub-Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Submission_Date__c</fullName>
+        <description>Date/time the survey was submitted with the responses that were captured.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date/time the survey was submitted with the responses that were captured.</inlineHelpText>
+        <label>Survey Submission Date</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>TSA_Initiative_Other_notes__c</fullName>
+        <description>If the picklist value for the initiative is selected to be other notes need to be provided to describe the initiative</description>
+        <externalId>false</externalId>
+        <label>TSA_Initiative_Other_notes</label>
+        <length>250</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_Zone__c</fullName>
+        <externalId>false</externalId>
+        <label>Time Zone</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_are_the_root_causes_of_the_issues__c</fullName>
+        <externalId>false</externalId>
+        <label>What are the root causes of the issues?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_barriers_exist__c</fullName>
+        <externalId>false</externalId>
+        <label>What barriers exist?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_didnt_that_work__c</fullName>
+        <externalId>false</externalId>
+        <label>What did not work?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_has_been_done_to_rectify_it__c</fullName>
+        <externalId>false</externalId>
+        <label>What has been done to rectify it?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_needs_to_be_done_to_correct_it__c</fullName>
+        <externalId>false</externalId>
+        <label>What needs to be done to correct it?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>What_outcome_does_the_customer_want__c</fullName>
+        <externalId>false</externalId>
+        <label>What outcome does the customer want?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>With_whom_has_the_customer_discussed_it__c</fullName>
+        <externalId>false</externalId>
+        <label>With whom has the customer discussed it?</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>X60_Days_Status__c</fullName>
+        <description>Customer perception of the status of this issue</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer perception of the status of this issue. Will be automatically updated by the Survey Agent after the customer is contacted at 60 days for follow up</inlineHelpText>
+        <label>60 Days Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>ALL_Today_s_Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 2) AND (3 OR 4) AND 5</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Available_24_7__c</columns>
+        <columns>Available_From__c</columns>
+        <columns>Available_To__c</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Survey_Call_Date_Time__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>ALL Today&apos;s Survey Activities/Tasks</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Emails</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>TASK.RECORDTYPE</columns>
+        <columns>TASK.TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Email</value>
+        </filters>
+        <label>All Emails</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_non_survey_tasks_ForAdminView</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Ryder_Task</value>
+        </filters>
+        <label>All non survey tasks ForAdminView</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Care360</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.CREATED_DATE</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Care360</value>
+        </filters>
+        <filters>
+            <field>TASK.CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>8/1/2013 12:00 AM</value>
+        </filters>
+        <label>Care360</label>
+    </listViews>
+    <listViews>
+        <fullName>Customer_360_Failed_Survey_Tasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Care360</value>
+        </filters>
+        <label>Customer 360 Failed Survey Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>MyActivities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyDelegatedActivities</fullName>
+        <filterScope>Delegated</filterScope>
+        <label>My Delegated Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>MyTeamsActivities</fullName>
+        <filterScope>Team</filterScope>
+        <label>My Team&apos;s Activities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Call_Result__c</columns>
+        <columns>Survey_Submission_Date__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Available_24_7__c</columns>
+        <columns>Available_From__c</columns>
+        <columns>Available_To__c</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <columns>Time_Zone__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>My Survey Activities/Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Teams_Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Call_Result__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Available_24_7__c</columns>
+        <columns>Available_From__c</columns>
+        <columns>Available_To__c</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <columns>Time_Zone__c</columns>
+        <filterScope>Team</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>My Team&apos;s Survey Activities/Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Today_s_Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 3) AND 2 AND (4 OR 5) AND 6</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <columns>Time_Zone__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Survey_Call_Date_Time__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>equals</operation>
+            <value>Not Started,Completed,Deferred/Callback,Retry</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>My Today&apos;s Survey Activities/Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>Open_Todays_Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 3) AND (2  OR (6 AND 7)) AND (4 OR 5) AND 8</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Call_Result__c</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Available_24_7__c</columns>
+        <columns>Available_From__c</columns>
+        <columns>Available_To__c</columns>
+        <columns>TASK.CREATED_DATE</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Survey_Call_Date_Time__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>equals</operation>
+            <value>Not Started</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>equals</operation>
+            <value>Deferred/Callback</value>
+        </filters>
+        <filters>
+            <field>Survey_Call_Result__c</field>
+            <operation>equals</operation>
+            <value>Same Day Reschedule</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>My Open Today&apos;s Survey Activities/Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>OverDueSurveyAct</fullName>
+        <booleanFilter>(1 AND (2 OR 5) AND 3 AND (4 OR 6)) AND 7</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.CREATED_DATE</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>TASK.LAST_UPDATE</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>equals</operation>
+            <value>Not Started</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>Survey_Call_Date_Time__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>equals</operation>
+            <value>lmeye,jgill,tdavi,llepi,lforb</value>
+        </filters>
+        <label>OverDueSurveyAct</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Overdue_Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 5) AND 2 AND (3 OR 4) AND 6</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <columns>Time_Zone__c</columns>
+        <columns>Available_24_7__c</columns>
+        <columns>Available_From__c</columns>
+        <columns>Available_To__c</columns>
+        <columns>TASK.LAST_UPDATE_DATE_ONLY</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>equals</operation>
+            <value>Not Started</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Survey_Call_Date_Time__c</field>
+            <operation>lessThan</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>Overdue Survey Activities/Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>Survey_Activities_Tasks</fullName>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>Area_Name__c</columns>
+        <columns>Available_From__c</columns>
+        <columns>Available_To__c</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Call_Result__c</columns>
+        <columns>Survey_Submission_Date__c</columns>
+        <columns>TASK.CREATED_DATE</columns>
+        <columns>Survey_Sub_Type__c</columns>
+        <columns>Time_Zone__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Task.Survey</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Customer Sat Survey</value>
+        </filters>
+        <label>Survey Activities/Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>TodaysTasks</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Today&apos;s Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>UpcomingEvents</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Upcoming Events</label>
+    </listViews>
+    <listViews>
+        <fullName>all_open_tasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Call_Result__c</columns>
+        <columns>Survey_ID__c</columns>
+        <columns>Survey_Submission_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <label>all open tasks</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>all_tasks</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.PRIORITY</columns>
+        <columns>Survey_Call_Date_Time__c</columns>
+        <columns>Survey_Call_Result__c</columns>
+        <columns>TASK.TYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.TYPE</field>
+            <operation>equals</operation>
+            <value>Survey</value>
+        </filters>
+        <label>all closed tasks</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>soat__A1_My_Open_Tasks</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>TASK.STATUS</field>
+            <operation>equals</operation>
+            <value>In Progress</value>
+        </filters>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>equals</operation>
+            <value>Vehicles to De-Activate due to Sold or Off-Lease</value>
+        </filters>
+        <filters>
+            <field>TASK.WHAT_NAME</field>
+            <operation>equals</operation>
+            <value>376515</value>
+        </filters>
+        <label>A1 - My Open Tasks</label>
+    </listViews>
+    <listViews>
+        <fullName>soat__A2_My_Upcoming_Events</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.TYPE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>A2 - My Upcoming Events</label>
+    </listViews>
+    <listViews>
+        <fullName>soat__A3_My_Emails_to_Saleforce</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>startsWith</operation>
+            <value>Email</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:7</value>
+        </filters>
+        <label>A3 - My Emails to Saleforce This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>soat__A4_My_Unresolved_Emails_to_Saleforce</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>TASK.SUBJECT</field>
+            <operation>startsWith</operation>
+            <value>Unresolved</value>
+        </filters>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>A4 - My Unresolved Emails to Saleforce</label>
+    </listViews>
+    <listViews>
+        <fullName>soat__B1_My_Tasks_This_Week</fullName>
+        <columns>TASK.PRIORITY</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.TYPE</columns>
+        <columns>TASK.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>B1 - My Tasks This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>soat__B2_My_Events_This_Week</fullName>
+        <columns>TASK.SUBJECT</columns>
+        <columns>TASK.WHO_NAME</columns>
+        <columns>TASK.WHAT_NAME</columns>
+        <columns>TASK.DUE_DATE</columns>
+        <columns>TASK.STATUS</columns>
+        <columns>TASK.TYPE</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACTIVITY.TASK</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>TASK.DUE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>B2 - My Events This Week</label>
+    </listViews>
+    <searchLayouts>
+        <searchFilterFields>TASK.WHO_NAME</searchFilterFields>
+        <searchFilterFields>CORE.USERS.ALIAS</searchFilterFields>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

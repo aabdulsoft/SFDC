@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sam Class Limits</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sam Class Limits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Lower Limit --></label>
+        <name>Lower_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upper Limit --></label>
+        <name>Upper_Limit__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

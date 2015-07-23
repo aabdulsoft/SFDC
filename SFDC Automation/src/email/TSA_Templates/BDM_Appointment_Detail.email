@@ -1,0 +1,21 @@
+Here is the following information for your appointment: 
+
+Company: {!Account.Name}
+Contact: {!Contact.Name}
+Phone: {!Contact.Phone}
+
+Email: {!Contact.Email}
+Appointment: 
+
+Topics of Discussion: 
+Miles from Shop: 
+
+
+1. Years in business: 
+2. Industry: 
+3. Lease/own: 
+4. Length of time they keep their trucks: 
+5. Who handles their Maintenance: 
+
+
+Please let me know if I can help further.

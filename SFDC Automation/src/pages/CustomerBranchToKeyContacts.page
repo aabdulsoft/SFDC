@@ -1,0 +1,40 @@
+<apex:page standardController="Customer_Branch__c"
+    extensions="CustomerBranchKeyContact">
+    <apex:form >
+        <apex:pageBlock title="Key Contacts">
+            <apex:pageBlockButtons location="top">
+                    <apex:commandButton onclick="window.open('{!addNewKeyContact}','_parent');" value="New Key Contact"/>
+                    <apex:commandButton value="Delete All Key Contacts" action="{!DeleteAllKEyContactsFromCustomerBranch}"  />
+                </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="1" collapsible="true">
+                <apex:pageBlockTable value="{!keyContactList}" var="item" width="100%"
+                    rowClasses="odd,even">
+                    <apex:column headerValue="Action" >
+                        <apex:outputPanel rendered="{!IF(!item.allBranch,true, false) }">
+                            <apex:commandLink target="_parent" action="{!URLFOR($Action.Key_Contact__c.edit,item.id)}" value="Edit"/>&nbsp;|&nbsp;
+                            <apex:commandLink target="_parent" action="{!URLFOR($Action.Key_Contact__c.delete,item.id)}" value="Del"/>
+                        </apex:outputPanel>
+                    </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Key_Contact__c.fields.Contact__c.label}">
+                       <apex:outputLink target="_parent" value="{!URLFOR($Action.Contact.View,item.contactId)}">{!item.contactName}</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!item.contactRole}" headerValue="{!$ObjectType.Key_Contact__c.fields.Contact_Role__c.label}" />
+                    <apex:column value="{!item.contactType}" headerValue="{!$ObjectType.Key_Contact__c.fields.Contact_Type__c.label}" />
+                    <apex:column headerValue="{!$ObjectType.Contact.fields.STATUS_ACTIVE__c.label}">
+                      <apex:inputCheckBox styleClass="checkbox1" value="{!item.contactStatus}" disabled="true" />
+                     </apex:column>
+                    <apex:column headerValue="{!$ObjectType.Contact.fields.DoNotCall.label}">
+                      <apex:inputCheckBox styleClass="checkbox1" value="{!item.contactDoNotCall}" disabled="true" /> 
+                     </apex:column>
+                     <apex:column headerValue="{!$ObjectType.Contact.fields.HasOptedOutofSurvey__c.label}">
+                      <apex:inputCheckBox styleClass="checkbox1" value="{!item.contactSurveyOptOut}" disabled="true" />
+                     </apex:column>
+                    <apex:facet name="footer{!IF(displayMoreLink, '', 'dummyname')}">
+                       <apex:commandLink rendered="{!displayMoreLink}" target="_parent" action="/a0P?rlid={!customerBranchToContactRLID}&id={!Customer_Branch__c.id}">Go to list</apex:commandLink>
+                       <!--<apex:commandLink rendered="{!displayMoreLink}" target="_parent" action="/a0P?rlid={!customerBranchToContactRLID}&id=addNewKeyContact">Go to list</apex:commandLink>-->
+                    </apex:facet>
+                </apex:pageBlockTable>
+                </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

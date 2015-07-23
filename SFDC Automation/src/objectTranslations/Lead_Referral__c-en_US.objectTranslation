@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Referral</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Referrals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account DUNS --></label>
+        <name>Account_DUNS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Date --></label>
+        <name>Appointment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Time --></label>
+        <name>Appointment_Time__c</name>
+        <picklistValues>
+            <masterLabel>1 : 00 PM</masterLabel>
+            <translation><!-- 1 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 : 15 PM</masterLabel>
+            <translation><!-- 1 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 : 30 PM</masterLabel>
+            <translation><!-- 1 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 : 45 PM</masterLabel>
+            <translation><!-- 1 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 00 AM</masterLabel>
+            <translation><!-- 10 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 15 AM</masterLabel>
+            <translation><!-- 10 : 15 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 30 AM</masterLabel>
+            <translation><!-- 10 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 : 45 AM</masterLabel>
+            <translation><!-- 10 : 45 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 00 AM</masterLabel>
+            <translation><!-- 11 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 15 AM</masterLabel>
+            <translation><!-- 11 : 15 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 30 AM</masterLabel>
+            <translation><!-- 11 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 : 45 AM</masterLabel>
+            <translation><!-- 11 : 45 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 00 PM</masterLabel>
+            <translation><!-- 12 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 15 PM</masterLabel>
+            <translation><!-- 12 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 30 PM</masterLabel>
+            <translation><!-- 12 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 : 45 PM</masterLabel>
+            <translation><!-- 12 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 00 PM</masterLabel>
+            <translation><!-- 2 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 15 PM</masterLabel>
+            <translation><!-- 2 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 30 PM</masterLabel>
+            <translation><!-- 2 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 : 45 PM</masterLabel>
+            <translation><!-- 2 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 00 PM</masterLabel>
+            <translation><!-- 3 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 15 PM</masterLabel>
+            <translation><!-- 3 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 30 PM</masterLabel>
+            <translation><!-- 3 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 : 45 PM</masterLabel>
+            <translation><!-- 3 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 00 PM</masterLabel>
+            <translation><!-- 4 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 15 PM</masterLabel>
+            <translation><!-- 4 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 30 PM</masterLabel>
+            <translation><!-- 4 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 : 45 PM</masterLabel>
+            <translation><!-- 4 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 00 PM</masterLabel>
+            <translation><!-- 5 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 15 PM</masterLabel>
+            <translation><!-- 5 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 30 PM</masterLabel>
+            <translation><!-- 5 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 : 45 PM</masterLabel>
+            <translation><!-- 5 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 00 PM</masterLabel>
+            <translation><!-- 6 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 15 PM</masterLabel>
+            <translation><!-- 6 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 30 PM</masterLabel>
+            <translation><!-- 6 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 : 45 PM</masterLabel>
+            <translation><!-- 6 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 00 AM</masterLabel>
+            <translation><!-- 7 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 00 PM</masterLabel>
+            <translation><!-- 7 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 15 AM</masterLabel>
+            <translation><!-- 7 : 15 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 15 PM</masterLabel>
+            <translation><!-- 7 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 30 AM</masterLabel>
+            <translation><!-- 7 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 30 PM</masterLabel>
+            <translation><!-- 7 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 45 AM</masterLabel>
+            <translation><!-- 7 : 45 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 : 45 PM</masterLabel>
+            <translation><!-- 7 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 00 AM</masterLabel>
+            <translation><!-- 8 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 00 PM</masterLabel>
+            <translation><!-- 8 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 15 AM</masterLabel>
+            <translation><!-- 8 : 15 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 15 PM</masterLabel>
+            <translation><!-- 8 : 15 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 30 AM</masterLabel>
+            <translation><!-- 8 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 30 PM</masterLabel>
+            <translation><!-- 8 : 30 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 45 AM</masterLabel>
+            <translation><!-- 8 : 45 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 : 45 PM</masterLabel>
+            <translation><!-- 8 : 45 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 00 AM</masterLabel>
+            <translation><!-- 9 : 00 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 00 PM</masterLabel>
+            <translation><!-- 9 : 00 PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 15 AM</masterLabel>
+            <translation><!-- 9 : 15 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 30 AM</masterLabel>
+            <translation><!-- 9 : 30 AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 : 45 AM</masterLabel>
+            <translation><!-- 9 : 45 AM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Authority --></label>
+        <name>Authority__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BDM Notes --></label>
+        <name>BDM_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget --></label>
+        <name>Budget__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Carrier Name --></label>
+        <name>Carrier_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Address --></label>
+        <name>Contact_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Email --></label>
+        <name>Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Title --></label>
+        <name>Contact_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Field --></label>
+        <name>DBA_Field__c</name>
+    </fields>
+    <fields>
+        <help><!-- MM-YY --></help>
+        <label><!-- Date Passed (MM-YY) --></label>
+        <name>Date_Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ever Leased? --></label>
+        <name>Ever_Leased__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FMS Account Name --></label>
+        <name>FMS_Account_Name_LU__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FMS Close Date --></label>
+        <name>FMS_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Description --></label>
+        <name>FMS_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Opp Stage --></label>
+        <name>FMS_Opp_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>FMS_Opportunity_Name__c</name>
+        <relationshipLabel><!-- Referrals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Amount --></label>
+        <name>FMS_Oppty_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Created Date --></label>
+        <name>FMS_Oppty_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Name --></label>
+        <name>FMS_Oppty_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Owner --></label>
+        <name>FMS_Oppty_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Reason/Won/Lost --></label>
+        <name>FMS_Oppty_Reason_Won_Lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Stage --></label>
+        <name>FMS_Oppty_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Total Vehicles --></label>
+        <name>FMS_Oppty_Total_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Oppty Win/Loss Notes --></label>
+        <name>FMS_Oppty_Win_Loss_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Who did you pass this lead to? --></help>
+        <label><!-- Lead Passed To --></label>
+        <name>FMS_Salesperson__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMS Total units --></label>
+        <name>FMS_Total_units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry --></label>
+        <name>Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiative --></label>
+        <name>Initiative__c</name>
+        <picklistValues>
+            <masterLabel>BDM Top 20</masterLabel>
+            <translation><!-- BDM Top 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact me now</masterLabel>
+            <translation><!-- Contact me now --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBD Top 20</masterLabel>
+            <translation><!-- DBD Top 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MQL</masterLabel>
+            <translation><!-- MQL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Demand</masterLabel>
+            <translation><!-- On Demand --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder OK (800#)</masterLabel>
+            <translation><!-- Ryder OK (800#) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Inquiry</masterLabel>
+            <translation><!-- Web Inquiry --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is there an opportunity? --></label>
+        <name>Is_there_an_opportunity__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Stage --></label>
+        <name>Lead_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Disqualified</masterLabel>
+            <translation><!-- Disqualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualifying</masterLabel>
+            <translation><!-- Qualifying --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Leased With --></label>
+        <name>Leased_With__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting Held --></label>
+        <name>Meeting_Held__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Need --></label>
+        <name>Need__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Next Steps --></label>
+        <name>Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objective --></label>
+        <name>Objective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Detail --></label>
+        <name>Opportunity_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpptyAmt --></label>
+        <name>OpptyAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- OpptyOwner --></label>
+        <name>OpptyOwner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Details --></label>
+        <name>Other_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Own? (Capital or Bank) --></label>
+        <name>Own_Capital_or_Bank__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PreQualified Credit Score --></label>
+        <name>PreQualified_Credit_Score__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for Disqualification --></label>
+        <name>Reason_for_Disqualification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Contact --></label>
+        <name>Referral_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Email Address --></label>
+        <name>Referral_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Phone --></label>
+        <name>Referral_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rent --></label>
+        <name>Rent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SCS ACC Name --></label>
+        <name>SCS_ACC_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Referral Type --></label>
+        <name>SCS_Referral_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Sales rep --></label>
+        <name>SCS_Sales_rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seasonal Rental? --></label>
+        <name>Seasonal_Rental__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- States Traveled --></label>
+        <name>States_Traveled__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AS</masterLabel>
+            <translation><!-- AS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DC</masterLabel>
+            <translation><!-- DC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FM</masterLabel>
+            <translation><!-- FM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GU</masterLabel>
+            <translation><!-- GU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MP</masterLabel>
+            <translation><!-- MP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VI</masterLabel>
+            <translation><!-- VI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TSA Approved By Manager --></label>
+        <name>TSA_Approved_By_Manager__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TSA Initiative Other Notes --></label>
+        <name>TSA_Initiative_Other_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timeframe --></label>
+        <name>Timeframe__c</name>
+        <picklistValues>
+            <masterLabel>1 Month</masterLabel>
+            <translation><!-- 1 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 Months</masterLabel>
+            <translation><!-- 10 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11 Months</masterLabel>
+            <translation><!-- 11 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 + Months</masterLabel>
+            <translation><!-- 12 + Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12 Months</masterLabel>
+            <translation><!-- 12 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Months</masterLabel>
+            <translation><!-- 2 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Months</masterLabel>
+            <translation><!-- 3 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Months</masterLabel>
+            <translation><!-- 4 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Months</masterLabel>
+            <translation><!-- 5 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Months</masterLabel>
+            <translation><!-- 6 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 Months</masterLabel>
+            <translation><!-- 7 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 Months</masterLabel>
+            <translation><!-- 8 Months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 Months</masterLabel>
+            <translation><!-- 9 Months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Cargo --></label>
+        <name>Type_of_Cargo__c</name>
+    </fields>
+    <fields>
+        <label><!-- With Whom? --></label>
+        <name>With_Whom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years in Business --></label>
+        <name>Years_in_Business__c</name>
+        <picklistValues>
+            <masterLabel>1 to 3  Years</masterLabel>
+            <translation><!-- 1 to 3  Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10 to 20 Years</masterLabel>
+            <translation><!-- 10 to 20 Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20+  Years</masterLabel>
+            <translation><!-- 20+  Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 to 5  Years</masterLabel>
+            <translation><!-- 3 to 5  Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 to 10 Years</masterLabel>
+            <translation><!-- 5 to 10 Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under 1 Year</masterLabel>
+            <translation><!-- Under 1 Year --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Lead Referral Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- FMS Opportunity --></label>
+            <section>FMS Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- FMS SFDC --></label>
+            <section>FMS SFDC</section>
+        </sections>
+        <sections>
+            <label><!-- SCS SFDC --></label>
+            <section>SCS SFDC</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TSA Appointments</layout>
+        <sections>
+            <label><!-- Appointment Detail --></label>
+            <section>Appointment Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Appointment Result --></label>
+            <section>Appointment Result</section>
+        </sections>
+        <sections>
+            <label><!-- Background Information --></label>
+            <section>Background Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Overview --></label>
+            <section>Overview</section>
+        </sections>
+        <sections>
+            <label><!-- Pre - Qualification --></label>
+            <section>Pre - Qualification</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- FMS to SCS --></label>
+        <name>FMS_to_SCS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SCS to FMS --></label>
+        <name>SCS_to_FMS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TM to FMS --></label>
+        <name>TM_to_FMS</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TSA Appointments --></label>
+        <name>TSA_Appointments</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter the Company Name --></errorMessage>
+        <name>Ever_Leased</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter Company Name --></errorMessage>
+        <name>Is_the_Truck_Rented</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter the Opportunity Name --></errorMessage>
+        <name>Is_there_an_opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only TSA and Admin can update Pre - Qualification Section --></errorMessage>
+        <name>Only_TSA_Can_Edit_Qualification_Section</name>
+    </validationRules>
+</CustomObjectTranslation>

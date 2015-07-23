@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>List of vehicles with their types</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Vehicle_Name__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>Vehicle Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle_Type__c</fullName>
+        <description>Type of vehicle</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of vehicle</inlineHelpText>
+        <label>Vehicle Type</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Vehicle List</label>
+    <visibility>Public</visibility>
+</CustomObject>

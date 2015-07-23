@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Tab for Revegy reports. These are reports that managers and Sales Ops will run to summarize account planning action</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>false</hasSidebar>
+    <label>Revegy Reports</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom82: Whistle</motif>
+    <url>https://rv1.revegy.com/RevegyEmbedded/REA.html?sessionId={!API.Session_ID}&amp;sessionURL={!API.Partner_Server_URL_220}&amp;companyId=4028259148f9a2a90148fae773a810a9&amp;viewType=REPORTS</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

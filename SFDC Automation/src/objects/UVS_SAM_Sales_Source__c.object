@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>SAM Sales Source</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Sales_Source__c</fullName>
+        <description>SAM Sales Source</description>
+        <externalId>false</externalId>
+        <inlineHelpText>SAM Sales Source</inlineHelpText>
+        <label>Sales Source</label>
+        <length>10</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>UVS SAM Sales Source</label>
+    <visibility>Public</visibility>
+</CustomObject>

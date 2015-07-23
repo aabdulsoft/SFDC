@@ -1,0 +1,12 @@
+<apex:page standardController="Account" standardStylesheets="false">
+<script>
+if( (typeof sforce != 'undefined') && (sforce != null) ) {
+// Salesforce1 navigation
+sforce.one.navigateToURL('https://ai.fmcsa.dot.gov/SMS/Carrier/{!Account.DOT_Number__c}/Overview.aspx');
+}
+else {
+// Set the window's URL using a Visualforce expression
+window.location.href = 'https://ai.fmcsa.dot.gov/SMS/Carrier/{!Account.DOT_Number__c}/Overview.aspx';
+}
+</script>
+</apex:page>

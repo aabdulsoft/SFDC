@@ -1,0 +1,197 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><br></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;">Thank you for leasing from Ryder!
+Our records indicate that the vehicle(s) below are nearing the end of the lease
+term:<o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<font face="arial">{!Customer_Branch__c.Ryder_HQ_Account__c}</font><br>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" width="100%" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; width: 100%; border-collapse: collapse; border: none;">
+ <tbody><tr>
+  <td width="21%" valign="top" style="width:21.44%;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;background:#262626;mso-background-themecolor:
+  text1;mso-background-themetint:217;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Unit#<o:p></o:p></span></b></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.86%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#262626;mso-background-themecolor:text1;
+  mso-background-themetint:217;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Year<o:p></o:p></span></b></p>
+  </td>
+  <td width="17%" valign="top" style="width:17.76%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#262626;mso-background-themecolor:text1;
+  mso-background-themetint:217;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Make<o:p></o:p></span></b></p>
+  </td>
+  <td width="19%" valign="top" style="width:19.66%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#262626;mso-background-themecolor:text1;
+  mso-background-themetint:217;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Type<o:p></o:p></span></b></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.28%;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;background:#262626;mso-background-themecolor:text1;
+  mso-background-themetint:217;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b><span style="font-size:10.0pt;font-family:
+  &quot;Arial&quot;,&quot;sans-serif&quot;">Expiration<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="21%" valign="top" style="width:21.44%;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.86%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="17%" valign="top" style="width:17.76%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="19%" valign="top" style="width:19.66%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="21%" valign="top" style="width:21.44%;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.86%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="17%" valign="top" style="width:17.76%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="19%" valign="top" style="width:19.66%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="21%" valign="top" style="width:21.44%;border:solid windowtext 1.0pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.86%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="17%" valign="top" style="width:17.76%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="19%" valign="top" style="width:19.66%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width="20%" valign="top" style="width:20.28%;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><o:p>&nbsp;</o:p></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;">You may have already discussed
+this with your Account Manager {!Customer_Branch__c.Customer_Branch_Owner__c};&nbsp;if so, you may disregard this email.&nbsp; <o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><font face="arial" size="3">If you have not already discussed
+these vehicles, please give your {!Ryder_Branch__c.Service_Manager_Name__c}&nbsp;a call at&nbsp;</font><font face="arial">{!Ryder_Branch__c.Service_Manager_Phone__c}&nbsp;</font><font face="arial" size="3">to
+schedule a vehicle inspection.&nbsp; Scheduling
+a pre-return inspection now will expedite the turn-in process and help you save
+money.&nbsp; Physical damage to a Ryder
+vehicle is your responsibility and must be repaired before the vehicle is
+returned. &nbsp;Lease charges continue until
+the repairs are made. When you repair damage noted before the turn-in date, there’s
+no continuation of the lease charges. <o:p></o:p></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><b>It’s a simple step that saves you money – and it begins by scheduling
+that pre-return inspection now.<o:p></o:p></b></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;">To start, simply let us know what
+time is convenient for you. We can provide repair estimates and schedule
+repairs with your insurance carrier or repair shop. If you prefer, Ryder can
+coordinate the repairs for an additional charge. If you have Ryder’s extended coverage,
+an appropriate accident report must be completed for any damage noted. <o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;">Take a minute today and avoid additional
+and unnecessary lease charges later. Please contact {!Ryder_Branch__c.Service_Manager_Name__c}&nbsp;at {!Ryder_Branch__c.Service_Manager_Phone__c} today to schedule your pre-return inspection. Our goal is to make the
+turn in of your Ryder lease unit as easy and cost effective as possible. <o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: left;">Ryder is here to help you Drive
+What Matters. If you have any questions about this inspection or any other
+issues, don’t hesitate to contact your Account Manager, {!Customer_Branch__c.Customer_Branch_Owner__c}&nbsp;at <span style="background:yellow;mso-highlight:yellow">[Account Manager phone].</span><o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: justify;"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: justify;">Best regards,<o:p></o:p></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; text-align: justify;"><span style="font-size:14.0pt;
+font-family:&quot;Brush Script MT&quot;">Ryder Transportation</span><i><o:p></o:p></i></p>]]></td>
+</tr>
+</table>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Key Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Key Contacts</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountId --></label>
+        <name>AccountId__c</name>
+        <relationshipLabel><!-- Key Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- All Branch Contact --></label>
+        <name>All_Branch_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate if this Contact is available to contact at all hours of the day. --></help>
+        <label><!-- Available 24/7? --></label>
+        <name>Available_24_7__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Available From --></label>
+        <name>Available_From__c</name>
+        <picklistValues>
+            <masterLabel>00:00</masterLabel>
+            <translation><!-- 00:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01:00</masterLabel>
+            <translation><!-- 01:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02:00</masterLabel>
+            <translation><!-- 02:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03:00</masterLabel>
+            <translation><!-- 03:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04:00</masterLabel>
+            <translation><!-- 04:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05:00</masterLabel>
+            <translation><!-- 05:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06:00</masterLabel>
+            <translation><!-- 06:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07:00</masterLabel>
+            <translation><!-- 07:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08:00</masterLabel>
+            <translation><!-- 08:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09:00</masterLabel>
+            <translation><!-- 09:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:00</masterLabel>
+            <translation><!-- 10:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00</masterLabel>
+            <translation><!-- 11:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00</masterLabel>
+            <translation><!-- 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14:00</masterLabel>
+            <translation><!-- 14:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15:00</masterLabel>
+            <translation><!-- 15:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16:00</masterLabel>
+            <translation><!-- 16:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17:00</masterLabel>
+            <translation><!-- 17:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18:00</masterLabel>
+            <translation><!-- 18:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19:00</masterLabel>
+            <translation><!-- 19:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20:00</masterLabel>
+            <translation><!-- 20:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21:00</masterLabel>
+            <translation><!-- 21:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22:00</masterLabel>
+            <translation><!-- 22:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23:00</masterLabel>
+            <translation><!-- 23:00 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Available To --></label>
+        <name>Available_To__c</name>
+        <picklistValues>
+            <masterLabel>00:00</masterLabel>
+            <translation><!-- 00:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01:00</masterLabel>
+            <translation><!-- 01:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>02:00</masterLabel>
+            <translation><!-- 02:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>03:00</masterLabel>
+            <translation><!-- 03:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>04:00</masterLabel>
+            <translation><!-- 04:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>05:00</masterLabel>
+            <translation><!-- 05:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06:00</masterLabel>
+            <translation><!-- 06:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>07:00</masterLabel>
+            <translation><!-- 07:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08:00</masterLabel>
+            <translation><!-- 08:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09:00</masterLabel>
+            <translation><!-- 09:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10:00</masterLabel>
+            <translation><!-- 10:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11:00</masterLabel>
+            <translation><!-- 11:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12:00</masterLabel>
+            <translation><!-- 12:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13:00</masterLabel>
+            <translation><!-- 13:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14:00</masterLabel>
+            <translation><!-- 14:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15:00</masterLabel>
+            <translation><!-- 15:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16:00</masterLabel>
+            <translation><!-- 16:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17:00</masterLabel>
+            <translation><!-- 17:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18:00</masterLabel>
+            <translation><!-- 18:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19:00</masterLabel>
+            <translation><!-- 19:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20:00</masterLabel>
+            <translation><!-- 20:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21:00</masterLabel>
+            <translation><!-- 21:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22:00</masterLabel>
+            <translation><!-- 22:00 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23:00</masterLabel>
+            <translation><!-- 23:00 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CSI Primary Count --></label>
+        <name>CSI_Primary_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select which role this Contact serves for this Customer/Branch. --></help>
+        <label><!-- Contact Role --></label>
+        <name>Contact_Role__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CSI Contact</masterLabel>
+            <translation><!-- CSI Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IFT Contact</masterLabel>
+            <translation><!-- IFT Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance Contact</masterLabel>
+            <translation><!-- Maintenance Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RydeSmart</masterLabel>
+            <translation><!-- RydeSmart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RydeSmart Mktg</masterLabel>
+            <translation><!-- RydeSmart Mktg --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Status --></label>
+        <name>Contact_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Trigger Toggle --></label>
+        <name>Contact_Trigger_Toggle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Contact Type.  Only one contact can be listed as Primary for a Customer/Branch. --></help>
+        <label><!-- Contact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tertiary</masterLabel>
+            <translation><!-- Tertiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Related Branches --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer / Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Key Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HQ Account ID --></label>
+        <name>HQ_Account_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is CSI --></label>
+        <name>Is_CSI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Maintenance --></label>
+        <name>Is_Maintenance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Primary Count --></label>
+        <name>Maintenance_Primary_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Migration Key --></label>
+        <name>Migration_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Contact Role Key --></label>
+        <name>Unique_Contact_Role_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Customer Branch Role Key --></label>
+        <name>Unique_Customer_Branch_Role_key__c</name>
+    </fields>
+    <layouts>
+        <layout>Key Contact All Branch Layout</layout>
+        <sections>
+            <label><!-- ALL BRANCH KEY CONTACT CANNOT  BE  EDITED HERE. PLEASE UPDATE THE CONTACT |||. --></label>
+            <section>ALL BRANCH KEY CONTACT CANNOT  BE  EDITED HERE. PLEASE UPDATE THE CONTACT |||.</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Key Contact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- All branch Contact --></label>
+        <name>All_branch_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Key Contact Default --></label>
+        <name>Key_Contact_Default</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Available To should be greater than Available From --></errorMessage>
+        <name>Availabily_From_To_Check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All_branch_key_contact_can&apos;t_be_updated . --></errorMessage>
+        <name>Cannot_Update_all_branch_key_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must select a Customer / Branch or Contact that matches the Account --></errorMessage>
+        <name>CustomerBranchEqualsHQAccount</name>
+    </validationRules>
+</CustomObjectTranslation>

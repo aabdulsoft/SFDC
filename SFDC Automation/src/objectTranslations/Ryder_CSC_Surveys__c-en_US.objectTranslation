@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ryder CSC Survey</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ryder CSC Surveys</value>
+    </caseValues>
+    <fields>
+        <help><!-- Satisfaction with the Current Relationship with your account manager --></help>
+        <label><!-- Account Mgr Satisfaction --></label>
+        <name>Account_Mgr_Satisfaction__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Ryder CSC Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Ryder CSC Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer / Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- Ryder CSC Surveys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dissatisfaction addressed? --></label>
+        <name>Dissatisfaction_addressed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Failed Survey --></label>
+        <name>Failed_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback about the agent --></label>
+        <name>Feedback_about_the_agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback as to why call wasnt resolved --></label>
+        <name>Feedback_as_to_why_call_wasnt_resolve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback as to why issue wasnt addressed --></label>
+        <name>Feedback_as_to_why_issue_wasnt_addressed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback on likelihood to call --></label>
+        <name>Feedback_on_likelihood_to_call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Account Manager Contacted --></label>
+        <name>Has_Account_Manager_Contacted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How satisfied are you with the agent? --></label>
+        <name>How_satisfied_are_you_with_the_agent__c</name>
+        <picklistValues>
+            <masterLabel>Dissatisfied</masterLabel>
+            <translation><!-- Dissatisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Likelihood of calling again --></label>
+        <name>Likelihood_of_calling_again__c</name>
+        <picklistValues>
+            <masterLabel>Likely</masterLabel>
+            <translation><!-- Likely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Likely</masterLabel>
+            <translation><!-- Not Likely --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ryder Follow-up Survey URL --></label>
+        <name>Ryder_Follow_up_Survey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Satisfaction With Current Relationship --></label>
+        <name>Satisfaction_With_Current_Relationship__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation><!-- Don&apos;t Know --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Satisfied with outcome --></label>
+        <name>Satisfied_with_outcome__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Printable Link --></label>
+        <name>Survey_Printable_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Score --></label>
+        <name>Survey_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Submission Date --></label>
+        <name>Survey_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time to contact you --></label>
+        <name>Time_to_contact_you__c</name>
+    </fields>
+    <fields>
+        <label><!-- Was your call resolved? --></label>
+        <name>Was_your_call_resolved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was your issue addressed? --></label>
+        <name>Was_your_issue_addressed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What can Ryder do to serve you better --></label>
+        <name>What_can_Ryder_do_to_serve_you_better__c</name>
+    </fields>
+    <fields>
+        <label><!-- What can Ryder do to solve the situation --></label>
+        <name>What_can_Ryder_do_to_solve_the_situation__c</name>
+    </fields>
+    <layouts>
+        <layout>Customer 360 Follow Up</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Followup Survey --></label>
+            <section>Followup Survey</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder CSC Survey Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Customer 360 Follow Up --></label>
+        <name>Customer_360_Follow_Up</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pilot Survey --></label>
+        <name>Pilot_Survey</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

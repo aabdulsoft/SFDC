@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Activity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Activities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity Date --></label>
+        <name>Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Detail --></label>
+        <name>Activity_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Type --></label>
+        <name>Activity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Email Opened</masterLabel>
+            <translation><!-- Email Opened --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Sent</masterLabel>
+            <translation><!-- Email Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form Submit</masterLabel>
+            <translation><!-- Form Submit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website Visit</masterLabel>
+            <translation><!-- Website Visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Marketing Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Marketing Activities --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

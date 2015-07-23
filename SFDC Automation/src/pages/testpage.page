@@ -1,0 +1,93 @@
+<apex:page >
+  
+  <html lang="en">
+<head>
+    
+    
+    <style>
+    ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 10px; }
+    li { margin: 5px; padding: 5px; width: 150px; }
+    
+    </style>
+    <script>
+    
+ 
+<apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/jquery-1.9.1.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.core.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.widget.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.mouse.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.draggable.js')}"/>
+<apex:includeScript value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/ui/jquery.ui.sortable.js')}"/>
+
+   
+    
+          $(function() {
+        
+            $( "#dropable" ).sortable({
+        
+            revert: true
+        });
+    
+        $( "#draggable" ).draggable({
+        
+            connectToSortable: "#dropable",
+    
+            helper: "clone",
+        
+            revert: "invalid"
+        
+                      });
+              
+                 $( "#draggable2" ).draggable({
+        
+                connectToSortable: "#dropable2",
+    
+            helper: "clone",
+            
+            revert: "invalid"
+        });
+    
+        $( "ul, li" ).disableSelection();
+    });
+    
+            </script>
+
+</head>
+<body>
+ <apex:stylesheet value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/themes/base/jquery.ui.all.css')}"/>
+ <apex:stylesheet value="{!URLFOR($Resource.JQuerydrag, '/Drag/jquery-ui-1.10.2/demos/demos.css')}"/>
+<div align="center" height="500" width="500">
+            
+<span valign="left" height="500" width="100" align="left">
+<ul>
+
+        <li id="draggable" class="ui-state-highlight">
+       <img src="http://www2.sfdcstatic.com/common/assets/img/logo-company.png">Drag me down</img></li>
+</ul>
+
+             </span>
+
+      <span valign="right" height="800" width="400" align="left">
+     
+<ul id="dropable">
+    <li class="ui-state-default"><img src="http://www2.sfdcstatic.com/common/assets/img/logo-company.png"></img></li>
+
+    <li class="ui-state-default">  </li>
+
+    <li class="ui-state-default">Item 3</li>
+
+    <li class="ui-state-default">Item 4</li>
+
+    <li class="ui-state-default">Item 5</li>
+</ul>
+       
+</span>
+</div>
+        
+<div class="demo-description">
+</div>
+
+</body></html>
+
+
+</apex:page>

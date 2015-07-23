@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ContractPackage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ContractPackages</value>
+    </caseValues>
+    <fields>
+        <label><!-- AM Name --></label>
+        <name>AM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- AM_UserID --></label>
+        <name>AM_UserID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- ContractPackages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comm_clos_dt --></label>
+        <name>Comm_clos_dt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comm_cr_pc --></label>
+        <name>Comm_cr_pc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cs_no --></label>
+        <name>Cs_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Customer Branch --></label>
+        <name>Customer_Branch__c</name>
+        <relationshipLabel><!-- ContractPackages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DOS Name --></label>
+        <name>DOS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOS UserId --></label>
+        <name>DOS_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- EVA --></label>
+        <name>EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ext_Ref_Id --></label>
+        <name>Ext_Ref_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- GDNS Name --></label>
+        <name>GDNS_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- GDNS UserId --></label>
+        <name>GDNS_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lessee no --></label>
+        <name>Lessee_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- NationalOrLocalCredit --></label>
+        <name>NationalOrLocalCredit__c</name>
+    </fields>
+    <fields>
+        <label><!-- NationalSales_Weighted_IRR_Dollars --></label>
+        <name>NationalSales_Weighted_IRR_Dollars__c</name>
+    </fields>
+    <fields>
+        <label><!-- NationalSales_Weighted_NVI_Dollars --></label>
+        <name>NationalSales_Weighted_NVI_Dollars__c</name>
+    </fields>
+    <fields>
+        <label><!-- NationalSales_comm_cr_pc --></label>
+        <name>NationalSales_comm_cr_pc__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Acct Flag --></label>
+        <name>National_Acct_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Capital EVA --></label>
+        <name>New_Capital_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Capital Vehicles --></label>
+        <name>New_Capital_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- OldRevenue_Gross --></label>
+        <name>OldRevenue_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Customer Branch --></label>
+        <name>Original_Customer_Branch__c</name>
+        <relationshipLabel><!-- ContractPackages (Original Customer Branch) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PackageType --></label>
+        <name>PackageType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Update Date Time --></label>
+        <name>Package_Update_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pkg_stat_cd --></label>
+        <name>Pkg_stat_cd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pkg_updat_dt --></label>
+        <name>Pkg_updat_dt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pkg_updat_tm --></label>
+        <name>Pkg_updat_tm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prod_grp_cd --></label>
+        <name>Prod_grp_cd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prod_line_cd --></label>
+        <name>Prod_line_cd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rating_Cd --></label>
+        <name>Rating_Cd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue_Gross --></label>
+        <name>Revenue_Gross__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue_Net --></label>
+        <name>Revenue_Net__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPO_NBR_CD --></label>
+        <name>SPO_NBR_CD__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVP Name --></label>
+        <name>SVP_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVP UserId --></label>
+        <name>SVP_UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Production --></label>
+        <name>Sales_Production__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spec_rate_cd --></label>
+        <name>Spec_rate_cd__c</name>
+    </fields>
+    <fields>
+        <label><!-- TRAN_TYP_CD --></label>
+        <name>TRAN_TYP_CD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veh_expr_dt --></label>
+        <name>Veh_expr_dt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veh_isrv_dt --></label>
+        <name>Veh_isrv_dt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veh_osrv_dt --></label>
+        <name>Veh_osrv_dt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veh_repl_no --></label>
+        <name>Veh_repl_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- VehicleCount --></label>
+        <name>VehicleCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+        <relationshipLabel><!-- ContractPackages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weighted_IRR_Dollars --></label>
+        <name>Weighted_IRR_Dollars__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weighted_NVI_Dollars --></label>
+        <name>Weighted_NVI_Dollars__c</name>
+    </fields>
+    <layouts>
+        <layout>ContractPackage Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Financial --></label>
+            <section>Financial</section>
+        </sections>
+        <sections>
+            <label><!-- Team --></label>
+            <section>Team</section>
+        </sections>
+        <sections>
+            <label><!-- Vehicle Section --></label>
+            <section>Vehicle Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

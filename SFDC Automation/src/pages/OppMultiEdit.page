@@ -1,0 +1,57 @@
+<apex:page StandardController="Opportunity" extensions="OppMultiEdit_Controller" sidebar="false" RecordSetVar="Opportunity" >
+	<apex:form >
+        <apex:sectionHeader subtitle="New Opportunity" title="Opportunity Edit" />
+        <apex:pageBlock id="SaveBlock" title="Opportunity Edit" >        
+            <apex:pageBlockButtons >                
+                <apex:commandButton value="Save" action="{!UpdateData}" />
+                <apex:commandButton value="Go Back" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="toperror">
+                <apex:pageMessages id="error" />
+            </apex:outputPanel>
+            <apex:pageBlockTable value="{!lOpp}" var="Data" id="datatable" columnsWidth="90px,90px,90px,100px,90px,90px,90px,90px,90px,90px,90px">
+                <apex:column Headervalue="Account Name">
+                    <apex:outputLink value="/{!Data.AccountID}" target="_blank" style="width:90px">{!Data.Account.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Opportunity Name">
+                    <apex:outputLink value="/{!Data.Id}" target="_blank" style="width:90px">{!Data.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Actual Close Date">
+                    <apex:outputField value="{!Data.Actual_Close_Date__c}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="Stage">
+                    <apex:inputField value="{!Data.StageName}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="Reason Won/Lost">
+                    <apex:inputField value="{!Data.Reason_Won_Lost__c}" required="true" style="width:90px" />
+                </apex:column>              
+                <apex:column >
+                    <apex:facet name="header">Who is the Main <br />Incumbent</apex:facet>
+                    <apex:inputField value="{!Data.Who_is_the_main_incumbent__c}" style="width:90px" required="true" />
+                </apex:column>
+                <apex:column >
+                	<apex:facet name="header">Deal lost to <br />Won from whom</apex:facet>
+                    <apex:inputField value="{!Data.Deal_lost_to_Won_from_whom__c}" style="width:90px" />
+                </apex:column>  
+                <apex:column >
+                    <apex:facet name="header">Competitor</apex:facet>
+                    <apex:inputField value="{!Data.CMPT_ID__c}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="">
+                    <apex:facet name="header">Local Provider <br />name</apex:facet>
+                    <apex:inputField value="{!Data.Local_Provider_Name__c}" style="width:90px" />
+                </apex:column>
+                <!--
+                <apex:column>
+                    <apex:facet name="header">Customer <br />100% ownership</apex:facet>
+                    <apex:inputField value="{!Data.Customer_100_Ownership__c}" style="width:90px" />
+                </apex:column>
+                -->                
+                <apex:column Headervalue="">
+                    <apex:facet name="header">Win/Loss <br />Notes</apex:facet>
+                    <apex:inputField value="{!Data.Notes__c}" style="width:90px" />
+                </apex:column>
+            </apex:pageBlockTable>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

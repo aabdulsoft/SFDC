@@ -1,0 +1,47 @@
+<!--
+/****************************************************************************
+ *   Date            Name                 Description
+ * --------        --------------       ----------------
+ * 1/25/2014       Saad Wali Jaan       RydeSmart PreLaunchChecklist Data Visibility on Accounts page    
+*  04/21/2015      Jorge Yunes          Adding funtion setFocusOnLoad() to change the focus
+ ****************************************************************************/
+-->
+
+<apex:page standardController="account" extensions="RSMAccountPLC" showHeader="true" id="myPage">
+    <apex:form id="myForm">
+        <script>
+             function setFocusOnLoad() {}
+         </script> 
+        <apex:pageMessages />
+        <apex:pageBlock title="" >
+            <apex:pageBlockButtons id="dealSummaryPageBlockButtons" location="top">
+                <apex:commandButton id="save" value="Save" action="{!saveRecord}" tabindex="1" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Pre Launch Checklist" columns="1" id="preLaunchChecklistSection">
+                <apex:pageBlockTable var="preLaunchChecklist" value="{!PagePreLaunchChecklist}" >
+                  <apex:column >
+                        <apex:facet name="header">Start Date</apex:facet>
+                        <apex:inputField id="txtStartDate" value="{!preLaunchChecklist.Start_Date__c}"/>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header">End Date</apex:facet>
+                        <apex:inputField id="txtEndDate" value="{!preLaunchChecklist.End_Date__c}"/>
+                    </apex:column>
+                    <apex:column value="{!preLaunchChecklist.Description__c}"/>
+                    <apex:column >
+                        <apex:facet name="header">Completed</apex:facet>
+                        <apex:inputCheckbox id="chkRecord" value="{!preLaunchChecklist.Completed__c}" />                   
+                    </apex:column>
+                    <!--  
+                    <apex:column headerValue="Action" >
+                        <apex:commandButton value="Save" action="{!saveRecord}">
+                            <apex:param name="idx" value="{!preLaunchChecklist.Account__c}"/>
+                        </apex:commandButton>
+                        
+                    </apex:column>
+                    -->
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+ </apex:page>

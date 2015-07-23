@@ -1,0 +1,2809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Address</value>
+        </caseValues>
+        <name>shipping_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical City</value>
+        </caseValues>
+        <name>shipping_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Country</value>
+        </caseValues>
+        <name>shipping_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical State/Province</value>
+        </caseValues>
+        <name>shipping_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Street</value>
+        </caseValues>
+        <name>shipping_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Zip/Postal Code</value>
+        </caseValues>
+        <name>shipping_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Status</value>
+        </caseValues>
+        <name>type_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Address ID --></label>
+        <name>ADDR_ID__c</name>
+    </fields>
+    <fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blitz</masterLabel>
+            <translation><!-- Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDM</masterLabel>
+            <translation><!-- CDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COMBO</masterLabel>
+            <translation><!-- COMBO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call-in</masterLabel>
+            <translation><!-- Call-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concentrix</masterLabel>
+            <translation><!-- Concentrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Marketing</masterLabel>
+            <translation><!-- Corporate Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DBD</masterLabel>
+            <translation><!-- DBD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DNA</masterLabel>
+            <translation><!-- DNA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Marketing</masterLabel>
+            <translation><!-- Digital Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Dimensional Marketing</masterLabel>
+            <translation><!-- Direct Dimensional Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing customer</masterLabel>
+            <translation><!-- Existing customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F&amp;B</masterLabel>
+            <translation><!-- F&amp;B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Campaigns</masterLabel>
+            <translation><!-- Local Campaigns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Marketing</masterLabel>
+            <translation><!-- Local Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mkt Automation - DGT</masterLabel>
+            <translation><!-- Mkt Automation - DGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRM</masterLabel>
+            <translation><!-- NRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Customer</masterLabel>
+            <translation><!-- Other Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Outbound</masterLabel>
+            <translation><!-- Other Outbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Referral</masterLabel>
+            <translation><!-- Other Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outside Contractor</masterLabel>
+            <translation><!-- Outside Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Advertising - DGT</masterLabel>
+            <translation><!-- Paid Advertising - DGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid Search - DGT</masterLabel>
+            <translation><!-- Paid Search - DGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental Counter</masterLabel>
+            <translation><!-- Rental Counter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar / Trade Shows</masterLabel>
+            <translation><!-- Seminar / Trade Shows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Buyers Guide</masterLabel>
+            <translation><!-- Truck Buyers Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Paper</masterLabel>
+            <translation><!-- Truck Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk-in</masterLabel>
+            <translation><!-- Walk-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Capture Date --></label>
+        <name>Account_Capture_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Classification --></label>
+        <name>Account_Classification__c</name>
+        <picklistValues>
+            <masterLabel>Coordinated</masterLabel>
+            <translation><!-- Coordinated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local - Cash Only</masterLabel>
+            <translation><!-- Local - Cash Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Cash and Non-Cash</masterLabel>
+            <translation><!-- Local Cash and Non-Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National - Cash Only</masterLabel>
+            <translation><!-- National - Cash Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Coordinated</masterLabel>
+            <translation><!-- Non-Coordinated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- No indicating how complex the acct is to manage. Serves as an indicator of level of effort that the sales person needs to dedicate to this acct. This is not represented in any specific time unit but just relative weight. Scores typically go from 3 to 50. --></help>
+        <label><!-- Account Complexity Score --></label>
+        <name>Account_Complexity_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Classifications --></label>
+        <name>Additional_Classifications__c</name>
+        <picklistValues>
+            <masterLabel>Enterprise Account</masterLabel>
+            <translation><!-- Enterprise Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Subsidiary</masterLabel>
+            <translation><!-- Enterprise Subsidiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Growth Account</masterLabel>
+            <translation><!-- Growth Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MWBE</masterLabel>
+            <translation><!-- MWBE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Profit</masterLabel>
+            <translation><!-- Non-Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ODM Customer</masterLabel>
+            <translation><!-- ODM Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ODM Target</masterLabel>
+            <translation><!-- ODM Target --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Site Target</masterLabel>
+            <translation><!-- On-Site Target --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCO Training Target</masterLabel>
+            <translation><!-- TCO Training Target --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 10</masterLabel>
+            <translation><!-- Top 10 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Place additional comments for service handling --></help>
+        <label><!-- Additional Comments --></label>
+        <name>Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Names --></label>
+        <name>Alias_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- At Risk Status % --></label>
+        <name>At_Risk_Status_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- At Risk --></label>
+        <name>At_Risk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Address Bit --></label>
+        <name>BAD_ADDRESS_BIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Address CD --></label>
+        <name>BAD_ADDR_CD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Address Date --></label>
+        <name>BAD_ADDR_DATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bad Address Reason --></label>
+        <name>BAD_ADDR_REASON__c</name>
+    </fields>
+    <fields>
+        <label><!-- BSNP ID --></label>
+        <name>BSNP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Status --></label>
+        <name>BUSINESS_STATUS__c</name>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation><!-- Current --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target Business</masterLabel>
+            <translation><!-- Target Business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bargain Hunter --></label>
+        <name>Bargain_Hunter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Fax --></label>
+        <name>Billing_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Phone --></label>
+        <name>Billing_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inception Date --></label>
+        <name>CO_ANNSRY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co Owner ID --></label>
+        <name>CO_OWNER_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Ryder Anniversary --></label>
+        <name>CO_RYDER_ANNSRY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Segment --></label>
+        <name>CO_SEGMENT__c</name>
+        <picklistValues>
+            <masterLabel>0 - Three trucks or less</masterLabel>
+            <translation><!-- 0 - Three trucks or less --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>00 - Three Trucks or Less (Bargain Hunter)</masterLabel>
+            <translation><!-- 00 - Three Trucks or Less (Bargain Hunter) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1 - Brgn hunters Med fl</masterLabel>
+            <translation><!-- 1 - Brgn hunters Med fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Cap builders Med fl</masterLabel>
+            <translation><!-- 2 - Cap builders Med fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Time-crit del Med fl</masterLabel>
+            <translation><!-- 3 - Time-crit del Med fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Brgn hunters Low den fl</masterLabel>
+            <translation><!-- 4 - Brgn hunters Low den fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5  - Cap bld Low den fl</masterLabel>
+            <translation><!-- 5  - Cap bld Low den fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - Time-crit del Low den fl</masterLabel>
+            <translation><!-- 6 - Time-crit del Low den fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 -  Brgn hunters Lrg fl</masterLabel>
+            <translation><!-- 7 -  Brgn hunters Lrg fl --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8 - Sophisticated 1</masterLabel>
+            <translation><!-- 8 - Sophisticated 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9 - Sophisticated 2</masterLabel>
+            <translation><!-- 9 - Sophisticated 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Risk Status Reason --></label>
+        <name>CR_STATUS_REASON__c</name>
+    </fields>
+    <fields>
+        <label><!-- CSA Score --></label>
+        <name>CSA_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Repair Limit --></label>
+        <name>CUST_REPAIR_LIMIT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell --></label>
+        <name>Cell__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this if the sales decisions are made at the National / Parent Account level. --></help>
+        <label><!-- Central Decisionmaking --></label>
+        <name>Central_Decisionmaking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Type --></label>
+        <name>CompanyTypeID__c</name>
+        <picklistValues>
+            <masterLabel>1 Corporation</masterLabel>
+            <translation><!-- 1 Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Sub S Corp</masterLabel>
+            <translation><!-- 2 Sub S Corp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Partnership</masterLabel>
+            <translation><!-- 3 Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 Sole Proprietorship</masterLabel>
+            <translation><!-- 4 Sole Proprietorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Tax Exempt</masterLabel>
+            <translation><!-- 5 Tax Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 Government Entity</masterLabel>
+            <translation><!-- 6 Government Entity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Lead Type --></label>
+        <name>Company_Lead_Type__c</name>
+        <picklistValues>
+            <masterLabel>Company</masterLabel>
+            <translation><!-- Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Describe any components not included in Service --></help>
+        <label><!-- Components Not Included --></label>
+        <name>Components_Not_Included__c</name>
+    </fields>
+    <fields>
+        <label><!-- IC_DoNotCall --></label>
+        <name>Connection__IC_DoNotCall__c</name>
+    </fields>
+    <fields>
+        <label><!-- IC_LastContact --></label>
+        <name>Connection__IC_LastContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Accounts --></label>
+        <name>Count_of_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Rating --></label>
+        <name>Credit_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Prospect ID --></label>
+        <name>CustProspectID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>CustomerTypeID__c</name>
+        <picklistValues>
+            <masterLabel>FMS</masterLabel>
+            <translation><!-- FMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMS Rental</masterLabel>
+            <translation><!-- FMS Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RIL</masterLabel>
+            <translation><!-- RIL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Referral Account --></label>
+        <name>Customer_Account__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Branch rollup --></label>
+        <name>Customer_Branch_rollup__c</name>
+    </fields>
+    <fields>
+        <help><!-- Doing Business As 2 --></help>
+        <label><!-- DBA 2 --></label>
+        <name>DBA_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Doing Business As 3 --></help>
+        <label><!-- DBA 3 --></label>
+        <name>DBA_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Doing Business As 4 --></help>
+        <label><!-- DBA 4 --></label>
+        <name>DBA_4__c</name>
+    </fields>
+    <fields>
+        <help><!-- Doing Business As 5 --></help>
+        <label><!-- DBA 5 --></label>
+        <name>DBA_5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Doing Business As --></help>
+        <label><!-- DBA --></label>
+        <name>DBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- D&amp;B Location Type --></label>
+        <name>DB_Loc_Type__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution Center</masterLabel>
+            <translation><!-- Distribution Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Division</masterLabel>
+            <translation><!-- Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headquarters</masterLabel>
+            <translation><!-- Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing/Assembly Center</masterLabel>
+            <translation><!-- Manufacturing/Assembly Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Location</masterLabel>
+            <translation><!-- Single Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary Undefined</masterLabel>
+            <translation><!-- Subsidiary Undefined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Center</masterLabel>
+            <translation><!-- Transportation Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehousing Center</masterLabel>
+            <translation><!-- Warehousing Center --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DCCompanyId --></label>
+        <name>DCCompanyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- DNB Subsidiary Type --></label>
+        <name>DNB_Subsidiary_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOT Number --></label>
+        <name>DOT_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DUNS HQ # --></label>
+        <name>DUNS_HQ__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Source Key --></label>
+        <name>Data_Source_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Source --></label>
+        <name>Data_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driving distance to nearest Ryder branch --></label>
+        <name>Distance_to_Ryder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Change Owner --></label>
+        <name>Do_Not_Change_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domestic Ultimate DUNS # --></label>
+        <name>Domestic_Ultimate_DUNS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy Flag --></label>
+        <name>Dummy_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Buy Signals --></label>
+        <name>EDP1__BuySignals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Activity Date --></label>
+        <name>EDP1__MostRecentActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Buy Signal Date --></label>
+        <name>EDP1__MostRecentBuySignalDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Inbound Activity --></label>
+        <name>EDP1__TotalInboundActivity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Open Opportunities --></label>
+        <name>EDP1__TotalOpenOpportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Opportunities --></label>
+        <name>EDP1__TotalOpportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- ESP --></label>
+        <name>ESP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Email --></label>
+        <name>Employee_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Name --></label>
+        <name>Employee_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Phone --></label>
+        <name>Employee_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Zipcode --></label>
+        <name>Employee_Zipcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enterprise Account Manager --></label>
+        <name>Enterprise_Account_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Enterprise Account Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Equifax City --></label>
+        <name>Equifax_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Company Name --></label>
+        <name>Equifax_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Country --></label>
+        <name>Equifax_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Email --></label>
+        <name>Equifax_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Fax --></label>
+        <name>Equifax_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax No --></label>
+        <name>Equifax_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Phone --></label>
+        <name>Equifax_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax State --></label>
+        <name>Equifax_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Street1 --></label>
+        <name>Equifax_Street1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Street2 --></label>
+        <name>Equifax_Street2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equifax Zip/Postal Code --></label>
+        <name>Equifax_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate the executive sponsoring this account --></help>
+        <label><!-- Executive Sponsor Name --></label>
+        <name>Executive_Sponsor_Nm__c</name>
+        <relationshipLabel><!-- Accounts (Executive Sponsor Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Executive Sponsor Program ID --></label>
+        <name>Executive_Sponsor_Program_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please indicate the year(s) this customer has been included in the VP Sponsor Program --></help>
+        <label><!-- Executive Sponsor Program --></label>
+        <name>Executive_Sponsor_Program__c</name>
+        <picklistValues>
+            <masterLabel>2012</masterLabel>
+            <translation><!-- 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013</masterLabel>
+            <translation><!-- 2013 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Total --></label>
+        <name>FMCSA_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Leased Tractor Count --></label>
+        <name>FMCSA_leased_tractor_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Leased Trailer Count --></label>
+        <name>FMCSA_leased_trailer_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Leased Truck Count --></label>
+        <name>FMCSA_leased_truck_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Owned Tractor Count --></label>
+        <name>FMCSA_owned_tractor_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Owned Trailer Count --></label>
+        <name>FMCSA_owned_trailer_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- FMCSA Owned Truck Count --></label>
+        <name>FMCSA_owned_truck_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Fixed Cost% --></label>
+        <name>FSL_Last_12_Months_Fixed_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Fixed Cost --></label>
+        <name>FSL_Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL_Last_12_Months_Margin --></label>
+        <name>FSL_Last_12_Months_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Rated Cost% --></label>
+        <name>FSL_Last_12_Months_Rated_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 Months - Rated Cost --></label>
+        <name>FSL_Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Fixed Cost% --></label>
+        <name>FSL_Life_to_Date_Fixed_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Fixed Cost --></label>
+        <name>FSL_Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Margin% --></label>
+        <name>FSL_Life_to_Date_Margin_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Margin --></label>
+        <name>FSL_Life_to_Date_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Rated Cost --></label>
+        <name>FSL_Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Life to Date - Revenue --></label>
+        <name>FSL_Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Company Name --></label>
+        <name>Family_Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Company Owner ID --></label>
+        <name>Family_Company_Owner_id_del__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Company ID --></label>
+        <name>Family_Company_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Maintenance Manager --></label>
+        <name>Field_Maintenance_Manager2__c</name>
+        <relationshipLabel><!-- Accounts (Field Maintenance Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Field Maintenance Manager --></label>
+        <name>Field_Maintenance_Manager__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Finance Company Used --></label>
+        <name>Finance_Company_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- FleetSeek RIN No --></label>
+        <name>FleetSeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Seek Total --></label>
+        <name>FleetSeek_total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fleet Ownership Type --></label>
+        <name>Fleet_Ownership_Type__c</name>
+        <picklistValues>
+            <masterLabel>100% Lease Competitor</masterLabel>
+            <translation><!-- 100% Lease Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100% Ownership</masterLabel>
+            <translation><!-- 100% Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100% Ryder</masterLabel>
+            <translation><!-- 100% Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Mixed Fleet</masterLabel>
+            <translation><!-- Complete Mixed Fleet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Ownership Lease Competitor</masterLabel>
+            <translation><!-- Mixed Ownership Lease Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Ownership Ryder</masterLabel>
+            <translation><!-- Mixed Ownership Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Ryder/ Lease Competition</masterLabel>
+            <translation><!-- Mixed Ryder/ Lease Competition --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Food &amp; Beverage Industry --></label>
+        <name>Food_Beverage_Industry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Former Customer --></label>
+        <name>FormerCustomer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency of Rental --></label>
+        <name>Frequency_of_Rental__c</name>
+        <picklistValues>
+            <masterLabel>1sr quarter</masterLabel>
+            <translation><!-- 1sr quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd quarter</masterLabel>
+            <translation><!-- 2nd quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd quarter</masterLabel>
+            <translation><!-- 3rd quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4th of July</masterLabel>
+            <translation><!-- 4th of July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4th quarter</masterLabel>
+            <translation><!-- 4th quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Harvest</masterLabel>
+            <translation><!-- Harvest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long Term</masterLabel>
+            <translation><!-- Long Term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mother&apos;s Day</masterLabel>
+            <translation><!-- Mother&apos;s Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer</masterLabel>
+            <translation><!-- Summer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thanksgiving</masterLabel>
+            <translation><!-- Thanksgiving --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactional</masterLabel>
+            <translation><!-- Transactional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valentines Day</masterLabel>
+            <translation><!-- Valentines Day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Growth Account --></label>
+        <name>GROWTH_ACC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if you want renewal opportunities to be generated as decentralized, even if you have set the account as centralized decision making. Use it if you want to maintain control of opportunity creation. --></help>
+        <label><!-- Generate Decentralized Opps --></label>
+        <name>Generate_Decentralized_Opps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Global Ultimate DUNS # --></label>
+        <name>Global_Ultimate_DUNS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Growth Status % --></label>
+        <name>Growth_Status_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Address City --></label>
+        <name>Guarantor_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Address Country --></label>
+        <name>Guarantor_Address_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Address State/Province --></label>
+        <name>Guarantor_Address_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Address Street --></label>
+        <name>Guarantor_Address_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Address Zip/Postal Code --></label>
+        <name>Guarantor_Address_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guarantor Name --></label>
+        <name>Guarantor_Name__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apparel</masterLabel>
+            <translation><!-- Apparel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banking</masterLabel>
+            <translation><!-- Banking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Biotechnology</masterLabel>
+            <translation><!-- Biotechnology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals</masterLabel>
+            <translation><!-- Chemicals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communications</masterLabel>
+            <translation><!-- Communications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consulting</masterLabel>
+            <translation><!-- Consulting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics</masterLabel>
+            <translation><!-- Electronics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy</masterLabel>
+            <translation><!-- Energy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation><!-- Environmental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Government</masterLabel>
+            <translation><!-- Government --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare</masterLabel>
+            <translation><!-- Healthcare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospitality</masterLabel>
+            <translation><!-- Hospitality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machinery</masterLabel>
+            <translation><!-- Machinery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Media</masterLabel>
+            <translation><!-- Media --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not For Profit</masterLabel>
+            <translation><!-- Not For Profit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation><!-- Recreation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipping</masterLabel>
+            <translation><!-- Shipping --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technology</masterLabel>
+            <translation><!-- Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telecommunications</masterLabel>
+            <translation><!-- Telecommunications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field is created to be used only on Existing Account Finder page --></help>
+        <label><!-- Is Selected --></label>
+        <name>Is_Selected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location ID --></label>
+        <name>LOC_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Fixed Cost --></label>
+        <name>Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Rated Cost --></label>
+        <name>Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last 12 Months - Revenue --></label>
+        <name>Last_12_Months_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL - Last 12 months revenue --></label>
+        <name>Last_12_months_FSL_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Revenue --></label>
+        <name>Last_12_months_RPM_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Customer Touch --></label>
+        <name>Last_Customer_Touch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Face to Face Activity Date --></label>
+        <name>Last_Face_to_Face_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sales Interaction --></label>
+        <name>Last_Sales_Interaction__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field holds the comment of the latest Activity of Type = &apos;Account/Opportunity Update&apos; on Account which is created by Account Owner, NCA or SAC. --></help>
+        <label><!-- Latest Update --></label>
+        <name>Latest_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Last Modified By --></label>
+        <name>Legacy_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Accounts (Legacy Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Legacy Last Modified Date --></label>
+        <name>Legacy_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Owner Id --></label>
+        <name>Legacy_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Address City --></label>
+        <name>Legal_Entity_Address_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Address Country --></label>
+        <name>Legal_Entity_Address_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Address State/Province --></label>
+        <name>Legal_Entity_Address_State_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Address Street --></label>
+        <name>Legal_Entity_Address_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity Address Zip/Postal Code --></label>
+        <name>Legal_Entity_Address_Zip_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Equifax No --></label>
+        <name>Legal_Equifax_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Site Duns # --></label>
+        <name>Legal_Site_Duns__c</name>
+    </fields>
+    <fields>
+        <help><!-- use this field to store old lessee no as a backup field for future cleanup --></help>
+        <label><!-- Lessee No Duplicate Backup --></label>
+        <name>LesseeNo_Dup_Backup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lessee Number --></label>
+        <name>LesseeNo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Fixed Cost --></label>
+        <name>Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Rated Cost --></label>
+        <name>Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Life to Date - Revenue --></label>
+        <name>Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Confidence --></label>
+        <name>Match_Confidence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Grade --></label>
+        <name>Match_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Missing DNB --></label>
+        <name>Missing_DNB__c</name>
+    </fields>
+    <fields>
+        <label><!-- National Rental # --></label>
+        <name>NATL_RNTL_CUST_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NCA --></label>
+        <lookupFilter>
+            <errorMessage><!-- That person does not have an NCA profile --></errorMessage>
+        </lookupFilter>
+        <name>NCA__c</name>
+        <relationshipLabel><!-- Accounts (NCA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NIAM --></label>
+        <name>NIAM__c</name>
+        <relationshipLabel><!-- Accounts (NIAM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- National Customer Flag --></label>
+        <name>NationalCustFlag__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the stage of the National Rental Application process --></help>
+        <label><!-- National Rental Application Stage --></label>
+        <name>National_Rental_Application_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Account Setup - Processing</masterLabel>
+            <translation><!-- Account Setup - Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ammendments / Hazmat</masterLabel>
+            <translation><!-- Ammendments / Hazmat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Approval</masterLabel>
+            <translation><!-- Credit Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined - Credit</masterLabel>
+            <translation><!-- Declined - Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance - COI</masterLabel>
+            <translation><!-- Insurance - COI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance - Ryder</masterLabel>
+            <translation><!-- Insurance - Ryder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location List</masterLabel>
+            <translation><!-- Location List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obtain Authorized List</masterLabel>
+            <translation><!-- Obtain Authorized List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Application</masterLabel>
+            <translation><!-- Signed Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verifying Customer Information</masterLabel>
+            <translation><!-- Verifying Customer Information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Nearest Ryder branch --></label>
+        <name>Nearest_Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Status % --></label>
+        <name>No_Status_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Key Account Capture Date --></label>
+        <name>Non_Key_Account_Capture_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate which other classifications or designations are pertinent to this account --></help>
+        <label><!-- Other Designations --></label>
+        <name>Other_Designations__c</name>
+        <picklistValues>
+            <masterLabel>Growth</masterLabel>
+            <translation><!-- Growth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MWBE (Minority Owned)</masterLabel>
+            <translation><!-- MWBE (Minority Owned) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Tag Team</masterLabel>
+            <translation><!-- National Tag Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 10</masterLabel>
+            <translation><!-- Top 10 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please specify Subs for PM&apos;s --></help>
+        <label><!-- Other Instructions --></label>
+        <name>Other_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- This information will not be displayed in SHOP. --></help>
+        <label><!-- Other Misc. Billing Information --></label>
+        <name>Other_Misc_Billing_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerRegion --></label>
+        <name>OwnerRegion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Copy --></label>
+        <name>Owner_Copy__c</name>
+        <relationshipLabel><!-- Accounts (Owner Copy) --></relationshipLabel>
+    </fields>
+    <fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>PO_NUMBER__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pager --></label>
+        <name>Pager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Status --></label>
+        <name>ParentAccountStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Classification --></label>
+        <name>Parent_Account_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Owner --></label>
+        <name>Parent_Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Fleet Ownership Type --></label>
+        <name>Parent_Fleet_Ownership_type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 2 --></label>
+        <name>Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polk total class 3-8 --></label>
+        <name>Polk_total_class_3_8__c</name>
+    </fields>
+    <fields>
+        <label><!-- PostalCode No Plus 4 --></label>
+        <name>PostalCode_No_Plus_4__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Projected Revenue --></label>
+        <name>Projected_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospecting Status --></label>
+        <name>Prospecting_Status__c</name>
+        <picklistValues>
+            <masterLabel>Actively Pursuing</masterLabel>
+            <translation><!-- Actively Pursuing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Actively Pursuing</masterLabel>
+            <translation><!-- Not Actively Pursuing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspect</masterLabel>
+            <translation><!-- Suspect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will Never Pursue</masterLabel>
+            <translation><!-- Will Never Pursue --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Fixed Cost% --></label>
+        <name>RPM_Last_12_Months_Fixed_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Fixed Cost --></label>
+        <name>RPM_Last_12_Months_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Margin% --></label>
+        <name>RPM_Last_12_Months_Margin_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Margin --></label>
+        <name>RPM_Last_12_Months_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Rated Cost% --></label>
+        <name>RPM_Last_12_Months_Rated_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Rated Cost --></label>
+        <name>RPM_Last_12_Months_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Last 12 Months - Revenue --></label>
+        <name>RPM_Last_12_Months_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Fixed Cost% --></label>
+        <name>RPM_Life_to_Date_Fixed_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Fixed Cost --></label>
+        <name>RPM_Life_to_Date_Fixed_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Margin% --></label>
+        <name>RPM_Life_to_Date_Margin_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Margin --></label>
+        <name>RPM_Life_to_Date_Margin__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Rated Cost% --></label>
+        <name>RPM_Life_to_Date_Rated_Cost_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Rated Cost --></label>
+        <name>RPM_Life_to_Date_Rated_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPM - Life to Date - Revenue --></label>
+        <name>RPM_Life_to_Date_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- If RS Account Classification is changed manually then Check &quot;Do Not Override AC&quot; field. --></help>
+        <label><!-- RydeSmart Classification --></label>
+        <name>RSM_AC_Classification__c</name>
+        <picklistValues>
+            <masterLabel>Key Account</masterLabel>
+            <translation><!-- Key Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Key Account</masterLabel>
+            <translation><!-- Non-Key Account --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RSM Account Status Update Date --></label>
+        <name>RSM_Account_Status_Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>RSM_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing --></label>
+        <name>RSM_Billing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Override CCM --></label>
+        <name>RSM_CCM_manual_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- If CCM is changed Manually then check &quot;Do Not Override CCM&quot; field. --></help>
+        <label><!-- CCM --></label>
+        <name>RSM_CCMs__c</name>
+        <relationshipLabel><!-- Accounts (CCM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>RSM_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>--None--</masterLabel>
+            <translation><!-- - - None- -  --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue Tree Systems</masterLabel>
+            <translation><!-- Blue Tree Systems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyntrx</masterLabel>
+            <translation><!-- Cyntrx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fleetmatics</masterLabel>
+            <translation><!-- Fleetmatics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JJ Keller</masterLabel>
+            <translation><!-- JJ Keller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omnitracs</masterLabel>
+            <translation><!-- Omnitracs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orbcomm</masterLabel>
+            <translation><!-- Orbcomm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rand McNally</masterLabel>
+            <translation><!-- Rand McNally --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skybitz</masterLabel>
+            <translation><!-- Skybitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sprint</masterLabel>
+            <translation><!-- Sprint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teletrac</masterLabel>
+            <translation><!-- Teletrac --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telogis</masterLabel>
+            <translation><!-- Telogis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom Tom</masterLabel>
+            <translation><!-- Tom Tom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trimble/PeopleNet</masterLabel>
+            <translation><!-- Trimble/PeopleNet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xata</masterLabel>
+            <translation><!-- Xata --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zonar</masterLabel>
+            <translation><!-- Zonar --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do Not Override RC --></label>
+        <name>RSM_Manual_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Onboarding --></label>
+        <name>RSM_Onboarding__c</name>
+        <picklistValues>
+            <masterLabel>Contacted and Training Scheduled</masterLabel>
+            <translation><!-- Contacted and Training Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiation</masterLabel>
+            <translation><!-- Initiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Researching</masterLabel>
+            <translation><!-- Researching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trained</masterLabel>
+            <translation><!-- Trained --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RSM PLC FLag --></label>
+        <name>RSM_PLC_FLag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plus1 Total Unit --></label>
+        <name>RSM_Plus1_Total_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plus Total Unit --></label>
+        <name>RSM_Plus_Total_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monthly Revenue --></label>
+        <name>RSM_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- STD Total Unit --></label>
+        <name>RSM_STD_Total_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- bypass --></label>
+        <name>RSM_bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Location Type --></label>
+        <name>RYDER_LOC_TYPE__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution Center</masterLabel>
+            <translation><!-- Distribution Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Division</masterLabel>
+            <translation><!-- Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headquarters</masterLabel>
+            <translation><!-- Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing/Assembly Center</masterLabel>
+            <translation><!-- Manufacturing/Assembly Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary Undefined</masterLabel>
+            <translation><!-- Subsidiary Undefined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Center</masterLabel>
+            <translation><!-- Transportation Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehousing Center</masterLabel>
+            <translation><!-- Warehousing Center --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rated FSL revenue --></label>
+        <name>Rated_FSL_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rated RPM revenue --></label>
+        <name>Rated_RPM_revenue__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Remaining Revenue --></label>
+        <name>Remianing_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be used the first time we are automatically generating renewal opportunities. Please indicate from which we should look for expiring units. Units expiring before this date will be ignored in the first generation process. --></help>
+        <label><!-- Renewal Opportunity Start Date --></label>
+        <name>Renewal_Opportunity_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be used for automatic generation of renewal opportunities. Indicate if we should create opportunities to cover expiring units by months, quarters, half-years or full-years --></help>
+        <label><!-- Renewal Opportunity Frequency --></label>
+        <name>Renewal_Opportunity__c</name>
+        <picklistValues>
+            <masterLabel>Annually</masterLabel>
+            <translation><!-- Annually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation><!-- Do Not Generate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarterly</masterLabel>
+            <translation><!-- Quarterly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi-Annually</masterLabel>
+            <translation><!-- Semi-Annually --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rental Price Tier --></label>
+        <name>Rental_Price_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 54</masterLabel>
+            <translation><!-- Tier 54 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 55</masterLabel>
+            <translation><!-- Tier 55 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 56</masterLabel>
+            <translation><!-- Tier 56 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 99</masterLabel>
+            <translation><!-- Tier 99 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier Premium</masterLabel>
+            <translation><!-- Tier Premium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reported to BOD --></label>
+        <name>Reported_to_BOD__c</name>
+        <picklistValues>
+            <masterLabel>Q1 2013</masterLabel>
+            <translation><!-- Q1 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q1 2014</masterLabel>
+            <translation><!-- Q1 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q2 2013</masterLabel>
+            <translation><!-- Q2 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q2 2014</masterLabel>
+            <translation><!-- Q2 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q3 2013</masterLabel>
+            <translation><!-- Q3 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q3 2014</masterLabel>
+            <translation><!-- Q3 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4 2012</masterLabel>
+            <translation><!-- Q4 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4 2013</masterLabel>
+            <translation><!-- Q4 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Q4 2014</masterLabel>
+            <translation><!-- Q4 2014 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RiskStatusAtRisk --></label>
+        <name>RiskStatusAtRisk__c</name>
+    </fields>
+    <fields>
+        <label><!-- RiskStatusCBCount --></label>
+        <name>RiskStatusCBCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- RiskStatusGrowth --></label>
+        <name>RiskStatusGrowth__c</name>
+    </fields>
+    <fields>
+        <label><!-- RiskStatusNoStatus --></label>
+        <name>RiskStatusNoStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- RiskStatusStable --></label>
+        <name>RiskStatusStable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk ID --></label>
+        <name>Risk_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accuracy Probability --></label>
+        <name>RyderProbabilityMatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ryder Specific Location Type --></label>
+        <name>Ryder_Specific_Loc_Type__c</name>
+        <picklistValues>
+            <masterLabel>Branch</masterLabel>
+            <translation><!-- Branch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distribution Center</masterLabel>
+            <translation><!-- Distribution Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Division</masterLabel>
+            <translation><!-- Division --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Headquarters</masterLabel>
+            <translation><!-- Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing/Assembly Center</masterLabel>
+            <translation><!-- Manufacturing/Assembly Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rental</masterLabel>
+            <translation><!-- Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary Undefined</masterLabel>
+            <translation><!-- Subsidiary Undefined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation Center</masterLabel>
+            <translation><!-- Transportation Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehousing Center</masterLabel>
+            <translation><!-- Warehousing Center --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAM Account Source --></label>
+        <name>SAM_Account_Source__c</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Blast</masterLabel>
+            <translation><!-- Email Blast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exp. With Ryder/Prev. customer</masterLabel>
+            <translation><!-- Exp. With Ryder/Prev. customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet – Other</masterLabel>
+            <translation><!-- Internet – Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ryder Website</masterLabel>
+            <translation><!-- Ryder Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce called/visited</masterLabel>
+            <translation><!-- Salesforce called/visited --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Buyers Guide</masterLabel>
+            <translation><!-- Truck Buyers Guide --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Paper</masterLabel>
+            <translation><!-- Truck Paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Trader</masterLabel>
+            <translation><!-- Truck Trader --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk in/Drive By</masterLabel>
+            <translation><!-- Walk in/Drive By --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth/Business assoc</masterLabel>
+            <translation><!-- Word of mouth/Business assoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow Pages</masterLabel>
+            <translation><!-- Yellow Pages --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAM_Cust_ID --></label>
+        <name>SAM_Cust_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SCS Collaboration --></label>
+        <name>SCS_Collaboration__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code Desc --></label>
+        <name>SIC_Code_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- SIC Code Ryder --></label>
+        <name>SIC_Code_Ryder__c</name>
+        <relationshipLabel><!-- Accounts (SIC Code Ryder) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SIC Code --></label>
+        <name>SIC_Code__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>STATUS_ACTIVE__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SapID --></label>
+        <name>SapID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Duns # --></label>
+        <name>Site_Duns__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are speed changes authorized and by whom --></help>
+        <label><!-- Speed Changes --></label>
+        <name>Speed_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stable Status % --></label>
+        <name>Stable_Status_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Level --></label>
+        <name>Support_Level__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Top 10 Account --></label>
+        <name>Top10Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Active Vehicles --></label>
+        <name>Total_Active_Vehicles__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field contains the sum of competitive vehicle total from related records on account. This count excludes Trailers from the totals --></help>
+        <label><!-- Competitive Vehicle Total --></label>
+        <name>Total_Competitive_Units__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total NRV Vehicles --></label>
+        <name>Total_NRV_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best overall vehicle count --></label>
+        <name>Total_vehicle_count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Export</masterLabel>
+            <translation><!-- Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale</masterLabel>
+            <translation><!-- Wholesale --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UTC Assigned --></label>
+        <name>UTC_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- UTC_Lead_ID --></label>
+        <name>UTC_Lead_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- UVS Related --></label>
+        <name>UVS_Related__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Trucks Purchased --></help>
+        <label><!-- UVS Truck Count --></label>
+        <name>UVS_Truck_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- UVS Account Status --></label>
+        <name>UVS_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Update Revenue --></label>
+        <name>Update_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- UpdatedFSLRPMFields --></label>
+        <name>UpdatedFSLRPMFields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated in SAM --></label>
+        <name>Updated_in_SAM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle count source --></label>
+        <name>Vehicle_count_source__c</name>
+        <picklistValues>
+            <masterLabel>-- None --</masterLabel>
+            <translation><!-- - -  None - -  --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Warranty Customer --></label>
+        <name>Warranty_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Training Complete --></label>
+        <name>Web_Training_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Verified Date --></label>
+        <name>addr_verified_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sourced from Data.com --></label>
+        <name>ddc_prospector__Sourced_from_Data_com__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_Rental_Id --></label>
+        <name>ext_Rental_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OSKeyID --></label>
+        <name>iSell__OSKeyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- int_CustProspectID --></label>
+        <name>int_CustProspectID__c</name>
+    </fields>
+    <fields>
+        <label><!-- fordata --></label>
+        <name>to__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Equifax Section --></label>
+            <section>Equifax Section</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Information --></label>
+            <section>Fleet Information</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Opportunity Settings --></label>
+            <section>Renewal Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label><!-- iSell --></label>
+            <section>iSell</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>RydeSmart Layout</layout>
+        <sections>
+            <label><!-- Account Classification --></label>
+            <section>Account Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Section --></label>
+            <section>Credit Section</section>
+        </sections>
+        <sections>
+            <label><!-- DUNS &amp; SIC Information --></label>
+            <section>DUNS &amp; SIC Information</section>
+        </sections>
+        <sections>
+            <label><!-- Doing Business As --></label>
+            <section>Doing Business As</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantor Info --></label>
+            <section>Guarantor Info</section>
+        </sections>
+        <sections>
+            <label><!-- HQ Visit Information (Testing HQ Visit) --></label>
+            <section>HQ Visit Information (Testing HQ Visit)</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Contract(s) --></label>
+            <section>RydeSmart Contract(s)</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Info --></label>
+            <section>RydeSmart Info</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Pre launch Checklist --></label>
+            <section>RydeSmart Pre launch Checklist</section>
+        </sections>
+        <sections>
+            <label><!-- RydeSmart Vehicle(s) --></label>
+            <section>RydeSmart Vehicle(s)</section>
+        </sections>
+        <sections>
+            <label><!-- User Info --></label>
+            <section>User Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder FMS Child Account Layout</layout>
+        <sections>
+            <label><!-- Account Classification --></label>
+            <section>Account Classification</section>
+        </sections>
+        <sections>
+            <label><!-- DUNS &amp; SIC Information --></label>
+            <section>DUNS &amp; SIC Information</section>
+        </sections>
+        <sections>
+            <label><!-- Doing Business As --></label>
+            <section>Doing Business As</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- iSell --></label>
+            <section>iSell</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder FMS Parent Account Layout</layout>
+        <sections>
+            <label><!-- Account Classification --></label>
+            <section>Account Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Section --></label>
+            <section>Credit Section</section>
+        </sections>
+        <sections>
+            <label><!-- DUNS &amp; SIC Information --></label>
+            <section>DUNS &amp; SIC Information</section>
+        </sections>
+        <sections>
+            <label><!-- Doing Business As --></label>
+            <section>Doing Business As</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Information --></label>
+            <section>Fleet Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Instructions for all Branches --></label>
+            <section>General Instructions for all Branches</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantor Info --></label>
+            <section>Guarantor Info</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Address --></label>
+            <section>Legal Address</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Opportunity Settings --></label>
+            <section>Renewal Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label><!-- iSell --></label>
+            <section>iSell</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder FMS Parent Account Planning Layout</layout>
+        <sections>
+            <label><!-- Account Classification --></label>
+            <section>Account Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Account Plan --></label>
+            <section>Account Plan</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Section --></label>
+            <section>Credit Section</section>
+        </sections>
+        <sections>
+            <label><!-- DUNS &amp; SIC Information --></label>
+            <section>DUNS &amp; SIC Information</section>
+        </sections>
+        <sections>
+            <label><!-- Doing Business As --></label>
+            <section>Doing Business As</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Information --></label>
+            <section>Fleet Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Instructions for all Branches --></label>
+            <section>General Instructions for all Branches</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantor Info --></label>
+            <section>Guarantor Info</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Address --></label>
+            <section>Legal Address</section>
+        </sections>
+        <sections>
+            <label><!-- Near By Contacts --></label>
+            <section>Near By Contacts</section>
+        </sections>
+        <sections>
+            <label><!-- Renewal Opportunity Settings --></label>
+            <section>Renewal Opportunity Settings</section>
+        </sections>
+        <sections>
+            <label><!-- iSell --></label>
+            <section>iSell</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ryder Pure Rental Account Layout</layout>
+        <sections>
+            <label><!-- Account Classification --></label>
+            <section>Account Classification</section>
+        </sections>
+        <sections>
+            <label><!-- DUNS &amp; SIC Information --></label>
+            <section>DUNS &amp; SIC Information</section>
+        </sections>
+        <sections>
+            <label><!-- Equifax Section --></label>
+            <section>Equifax Section</section>
+        </sections>
+        <sections>
+            <label><!-- iSell --></label>
+            <section>iSell</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UVS Account Page Layout</layout>
+        <sections>
+            <label><!-- Account Classification --></label>
+            <section>Account Classification</section>
+        </sections>
+        <sections>
+            <label><!-- Credit Section --></label>
+            <section>Credit Section</section>
+        </sections>
+        <sections>
+            <label><!-- DUNS &amp; SIC Information --></label>
+            <section>DUNS &amp; SIC Information</section>
+        </sections>
+        <sections>
+            <label><!-- General Instructions for all Branches --></label>
+            <section>General Instructions for all Branches</section>
+        </sections>
+        <sections>
+            <label><!-- Guarantor Info --></label>
+            <section>Guarantor Info</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Address --></label>
+            <section>Legal Address</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>UVS Sales Page Layout</layout>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Needs --></label>
+            <section>Customer Needs</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Referral/Customer Referral --></label>
+            <section>Employee Referral/Customer Referral</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Lease Information --></label>
+            <section>Lease Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Competitor Vehicle --></label>
+        <name>Competitor_Vehicle</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Ryder Account --></label>
+        <name>Ryder_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ryder FMS Branch Account --></label>
+        <name>Ryder_FMS_Branch_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ryder FMS Parent Account --></label>
+        <name>Ryder_Parent_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Ryder Pure Rental Account --></label>
+        <name>Ryder_Rental_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendor --></label>
+        <name>Vendor</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter country code of either &quot;US&apos; or &quot;CA&quot; is required. --></errorMessage>
+        <name>AccountBillingCountry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter province is required. --></errorMessage>
+        <name>AccountBillingProvince</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter state is required. --></errorMessage>
+        <name>AccountBillingState</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only an Admin can change the Account Name field. --></errorMessage>
+        <name>AccountNameChanges</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter country code of either US or CA is required. --></errorMessage>
+        <name>AccountShippingCountry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter province is required. --></errorMessage>
+        <name>AccountShippingProvince</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter state is required. --></errorMessage>
+        <name>AccountShippingState</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing fax numbers should be in this format: (999) 999-9999. --></errorMessage>
+        <name>Billing_Fax_has_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Billing phone numbers should be in this format: (999) 999-9999. --></errorMessage>
+        <name>Billing_Phone_has_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Canadian postal code must be in A9A 9A9 format. --></errorMessage>
+        <name>Canadian_Billing_Postal_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cell numbers should be in this format: (999) 999-9999. --></errorMessage>
+        <name>Cell_has_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot select this flag unless this is a National Account. --></errorMessage>
+        <name>CentralDecisionMakingDependentOnNational</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the Centralized decision flag. Please contact SalesAdmin to request changes. --></errorMessage>
+        <name>CentralDecisionmakingonlychangebyadmin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot change the ownership of a Customer account.  Please contact your administrator to request changes. --></errorMessage>
+        <name>CustomerAccountOwnership</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DUNS HQ # is not numeric. --></errorMessage>
+        <name>DUNSHQNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Do not change owner can be checked only for coordinated accounts. --></errorMessage>
+        <name>Do_Not_Change_Owner_update_not_allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Domestic Ultimate Duns # is not numeric. --></errorMessage>
+        <name>DomesticUltimateDunsNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enterprise Account Manager must be a &apos;Director of Enterprise Sales&apos; --></errorMessage>
+        <name>EnterpriseAccountManagerUser</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &quot;Enterprise Account&quot; or &quot;Enterprise Subsidiary&quot; Additional Classifications can only be assigned to National Accounts and Enterpise Account Manager must also be specified --></errorMessage>
+        <name>EnterpriseAccountRequisites</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Family Company ID is not numeric. --></errorMessage>
+        <name>FamilyCompanyIDNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Global Ultimate Duns # is not numeric. --></errorMessage>
+        <name>GlobalUltimateDunsNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter country code of either &quot;US&apos; or &quot;CA&quot; is required. --></errorMessage>
+        <name>LegalEntityAddressCountry</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter province is required. --></errorMessage>
+        <name>LegalEntityAddressProvince</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter state is required. --></errorMessage>
+        <name>LegalEntityAddressState</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Lessee # must be Numeric. --></errorMessage>
+        <name>LesseeFieldIsNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only an administrator can change the Account Classification for a Customer Account. --></errorMessage>
+        <name>LockClassificationField</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only an admin can change the market segment from 00, 1, 4, or 7 --></errorMessage>
+        <name>MarketSegmentValues</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NR# must be Numeric. --></errorMessage>
+        <name>NRNumberNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lease sales people cannot create FMS Rental accounts. National Rental Managers can create FMS Rental accounts only. --></errorMessage>
+        <name>Only_National_can_create_FMS_Rentals</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Pager numbers should be in this format: (999) 999-9999. --></errorMessage>
+        <name>Pager_has_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone numbers should be in this format: (999) 999-9999. --></errorMessage>
+        <name>Phone2_has_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Phone numbers should be in this format: (999) 999-9999. --></errorMessage>
+        <name>Phone_has_ten_digits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Key Account : User can update status only to &apos;Trained&apos; from &apos;Contacted and Training Scheduled&apos;
+Non-Key Account : User can update status only to &apos;Trained&apos; --></errorMessage>
+        <name>RSMOnboardingStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Ryde Smart Users do not have access to edit this field --></errorMessage>
+        <name>RSM_Account_Name_ReadOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only National sales people or NCA role can update the Renewal Opportunity Start Date or Renewal Opportunity Frequency fields in National Accounts.  Please contact the DNA or NCA to update these fields. --></errorMessage>
+        <name>RenewalFrequencyOpenToNationalOnly</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SIC Code is not editable since a value already exists --></errorMessage>
+        <name>SICCodeEditable</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SIC Code is not numeric. --></errorMessage>
+        <name>SICCodeNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Site Duns # is not numeric. --></errorMessage>
+        <name>SiteDunsNumeric</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add a Site Duns # before you can update the Legal Site Duns # field. --></errorMessage>
+        <name>Site_Duns_Num_must_exist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Zip code must be in 99999 or 99999-9999 format. --></errorMessage>
+        <name>US_Billing_Zip_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A valid two-letter country code is required for UVS Accounts. --></errorMessage>
+        <name>UVS_AccountShippingCountry</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Conga_Composer_OAuth --></label>
+        <name>APXTConga4__Conga_Composer_OAuth</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Conga_Mail_Merge --></label>
+        <name>APXTConga4__Conga_Mail_Merge</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- All_Contacts_Report --></label>
+        <name>All_Contacts_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Billing_General --></label>
+        <name>Billing_General</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Call_Plan --></label>
+        <name>Call_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Customer_CPI --></label>
+        <name>Customer_CPI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Customer_Information_Report --></label>
+        <name>Customer_Information_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Customer_Prospect_Information --></label>
+        <name>Customer_Prospect_Information</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- D_B --></label>
+        <name>D_B</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FMCSA_Record --></label>
+        <name>FMCSA_Record</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Fuel --></label>
+        <name>Fuel</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Glossary --></label>
+        <name>Glossary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- History_Viewer --></label>
+        <name>History_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Hoovers --></label>
+        <name>Hoovers</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Insurance --></label>
+        <name>Insurance</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Invoice --></label>
+        <name>Invoice</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Key_Contacts --></label>
+        <name>Key_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Lease_Extra --></label>
+        <name>Lease_Extra</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Locations_Contacts_Report --></label>
+        <name>Locations_Contacts_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Meeting_Agenda --></label>
+        <name>Meeting_Agenda</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Non_Lease_Contract --></label>
+        <name>Non_Lease_Contract</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Opportunity_Review --></label>
+        <name>Opportunity_Review</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RSM_Device_Status --></label>
+        <name>RSM_Device_Status</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- RSM_Health_Status --></label>
+        <name>RSM_Health_Status</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Rebillables --></label>
+        <name>Rebillables</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SyncRADAR --></label>
+        <name>SyncRADAR</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rate Sheet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rate Sheets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Branch No --></label>
+        <name>Branch_No__c</name>
+        <relationshipLabel><!-- Rate Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Deal Summary --></label>
+        <name>Deal_Summary__c</name>
+        <relationshipLabel><!-- Rate Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EVA --></label>
+        <name>EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fuel Type --></label>
+        <name>FuelType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gross Revenue --></label>
+        <name>Gross_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include In Quote --></label>
+        <name>Include_In_Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in EVA --></label>
+        <name>Include_in_EVA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Investment --></label>
+        <name>Net_Investment__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Vehicles --></label>
+        <name>No_of_Vehicles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Revenue --></label>
+        <name>Old_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Rate Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Create Date --></label>
+        <name>Original_Create_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Package Type --></label>
+        <name>Package_Type__c</name>
+        <picklistValues>
+            <masterLabel>Non-Regular</masterLabel>
+            <translation><!-- Non-Regular --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular</masterLabel>
+            <translation><!-- Regular --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Rate Sheet from Radar --></help>
+        <label><!-- Rate Sheet Name --></label>
+        <name>Rate_Sheet_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field to represent the time difference between Creation date of Rate Sheet and Opportunity --></help>
+        <label><!-- Time Difference --></label>
+        <name>Time_Difference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transaction Type --></label>
+        <name>Transaction_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add Insurance Only</masterLabel>
+            <translation><!-- Add Insurance Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add/Drop Services</masterLabel>
+            <translation><!-- Add/Drop Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract Change</masterLabel>
+            <translation><!-- Contract Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion to Contract Change</masterLabel>
+            <translation><!-- Conversion to Contract Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conversion to Term Extension</masterLabel>
+            <translation><!-- Conversion to Term Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lessee  Re-Assignment</masterLabel>
+            <translation><!-- Lessee  Re-Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New/Add Business</masterLabel>
+            <translation><!-- New/Add Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement</masterLabel>
+            <translation><!-- Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Term Extension</masterLabel>
+            <translation><!-- Term Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk Continuation</masterLabel>
+            <translation><!-- Walk Continuation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ext_ratesheet_id --></label>
+        <name>ext_ratesheet_id__c</name>
+    </fields>
+    <layouts>
+        <layout>Rate Sheet Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- No changes are allowed on this page. if you are trying to update the Include in Quote, please go to the Opportunity Details Page. For any other updates, go to Radar using the Edit in Radar link on the Opportunity Details Page. --></errorMessage>
+        <name>No_UpdatesOnRateSheet</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Launch_Radar --></label>
+        <name>Launch_Radar</name>
+    </webLinks>
+</CustomObjectTranslation>

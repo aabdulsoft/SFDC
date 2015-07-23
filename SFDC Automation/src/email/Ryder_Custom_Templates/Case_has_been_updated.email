@@ -1,0 +1,11 @@
+The following case was created or modified:
+
+Case Number: {!Case.CaseNumber}
+Modified by: {!Case.LastModifiedBy}
+Most Recent Comment: {!Case.Last_Case_Comment}
+Link: {!Case.Link}
+
+You are receiving this notification because you are the owner of the case.
+
+Sincerely,
+Ryder Sales Admin

@@ -1,0 +1,16 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="1" aEditID="c1r1" >
+<![CDATA[<FONT style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt" class=Apple-style-span face="Arial, sans-serif"><FONT style="COLOR: rgb(0,0,0)"><SPAN style="FONT-WEIGHT: bold"><FONT size=+0>Dear Valued Ryder Customer,</FONT><BR><BR style="FONT-WEIGHT: bold"></SPAN></FONT></FONT>
+<P style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold"><FONT face="Arial, sans-serif">Please complete this brief online survey so we might better serve you in the future.&nbsp; Your responses will help us to continue providing information and services that you find most useful.<BR></FONT></P>
+<P style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold"><FONT face="Arial, sans-serif"><BR></FONT></P>
+<P style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold"><FONT face="Arial, sans-serif">Case Number:&nbsp;{!Case.CaseNumber}</FONT></P>
+<P style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold"><FONT face="Arial, sans-serif">Case Description:&nbsp;{!Case.Description}</FONT></P><FONT style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt" face="Arial, sans-serif"><B style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold">
+<DIV><FONT style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt" face="Arial, sans-serif"><B style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold"><BR></B></FONT></DIV>Again, thank you for your time. To begin the survey, simply click on the link below.&nbsp;</B></FONT> 
+<DIV style="FONT-FAMILY: arial"><B><BR></B></DIV>
+<DIV><FONT style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt" face="Arial, sans-serif"><B style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt"></B></FONT><B style="FONT-FAMILY: arial"><A href="http://www.clicktools.com/survey?iv=200zzomsylriw&amp;q1={!Contact.Id}&amp;q2={!Case.Id}&amp;q3=01260000000UHZiAAO">Click here for survey link</A><BR></B>
+<DIV><FONT style="COLOR: rgb(0,0,0); FONT-SIZE: 12pt" face="Arial, sans-serif">
+<P style="COLOR: rgb(0,0,0); FONT-SIZE: 12pt" class=MsoNormal><BR></P></FONT>
+<DIV style="FONT-FAMILY: arial"><FONT face="Arial, sans-serif"><SPAN style="FONT-FAMILY: arial; COLOR: rgb(0,0,0); FONT-SIZE: 12pt; FONT-WEIGHT: bold" class="ct_text ct_text_top">Should you have any additional questions, please contact Ryder Customer Care at 1-800-947-9337 or <A href="mailto:Customer_Service-US@ryder.com">Customer_Service-US@ryder.com</A>.</SPAN></FONT><BR></DIV></DIV></DIV>]]></td>
+</tr>
+</table>

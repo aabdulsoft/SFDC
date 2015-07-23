@@ -1,0 +1,5348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Close</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>DeleteSeries</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewTask</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ActivityDate</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDisposition</fullName>
+    </fields>
+    <fields>
+        <fullName>CallDurationInSeconds</fullName>
+    </fields>
+    <fields>
+        <fullName>CallObject</fullName>
+    </fields>
+    <fields>
+        <fullName>CallType</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>High</fullName>
+                <default>false</default>
+                <highPriority>true</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Normal</fullName>
+                <default>true</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <highPriority>false</highPriority>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RecurrenceInterval</fullName>
+    </fields>
+    <fields>
+        <fullName>RecurrenceRegeneratedType</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Started</fullName>
+                <closed>false</closed>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting on someone else</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deferred/Callback</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retry</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Resolved</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Resolved</fullName>
+                <closed>false</closed>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Annual Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corrective Action Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel Incentive Task</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ownership Validation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Account Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account/Opportunity Update</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ACH Changes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Annual Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bi monthly call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bi monthly call 1st attempt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bi monthly call 2nd attempt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BMC 3rd attempt, escalation required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CCO Action</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Collision Review Board</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Question/ Direction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Compliance Summary/ Recommendations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit Line Increases</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CSA Guidance/Training/Score Reduction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Appreciation Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Safety Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customized Driver Training/ Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Driver Awards Program</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Driver Safety Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Educate Events</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Escalations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executive Leadership Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Extended Terms</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financials Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fleet Risk Assessment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grand Opening</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ILOC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leadership Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mock DOT Audit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Name Changed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Natural Gas Vehicle Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Notes from scheduled meeting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open Hose</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outbound Call</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partial Win</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Participant in Customer Safety Symposium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder Safety Capabilities Presentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Safety Program Development/ Benchmarking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security Refunds</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Town Forum</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Verbal Financial Discussion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>WhatId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WhoId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <recordTypes>
+        <fullName>CCO_Action_Plan</fullName>
+        <active>true</active>
+        <label>CCO Action Plan</label>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Annual Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>ACH Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account%2FOpportunity Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSA Guidance%2FTraining%2FScore Reduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collision Review Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Question%2F Direction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Summary%2F Recommendations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Line Increases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Appreciation Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Safety Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customized Driver Training%2F Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Awards Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Safety Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Educate Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Leadership Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extended Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financials Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Risk Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Opening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leadership Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mock DOT Audit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas Vehicle Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Notes from scheduled meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Win</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant in Customer Safety Symposium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Safety Capabilities Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Program Development%2F Benchmarking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security Refunds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Town Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verbal Financial Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>CWP_Task</fullName>
+        <active>true</active>
+        <description>This record type will be used by customer web portal.</description>
+        <label>CWP Task</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Appreciation Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Educate Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Opening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Town Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Care360</fullName>
+        <active>true</active>
+        <description>This record type is used for failed surveys</description>
+        <label>Care360</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Survey</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Contact_Me_Now</fullName>
+        <active>true</active>
+        <description>Contact Me Now Record Type - Used by Mkt Automation</description>
+        <label>Contact Me Now</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Credit_Activity_Task</fullName>
+        <active>true</active>
+        <description>This Record Type is used for Credit to create Activities</description>
+        <label>Credit Activity Task</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>ACH Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Line Increases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extended Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financials Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Security Refunds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verbal Financial Discussion</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fuel_Sales</fullName>
+        <active>true</active>
+        <description>For fuel team to conduct a sales survey</description>
+        <label>Fuel Sales</label>
+        <picklistValues>
+            <picklist>Disposition__c</picklist>
+            <values>
+                <fullName>Incorrect contact%2F info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spoke to contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>BDM Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DBD Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Fuel Incentive Task</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>ACH Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account%2FOpportunity Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSA Guidance%2FTraining%2FScore Reduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collision Review Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Question%2F Direction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Summary%2F Recommendations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Line Increases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Appreciation Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Safety Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customized Driver Training%2F Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Awards Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Safety Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Educate Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Leadership Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extended Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Financials Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Risk Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Opening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leadership Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mock DOT Audit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas Vehicle Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Notes from scheduled meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Partial Win</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant in Customer Safety Symposium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Safety Capabilities Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Program Development%2F Benchmarking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security Refunds</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Town Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verbal Financial Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>X60_Days_Status__c</picklist>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>HQ_Visit_Task</fullName>
+        <active>true</active>
+        <description>Activity associated with the HQ Visit</description>
+        <label>HQ Visit Task</label>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>ACH Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Line Increases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extended Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verbal Financial Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>IAM_Task</fullName>
+        <active>true</active>
+        <description>IAM and NIAM will use this as default task record type to create tasks</description>
+        <label>IAM Task</label>
+        <picklistValues>
+            <picklist>Disposition__c</picklist>
+            <values>
+                <fullName>Incorrect contact%2F info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spoke to contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>BDM Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DBD Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_of_Issue__c</picklist>
+            <values>
+                <fullName>ACCOUNT MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASSET MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BREAKDOWN ANALYSIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAMPAIGN REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAPTIVE SHOP ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMUNICATION RECEIVED FROM SHOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSA 2010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOM REPORT REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER CARE PLAN ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER REQUESTED ANALYSIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER SPECIFIC REQUIREMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER TRAINING REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVIR PROCESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY ROAD SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENGINE PARAMETER SETTINGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXCESSIVE DOWNTIME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY PARTS ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY TOOLING ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOURS OF OPERATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEW EQUIPMENT ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEW EQUIPMENT TRAINING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTSIDE REPAIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM CURRENCY ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCRC DECALS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCRC SPECIAL INSTRUCTIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REGEN%2FDEF ISSUES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RENTAL%2FSUB VEHICLE AVAILABILITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RENTAL%2FSUB VEHICLE CONDITION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REPAIRS COMPLETED IN TIME PROMISED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REPAIRS DONE RIGHT THE FIRST TIME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RYDERS BILLING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RYDESMART ISSUES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY COMPLIANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICE ISLAND ISSUES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICE REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPECIFICATIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TECH DESK TICKET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TECHNICIAN QUALIFICATIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRAINING MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRUCK WASHING SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VEHICLE CONDITION DURING FLEET CHECK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ownership Validation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account%2FOpportunity Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Annual Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BMC 3rd attempt%2C escalation required</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bi monthly call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bi monthly call 1st attempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bi monthly call 2nd attempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CCO Action</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Notes from scheduled meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>X60_Days_Status__c</picklist>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Legal_Case_Activity_Task</fullName>
+        <active>true</active>
+        <description>This Record Type is used for Legal to create Cases Activity</description>
+        <label>Legal Case Activity Task</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Marketing_Activity</fullName>
+        <active>true</active>
+        <description>Record type to group all activities created from marketing automation system</description>
+        <label>Marketing Activity</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Marketing Event</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Appreciation Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Educate Events</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Grand Opening</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open Hose</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ryder Sponsored Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telemarketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Town Forum</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>NAFMM</fullName>
+        <active>true</active>
+        <description>Task record type for NAFMM tasks</description>
+        <label>NAFMM</label>
+        <picklistValues>
+            <picklist>Disposition__c</picklist>
+            <values>
+                <fullName>Incorrect contact%2F info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spoke to contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>BDM Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DBD Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source_of_Issue__c</picklist>
+            <values>
+                <fullName>ACCOUNT MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ASSET MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BREAKDOWN ANALYSIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAMPAIGN REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CAPTIVE SHOP ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>COMMUNICATION RECEIVED FROM SHOP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CSA 2010</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOM REPORT REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER CARE PLAN ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER REQUESTED ANALYSIS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER SPECIFIC REQUIREMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>CUSTOMER TRAINING REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DVIR PROCESS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMERGENCY ROAD SERVICES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ENGINE PARAMETER SETTINGS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EXCESSIVE DOWNTIME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY PARKING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY PARTS ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY SAFETY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY SECURITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>FACILITY TOOLING ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HOURS OF OPERATION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>INFORMATION REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEW EQUIPMENT ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NEW EQUIPMENT TRAINING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OUTSIDE REPAIR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PM CURRENCY ISSUE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCRC DECALS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RCRC SPECIAL INSTRUCTIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REGEN%2FDEF ISSUES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RENTAL%2FSUB VEHICLE AVAILABILITY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RENTAL%2FSUB VEHICLE CONDITION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REPAIRS COMPLETED IN TIME PROMISED</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>REPAIRS DONE RIGHT THE FIRST TIME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RYDERS BILLING</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RYDESMART ISSUES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY COMPLIANCE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICE ISLAND ISSUES</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SERVICE REQUEST</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SPECIFICATIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TECH DESK TICKET</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TECHNICIAN QUALIFICATIONS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRAINING MANAGEMENT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TRUCK WASHING SERVICE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>VEHICLE CONDITION DURING FLEET CHECK</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Corrective Action Request</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>X60_Days_Status__c</picklist>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Proposal_Response</fullName>
+        <active>true</active>
+        <description>Resquest For Proposal Task</description>
+        <label>Proposal Response</label>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>RydeSmart_Task</fullName>
+        <active>true</active>
+        <description>This Record type is used for RydeSmart Task</description>
+        <label>RydeSmart Task</label>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>ACH Changes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Credit Line Increases</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Escalations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Extended Terms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ILOC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Changed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Verbal Financial Discussion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Ryder_Task</fullName>
+        <active>true</active>
+        <label>Ryder Task</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ownership Validation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Account%2FOpportunity Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Phone Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deliver Proposal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Bounceback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Click Through</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Open</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Sent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Subscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Unsubscribe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Sponsor Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Form Submit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Get Signed Deal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Notes from scheduled meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Offline Activity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Opportunity Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Phone Call with Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Visit</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Safety</fullName>
+        <active>true</active>
+        <description>For the Safety Group</description>
+        <label>Safety</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Meeting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>CSA Guidance%2FTraining%2FScore Reduction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collision Review Board</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Question%2F Direction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compliance Summary%2F Recommendations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Safety Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customized Driver Training%2F Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Awards Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver Safety Meeting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Leadership Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fleet Risk Assessment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Leadership Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mock DOT Audit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Natural Gas Vehicle Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant in Customer Safety Symposium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder Safety Capabilities Presentation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Safety Program Development%2F Benchmarking</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Survey</fullName>
+        <active>true</active>
+        <description>Task only used to capture the workload for surveys</description>
+        <label>Survey</label>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>Large</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Survey</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>TSA_Activity</fullName>
+        <active>true</active>
+        <label>TSA Activity</label>
+        <picklistValues>
+            <picklist>Initiative__c</picklist>
+            <values>
+                <fullName>BDM Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DBD Target</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Campaigns</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>National Tag Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder OK %28800%23%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Inquiry</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>High</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Low</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Normal</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deferred%2FCallback</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Started</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Resolved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting on someone else</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Subject</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contact Me Now Request Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Sat Survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Follow up task for Failed CSI survey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Automation Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Letter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Call_Result__c</picklist>
+            <values>
+                <fullName>Disconnect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Future Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hangup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Left Message</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Number Disconnected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Completed Survey Recently</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refusal - Too Busy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Day Reschedule</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unavailable</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out_Reason__c</picklist>
+            <values>
+                <fullName>Customer Request</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lengthy Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Interest</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Opt_Out__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_Sub_Type__c</picklist>
+            <values>
+                <fullName>CNGottsman</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Large</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAFETY-KLEEN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Call</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>AssignedTo_OnlyAdminManagers</fullName>
+        <active>true</active>
+        <description>The Assigned To field on the Survey Task can only be updated by System Administrator or Service Management Profile</description>
+        <errorConditionFormula>AND(
+   ISPICKVAL(Type,&quot;Survey&quot;),Subject = &quot;Customer Sat Survey&quot;, 
+   ISCHANGED( OwnerId),
+     $UserRole.Name &lt;&gt; &quot;Service Team Management&quot;,
+     NOT($Profile.Name = &quot;System Administrator&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>OwnerId</errorDisplayField>
+        <errorMessage>Must be a manager to revise this field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>CallbackRequiresSurveyCallDateTime</fullName>
+        <active>true</active>
+        <description>The Callback Survey Result requires a survey call date/time value.</description>
+        <errorConditionFormula>AND
+(ISBLANK(Survey_Call_Date_Time__c ),
+OR(ISPICKVAL(Survey_Call_Result__c, &quot;Future Reschedule&quot;),  ISPICKVAL(Survey_Call_Result__c, &quot;Same Day Reschedule&quot;)))</errorConditionFormula>
+        <errorDisplayField>Survey_Call_Date_Time__c</errorDisplayField>
+        <errorMessage>The requested callback date/time must be entered.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EnforceCategory_DeferredCallbackorRetry</fullName>
+        <active>true</active>
+        <description>If agent chooses a status of Deferred/Callback, enforce the addition of either Same Day Reschedule or Future Reschedule. If agent chooses a status of Retry, enforce the addition of one of the dependent value choices.</description>
+        <errorConditionFormula>AND
+(ISPICKVAL(Type,&quot;Survey&quot;),Subject = &quot;Customer Sat Survey&quot;, ISPICKVAL(Survey_Call_Result__c, &quot;&quot;),
+OR (ISPICKVAL( Status, &quot;Deferred/Callback&quot;),
+ISPICKVAL(Status, &quot;Retry&quot;)))</errorConditionFormula>
+        <errorDisplayField>Survey_Call_Result__c</errorDisplayField>
+        <errorMessage>Please select a value in the Survey Call Result field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EnforceNoRefusals_SafetyKleenSurveys</fullName>
+        <active>true</active>
+        <description>Agent is not allowed to choose Refusal for any Safety-Kleen survey.</description>
+        <errorConditionFormula>AND
+(ISPICKVAL( Survey_Sub_Type__c, &apos;SAFETY-KLEEN&apos;),ISPICKVAL(Type,&quot;Survey&quot;),Subject = &quot;Customer Sat Survey&quot;,
+OR(ISPICKVAL(Survey_Call_Result__c, &apos;Refusal&apos;),ISPICKVAL(Survey_Call_Result__c, &apos;Refusal - Too Busy&apos;)))</errorConditionFormula>
+        <errorDisplayField>Survey_Call_Result__c</errorDisplayField>
+        <errorMessage>Safety-Kleen surveys are not allowed to have refusals.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_OnlyAdminManagers</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+ISPICKVAL(Type,&quot;Survey&quot;),Subject = &quot;Customer Sat Survey&quot;, 
+ISCHANGED( Status), 
+$UserRole.Name &lt;&gt; &quot;Service Team Management&quot;, 
+$UserRole.Name &lt;&gt; &apos;Service Team&apos;, 
+NOT($Profile.Name = &quot;System Administrator&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>Status</errorDisplayField>
+        <errorMessage>Must be an agent or Administrator to change this field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SurveyCallDateTime_NoBackDate</fullName>
+        <active>true</active>
+        <description>The Survey Call Date Time should always be a date in the future.</description>
+        <errorConditionFormula>NOT( ISBLANK(Survey_Call_Date_Time__c))  &amp;&amp;  DATEVALUE(Survey_Call_Date_Time__c) &lt; Today()   &amp;&amp;
+NOT($Profile.Name = &quot;System Administrator&quot;)</errorConditionFormula>
+        <errorDisplayField>Survey_Call_Date_Time__c</errorDisplayField>
+        <errorMessage>The Survey Call Date Time must be a date/time in the future.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Create_Case</fullName>
+        <availability>online</availability>
+        <description>Create a case from the task auto-populated with information gathered from the Survey Activity</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Case</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/13.0/connection.js&quot;)} 
+
+var caseObj = new sforce.SObject(&quot;Case&quot;); 
+caseObj.Status = &apos;New&apos;; 
+caseObj.Caller_Type__c = &apos;External&apos;; 
+caseObj.Origin = &apos;CSI Closed Loop&apos; + &apos;-&apos; + &apos;{!Task.Survey_Sub_Type__c}&apos;; 
+caseObj.Customer_Branch__c = &apos;{!Customer_Branch__c.Id}&apos;; 
+
+//Build 1 2012 - Added to force the relationship between the activity and the case. 
+caseObj.Activity_ID__c = &apos;{!Task.Id}&apos;; 
+
+//ChangeStrategies - Original Shared Services Code Commented to align with code in production 
+//caseObj.Account_Name__c = &apos;{!Account.Name}&apos;; 
+
+caseObj.AccountId = &apos;{!Account.Id}&apos;; 
+//commented by neelima to update the filed to contactid 08/28/2012
+//caseObj.Contact_Name__c = &apos;{!Contact.Id}&apos;; 
+
+caseObj.ContactId = &apos;{!Contact.Id}&apos;; 
+
+caseObj.Email__c = &apos;{!Contact.Email}&apos;; 
+caseObj.Contact_Phone__c = &apos;{!Contact.Phone}&apos;; 
+
+//Commented by Raja 8/23/11 
+//Owner cannot be set on the fly by service profile people unless they have modify all permission on the case object. 
+//caseObj.OwnerId = &apos;{!Customer_Branch__c.Customer_Branch_OwnerId__c}&apos;; 
+
+var result = sforce.connection.create([caseObj]); 
+
+if (result[0].success==&apos;false&apos;) { 
+alert(result[0].errors.message); 
+} else { 
+var newURL = &apos;/&apos; + result[0].id + &apos;/e&apos;; 
+window.top.location = newURL; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Fuel_Sales_Link</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Fuel Sales Link</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://cs20.salesforce.com/{!Fuel_Sales__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Log_A_Call</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Log A Call</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>https://na4.salesforce.com/00T/e?what_id={!HQ_Visit__c.Id}&amp;retURL=%2F{!HQ_Visit__c.Id}&amp;RecordType=01260000000UNRa&amp;ent=Task</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Start_Followup_Survey</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Start Followup Survey</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>location.replace(&apos;http://www.clicktools.com/survey?iv=1o5jqnmvwam8im&amp;q2={!Customer_Branch__c.Id}&amp;q1={!Contact.Id}&amp;q3={!Task.Id}&amp;q4={!URLENCODE(Customer_Branch__c.Ryder_Branch__c)}&amp;q6={!Contact.Phone}&amp;q5={!Contact.Name}&amp;q7={!$User.Id}&amp;q8={!$User.Alias}&amp;q9={!Task.Orignal_Task_Date__c}&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Start_Survey</fullName>
+        <availability>online</availability>
+        <description>Start the Customer Satisfaction Survey with the respondent on the phone.  This button should be clicked only once the initial script has been read from the SurveyActivities VF page and the contact has been verified.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Start Survey</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/18.0/apex.js&quot;)}
+
+if({!NOT( ISBLANK( Task.Survey_ID__c ) )}) 
+alert (&apos;Survey is already completed. A new survey cannot be started. Please click on the survey link to view the already completed survey.&apos;); 
+else 
+{ 
+if(&apos;{!Task.Survey_Sub_Type__c }&apos; == &apos;Large&apos;) {
+location.replace(&apos;http://www.clicktools.com/survey?iv=37w59sojjyyt5&amp;q2={!Customer_Branch__c.Id}&amp;q1={!Contact.Id}&amp;q3={!Task.Id}&amp;q4={!URLENCODE(Customer_Branch__c.Ryder_Branch__c)}&amp;q6={!Contact.Phone}&amp;q5={!URLENCODE(Contact.Name)}&amp;q7={!$User.Id}&amp;q8={!$User.Alias}&apos;)
+}
+if(&apos;{!Task.Survey_Sub_Type__c }&apos; == &apos;SAFETY-KLEEN&apos;) {
+location.replace(&apos;http://www.clicktools.com/survey?iv=fduzmupspnr14&amp;q2={!Customer_Branch__c.Id}&amp;q1={!Contact.Id}&amp;q3={!Task.Id}&amp;q4={!URLENCODE(Customer_Branch__c.Ryder_Branch__c)}&amp;q6={!Contact.Phone}&amp;q5={!URLENCODE(Contact.Name)}&amp;q7={!$User.Id}&amp;q8={!$User.Alias}&apos;)
+}
+else{
+location.replace(&apos;http://www.clicktools.com/survey?iv=37w59sojjyyt5&amp;q2={!Customer_Branch__c.Id}&amp;q1={!Contact.Id}&amp;q3={!Task.Id}&amp;q4={!URLENCODE(Customer_Branch__c.Ryder_Branch__c)}&amp;q6={!Contact.Phone}&amp;q5={!URLENCODE(Contact.Name)}&amp;q7={!$User.Id}&amp;q8={!$User.Alias}&apos;);
+}
+}</url>
+    </webLinks>
+</CustomObject>

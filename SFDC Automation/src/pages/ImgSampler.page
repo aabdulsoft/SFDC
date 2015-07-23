@@ -1,0 +1,166 @@
+<apex:page showHeader="false" sidebar="false" standardStylesheets="false">
+<style>
+.wrap {
+    width: 970px;
+}
+
+.wrap table {
+    width: 910px;
+    table-layout: fixed;
+}
+
+table tr td {
+    padding: 5px;
+    border: 1px solid #eee;
+    width: 300px;
+    word-wrap: break-word;
+}
+
+.inner_table {
+    height: 665px;
+    overflow-y: auto;
+}
+</style>
+ 
+ <div class="wrap">
+  <table class="head">
+        <tr>
+            <td align="center"><button type="button">Save Selections</button></td>
+            <td align="center"><button type="button">Cancel</button></td>
+        </tr>
+    </table>
+ <div class="inner_table">   
+ <table>
+     <tr>
+         <td align="center"> 
+             Vehicle #1234<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+         <td align="center">
+              Vehicle #1235<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>   
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+         <td align="center">
+              Vehicle #1236<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+     </tr>
+     <tr>
+         <td align="center">
+              Vehicle #1237<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+         <td align="center">
+              Vehicle #1238<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>   
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+         <td align="center">
+              Vehicle #1239<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+     </tr>
+     <tr>
+         <td align="center">
+              Vehicle #123456<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+         <td align="center">
+             Vehicle #123457<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>   
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+         <td align="center">
+             Vehicle #1234568<br/>
+             <img src="http://vehicleimages.ryder.com//images/300294.jpg" width="300" height="300"/>
+             <br/><input type="checkbox"/>&nbsp;&nbsp;
+             <select>
+              <option value="0"></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+         </td>
+     </tr>
+ </table>
+ </div>
+ <table class="head">
+        <tr>
+            <td align="center"><button type="button">Save Selections</button></td>
+            <td align="center"><button type="button">Cancel</button></td>
+        </tr>
+    </table>
+ </div>
+</apex:page>

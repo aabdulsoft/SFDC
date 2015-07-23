@@ -1,0 +1,48 @@
+<apex:page StandardController="Opportunity" extensions="OppChangeForecast_Controller" sidebar="false" RecordSetVar="Opportunity" >
+    <apex:form >
+        <apex:sectionHeader subtitle="New Opportunity" title="Opportunity Edit" />
+        <apex:pageBlock id="SaveBlock" title="Opportunity Edit" >        
+            <apex:pageBlockButtons >                
+                <apex:commandButton value="Save" action="{!UpdateData}" />
+                <apex:commandButton value="Go Back" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:outputPanel id="toperror">
+                <apex:pageMessages id="error" />
+            </apex:outputPanel>
+            <apex:pageBlockTable value="{!lOpp}" var="Data" id="datatable" columnsWidth="120px,120px,90px,100px,90px,90px,90px,150px,150px">
+                <apex:column Headervalue="Account Name">
+                    <apex:outputLink value="/{!Data.AccountID}" target="_blank" style="width:90px">{!Data.Account.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Opportunity Name">
+                    <apex:outputLink value="/{!Data.Id}" target="_blank" style="width:90px">{!Data.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Opp Owner">
+                    <apex:outputLink value="/{!Data.OwnerId}" target="_blank" style="width:90px">{!Data.Owner.Name}</apex:outputLink>
+                </apex:column>
+                <apex:column Headervalue="Stage">
+                    <apex:outputField value="{!Data.StageName}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="Estimated Deal Value">
+                    <apex:outputField value="{!Data.EST_DEAL_VAL__c}" style="width:90px" />
+                </apex:column>
+                
+                <apex:column Headervalue="">
+                    <apex:facet name="header">Included in  <br />Monthly Forecast</apex:facet>
+                    <apex:inputField value="{!Data.Included_in_Monthly_Forecast__c}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="">
+                    <apex:facet name="header">Included in  <br />Quarterly Forecast</apex:facet>
+                    <apex:inputField value="{!Data.Included_in_Quarterly_Forecast__c}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="">
+                    <apex:facet name="header">Description</apex:facet>
+                    <apex:inputField value="{!Data.Description}" style="width:90px" />
+                </apex:column>
+                <apex:column Headervalue="">
+                    <apex:facet name="header">Next Step</apex:facet>
+                    <apex:inputField value="{!Data.NextStep}" style="width:90px" />
+                </apex:column>
+            </apex:pageBlockTable>            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

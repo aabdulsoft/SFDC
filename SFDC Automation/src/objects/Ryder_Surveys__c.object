@@ -1,0 +1,4697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object will store the high-level results of Click Tools surveys, including the CSI, Follow up and Closed Case Surveys.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Activity_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Activity ID associated to the task for the survey conducted by the agent</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Activity ID associated to the task for the survey conducted by the agent</inlineHelpText>
+        <label>Activity ID</label>
+        <length>22</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>CS_Score__c</fullName>
+        <description>Customer Satisfaction Score - calculated in the interim before CSI introduction</description>
+        <externalId>false</externalId>
+        <label>CS Score</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Ryder Surveys</relationshipLabel>
+        <relationshipName>Ryder_Surveys1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Conducted_Business_Review__c</fullName>
+        <externalId>false</externalId>
+        <label>Conducted business review</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Don&apos;t Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Ryder Surveys</relationshipLabel>
+        <relationshipName>Ryder_Surveys1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch_Name_From_Survey__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Branch Name From Survey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer_Branch__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The customer/branch the survey corresponds.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The customer/branch of the key contact that responded to this survey.</inlineHelpText>
+        <label>Customer Branch</label>
+        <referenceTo>Customer_Branch__c</referenceTo>
+        <relationshipLabel>Ryder Surveys</relationshipLabel>
+        <relationshipName>Ryder_Surveys</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Acct_Mgr_Satisfaction__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with their Account Manager.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with their Account Manager.</inlineHelpText>
+        <label>Account Manager Satisfaction</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Likelihood_to_Renew__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the likelihood to renew contract with Ryder.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the likelihood to renew contract with Ryder.</inlineHelpText>
+        <label>Likelihood to Renew</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Likely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Maintenance_Satisfaction__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with Ryder&apos;s Maintenance.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with Ryder&apos;s Maintenance.</inlineHelpText>
+        <label>Maintenance Satisfaction</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Overall_Satisfaction_FSL__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the overall FSL customer satisfaction with Ryder.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the overall FSL customer satisfaction with Ryder.</inlineHelpText>
+        <label>Overall Satisfaction - FSL</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Overall_Satisfaction_RPM__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the overall customer satisfaction with Ryder where the customer is an RPM business.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the overall customer satisfaction with Ryder where the customer is an RPM business.</inlineHelpText>
+        <label>Overall Satisfaction - RPM</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Shop_Communications__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with Ryder&apos;s shop communications.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s satisfaction with Ryder&apos;s shop&apos;s communications.</inlineHelpText>
+        <label>Maintenance Shop Communications</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Don&apos;t Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Sat_Willingness_to_Refer__c</fullName>
+        <description>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s willingness to refer Ryder to colleagues.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>As a result of taking the customer satisfaction survey, this is the ranking from 10 to 1 (10 being extremely satisfied and 1 being least satisfied) on the customer&apos;s willingness to refer Ryder to colleagues.</inlineHelpText>
+        <label>Willingness to Refer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>9</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Satisfaction_Survey__c</fullName>
+        <description>Link to the customer satisfaction survey</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the customer satisfaction survey</inlineHelpText>
+        <label>Customer Satisfaction Survey</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Do_you_receive_approve_Ryder_invoices__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you receive/approve Ryder invoices?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Don&apos;t Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Do_you_use_Ryder_Rental_vehicles__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you use Ryder rental vehicles?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Do Not Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ExternalSurveyId__c</fullName>
+        <externalId>false</externalId>
+        <label>ExternalSurveyId</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Survey_Response_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>External Survey Response Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Failed_Survey_Email_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Failed Survey Email Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Failed_Survey_Email_Sent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Failed Survey Email Sent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Failed_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Flag is updated if any of the following criteria is met
+Overall CSI Score =&lt; 70
+MX Sat Score =&lt; 5</description>
+        <externalId>false</externalId>
+        <label>Failed Survey</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Feedback__c</fullName>
+        <description>Do you have any feedback as to how your problem was resolved by the Ryder Customer Care agent?</description>
+        <externalId>false</externalId>
+        <label>Feedback</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_about_the_agent__c</fullName>
+        <description>Do you have any feedback about the agent who handled your call?</description>
+        <externalId>false</externalId>
+        <label>Feedback about the agent</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Feedback_as_to_why_the_issue_wasnt_solve__c</fullName>
+        <description>Do you have any feedback as to how/why the issue was not solved to your satisfaction?</description>
+        <externalId>false</externalId>
+        <label>Feedback as to why the issue wasnt solve</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Has_your_problem_been_resolved__c</fullName>
+        <description>Has your problem or question been resolved to your satisfaction?</description>
+        <externalId>false</externalId>
+        <label>Has your problem been resolved?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Don&apos;t Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>How_can_Ryder_improve_Maint_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>How can Ryder improve Maint service?</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>How_can_Ryder_improve_the_services__c</fullName>
+        <externalId>false</externalId>
+        <label>How can Ryder improve the services</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Increased_fleet_with_other_providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Increased fleet with other providers?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Don&apos;t Know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>KeyContact_LocalAccountManager__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Contact Local Account Manager</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KeyContact_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Contact Other</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KeyContact_ServiceManager__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Contact Service Manager</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_PDF_Emailed_BY_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Last PDF Emailed BY User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Surveys_PDF_Emailed_For</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_PDF_Emailed_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last PDF Emailed Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Liked_the_MOST_about_support_experience__c</fullName>
+        <description>What, if anything, did you like MOST about your support experience?</description>
+        <externalId>false</externalId>
+        <label>Liked the MOST about support experience</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Likelihood_of_calling_again__c</fullName>
+        <description>How likely are you to call into Ryder Customer Care again?</description>
+        <externalId>false</externalId>
+        <label>Likelihood of calling again</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Likelihood_to_recommend__c</fullName>
+        <externalId>false</externalId>
+        <label>Likelihood to recommend</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Likely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Contact_Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Contact Frequency</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Before and after every PM/Maintenance event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Contact_Preference__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance Contact Preference</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Emergency_Road_Service__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance-Emergency Road Service</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Relation_with_shop_contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance- Relation with shop contact</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Repairs_In_time__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance-Repairs In time</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Truck_Washing__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance-Truck Washing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Vehicle_Repairs__c</fullName>
+        <externalId>false</externalId>
+        <label>Maintenance-Vehicle Repairs</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Other_Areas_Of_Concern__c</fullName>
+        <externalId>false</externalId>
+        <label>Other areas of concern</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_Carriers__c</fullName>
+        <externalId>false</externalId>
+        <label>What are the other carriers you use?</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Overall_experience__c</fullName>
+        <description>Thinking of your overall experience with Customer Care regarding your call</description>
+        <externalId>false</externalId>
+        <label>Overall experience</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Overall_how_satisfied_are_you_with_the__c</fullName>
+        <description>Overall, how satisfied are you with the agent who handled your call?</description>
+        <externalId>false</externalId>
+        <label>How satisfied are you with the agent</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Overall_quality__c</fullName>
+        <description>How would you rate the overall quality of Ryder&apos;s Customer Care in this case?</description>
+        <externalId>false</externalId>
+        <label>Overall quality</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfactory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unsatisfactory</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PDF_Emailed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>PDF Emailed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Reason_For_Choosing_Ryder__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary reason for choosing Ryder</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Improve vehicle uptime</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ryder capabilities / Experience / Resources</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trust the Ryder name and reputation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Network of faciltiies</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pricing / cost was right</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EPA/DOT Compliance / Regulatory Compliance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wanted to get out of trucking business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management decision</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Problem_resolved__c</fullName>
+        <description>Was your problem resolved on the first contact with a Ryder Customer Care agent?</description>
+        <externalId>false</externalId>
+        <label>Problem resolved</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Don&apos;t know</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Reason_Behind_Renewal_Intent__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason Behind Renewal Intent</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reason_for_using_other_carriers__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason for using other carriers</label>
+        <length>4000</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Role_in_DMP__c</fullName>
+        <externalId>false</externalId>
+        <label>Role in DMP</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Decision Maker</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Contributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ryder_Customer__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Branch__r.Ryder_HQ_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ryder Customer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ryder_Customer_del__c</fullName>
+        <externalId>false</externalId>
+        <formula>Customer_Branch__r.Ryder_HQ_Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ryder Customer</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_Billing_Accuracy__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction with billing accuracy</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_Billing_Format__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction with billing format</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_Billing_Timeliness__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction with billing timeliness</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_Ryder_Branch__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction With Ryder Branch</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_performace_review__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction With Performance Review</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_with_Rental_Vehicles__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction with Rental Vehicles</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_with_other_provider__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction with other provider</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Satisfaction_with_the_overall_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Satisfaction with the overall Value</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Conducted_By__c</fullName>
+        <description>This is the alias of the person that conducted the survey.</description>
+        <externalId>false</externalId>
+        <label>Survey Conducted By</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Details_Loaded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Identifies whether data has been loaded from ClickTools daily download</description>
+        <externalId>false</externalId>
+        <label>Survey Details Loaded</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Printable_Link__c</fullName>
+        <description>The link to print out the results of the survey without having to store the print-out or pdf on a server.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The link to print out the results of the survey without having to store the print-out or pdf on a server.</inlineHelpText>
+        <label>Survey Printable Link</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Responder_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Responder Email</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Responder_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Responder Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Responder_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Responder Phone</label>
+        <length>40</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Responder_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Responder Title</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Submission_Date__c</fullName>
+        <description>The date the survey was submitted with the responses.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The survey was submitted on this date with the responses that can be viewed in the url.</inlineHelpText>
+        <label>Survey Submission Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Survey_contact_preference__c</fullName>
+        <externalId>false</externalId>
+        <label>Survey Contact Preference</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Either</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Do Not Contact for Surveys</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Times_PDF_Emailed__c</fullName>
+        <description>Number of times the email was sent out.</description>
+        <externalId>false</externalId>
+        <label>Times PDF Emailed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>To_be_contacted_by_RyderDirector__c</fullName>
+        <externalId>false</externalId>
+        <label>To be contacted by Ryder Director</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Use_Other_Providers__c</fullName>
+        <externalId>false</externalId>
+        <label>Do you use Other Providers?</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>What_should_be_done_to_improve_support__c</fullName>
+        <description>What, if anything, should we do to improve the support experience?</description>
+        <externalId>false</externalId>
+        <label>What should be done to improve support</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <label>Ryder Survey</label>
+    <listViews>
+        <fullName>All_surveys</fullName>
+        <columns>NAME</columns>
+        <columns>Case__c</columns>
+        <columns>Contact__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All surveys</label>
+    </listViews>
+    <listViews>
+        <fullName>CSI_Surveys</fullName>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Survey_Submission_Date__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Ryder_Surveys__c.CSI_Survey</value>
+        </filters>
+        <label>CSI Surveys</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CS_Surveys_Completed_By_Judy</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>Contact__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Survey_Conducted_By__c</field>
+            <operation>equals</operation>
+            <value>jgill</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>10/1/2012 12:00 AM</value>
+        </filters>
+        <label>CS Surveys Completed By Judy</label>
+        <sharedTo>
+            <group>AllService</group>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CS_Surveys_Completed_By_Scott</fullName>
+        <booleanFilter>1 AND 2 AND (3 or 4 or 5 or 6) and (7 or 8)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>Contact__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Survey_Conducted_By__c</field>
+            <operation>equals</operation>
+            <value>swull</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>9/25/2012 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Shop_Communications__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <label>CS Surveys Completed By Scott</label>
+        <sharedTo>
+            <group>AllService</group>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CS_Surveys_Completed_By_Today_Saad</fullName>
+        <booleanFilter>1</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>11/5/2012 12:00 AM</value>
+        </filters>
+        <label>CS Surveys Completed By Today - Saad</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CS_Surveys_Completed_Michigan_Lakes</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2012 12:00 AM</value>
+        </filters>
+        <label>CS Surveys Completed Michigan Lakes</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CS_Surveys_Completed_and_Not_Emailed</fullName>
+        <booleanFilter>1 AND (4 OR 5)  AND (2 OR 3 OR 6 or 7) AND 8 AND 9</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>Contact__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PDF_Emailed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Shop_Communications__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>5/1/2012 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Survey_Details_Loaded__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>CS Surveys Completed and Not Emailed</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>CS_Surveys_Special_Email_Request</fullName>
+        <booleanFilter>1 AND (4 OR 5)  AND (2 OR 3 OR 6 or 7) AND 8</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>Contact__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>equals</operation>
+            <value>RS-08776-111212</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Shop_Communications__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>5/1/2012 12:00 AM</value>
+        </filters>
+        <label>CS Surveys - Special Email Request</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Close_Case_Surveys</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Contact__c</columns>
+        <columns>Case__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Ryder_Surveys__c.Closed_Case_Survey</value>
+        </filters>
+        <label>Close Case Surveys</label>
+    </listViews>
+    <listViews>
+        <fullName>Completed_CS_Surveys_By_Date</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>greaterThan</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>equals</operation>
+            <value>RS-02666-020712</value>
+        </filters>
+        <label>Completed CS Surveys By Date</label>
+    </listViews>
+    <listViews>
+        <fullName>Completed_CS_Surveys_Mailed_After_Aug_17</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7 AND 8 AND 9</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <filters>
+            <field>Last_PDF_Emailed_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>8/23/2012 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Last_PDF_Emailed_Date__c</field>
+            <operation>lessThan</operation>
+            <value>8/25/2012 12:00 AM</value>
+        </filters>
+        <label>Completed CS Surveys Mailed After Aug 17</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Customer_Sat_Surveys</fullName>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Survey_Details_Loaded__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>equals</operation>
+            <value>RS-03898-033012</value>
+        </filters>
+        <label>Completed CS Surveys Saad</label>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Customer_Sat_Surveys_2012</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7 and 8</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>LAST_UPDATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>1/1/2012 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Survey_Details_Loaded__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Loaded Completed CS Surveys</label>
+    </listViews>
+    <listViews>
+        <fullName>Falied_Surveys_List</fullName>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR (7 AND 8))</booleanFilter>
+        <columns>NAME</columns>
+        <columns>CS_Score__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Case__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Ryder_Surveys__c.CSI_Survey</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>greaterOrEqual</operation>
+            <value>6/21/2012 12:00 AM</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>notContain</operation>
+            <value>,10,9,8,7,6,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>notContain</operation>
+            <value>,10,9,8,7,6,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>notContain</operation>
+            <value>,10,9,8,7,6,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Shop_Communications__c</field>
+            <operation>notContain</operation>
+            <value>,10,9,8,7,6,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>CS_Score__c</field>
+            <operation>lessOrEqual</operation>
+            <value>70</value>
+        </filters>
+        <filters>
+            <field>CS_Score__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Falied Surveys List</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Last_Week_s_Completed_CS_Surveys</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>Last Week&apos;s Completed CS Surveys</label>
+    </listViews>
+    <listViews>
+        <fullName>Test_Gizmo_Surveys</fullName>
+        <booleanFilter>1 AND 2 and 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Case__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Feedback_about_the_agent__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATEDBY_USER.ALIAS</field>
+            <operation>equals</operation>
+            <value>salesadm</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Ryder_Surveys__c.CSI_Survey</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>greaterThan</operation>
+            <value>4/24/2013 12:00 AM</value>
+        </filters>
+        <label>Test Gizmo Surveys</label>
+        <sharedTo>
+            <group>SystemAdmin</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>ThisWeek_s_Completed_CS_Surveys</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <columns>Failed_Survey__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>This Week&apos;s Completed CS Surveys</label>
+    </listViews>
+    <listViews>
+        <fullName>This_Month_s_Completed_CS_Surveys</fullName>
+        <booleanFilter>1 AND (2 OR 3  OR 6) AND (4 OR 5) AND 7</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer_Branch__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Survey_Details_Loaded__c</columns>
+        <columns>PDF_Emailed__c</columns>
+        <columns>Last_PDF_Emailed_Date__c</columns>
+        <columns>Customer_Sat_Acct_Mgr_Satisfaction__c</columns>
+        <columns>Customer_Sat_Maintenance_Satisfaction__c</columns>
+        <columns>Customer_Sat_Shop_Communications__c</columns>
+        <columns>Customer_Sat_Likelihood_to_Renew__c</columns>
+        <columns>Customer_Sat_Willingness_to_Refer__c</columns>
+        <columns>Survey_Conducted_By__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_FSL__c</columns>
+        <columns>Customer_Sat_Overall_Satisfaction_RPM__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Customer_Satisfaction_Survey__c</field>
+            <operation>contains</operation>
+            <value>http</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Acct_Mgr_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Maintenance_Satisfaction__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_FSL__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Overall_Satisfaction_RPM__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Customer_Sat_Likelihood_to_Renew__c</field>
+            <operation>equals</operation>
+            <value>10,9,8,7,6,5,4,3,2,1,Don&apos;t Know</value>
+        </filters>
+        <filters>
+            <field>Survey_Submission_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>This Month&apos;s Completed CS Surveys</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RS-{00000}-{mmddyy}</displayFormat>
+        <label>Ryder Survey Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Ryder Surveys</pluralLabel>
+    <recordTypes>
+        <fullName>CSI_Survey</fullName>
+        <active>true</active>
+        <description>CSI Survey - Customer Satisfaction</description>
+        <label>CSI Survey</label>
+        <picklistValues>
+            <picklist>Conducted_Business_Review__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Acct_Mgr_Satisfaction__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Likelihood_to_Renew__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Maintenance_Satisfaction__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Overall_Satisfaction_FSL__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Overall_Satisfaction_RPM__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Shop_Communications__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Willingness_to_Refer__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_receive_approve_Ryder_invoices__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_use_Ryder_Rental_vehicles__c</picklist>
+            <values>
+                <fullName>Do Not Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Has_your_problem_been_resolved__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increased_fleet_with_other_providers__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Likelihood_of_calling_again__c</picklist>
+            <values>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Likelihood_to_recommend__c</picklist>
+            <values>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Contact_Frequency__c</picklist>
+            <values>
+                <fullName>Before and after every PM%2FMaintenance event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Contact_Preference__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Emergency_Road_Service__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Relation_with_shop_contact__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Repairs_In_time__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Truck_Washing__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Vehicle_Repairs__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Overall_experience__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Overall_how_satisfied_are_you_with_the__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Overall_quality__c</picklist>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfactory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsatisfactory</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Reason_For_Choosing_Ryder__c</picklist>
+            <values>
+                <fullName>EPA%2FDOT Compliance %2F Regulatory Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improve vehicle uptime</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network of faciltiies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing %2F cost was right</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder capabilities %2F Experience %2F Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust the Ryder name and reputation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wanted to get out of trucking business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Problem_resolved__c</picklist>
+            <values>
+                <fullName>Don%27t know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_in_DMP__c</picklist>
+            <values>
+                <fullName>Contributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Billing_Accuracy__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Billing_Format__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Billing_Timeliness__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Ryder_Branch__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_performace_review__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_with_Rental_Vehicles__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_with_other_provider__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_with_the_overall_Value__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_contact_preference__c</picklist>
+            <values>
+                <fullName>Do Not Contact for Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Either</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>To_be_contacted_by_RyderDirector__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Closed_Case_Survey</fullName>
+        <active>true</active>
+        <label>Closed Case Survey</label>
+        <picklistValues>
+            <picklist>Conducted_Business_Review__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Acct_Mgr_Satisfaction__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Likelihood_to_Renew__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Maintenance_Satisfaction__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Overall_Satisfaction_FSL__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Overall_Satisfaction_RPM__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Shop_Communications__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Customer_Sat_Willingness_to_Refer__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_receive_approve_Ryder_invoices__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Do_you_use_Ryder_Rental_vehicles__c</picklist>
+            <values>
+                <fullName>Do Not Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Has_your_problem_been_resolved__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Increased_fleet_with_other_providers__c</picklist>
+            <values>
+                <fullName>Don%27t Know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Likelihood_of_calling_again__c</picklist>
+            <values>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Likelihood_to_recommend__c</picklist>
+            <values>
+                <fullName>Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unlikely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Likely</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Unlikely</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Contact_Frequency__c</picklist>
+            <values>
+                <fullName>Before and after every PM%2FMaintenance event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Weekly</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Contact_Preference__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Emergency_Road_Service__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Relation_with_shop_contact__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Repairs_In_time__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Truck_Washing__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Maintenance_Vehicle_Repairs__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Overall_experience__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Overall_how_satisfied_are_you_with_the__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Overall_quality__c</picklist>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfactory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unsatisfactory</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Reason_For_Choosing_Ryder__c</picklist>
+            <values>
+                <fullName>EPA%2FDOT Compliance %2F Regulatory Compliance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Improve vehicle uptime</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Management decision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network of faciltiies</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing %2F cost was right</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ryder capabilities %2F Experience %2F Resources</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust the Ryder name and reputation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wanted to get out of trucking business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Problem_resolved__c</picklist>
+            <values>
+                <fullName>Don%27t know</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Role_in_DMP__c</picklist>
+            <values>
+                <fullName>Contributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Influencer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Billing_Accuracy__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Billing_Format__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Billing_Timeliness__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_Ryder_Branch__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_performace_review__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_with_Rental_Vehicles__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_with_other_provider__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Satisfaction_with_the_overall_Value__c</picklist>
+            <values>
+                <fullName>Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Somewhat Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Dissatisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Very Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Survey_contact_preference__c</picklist>
+            <values>
+                <fullName>Do Not Contact for Surveys</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Either</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>To_be_contacted_by_RyderDirector__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Ryder_Customer_del__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Sat_Overall_Satisfaction_RPM__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Sat_Likelihood_to_Renew__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Sat_Acct_Mgr_Satisfaction__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Sat_Willingness_to_Refer__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Satisfaction_Survey__c</customTabListAdditionalFields>
+        <listViewButtons>Send_PDF</listViewButtons>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Ryder_Customer_del__c</searchFilterFields>
+        <searchFilterFields>Contact__c</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchResultsAdditionalFields>Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Send_PDF</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send PDF</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)} 
+
+
+// TR - 02/06/12 - Make sure user is authorized to send pdf 
+var systemAdministratorText = &quot;{!$Profile.Name}&quot;; 
+var bResult; 
+var records; 
+var idString=&quot;(&apos;&quot;; 
+var authorizedUsers = sforce.connection.query(&quot;SELECT u.Id FROM User u WHERE u.UserRole.Name = &apos;Service Team Management&apos; AND u.Id = &apos;{!$User.Id}&apos;&quot;); 
+var authorizedUserRecords = authorizedUsers.getArray(&quot;records&quot;); 
+
+if((authorizedUserRecords.length &lt;= 0) &amp;&amp; (systemAdministratorText != &quot;System Administrator&quot;) &amp;&amp; (systemAdministratorText != &quot;SSO System Administrator&quot;)) 
+{ 
+alert(&quot;Not Authorized to Use This Functionality!&quot;); 
+bResult=false; 
+} 
+else 
+{ 
+bResult=true; 
+records = {!GETRECORDIDS($ObjectType.Ryder_Surveys__c)}; 
+} 
+if(bResult==true &amp;&amp; records[0] == null) 
+{ 
+alert(&quot;Please select at least one row&quot;); 
+bResult=false; 
+} 
+else if (bResult==true &amp;&amp; records.length &gt; 10) 
+{ 
+alert(&quot;You cannot select more than 10 records.&quot;); 
+bResult=false; 
+} 
+// check if any non csi surveys are selected 
+else if(bResult==true) 
+{ 
+// create a id string 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+idString= idString+records[n] + &quot;&apos;&quot;; 
+if ( records.length-n !=1) idString=idString + &quot;,&apos;&quot;; else idString=idString + &apos;)&apos;; 
+} 
+
+var soqlString=&apos;SELECT Id, RecordType.Name FROM Ryder_Surveys__c where id in &apos; + idString; 
+soqlString=soqlString+ &quot; and RecordType.Name != &apos;CSI Survey&apos; &quot;; 
+var surveys = sforce.connection.query(soqlString); 
+var surveyArray=surveys.getArray(&quot;records&quot;); 
+
+if (surveyArray.length&gt;0) 
+{ 
+alert(&quot;This function is not allowed for non CSI surveys.&quot;); 
+bResult=false; 
+} 
+// check if any unloaded surveys are loaded. 
+if(bResult==true) 
+{ 
+var soqlString2=&apos;SELECT Id, Survey_Details_Loaded__c FROM Ryder_Surveys__c where id in &apos; + idString; 
+soqlString2=soqlString2+ &quot; and Survey_Details_Loaded__c = false &quot;; 
+var surveys2 = sforce.connection.query(soqlString2); 
+var surveyArray2=surveys2.getArray(&quot;records&quot;); 
+
+if (surveyArray2.length&gt;0) 
+{ 
+bResult=false; 
+alert(&quot;The survey details have not been loaded for all of the surveys selected.&quot;); 
+} 
+} 
+// check if any pdfs are already emailed 
+if(bResult==true) 
+{ 
+var soqlString3=&apos;SELECT Id, Name,PDF_Emailed__c FROM Ryder_Surveys__c where id in &apos; + idString; 
+soqlString3=soqlString3+ &quot; and PDF_Emailed__c = true &quot;; 
+var surveys3 = sforce.connection.query(soqlString3); 
+var surveyArray3=surveys3.getArray(&quot;records&quot;); 
+// if the pdfs are not already emailed send out the emails.
+if(surveyArray3.length==0) 
+{ 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+var result = sforce.apex.execute(&quot;SendRyderSurveyEmail&quot;,&quot;sendActivityMailPDF&quot;, {surveyID: records[n] }); 
+} 
+// reload the window. 
+window.location.reload(); 
+
+} 
+else if (surveyArray3.length&gt;0) 
+{ 
+var surveyNames=&apos;&apos;; 
+// loop through already emailed surveys to get the surveys names for display 
+for(var i=0;i&lt;surveyArray3.length;i++) 
+{ 
+if ( surveyArray3.length-i !=1) surveyNames=surveyNames+ surveyArray3[i].Name+&apos;,&apos;; 
+else surveyNames=surveyNames+ surveyArray3[i].Name; 
+} 
+var r=confirm(&quot;Pdfs have already been emailed for the following selected surveys. &quot; + &apos;\n&apos; + surveyNames +&apos;\n&apos;+ &quot; Do you want to send the pdfs anyway?&quot;); 
+if (r==true) 
+{ 
+// loop through the selected surveys and send out the pdfs. 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+var result = sforce.apex.execute(&quot;SendRyderSurveyEmail&quot;,&quot;sendActivityMailPDF&quot;, {surveyID: records[n] }); 
+} 
+// reload the window. 
+window.location.reload(); 
+} 
+} 
+}
+}</url>
+    </webLinks>
+</CustomObject>

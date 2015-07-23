@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Split</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Splits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Migration Counter --></label>
+        <name>Migration_Counter__c</name>
+    </fields>
+    <fields>
+        <label><!-- OC Amount --></label>
+        <name>OC_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- OC Count --></label>
+        <name>OC_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Amount --></label>
+        <name>Pipeline_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pipeline Amount --></help>
+        <label><!-- Pipeline Split Amount --></label>
+        <name>Pipeline_Split_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SH Amount --></label>
+        <name>SH_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- SH Count --></label>
+        <name>SH_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team Member --></label>
+        <name>Sales_Team_Member__c</name>
+        <relationshipLabel><!-- Opportunity Splits --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the split percentage for this Sales Team Member --></help>
+        <label><!-- Split % --></label>
+        <name>Split_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Type --></label>
+        <name>User_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WSO Amount --></label>
+        <name>WSO_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- WSO Count --></label>
+        <name>WSO_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- ext_pipeline_id --></label>
+        <name>ext_pipeline_id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Invalid Sales Team Member --></errorMessage>
+        <name>requireSplitUser</name>
+    </validationRules>
+</CustomObjectTranslation>

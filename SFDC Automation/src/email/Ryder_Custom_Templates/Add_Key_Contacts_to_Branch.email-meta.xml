@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to notify Sales Reps when a new Cust/Br record is creating that needs Key Contacts</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Add Key Contacts to Branch</name>
+    <style>none</style>
+    <subject>Please add Key Contacts to your Customer/Branch</subject>
+    <type>text</type>
+</EmailTemplate>
